@@ -61,12 +61,45 @@ module.exports = {
               sourceMap: isDevelopment,
             },
           },
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "postcss-preset-env",
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            },
+          },
         ],
       },
       {
         test: /\.(a|c)ss$/,
         exclude: /\.module.((a|c)ss)$/,
-        use: [isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader, "css-loader"],
+        use: [
+          isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader,
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "postcss-preset-env",
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            },
+          },
+        ],
       },
     ],
   },

@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply bg-green-800;
+  @apply font-extrabold;
+}
+
 *,
 *::before,
 *::after {
