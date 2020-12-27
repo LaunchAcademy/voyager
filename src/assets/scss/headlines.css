@@ -1,0 +1,6 @@
+h1 {
+  @apply font-headline;
+  @apply font-extrabold;
+  @apply text-5xl;
+  @apply text-teal;
+}
