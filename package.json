@@ -1,7 +1,9 @@
 {
   "scripts": {
     "build": "./node_modules/.bin/webpack",
-    "dev": "./node_modules/.bin/webpack serve"
+    "dev": "./node_modules/.bin/webpack serve",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "license": "UNLICENSED",
   "private": true,
@@ -12,10 +14,20 @@
   },
   "devDependencies": {
     "@hot-loader/react-dom": "~16.13",
+    "@storybook/addon-actions": "^6.2.8",
+    "@storybook/addon-docs": "^6.2.8",
+    "@storybook/addon-essentials": "^6.2.8",
+    "@storybook/addon-links": "^6.2.8",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "^6.2.8",
+    "storybook": "^6.2.8",
     "webpack-dev-server": "~3.11"
   },
+  "resolutions": {
+    "postcss": "8.1.7"
+  },
   "dependencies": {
-    "@babel/core": "7.10.2",
+    "@babel/core": "7.13.16",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
@@ -25,14 +37,14 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.6.2",
-    "autoprefixer": "^10.1.0",
+    "autoprefixer": "^10",
     "babel-loader": "~8.1",
     "css-loader": "^5.0.0",
     "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-plugin": "5.0.0-beta.1",
     "mini-css-extract-plugin": "^0.9.0",
-    "postcss": "^8.2.1",
-    "postcss-import": "^14.0.0",
+    "postcss": "^8",
+    "postcss-import": "14.0.0",
     "postcss-loader": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
     "prop-types": "~15.7",
