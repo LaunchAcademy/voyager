@@ -1,7 +1,7 @@
-@import './headlines.css';
-
 @tailwind base;
 @tailwind components;
+
+@import '../../../theme/typography/typography.css';
 /* @tailwind utilities; */
 
 
