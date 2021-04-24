@@ -33,3 +33,12 @@
     @apply bg-teal text-black border-black;
   }
 }
+
+.button.callout-photo__button {
+  @apply bg-white text-black border-black border;
+
+  &.button_secondary {
+    @apply text-white border-2 border-white;
+    background: transparent;
+  }
+}

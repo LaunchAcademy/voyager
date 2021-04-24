@@ -12,6 +12,8 @@ const Button = ({
   }
   if (placement === "callout") {
     modifiers.push("callout__button");
+  } else if (placement === "photo") {
+    modifiers.push("callout-photo__button");
   }
 
   if (to) {

@@ -18,7 +18,12 @@ addParameters({
       {
         name: "callout",
         value: colors.secondaryBrand.hex
+      },
+      {
+        name: "photo",
+        value: colors.secondaryText.hex
       }
+
     ]
   },
 });
