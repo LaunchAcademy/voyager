@@ -25,3 +25,11 @@
     @apply border-primary-brand text-primary-brand bg-white border-2;
   }
 }
+
+.callout__button {
+  @apply bg-black text-teal;
+
+  &.button_secondary {
+    @apply bg-teal text-black border-black;
+  }
+}

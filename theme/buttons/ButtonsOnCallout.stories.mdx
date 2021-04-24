@@ -1,24 +1,31 @@
-import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import blocks, { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
 import Button from "./Button"
 import "../../src/assets/scss/main.css";
 
 export const Template = (args) => <Button {...args} />
+Template.parameters = {
+  backgrounds: {default: "callout"},
+};
 const defaultArgs = {
   text: "Apply Today",
   to: "#",
-  size: "xl"
+  size: "xl",
+  placement: "callout"
 }
 
-<Meta title="Buttons/On Light BG" component={Button} />
+<Meta title="Buttons/On Callout" component={Button} parameters={{
+  backgrounds: {default: "callout"}}}/>
 
 # Buttons
+
+<ArgsTable of={Button} />
 
 ## Primary Buttons
 
 ### Extra-Large (xl)
 
-<Canvas>
-  <Story name="Primary XL" args={{...defaultArgs, size: "xl"}}>
+<Canvas parameters={Template.parameters}>
+  <Story name="Primary XL" args={{...defaultArgs, size: "xl"}} >
     {(args) => <Button {...args} />}
   </Story>
 </Canvas>
