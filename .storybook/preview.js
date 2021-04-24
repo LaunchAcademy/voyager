@@ -10,6 +10,5 @@ addParameters({
   docs: {
     container: DocsContainer,
     page: DocsPage,
-    inlineStories: false
   },
 });

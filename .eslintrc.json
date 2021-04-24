@@ -8,15 +8,16 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 11,
-    "sourceType": "module"
+    "ecmaVersion": 11
   },
   "plugins": ["react", "prettier"],
   "rules": {
     "quotes": ["error", "double", { "avoidEscape": true }],
-    "no-param-reassign": ["error", { "props": false }]
-  },
-  "settings": {
-    "import/resolver": "webpack"
+    "no-param-reassign": ["error", { "props": false }],
+    "react/jsx-filename-extension": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-restricted-syntax": "off"
   }
 }

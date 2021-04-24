@@ -1,18 +1,11 @@
-import blocks, { Meta, Typeset } from '@storybook/addon-docs/blocks';
-import Headline from "./Headline"
+import blocks, { Meta, Typeset, Canvas, Story } from '@storybook/addon-docs/blocks';
 import "./typography.css";
 
-<Meta title="Typography" />
+<Meta title="Typography" parameters={{ previewTabs: { canvas: { hidden: true } } }} />
 
 # Typography
 
 ## Headlines
-
-<Canvas>
-  <Story name="headline">
-    <Headline />
-  </Story>
-</Canvas>
 
 <Canvas>
   <Story name="Headlines">

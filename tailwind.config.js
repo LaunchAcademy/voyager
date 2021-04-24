@@ -1,15 +1,12 @@
-const _ = require("lodash");
-const colors = require("./theme/colors/colors");
+const getColorsByName = require("./theme/colors/getColorsByName");
+const getColorsByColorName = require("./theme/colors/getColorsByColorName");
 const fontFamily = require("./theme/typography/fontFamily.js");
 
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: Object.values(colors).reduce((map, colorProps) => ({
-      ...map,
-      [_.kebabCase(colorProps.colorName)]: colorProps.hex,
-    }), {}),
+    colors: { ...getColorsByColorName(), ...getColorsByName() },
     fontFamily,
   },
   variants: {
