@@ -1,0 +1,80 @@
+import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Button from "./Button"
+import "../../src/assets/scss/main.css";
+
+export const Template = (args) => <Button {...args} />
+const defaultArgs = {
+  text: "Apply Today",
+  to: "#",
+  size: "xl"
+}
+
+<Meta title="Buttons/On Light BG" component={Button} />
+
+# Buttons
+
+## Primary Buttons
+
+### Extra-Large (xl)
+
+<Canvas>
+  <Story name="Primary XL" args={{...defaultArgs, size: "xl"}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Large (lg)
+<Canvas>
+  <Story name="Primary LG" args={{...defaultArgs, size: "lg"}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Medium (md)
+
+<Canvas>
+  <Story name="Primary MD" args={{...defaultArgs, size: "md"}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Small (sm)
+
+<Canvas>
+  <Story name="Primary SM" args={{...defaultArgs, size: "sm"}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Secondary Buttons
+
+### Extra-Large (xl)
+
+<Canvas>
+  <Story name="Secondary XL" args={{...defaultArgs, size: "xl", secondary: true}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Large (lg)
+<Canvas>
+  <Story name="Secondary LG" args={{...defaultArgs, size: "lg", secondary: true}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Medium (md)
+
+<Canvas>
+  <Story name="Secondary MD" args={{...defaultArgs, size: "md", secondary: true}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Small (sm)
+
+<Canvas>
+  <Story name="Secondary SM" args={{...defaultArgs, size: "sm", secondary: true}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

@@ -49,5 +49,10 @@ module.exports = {
     hex: "#522B29",
     colorName: "Brown",
   },
+  white: {
+    applications: ["Primary button text"],
+    hex: "#fff",
+    colorName: "White",
+  },
 
 };
