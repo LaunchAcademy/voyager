@@ -1,0 +1,66 @@
+.footer {
+  @apply text-center;
+
+  & .footer__logo {
+    @apply inline-block;
+  }
+
+  & .footer__social-media-links {
+    @apply my-8;
+
+    & li {
+      @apply rounded-full bg-accent inline-block mr-4;
+      @apply w-8;
+    }
+
+    & li:last-child {
+      @apply mr-0;
+    }
+  }
+
+  & .footer__form {
+    @apply my-3 w-72 mx-auto;
+    position: relative;
+  }
+
+  & .footer__form-legend {
+    font-size: 1.5rem;
+    @apply font-bold;
+  }
+
+  & .footer__link-list-title {
+    @apply font-bold mb-8;
+  }
+
+  & .footer__input_type-email {
+    @apply bg-gray-light-slate py-2 px-4 rounded-lg mt-4 mb-8 w-full text-black font-bold focus:ring-4 focus:border-secondary-brand focus:ring-primary-brand focus:outline-none border-2 border-gray-light-slate;
+    font-size: 0.875rem;
+
+    &::placeholder {
+      @apply text-black font-bold;
+    }
+  }
+
+  & .footer__form-submit-button {
+    position: absolute;
+    bottom: 38px;
+    right: 28px;
+    @apply text-white;
+  }
+
+  & .footer__link-list {
+    & li {
+      @apply mb-3;
+    }
+
+    & li a {
+      @apply underline font-bold;
+    }
+
+    @apply mb-16;
+  }
+
+  & .footer__copyright-notice {
+    font-size: 0.875rem;
+  }
+}

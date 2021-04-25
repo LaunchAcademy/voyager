@@ -1,0 +1,78 @@
+import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import TopBar from "./TopBar"
+import Button from "../buttons/Button"
+import Icon from "../icons/Icon"
+
+import logo from "../../src/assets/images/logo.png";
+import "./footer.css";
+
+<Meta title="Footer" />
+
+# Primary Navigation
+
+<Canvas>
+  <Story name="Website">
+    <footer className="footer">
+      <img className="footer__logo" src={logo} alt="Launch Academy" />
+      <ul className="footer__social-media-links">
+        <li>
+          <a href="https://github.com/launchacademy" aria-label="Launch Academy on GitHub"><Icon name="github" /></a>
+        </li>
+        <li>
+          <a href="https://facebook.com/TheLaunchAcademy" aria-label="Launch Academy on Facebook"><Icon name="facebook-f" /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/c/Launchacademy" aria-label="Launch Academy on YouTube"><Icon name="youtube" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/launch-academy-inc/" aria-label="Launch Academy on LinkedIn"><Icon name="linkedin-in" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/LaunchAcademy" aria-label="Launch Academy on Twitter"><Icon name="twitter" /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/launchacademy/" aria-label="Launch Academy on Instagram"><Icon name="instagram" /></a>
+        </li>
+      </ul>
+      <form className="footer__form" autocomplete="off">
+        <fieldset>
+          <legend className="footer__form-legend">Stay in the loop</legend>
+          <input type="email" name="email" id="footer__input_type-email" className="footer__input_type-email" placeholder="Your email address" aria-label="Your email address" required />
+          <button type="submit" className="footer__form-submit-button"><Icon name="paper-plane" aria-label="Subscribe" /></button>
+        </fieldset>
+      </form>
+      <section className="footer__link-list">
+        <h5 className="footer__link-list-title">Outcomes</h5>
+        <ul>
+          <li>
+            <a href="https://static.spacecrafted.com/b13328575ece40d8853472b9e0cf2047/r/f55372eff2de479a8a5b4fdf68d68489/1/Launch%20Academy%20Boston%20Fundamentals%20of%20Web%20Development%20H1%202020.pdf">CIRR</a>
+          </li>
+          <li>
+            <a href="https://www.switchup.org/bootcamps/launch-academy">SwitchUp</a>
+          </li>
+          <li>
+            <a href="https://www.coursereport.com/schools/launch-academy">Course Report</a>
+          </li>
+        </ul>
+      </section>
+      <section className="footer__link-list">
+        <h5 className="footer__link-list-title">Company</h5>
+        <ul>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/careers">Careers</a>
+          </li>
+          <li>
+            <a href="/codecabulary">Codecabulary</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </section>
+      <p className="footer__copyright-notice">&copy; {(new Date()).getFullYear()} Launch Academy</p>
+    </footer>
+  </Story>
+</Canvas>
