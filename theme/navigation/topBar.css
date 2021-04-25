@@ -1,0 +1,12 @@
+.top-bar-navigation {
+  @apply flex justify-between items-center;
+  & .navigation-list.navigation-list__top {
+    @apply font-bold font-headline;
+    line-height: 1.11rem;
+    font-size: 0.875rem;
+
+    & li {
+      @apply inline-block pr-8;
+    }
+  }
+}

@@ -24,6 +24,10 @@
   &.button_secondary {
     @apply border-primary-brand text-primary-brand bg-white border-2;
   }
+
+  & svg {
+    @apply ml-4;
+  }
 }
 
 .callout__button {

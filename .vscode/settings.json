@@ -17,7 +17,12 @@
     "titleBar.inactiveForeground": "#15202b99"
   },
   "peacock.color": "#00b3e6",
+  "files.associations": {
+    "*.css": "postcss"
+  },
   "cSpell.words": [
+    "fontawesome",
+    "fortawesome",
     "tailwindcss"
   ]
 }
