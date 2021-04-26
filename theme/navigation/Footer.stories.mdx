@@ -13,27 +13,29 @@ import "./footer.css";
 <Canvas>
   <Story name="Website">
     <footer className="footer">
-      <img className="footer__logo" src={logo} alt="Launch Academy" />
-      <ul className="footer__social-media-links">
-        <li>
-          <a href="https://github.com/launchacademy" aria-label="Launch Academy on GitHub"><Icon name="github" /></a>
-        </li>
-        <li>
-          <a href="https://facebook.com/TheLaunchAcademy" aria-label="Launch Academy on Facebook"><Icon name="facebook-f" /></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/c/Launchacademy" aria-label="Launch Academy on YouTube"><Icon name="youtube" /></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/company/launch-academy-inc/" aria-label="Launch Academy on LinkedIn"><Icon name="linkedin-in" /></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/LaunchAcademy" aria-label="Launch Academy on Twitter"><Icon name="twitter" /></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/launchacademy/" aria-label="Launch Academy on Instagram"><Icon name="instagram" /></a>
-        </li>
-      </ul>
+      <div className="footer__brand">
+        <img className="footer__logo" src={logo} alt="Launch Academy" />
+        <ul className="footer__social-media-links">
+          <li>
+            <a href="https://github.com/launchacademy" aria-label="Launch Academy on GitHub"><Icon name="github" /></a>
+          </li>
+          <li>
+            <a href="https://facebook.com/TheLaunchAcademy" aria-label="Launch Academy on Facebook"><Icon name="facebook-f" /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/c/Launchacademy" aria-label="Launch Academy on YouTube"><Icon name="youtube" /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/launch-academy-inc/" aria-label="Launch Academy on LinkedIn"><Icon name="linkedin-in" /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/LaunchAcademy" aria-label="Launch Academy on Twitter"><Icon name="twitter" /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/launchacademy/" aria-label="Launch Academy on Instagram"><Icon name="instagram" /></a>
+          </li>
+        </ul>
+      </div>
       <form className="footer__form" autocomplete="off">
         <fieldset>
           <legend className="footer__form-legend">Stay in the loop</legend>

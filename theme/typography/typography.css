@@ -6,7 +6,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  @apply text-black;
+  @apply text-black container mx-auto;
 }
 
 h1, h2, h3, h4, h5 {

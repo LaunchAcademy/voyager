@@ -1,16 +1,24 @@
 .footer {
-  @apply text-center;
+  @apply text-center md:text-left align-top gap-4 lg:gap-8;
+  @apply md:grid md:grid-cols-12 md:my-16;
+  @apply lg:grid lg:grid-cols-10;
+
+  & .footer__brand {
+    @apply md:col-span-6;
+    @apply lg:col-span-3;
+  }
 
   & .footer__logo {
     @apply inline-block;
   }
 
   & .footer__social-media-links {
-    @apply my-8;
+    @apply my-4;
 
     & li {
       @apply rounded-full bg-accent inline-block mr-4;
       @apply w-8;
+      @apply md:text-center;
     }
 
     & li:last-child {
@@ -19,7 +27,9 @@
   }
 
   & .footer__form {
-    @apply my-3 w-72 mx-auto;
+    @apply my-3 sm:w-72 lg:w-full mx-auto;
+    @apply md:col-span-6 md:mt-0;
+    @apply lg:col-span-3;
     position: relative;
   }
 
@@ -30,6 +40,7 @@
 
   & .footer__link-list-title {
     @apply font-bold mb-8;
+    @apply lg:text-2xl;
   }
 
   & .footer__input_type-email {
@@ -43,12 +54,25 @@
 
   & .footer__form-submit-button {
     position: absolute;
-    bottom: 38px;
+    top: 60px;
     right: 28px;
     @apply text-white;
   }
 
   & .footer__link-list {
+    @apply md:col-span-3;
+    @apply lg:col-span-2;
+
+    &:first-of-type {
+      @apply md:col-start-4;
+      @apply lg:col-start-7;
+    }
+
+    &:last-of-type {
+      @apply md:col-span-6;
+      @apply lg:col-span-2;
+    }
+
     & li {
       @apply mb-3;
     }
@@ -62,5 +86,6 @@
 
   & .footer__copyright-notice {
     font-size: 0.875rem;
+    @apply md:col-span-full md:text-center;
   }
 }
