@@ -1,6 +1,7 @@
 .callout_photo {
   @apply relative bg-no-repeat bg-cover py-32 text-white text-center;
   @apply lg:py-64;
+
   &::before {
     content: "";
     position: absolute;
@@ -16,7 +17,26 @@
   }
 
   & .callout_title {
-    @apply text-white mb-1;
-    @apply lg:mb-8;
+    @apply text-white mb-1 z-20 relative;
+    @apply lg:mb-4 lg:text-6xl;
+  }
+
+  & .callout_content.callout__prose_lg {
+    @apply px-12 text-left relative;
+    @apply lg:w-7/12 xl:w-1/2 lg:px-0 lg:pl-8;
+
+    & .callout_content-container {
+      &::before {
+        content: "";
+        position: absolute;
+        @apply bg-purple rounded-full h-24 w-24 top-24 z-0;
+        @apply lg:h-36 lg:w-36 lg:top-72 left-48;
+      }
+
+      & p {
+        @apply ml-16 mr-6 mt-8 z-20 relative text-xs;
+        @apply lg:ml-64 lg:text-base lg:mt-0;
+      }
+    }
   }
 }

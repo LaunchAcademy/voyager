@@ -6,14 +6,31 @@ import "./callout.css";
 
 <Meta title="Callouts" />
 
-# Homepage Hero
+# Hero
+
+## Homepage Simple
 
 <Canvas>
   <Story name="Title and One Button">
     <section className="callout_photo" style={{"background-image": 'url("https://placekitten.com/1024/350")'}}>
       <div className="callout_content">
         <h3 className="callout_title">See us in action</h3>
-        <Button placement="photo" text="Placeholder Text" to="#" secondary />
+        <Button placement="photo" text="Watch Video" to="#" secondary iconName="eye" />
+      </div>
+    </section>
+  </Story>
+</Canvas>
+
+# Homepage with Paragraph
+
+<Canvas>
+  <Story name="Title and Paragraph">
+    <section className="callout_photo" style={{"background-image": 'url("https://placekitten.com/1024/350")'}}>
+      <div className="callout_content callout__prose_lg">
+        <h3 className="callout_title">A practical computer science education without the bloat of a 4-year program</h3>
+        <div className="callout_content-container">
+          <p>Launch provides a highly-structured, collaborative learning environment designed to prepare you for you new career in just 18 weeks.</p>
+        </div>
       </div>
     </section>
   </Story>
