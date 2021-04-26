@@ -1,15 +1,43 @@
+@screen lg {
+  .hero .hero__image-container {
+    min-width: 480px;
+    max-width: 630px;
+  }
+}
+
+@screen xl {
+  width: 630px;
+}
+
 .hero {
   @apply text-center pb-28;
+  @apply lg:text-left lg:grid lg:grid-cols-12 lg:gap-4 lg:items-center lg:justify-center;
 
   & .hero__image-container {
     @apply inline-block relative;
+    @apply lg:col-span-6;
 
 
   }
 
+  & .hero__supporting-content {
+    @apply lg:col-span-6 lg:align-middle lg:mx-8;
+  }
+
+  & .hero__image_sm {
+    @apply lg:hidden;
+  }
+
+  & .hero__image_lg {
+    @apply hidden;
+    @apply lg:inline-block;
+  }
+
   & .hero__play-button {
     position: absolute;
-    @apply bottom-6 right-3;
+    @apply bottom-6 right-5;
+    @apply lg:text-5xl lg:p-6 lg:bottom-12 lg:right-5;
+    @apply xl:right-12 xl:bottom-16;
   }
 
   & .hero__image_rounded {
@@ -17,18 +45,21 @@
   }
 
   & .hero__image_title {
-    @apply text-2xl mx-2 mb-4;
+    @apply text-2xl mb-4;
+    @apply lg:text-6xl;
   }
 
   & .hero__image_subtitle {
     @apply uppercase text-xs;
+    @apply lg:mb-1 lg:text-base;
   }
 
   & .hero__button {
-    @apply inline-block clear-both;
+    @apply inline-block clear-both py-2;
   }
 
   & .hero__button-container {
     @apply pb-5;
+    @apply lg:inline-block mr-4;
   }
 }
