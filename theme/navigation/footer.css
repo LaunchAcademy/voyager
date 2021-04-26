@@ -18,9 +18,9 @@
     @apply my-4;
 
     & li {
-      @apply rounded-full bg-accent inline-block mr-4;
-      @apply w-8;
+      @apply rounded-full bg-accent inline-block mr-4 p-2;
       @apply md:text-center;
+      @apply lg:p-1;
     }
 
     & li:last-child {
@@ -56,7 +56,7 @@
 
   & .footer__form-submit-button {
     position: absolute;
-    top: 60px;
+    top: 48px;
     right: 28px;
     @apply text-white;
   }
