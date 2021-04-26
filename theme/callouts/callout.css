@@ -1,0 +1,22 @@
+.callout_photo {
+  @apply relative bg-no-repeat bg-cover py-32 text-white text-center;
+  @apply lg:py-64;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @apply bg-opacity-70 bg-photo-overlay;
+  }
+
+  & .callout_content {
+    @apply relative;
+  }
+
+  & .callout_title {
+    @apply text-white mb-1;
+    @apply lg:mb-8;
+  }
+}

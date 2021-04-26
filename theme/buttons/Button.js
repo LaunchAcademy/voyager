@@ -29,7 +29,7 @@ const Button = ({
   }
 
   if (to) {
-    return <a className={`button button_size_${size} ${modifiers.join(" ")} ${className}`} href={to}>{hideText ? null : text}{icon}</a>;
+    return <a className={`button button_size_${size} ${modifiers.join(" ")} ${className || ""}`} href={to}>{hideText ? null : text}{icon}</a>;
   }
   return null;
 };
