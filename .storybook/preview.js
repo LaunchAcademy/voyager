@@ -1,6 +1,5 @@
 import { addParameters } from '@storybook/react';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
-import "../theme/typography/typography.css";
 import colors from "../theme/colors/colors"
 
 export const parameters = {

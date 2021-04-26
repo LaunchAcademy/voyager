@@ -3,22 +3,18 @@
   line-height: 1.5rem;
 
   &.button_size_xl {
-    font-size: 1.125rem;
-    @apply p-4;
+    @apply lg:p-4 py-1 px-4 text-base;
   }
   &.button_size_lg {
-    font-size: 0.875rem;
-    @apply py-3 px-4;
+    @apply py-3 px-4 text-xs;
   }
 
   &.button_size_md {
-    @apply py-2 px-4;
-    font-size: 0.875rem;
+    @apply py-2 px-4 text-xs;
   }
 
   &.button_size_sm {
-    @apply py-1 px-4;
-    font-size: 0.875rem;
+    @apply py-1 px-4 text-xs;
   }
 
   &.button_secondary {
@@ -27,6 +23,14 @@
 
   & svg {
     @apply ml-4;
+  }
+
+  &.button_text-hidden {
+    @apply px-4 py-4 text-lg text-center;
+  }
+
+  &.button_text-hidden svg {
+    @apply ml-0;
   }
 }
 

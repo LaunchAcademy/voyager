@@ -1,0 +1,28 @@
+import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Button from "../buttons/Button"
+import Icon from "../icons/Icon"
+import "../../src/assets/scss/main.css"
+import "./hero.css";
+
+<Meta title="Hero" />
+
+# Primary Navigation
+
+<Canvas>
+  <Story name="Circular Photo">
+    <section className="hero">
+      <div className="hero__image-container">
+        <img src="https://place-hold.it/210x210" alt="Hero Image" className="hero__image hero__image_rounded image_small" />
+        <Button to="#" iconName="play" hideText text="Play Video" className="hero__play-button" />
+      </div>
+      <h2 className="hero__image_subtitle">Going Pro Starts Here.</h2>
+      <h1 className="hero__image_title">Launch your career in software today.</h1>
+      <div className="hero__button-container">
+        <Button to="#" text="Apply Today" iconName="chevron-right" className="hero__button" size="xl" />
+      </div>
+      <div className="hero__button-container">
+        <Button to="#" text="Watch Video" iconName="eye" className="hero__button" secondary size="xl" />
+      </div>
+    </section>
+  </Story>
+</Canvas>

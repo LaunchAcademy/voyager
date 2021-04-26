@@ -6,7 +6,7 @@ import getIconMap from "../icons/getIconMap";
 import "./buttons.css";
 
 const Button = ({
-  text, to, size, secondary, placement, iconName,
+  text, to, size, secondary, placement, iconName, className, hideText,
 }) => {
   const modifiers = [];
   if (secondary) {
@@ -24,8 +24,12 @@ const Button = ({
     icon = <FontAwesomeIcon icon={iconMap[iconName]} />;
   }
 
+  if (hideText) {
+    modifiers.push("button_text-hidden");
+  }
+
   if (to) {
-    return <a className={`button button_size_${size} ${modifiers.join(" ")}`} href={to}>{text}{icon}</a>;
+    return <a className={`button button_size_${size} ${modifiers.join(" ")} ${className}`} href={to}>{hideText ? null : text}{icon}</a>;
   }
   return null;
 };
@@ -37,6 +41,8 @@ Button.defaultProps = {
   size: "md",
   secondary: false,
   placement: undefined,
+  className: undefined,
+  hideText: false,
 };
 
 Button.propTypes = {
@@ -46,6 +52,8 @@ Button.propTypes = {
   size: PropTypes.oneOf(["xl", "lg", "md", "sm"]),
   secondary: PropTypes.bool,
   placement: PropTypes.oneOf(["callout", "photo", undefined]),
+  className: PropTypes.string,
+  hideText: PropTypes.bool,
 };
 
 export default Button;

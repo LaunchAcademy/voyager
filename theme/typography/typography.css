@@ -1,9 +1,6 @@
-#storybook-preview-iframe {
-  font-size: 18px;
-}
-
 body {
-  font-size: 18px;
+  @apply text-xs;
+  @apply lg:text-base;
   line-height: 21px;
   font-weight: 400;
   @apply text-black container mx-auto;
@@ -18,38 +15,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.33rem;
+  @apply text-3xl;
+  @apply lg:text-6xl;
   line-height: 60px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.66rem;
+  @apply text-xl;
+  @apply lg:text-5xl;
   font-weight: 700;
   line-height: 2.66rem;
 }
 
 h3 {
-  font-size: 2rem;
+  @apply text-base;
+  @apply lg:text-3xl;
   line-height: 2.22rem;
   font-weight: 700;
 }
 
 h4 {
-  font-size: 1.33rem;
+  @apply text-sm;
+  @apply lg:text-xl;
   line-height: 1.66rem;
   font-weight: 400;
 }
 
 h5 {
   font-weight: 400;
-  font-size: 1rem;
+  @apply lg:text-base;
   letter-spacing: 4%;
   line-height: 1.16rem;
 }
 
 h6 {
-  @apply font-text;
+  @apply font-text lg:text-base;
   font-weight: 400;
   line-height: 1.77rem;
   letter-spacing: 4%;
