@@ -59,7 +59,7 @@ import "./footer.css";
       </section>
       <section className="footer__link-list">
         <h5 className="footer__link-list-title">Company</h5>
-        <ul>
+        <ul role="list">
           <li>
             <a href="/about">About</a>
           </li>
@@ -74,7 +74,13 @@ import "./footer.css";
           </li>
         </ul>
       </section>
-      <p className="footer__copyright-notice">&copy; {(new Date()).getFullYear()} Launch Academy</p>
+      <section className="footer__compliance">
+        <ul role="list" className="footer__compliance-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Student Disclosures</a></li>
+        </ul>
+        <p className="footer__copyright-notice">&copy; {(new Date()).getFullYear()} Launch Academy</p>
+      </section>
     </footer>
   </Story>
 </Canvas>

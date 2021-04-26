@@ -2,10 +2,12 @@
   @apply text-center md:text-left align-top gap-4 lg:gap-8;
   @apply md:grid md:grid-cols-12 md:my-16;
   @apply lg:grid lg:grid-cols-10;
+  @apply xl:grid xl:grid-cols-12;
 
   & .footer__brand {
     @apply md:col-span-6;
     @apply lg:col-span-3;
+    @apply xl:col-start-2;
   }
 
   & .footer__logo {
@@ -60,12 +62,14 @@
   }
 
   & .footer__link-list {
+    @apply mb-16;
     @apply md:col-span-3;
-    @apply lg:col-span-2;
+    @apply lg:col-span-2 lg:mb-4;
 
     &:first-of-type {
       @apply md:col-start-4;
       @apply lg:col-start-7;
+      @apply xl:col-start-9;
     }
 
     &:last-of-type {
@@ -80,12 +84,25 @@
     & li a {
       @apply underline font-bold;
     }
-
-    @apply mb-16;
   }
 
-  & .footer__copyright-notice {
+  & .footer__compliance {
     font-size: 0.875rem;
     @apply md:col-span-full md:text-center;
+    @apply lg:text-left;
+    @apply xl:col-start-2;
+
+    & .footer__copyright-notice {
+      @apply inline-block;
+    }
+  }
+
+  & .footer__compliance-links {
+    @apply md:inline-block md:mr-8;
+
+    & li {
+      @apply underline my-2;
+      @apply md:mr-2 md:inline-block;
+    }
   }
 }
