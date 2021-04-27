@@ -23,14 +23,17 @@
 
   & .callout_content.callout__prose_lg {
     @apply px-12 text-left relative;
-    @apply lg:w-7/12 xl:w-1/2 lg:px-0 lg:pl-8;
+    @apply md:w-9/12;
+    @apply lg:w-7/12 lg:px-0 lg:pl-8;
+    @apply xl:w-1/2;
 
     & .callout_content-container {
+      @apply relative;
       &::before {
-        content: "";
+        content: " ";
         position: absolute;
-        @apply bg-purple rounded-full h-24 w-24 top-24 z-0;
-        @apply lg:h-36 lg:w-36 lg:top-72 left-48;
+        @apply bg-purple inline-block rounded-full h-24 w-24 z-0 -top-4;
+        @apply lg:h-36 lg:w-36 lg:-top-4 lg:ml-64 lg:-left-24;
       }
 
       & p {

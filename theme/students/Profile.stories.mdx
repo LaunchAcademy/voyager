@@ -1,0 +1,21 @@
+import blocks, { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import Profile from "./Profile"
+
+export const Template = (args) => <Profile {...args} />
+
+<Meta title="Profiles" />
+
+# Profiles
+
+<Canvas>
+  <Story name="Featured Student">
+    <Profile
+      name="Thom Froes"
+      headshotUrl="https://placekitten.com/210/210"
+      currentTitle="DevOps"
+      currentEmployer="Boston Mutual"
+      formerTitle="Pastry Chef" />
+  </Story>
+</Canvas>
+
+## Student Profiles
