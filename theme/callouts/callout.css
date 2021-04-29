@@ -1,0 +1,45 @@
+.callout_photo {
+  @apply relative bg-no-repeat bg-cover py-32 text-white text-center;
+  @apply lg:py-64;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @apply bg-opacity-70 bg-photo-overlay;
+  }
+
+  & .callout_content {
+    @apply relative;
+  }
+
+  & .callout_title {
+    @apply text-white mb-1 z-20 relative;
+    @apply lg:mb-4 lg:text-6xl;
+  }
+
+  & .callout_content.callout__prose_lg {
+    @apply px-12 text-left relative;
+    @apply md:w-9/12;
+    @apply lg:w-7/12 lg:px-0 lg:pl-8;
+    @apply xl:w-1/2;
+
+    & .callout_content-container {
+      @apply relative;
+      &::before {
+        content: " ";
+        position: absolute;
+        @apply bg-purple inline-block rounded-full h-24 w-24 z-0 -top-4;
+        @apply lg:h-36 lg:w-36 lg:-top-4 lg:ml-64 lg:-left-24;
+      }
+
+      & p {
+        @apply ml-16 mr-6 mt-8 z-20 relative text-xs;
+        @apply lg:ml-64 lg:text-base lg:mt-0;
+      }
+    }
+  }
+}
