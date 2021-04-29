@@ -1,0 +1,108 @@
+.footer {
+  @apply text-center md:text-left align-top gap-4 lg:gap-8;
+  @apply md:grid md:grid-cols-12 md:my-16;
+  @apply lg:grid lg:grid-cols-10;
+  @apply xl:grid xl:grid-cols-12;
+
+  & .footer__brand {
+    @apply md:col-span-6;
+    @apply lg:col-span-3;
+    @apply xl:col-start-2;
+  }
+
+  & .footer__logo {
+    @apply inline-block;
+  }
+
+  & .footer__social-media-links {
+    @apply my-4;
+
+    & li {
+      @apply rounded-full bg-accent inline-block mr-4 p-2;
+      @apply md:text-center;
+      @apply lg:p-1;
+    }
+
+    & li:last-child {
+      @apply mr-0;
+    }
+  }
+
+  & .footer__form {
+    @apply my-3 sm:w-72 lg:w-full mx-auto;
+    @apply md:col-span-6 md:mt-0;
+    @apply lg:col-span-3;
+    position: relative;
+  }
+
+  & .footer__form-legend {
+    font-size: 1.5rem;
+    @apply font-bold;
+  }
+
+  & .footer__link-list-title {
+    @apply font-bold mb-8;
+    @apply lg:text-2xl;
+  }
+
+  & .footer__input_type-email {
+    @apply bg-gray-light-slate py-2 px-4 rounded-lg mt-4 mb-8 w-full text-black font-bold focus:ring-4 focus:border-secondary-brand focus:ring-primary-brand focus:outline-none border-2 border-gray-light-slate;
+    font-size: 0.875rem;
+
+    &::placeholder {
+      @apply text-black font-bold;
+    }
+  }
+
+  & .footer__form-submit-button {
+    position: absolute;
+    top: 48px;
+    right: 28px;
+    @apply text-white;
+  }
+
+  & .footer__link-list {
+    @apply mb-16;
+    @apply md:col-span-3;
+    @apply lg:col-span-2 lg:mb-4;
+
+    &:first-of-type {
+      @apply md:col-start-4;
+      @apply lg:col-start-7;
+      @apply xl:col-start-9;
+    }
+
+    &:last-of-type {
+      @apply md:col-span-6;
+      @apply lg:col-span-2;
+    }
+
+    & li {
+      @apply mb-3;
+    }
+
+    & li a {
+      @apply underline font-bold;
+    }
+  }
+
+  & .footer__compliance {
+    font-size: 0.875rem;
+    @apply md:col-span-full md:text-center;
+    @apply lg:text-left;
+    @apply xl:col-start-2;
+
+    & .footer__copyright-notice {
+      @apply inline-block;
+    }
+  }
+
+  & .footer__compliance-links {
+    @apply md:inline-block md:mr-8;
+
+    & li {
+      @apply underline my-2;
+      @apply md:mr-2 md:inline-block;
+    }
+  }
+}
