@@ -1,47 +1,40 @@
-@screen lg {
-  .hero .hero__image-container {
-    min-width: 480px;
-    max-width: 630px;
-  }
-}
-
-@screen xl {
-  width: 630px;
-}
-
 .hero {
   @apply text-center pb-28;
-  @apply lg:text-left lg:grid lg:grid-cols-12 lg:gap-4 lg:items-center lg:justify-center;
+  @apply lg:text-left grid grid-cols-12 lg:gap-4 lg:items-center lg:justify-center;
 
-  & .hero__image-container {
-    @apply inline-block relative;
+  & .hero__image-column {
+    @apply col-span-12 text-center;
     @apply lg:col-span-6;
-
-
+    @apply sm:text-center sm:items-center;
   }
 
   & .hero__supporting-content {
-    @apply lg:col-span-6 lg:align-middle lg:mx-8;
+    @apply col-span-12;
+    @apply lg:col-span-6;
+    @apply align-middle lg:mx-8;
   }
 
-  & .hero__image_sm {
-    @apply lg:hidden;
+  & .hero__image-container {
+    @apply relative inline-block;
+    @apply mt-12 mb-8;
+    width: 210px;
+    height: 210px;
   }
 
-  & .hero__image_lg {
-    @apply hidden;
-    @apply lg:inline-block;
+  & .hero__image {
+    height: 210px;
+    width: 210px;
   }
 
   & .hero__play-button {
     position: absolute;
-    @apply bottom-6 right-5;
-    @apply lg:text-5xl lg:p-6 lg:bottom-12 lg:right-5;
-    @apply xl:right-12 xl:bottom-16;
+    @apply bottom-2 right-1;
+    @apply lg:text-5xl lg:p-6 lg:right-4 lg:bottom-4;
+    @apply xl:right-4 xl:bottom-4;
   }
 
   & .hero__image_rounded {
-    @apply rounded-full mt-16 mb-8;
+    @apply rounded-full;
   }
 
   & .hero__image_title {
@@ -61,5 +54,21 @@
   & .hero__button-container {
     @apply pb-5;
     @apply lg:inline-block mr-4;
+  }
+}
+
+@screen lg {
+  .hero .hero__image {
+    min-width: 480px;
+    max-width: 480px;
+    min-height: 480px;
+    max-height: 630px;
+  }
+
+  .hero .hero__image-container {
+    min-width: 480px;
+    max-width: 480px;
+    min-height: 480px;
+    max-height: 630px;
   }
 }

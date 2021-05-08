@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import getIconMap from "../icons/getIconMap";
+import getIconMap from "../icons/getIconMap.js";
 
 import "./buttons.css";
 

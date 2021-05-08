@@ -1,6 +1,6 @@
-const getColorsByName = require("./theme/colors/getColorsByName");
-const getColorsByColorName = require("./theme/colors/getColorsByColorName");
-const fontFamily = require("./theme/typography/fontFamily.js");
+const getColorsByName = require("./theme/colors/getColorsByName.cjs");
+const getColorsByColorName = require("./theme/colors/getColorsByColorName.cjs");
+const fontFamily = require("./theme/typography/fontFamily.cjs");
 
 module.exports = {
   purge: [],

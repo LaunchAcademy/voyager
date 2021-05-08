@@ -46,7 +46,7 @@
   }
 
   & .footer__input_type-email {
-    @apply bg-gray-light-slate py-2 px-4 rounded-lg mt-4 mb-8 w-full text-black font-bold focus:ring-4 focus:border-secondary-brand focus:ring-primary-brand focus:outline-none border-2 border-gray-light-slate;
+    @apply bg-gray-light-slate py-2 px-4 rounded-lg mt-4 mb-8 w-full text-black font-bold focus:ring-4 focus:ring-primary-brand focus:outline-none border-2 border-gray-light-slate;
     font-size: 0.875rem;
 
     &::placeholder {

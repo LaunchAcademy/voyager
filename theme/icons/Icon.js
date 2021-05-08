@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import getIconMap from "./getIconMap";
+import getIconMap from "./getIconMap.js";
 
 const iconMap = getIconMap();
 const Icon = ({ name, fixedWidth }) => (

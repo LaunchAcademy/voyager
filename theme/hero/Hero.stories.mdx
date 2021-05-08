@@ -1,6 +1,6 @@
 import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Button from "../buttons/Button"
-import Icon from "../icons/Icon"
+import Icon from "../icons/Icon.js"
 import "../../src/assets/scss/main.css"
 import "./hero.css";
 
@@ -11,10 +11,11 @@ import "./hero.css";
 <Canvas>
   <Story name="Circular Photo">
     <section className="hero">
-      <div className="hero__image-container">
-        <img src="https://place-hold.it/210x210" alt="Hero Image" className="hero__image hero__image_rounded hero__image_sm" />
-        <img src="https://place-hold.it/630x630" alt="Hero Image" className="hero__image hero__image_rounded hero__image_lg" />
-        <Button to="#" iconName="play" hideText text="Play Video" className="hero__play-button" />
+      <div className="hero__image-column">
+        <div className="hero__image-container">
+          <img src="https://place-hold.it/630x630" alt="Hero Image" className="hero__image hero__image_rounded hero__image_sm" />
+          <Button to="#" iconName="play" hideText text="Play Video" className="hero__play-button" />
+        </div>
       </div>
       <div className="hero__supporting-content">
         <h2 className="hero__image_subtitle">Going Pro Starts Here.</h2>

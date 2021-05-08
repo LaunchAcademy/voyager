@@ -1,5 +1,5 @@
 const _ = require("lodash");
-const colors = require("./colors");
+const colors = require("./colors.cjs");
 
 const getColorsByName = () => Object.keys(colors).reduce((map, name) => ({
   ...map,
