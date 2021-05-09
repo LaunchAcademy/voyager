@@ -1,10 +1,11 @@
 import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Button from "../buttons/Button.js"
 import Icon from "../icons/Icon.js"
+import SimpleBanner from "./SimpleBanner.js"
+import BannerTitle from "./BannerTitle.js"
 import "../../src/assets/scss/main.css"
-import "./callout.css";
 
-<Meta title="Callouts" />
+<Meta title="Banners" />
 
 # Hero
 
@@ -12,12 +13,10 @@ import "./callout.css";
 
 <Canvas>
   <Story name="Title and One Button">
-    <section className="callout_photo" style={{"background-image": 'url("https://placekitten.com/1024/350")'}}>
-      <div className="callout_content">
-        <h3 className="callout_title">See us in action</h3>
-        <Button placement="photo" text="Watch Video" to="#" secondary iconName="eye" />
-      </div>
-    </section>
+    <SimpleBanner backgroundImageUrl="https://placekitten.com/1024/350">
+      <BannerTitle>See us in action</BannerTitle>
+      <Button placement="photo" text="Watch Video" to="#" secondary iconName="eye" />
+    </SimpleBanner>
   </Story>
 </Canvas>
 

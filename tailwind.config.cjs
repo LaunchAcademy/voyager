@@ -6,6 +6,9 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    container: {
+      center: true,
+    },
     colors: { ...getColorsByColorName(), ...getColorsByName() },
     fontFamily,
     fontSize: {
@@ -19,7 +22,7 @@ module.exports = {
       lg: "1.25rem",
       xl: "1.5rem",
       "2xl": ["2rem", { lineHeight: "2.25rem" }],
-      "3xl": "2.25rem",
+      "3xl": ["2.25rem", { lineHeight: "2.4rem" }],
       "5xl": "3rem",
       "6xl": ["3.75rem", { lineHeight: "3.75rem" }],
     },
