@@ -1,8 +1,15 @@
+.profile-list {
+  @apply grid grid-cols-1;
+  @apply lg:grid lg:grid-cols-3 lg:gap-4 lg:justify-center lg:place-items-center;
+}
+
 .profile {
   @apply my-4 text-center;
 
   & .profile__image {
     @apply rounded-full inline-block my-8;
+    @apply w-52;
+    @apply lg:w-72;
   }
 
   & .profile__name {
