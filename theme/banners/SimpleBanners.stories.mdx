@@ -3,6 +3,7 @@ import Button from "../buttons/Button.js"
 import Icon from "../icons/Icon.js"
 import SimpleBanner from "./SimpleBanner.js"
 import BannerTitle from "./BannerTitle.js"
+import BannerContent from "./BannerContent.js"
 import "../../src/assets/scss/main.css"
 
 <Meta title="Banners" />
@@ -24,13 +25,11 @@ import "../../src/assets/scss/main.css"
 
 <Canvas>
   <Story name="Title and Paragraph">
-    <section className="callout_photo" style={{"background-image": 'url("https://placekitten.com/1024/350")'}}>
-      <div className="callout_content callout__prose_lg">
-        <h3 className="callout_title">A practical computer science education without the bloat of a 4-year program</h3>
-        <div className="callout_content-container">
-          <p>Launch provides a highly-structured, collaborative learning environment designed to prepare you for you new career in just 18 weeks.</p>
-        </div>
-      </div>
-    </section>
+    <SimpleBanner type="prose" backgroundImageUrl="https://placekitten.com/1024/350">
+      <BannerTitle>A practical computer science education without the bloat of a 4-year program</BannerTitle>
+      <BannerContent>
+        <p>Launch provides a highly-structured, collaborative learning environment designed to prepare you for you new career in just 18 weeks.</p>
+      </BannerContent>
+    </SimpleBanner>
   </Story>
 </Canvas>

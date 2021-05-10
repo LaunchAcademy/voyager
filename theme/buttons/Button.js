@@ -12,10 +12,10 @@ const Button = ({
   if (secondary) {
     modifiers.push("button_secondary");
   }
-  if (placement === "callout") {
-    modifiers.push("callout__button");
+  if (placement === "banner") {
+    modifiers.push("banner__button");
   } else if (placement === "photo") {
-    modifiers.push("callout-photo__button");
+    modifiers.push("banner-photo__button");
   }
 
   let icon;

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./banners.css";
 
 const BannerTitle = ({ children }) => (
-  <h3 className="banner_title">
+  <h3 className="banner__title">
     {children}
   </h3>
 );
