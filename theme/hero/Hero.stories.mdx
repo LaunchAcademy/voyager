@@ -1,6 +1,7 @@
 import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Button from "../buttons/Button"
 import Icon from "../icons/Icon.js"
+import Quote from "../quote/Quote.js"
 import "../../src/assets/scss/main.css"
 import "./hero.css";
 
@@ -26,6 +27,31 @@ import "./hero.css";
         <div className="hero__button-container">
           <Button to="#" text="Watch Video" iconName="eye" className="hero__button" secondary size="lg" />
         </div>
+      </div>
+    </section>
+  </Story>
+</Canvas>
+
+# Quote Hero
+
+<Canvas>
+  <Story name="Square Photo">
+    <section className="hero">
+      <div className="hero__image-column">
+        <div className="hero__image-container">
+          <img src="https://place-hold.it/630x630" alt="Hero Image" className="hero__image hero__image_sm" />
+        </div>
+      </div>
+      <div className="hero__supporting-content">
+        <h2 className="hero__image_subtitle">Launch your career.</h2>
+        <h1 className="hero__image_title">Then take it to the next level.</h1>
+        <div className="hero__button-container">
+          <Button to="#" text="Apply Today" iconName="chevron-right" className="hero__button" size="lg" />
+        </div>
+        <div className="hero__button-container">
+          <Button to="#" text="Get the Syllabus" iconName="eye" className="hero__button" secondary size="lg" />
+        </div>
+        <Quote />
       </div>
     </section>
   </Story>
