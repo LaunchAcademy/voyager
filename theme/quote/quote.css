@@ -1,5 +1,28 @@
 .quote {
-  @apply grid grid-cols-4;
+  @apply grid grid-cols-4 divide-x-2;
 
+  & .quote__content {
+    @apply col-span-1 text-left;
+  }
+
+  & .quote__quote_icon {
+    @apply font-normal font-quote text-6xl;
+  }
+
+  & .quote__quote_text {
+    @apply col-span-3 pl-10 text-left;
+  }
+
+  & .quote__quote_quote {
+    @apply pb-5 font-text;
+  }
+
+  & .quote__quote_name {
+    @apply font-bold leading-snug;
+    text-transform: uppercase;
+  }
   
+  & .quote__quote_company {
+    text-transform: uppercase;
+  }
 }

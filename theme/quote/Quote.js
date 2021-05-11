@@ -4,14 +4,14 @@ import Icon from '../icons/Icon'
 
 const Quote = ({ quote, name, company }) => {
   return (
-    <div className="quote divide-x-2">
-      <div className="col-span-1 text-right pr-10">
-        <p className="font-normal font-quote text-6xl">”</p>
+    <div className="quote">
+      <div className="quote__content">
+        <p className="quote__quote_icon">”</p>
       </div>
-      <div className="col-span-3 pl-10 text-left">
-        <p className="pb-2 font-text">{quote}</p>
-        <h6 className="font-bold leading-snug">{name}</h6>
-        <h5>{company}</h5>
+      <div className="quote__quote_text">
+        <p className="quote__quote_quote">{quote}</p>
+        <h6 className="quote__quote_name">{name}</h6>
+        <h5 className="quote__quote_company">{company}</h5>
       </div>
     </div>
   )
