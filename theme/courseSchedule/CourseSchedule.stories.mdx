@@ -1,5 +1,6 @@
 import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Button from "../buttons/Button.js"
+import CourseSchedule from "./CourseSchedule.js"
 import courseschedule from "./courseschedule.css"
 
 <Meta title="Course Schedule" />
@@ -9,34 +10,25 @@ import courseschedule from "./courseschedule.css"
 <Canvas>
   <Story name="Course Schedule">
     <h1 className="text-center">Upcoming course schedule</h1>
-    <div className="course-schedule">
-      <div className="course-schedule__course_content full-width">
-        <label className="course-schedule__label">Cohort</label>
-        <h3>Boston #34</h3>
-      </div>
-      <div className="course-schedule__course_content full-width">
-        <label className="course-schedule__label">Enrollment ends</label>
-        <h4 className="course-schedule__date">Jul 15, 2021</h4>
-      </div>
-      <div className="course-schedule__course_content">
-        <label className="course-schedule__label">Preflight begins</label>
-        <h4 className="course-schedule__date">Jun 14, 2021</h4>
-      </div>
-      <div className="course-schedule__course_content"> 
-        <label className="course-schedule__label">Ignition begins</label>
-        <h4 className="course-schedule__date">Jul 5, 2021</h4>
-      </div>
-      <div className="course-schedule__course_content">
-        <label className="course-schedule__label">Cohort begins</label>
-        <h4 className="course-schedule__date">Aug 30, 2021</h4>
-      </div>
-      <div className="course-schedule__course_content">
-        <label className="course-schedule__label">Cohort ends</label>
-        <h4 className="course-schedule__date">Nov 5, 2021</h4>
-      </div>
-      <div className="course-schedule__course_content full-width">
-        <Button to="#" text="Apply Today" className="hero__button" size="lg" />
-      </div>
-    </div>
+    <CourseSchedule 
+      cohort="Boston #34"
+      enrollmentEnd="Jul 15, 2021"
+      preflightBegins="Jun 14, 2021"
+      ignitionBegins="Jul 5, 2021"
+      cohortBegins="Aug 30, 2021"
+      cohortEnds="Nov 5, 2021"
+      buttonURL="#"
+      buttonText="Apply Today"
+    />
+    <CourseSchedule 
+      cohort="Boston #35"
+      enrollmentEnd="Oct 14, 2021"
+      preflightBegins="Sept 13, 2021"
+      ignitionBegins="Oct 4, 2021"
+      cohortBegins="Nov 29, 2021"
+      cohortEnds="February 11, 2021"
+      buttonURL="#"
+      buttonText="Apply Today"
+    />
   </Story>
 </Canvas>
