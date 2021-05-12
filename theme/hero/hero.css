@@ -1,6 +1,6 @@
 .hero {
-  @apply text-center pb-28;
-  @apply lg:text-left grid grid-cols-12 lg:gap-2 lg:items-center lg:justify-center;
+  @apply grid grid-cols-12 text-center pb-28;
+  @apply lg:text-left lg:gap-2 lg:items-center lg:justify-center;
 
   & .hero__image-column {
     @apply col-span-12 text-center;
