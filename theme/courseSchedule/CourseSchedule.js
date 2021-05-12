@@ -1,9 +1,11 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+
+import Button from "../buttons/Button.js"
 
 const CourseSchedule = ({ cohort, enrollmentEnds, preflightBegins, ignitionBegins, cohortBegins, cohortEnds, buttonURL, buttonText }) => {
 
   return (
-    <Fragment>
+    <div className="course-schedule">
       <div className="course-schedule__course_content course-schedule__course_content--two-column">
         <label className="course-schedule__label">Cohort</label>
         <h3 className="course-schedule__cohort">{cohort}</h3>
@@ -31,7 +33,7 @@ const CourseSchedule = ({ cohort, enrollmentEnds, preflightBegins, ignitionBegin
       <div className="course-schedule__course_content course-schedule__course_content--two-column">
         <Button to={buttonURL} text={buttonText} className="hero__button" size="lg" />
       </div>
-    </Fragment>
+    </div>
   )
 
 
