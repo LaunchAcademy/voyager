@@ -3,7 +3,6 @@ import { format } from 'date-fns'
 
 import CourseSchedule from "./CourseSchedule.js"
 
-
 const CourseScheduleList = ({ cohortSchedule }) => {
   let enrollmentEnds
   let preflightBegins

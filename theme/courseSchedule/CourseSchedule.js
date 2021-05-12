@@ -35,8 +35,6 @@ const CourseSchedule = ({ cohort, enrollmentEnds, preflightBegins, ignitionBegin
       </div>
     </div>
   )
-
-
 }
 
 export default CourseSchedule
