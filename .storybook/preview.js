@@ -31,7 +31,7 @@ addParameters({
       sm: {
         name: 'sm',
         styles: {
-          width: '375px',
+          width: '376px',
           height: '480px'
         },
         type: "mobile"
@@ -39,7 +39,7 @@ addParameters({
       md: {
         name: 'md',
         styles: {
-          width: '768px',
+          width: '769px',
           height: '640px'
         },
         type: "mobile"
@@ -47,7 +47,7 @@ addParameters({
       lg: {
         name: 'lg',
         styles: {
-          width: '1024px',
+          width: '1025px',
           height: '768px'
         },
         type: "desktop"
@@ -55,7 +55,7 @@ addParameters({
       xl: {
         name: 'xl',
         styles: {
-          width: '1280px',
+          width: '1281px',
           height: '1024px'
         },
         type: "desktop"
@@ -63,7 +63,7 @@ addParameters({
       "2xl": {
         name: '2xl',
         styles: {
-          width: '1536px',
+          width: '1537px',
           height: '1280px'
         },
         type: "desktop"
