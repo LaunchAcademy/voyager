@@ -1,17 +1,16 @@
-import React from 'react'
-import Button from "../buttons/Button.js"
+import React, { Fragment } from 'react'
 
-const CourseSchedule = ({ cohort, enrollmentEnd, preflightBegins, ignitionBegins, cohortBegins, cohortEnds, buttonURL, buttonText }) => {
+const CourseSchedule = ({ cohort, enrollmentEnds, preflightBegins, ignitionBegins, cohortBegins, cohortEnds, buttonURL, buttonText }) => {
 
   return (
-    <div className="course-schedule">
+    <Fragment>
       <div className="course-schedule__course_content course-schedule__course_content--two-column">
         <label className="course-schedule__label">Cohort</label>
-        <h3 className="course-schedule__cohort-small-text">{cohort}</h3>
+        <h3 className="course-schedule__cohort">{cohort}</h3>
       </div>
       <div className="course-schedule__course_content course-schedule__course_content--two-column">
         <label className="course-schedule__label">Enrollment ends</label>
-        <h4 className="course-schedule__date">{enrollmentEnd}</h4>
+        <h4 className="course-schedule__date">{enrollmentEnds}</h4>
       </div>
       <div className="course-schedule__course_content">
         <label className="course-schedule__label">Preflight begins</label>
@@ -32,7 +31,7 @@ const CourseSchedule = ({ cohort, enrollmentEnd, preflightBegins, ignitionBegins
       <div className="course-schedule__course_content course-schedule__course_content--two-column">
         <Button to={buttonURL} text={buttonText} className="hero__button" size="lg" />
       </div>
-    </div>
+    </Fragment>
   )
 
 

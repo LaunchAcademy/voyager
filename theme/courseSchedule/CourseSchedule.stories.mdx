@@ -1,6 +1,24 @@
 import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import CourseSchedule from "./CourseSchedule.js"
+import CourseScheduleList from "./CourseScheduleList.js"
 import courseschedule from "./courseschedule.css"
+import subDays from "date-fns/subDays"
+
+export const dates = [
+  bos34Dates = {
+    enrollmentEnds: "enrollment",
+    prefligtBegins: "preflight",
+    ignitionBegins: "ignition",
+    cohortBegins: "cohort",
+    cohortEnds: "corhortends",
+  },
+    bos35Dates = {
+    enrollmentEnds: "enrollment",
+    prefligtBegins: "preflight",
+    ignitionBegins: "ignition",
+    cohortBegins: "cohort",
+    cohortEnds: "corhortends",
+  }
+]
 
 <Meta title="Course Schedule" />
 
@@ -9,25 +27,6 @@ import courseschedule from "./courseschedule.css"
 <Canvas>
   <Story name="Course Schedule">
     <h1 className="text-center">Upcoming course schedule</h1>
-    <CourseSchedule 
-      cohort="Boston #34"
-      enrollmentEnd="Jul 15, 2021"
-      preflightBegins="Jun 14, 2021"
-      ignitionBegins="Jul 5, 2021"
-      cohortBegins="Aug 30, 2021"
-      cohortEnds="Nov 5, 2021"
-      buttonURL="#"
-      buttonText="Apply Today"
-    />
-    <CourseSchedule 
-      cohort="Boston #35"
-      enrollmentEnd="Oct 14, 2021"
-      preflightBegins="Sept 13, 2021"
-      ignitionBegins="Oct 4, 2021"
-      cohortBegins="Nov 29, 2021"
-      cohortEnds="February 11, 2021"
-      buttonURL="#"
-      buttonText="Apply Today"
-    />
+    <CourseScheduleList dates={dates} />
   </Story>
 </Canvas>

@@ -1,10 +1,6 @@
 .course-schedule {
-  @apply grid grid-cols-2 p-2 max-w-sm my-3;
+  @apply grid grid-cols-2 max-w-sm p-2 mx-auto my-3 rounded-lg shadow-lg;
   @apply lg:grid-cols-7 lg:max-w-full;
-  border-radius: 8px;
-  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
-  margin-left: auto;
-  margin-right: auto;
 
   & .course-schedule__course_content {
     @apply col-span-1 m-1;
@@ -12,25 +8,17 @@
 
   & .course-schedule__cohort {
     @apply font-headline;
-    @apply lg:text-sm lg:text-left;
-    word-wrap: nowrap;
+    @apply lg:text-lg lg:text-left;
   }
 
-  & .course-schedule__cohort-small-text {
-      @apply lg:text-xl lg:text-left;
-    }
-
   & .course-schedule__label {
-    @apply font-headline;
+    @apply font-headline uppercase;
     @apply lg:text-xxs lg:text-left;
-    word-wrap: nowrap;
-    text-transform: uppercase;
   }
     
   & .course-schedule__date {
     @apply font-headline font-bold;
     @apply lg:font-normal lg:text-sm;
-    word-wrap: nowrap;
   }
 
   & .course-schedule__course_content--two-column {
