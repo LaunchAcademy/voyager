@@ -1,5 +1,5 @@
 .card_list {
-  @apply text-center;
+  @apply text-center max-w-screen-lg mx-auto;
 
   & .card-list__columns {
     @apply grid grid-cols-1 gap-4 my-5;
@@ -11,8 +11,8 @@
   }
 
   & .card-list__columns--three-column {
-    @apply grid grid-cols-1 gap-4 my-5;
-    @apply lg:grid lg:grid-cols-3 lg:grid-flow-col lg:grid-rows-2 lg:grid-flow-row lg:gap-x-4 lg:gap-y-16 my-5;
+    @apply grid grid-cols-1 gap-4 my-5 my-5;
+    @apply lg:grid lg:grid-cols-3 lg:grid-flow-col lg:grid-rows-2 lg:grid-flow-row lg:gap-x-4 lg:gap-y-16 my-5 my-5;
   }
 }
 
