@@ -1,6 +1,6 @@
 .hero {
-  @apply text-center pb-28;
-  @apply lg:text-left grid grid-cols-12 lg:gap-4 lg:items-center lg:justify-center;
+  @apply grid grid-cols-12 text-center pb-28;
+  @apply lg:text-left lg:gap-2 lg:items-center lg:justify-center;
 
   & .hero__image-column {
     @apply col-span-12 text-center;
@@ -11,12 +11,12 @@
   & .hero__supporting-content {
     @apply col-span-12;
     @apply lg:col-span-6;
-    @apply align-middle lg:mx-8;
+    @apply align-bottom lg:mx-8;
   }
 
   & .hero__image-container {
     @apply relative inline-block;
-    @apply mt-12 mb-8;
+    @apply mt-12;
     width: 210px;
     height: 210px;
   }
@@ -43,7 +43,7 @@
   }
 
   & .hero__image_subtitle {
-    @apply uppercase text-xs;
+    @apply uppercase text-xs pt-20;
     @apply lg:mb-1 lg:text-base;
   }
 

@@ -75,6 +75,6 @@
   "dependencies": {
     "@headlessui/react": "^1.0.0",
     "date-fns": "^2.21.3",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.21"
   }
 }

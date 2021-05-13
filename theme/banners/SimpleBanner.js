@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./banners.css";
 
-const SimpleBanner = ({ children, backgroundImageUrl }) => (
-  <section className="banner_photo" style={{ "background-image": `url("${backgroundImageUrl}")` }}>
-    <div className="banner_content">
+const SimpleBanner = ({ children, backgroundImageUrl, type }) => (
+  <section className={`banner__photo banner_${type}`} style={{ "background-image": `url("${backgroundImageUrl}")` }}>
+    <div className="banner__content">
       {children}
     </div>
   </section>

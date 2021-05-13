@@ -1,4 +1,9 @@
-.banner_photo {
+.banner__title {
+    @apply text-white mb-1 z-20 relative;
+    @apply lg:mb-4 lg:text-6xl;
+}
+
+.banner__photo {
   @apply relative bg-no-repeat bg-cover py-32 text-white text-center mx-auto;
   @apply lg:py-64;
 
@@ -12,22 +17,17 @@
     @apply bg-opacity-70 bg-photo-overlay;
   }
 
-  & .banner_content {
+  & .banner__content {
     @apply relative;
   }
 
-  & .banner_title {
-    @apply text-white mb-1 z-20 relative;
-    @apply lg:mb-4 lg:text-6xl;
-  }
-
-  & .banner_content.callout__prose_lg {
+  &.banner_prose .banner__content {
     @apply px-12 text-left relative;
     @apply md:w-9/12;
     @apply lg:w-7/12 lg:px-0 lg:pl-8;
     @apply xl:w-1/2;
 
-    & .banner_content-container {
+    & .banner__content-container {
       @apply relative;
       &::before {
         content: " ";
