@@ -1,0 +1,44 @@
+import blocks, { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import FaqList from "./FaqList"
+import Faq from "./Faq"
+import "./faqList.css"
+
+export const Template = (args) => <FaqList {...args} />
+
+<Meta title="FaqList" />
+
+# Faq List 
+
+export const codedQuestions = [
+  {
+    id: 1,
+    title: "Lorem ipsum dolor sit amet?",
+    description: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.",
+  },
+  {id: 2,
+    title: "Lorem ipsum dolor sit amet?",
+    description: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.",
+  },
+  {
+    id: 3,
+    title: "Lorem ipsum dolor sit amet?",
+    description: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.",
+  },
+  {
+    id: 4,
+    title: "Lorem ipsum dolor sit amet?",
+    description: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.",
+  }
+];
+
+<Canvas>
+  <Story name="Faq List">
+    <div className="faq-list">
+      <div className="faq-list-container">
+        <FaqList
+          incomingQuestions={codedQuestions}
+        />
+      </div>
+    </div>
+  </Story>
+</Canvas>
