@@ -1,0 +1,33 @@
+.horizontal-profile-list-title {
+  @apply grid grid-cols-1;
+}
+
+.horizontal-profile-list-container {
+  @apply grid grid-cols-1;
+  @apply lg:grid lg:grid-cols-2 lg:justify-center lg:place-items-center;
+}
+
+.horizontal-profile {
+  @apply my-2 text-center;
+
+  & .horizontal-profile__image {
+    @apply rounded-full inline-block my-8;
+    @apply w-52;
+    @apply lg:w-72;
+  }
+
+  & .horizontal-profile__name {
+    @apply text-xl font-headline font-bold mb-2;
+    @apply lg:text-xl lg:mb-1;
+  }
+
+  & .horizontal-profile__current-title {
+    @apply text-xs uppercase mb-4 tracking-wide;
+    @apply lg:mb-2 lg:font-normal tracking-wider;
+  }
+
+  , & .horizontal-profile__description {
+    @apply text-lg mb-2;
+    @apply lg:mb-0 lg:text-xs lg:font-text lg:normal-case;
+  }
+}
