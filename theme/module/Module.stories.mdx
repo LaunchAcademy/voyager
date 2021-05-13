@@ -1,17 +1,17 @@
 import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import "../../src/assets/scss/main.css"
-import "./programModule.css";
-import ProgramModule from "./ProgramModule"
-import ModuleLearningObjective from "../moduleLearningObjective/ModuleLearningObjective";
+import "../../src/assets/scss/main.css";
+import "./module.css";
+import Module from "./Module";
+import ModuleLearningObjective from "./ModuleLearningObjective";
 
-<Meta title="ProgramModule" />
+<Meta title="Module" />
 
 # Program Module
 
 <Canvas>
-  <Story name="Program Module">
-    <div className="programModule">
-      <ProgramModule 
+  <Story name="Module">
+    <div className="module">
+      <Module 
         subtitle="Module 0"
         title="Course Prep & Pre-work"
         location="Campus"
@@ -21,19 +21,16 @@ import ModuleLearningObjective from "../moduleLearningObjective/ModuleLearningOb
         imageUrl="https://place-hold.it/463x538"
       >
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
-      </ProgramModule>
-      <ProgramModule 
+      </Module>
+      <Module 
         subtitle="Module 1"
         title="Coding Fundamentals"
         location="Online"
@@ -43,19 +40,16 @@ import ModuleLearningObjective from "../moduleLearningObjective/ModuleLearningOb
         imageUrl="https://place-hold.it/463x538"
       >
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
-      </ProgramModule>
-      <ProgramModule 
+      </Module>
+      <Module 
         subtitle="Module 2"
         title="Software Engineering Immersive "
         location="On Campus"
@@ -65,19 +59,16 @@ import ModuleLearningObjective from "../moduleLearningObjective/ModuleLearningOb
         imageUrl="https://place-hold.it/463x538"
       >
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
-      </ProgramModule>
-      <ProgramModule 
+      </Module>
+      <Module 
         subtitle="Module 3"
         title="Career Advancement"
         location="On Campus"
@@ -87,18 +78,15 @@ import ModuleLearningObjective from "../moduleLearningObjective/ModuleLearningOb
         imageUrl="https://place-hold.it/463x538"
       >
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
       <ModuleLearningObjective
-        iconName="info-circle"
         objectiveDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
       />
-      </ProgramModule>
+      </Module>
     </div>
   </Story>
 </Canvas>
