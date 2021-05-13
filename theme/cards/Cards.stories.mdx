@@ -1,0 +1,52 @@
+import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import "./cards.css";
+
+import CardList from "./CardList"
+
+export const content = [
+  {
+    photo: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
+  },
+  {
+    photo: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
+  },
+  {
+    photo: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
+  },
+    {
+    photo: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
+  },
+  {
+    photo: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
+  },
+  {
+    photo: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
+  }
+]
+
+export const columns = 3
+
+<Meta title="Cards" />
+
+# Program Cards
+
+<Canvas>
+  <Story name="Program Cards">
+    <div className="card_list">
+      <h1>Everything you need to get hire-ready in just 18 weeks.</h1>
+      <CardList content={content} columns={columns} />
+    </div>
+  </Story>
+</Canvas>
