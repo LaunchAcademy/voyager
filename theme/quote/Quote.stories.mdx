@@ -1,0 +1,18 @@
+import blocks, { Canvas, Story } from '@storybook/addon-docs/blocks';
+import Quote from './Quote'
+
+export const Template = (args) => <Quote {...args} />
+
+<Meta title="Quote" />
+
+# Quote
+
+<Canvas>
+  <Story name="quote">
+    <Quote 
+      quote="“I highly recommend Launch Academy to anyone who is thinking about switching to software development. Launch Academy found a great formula for success.”"
+      name="Mo Zhu"
+      company="3Play Media"
+    />
+  </Story>
+</Canvas>
