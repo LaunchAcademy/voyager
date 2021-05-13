@@ -34,15 +34,15 @@
   }
 }
 
-.callout__button {
-  @apply bg-black text-teal;
+.banner__button {
+  @apply bg-black text-teal border-none;
 
   &.button_secondary {
     @apply bg-teal text-black border-black;
   }
 }
 
-.button.callout-photo__button {
+.button.banner-photo__button {
   @apply bg-white text-black border-black border;
 
   &.button_secondary {
