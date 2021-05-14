@@ -36,7 +36,7 @@ export const content = [
   }
 ]
 
-export const columns = 2
+export const columns = 3
 
 <Meta title="Cards" />
 
@@ -44,9 +44,9 @@ export const columns = 2
 
 <Canvas>
   <Story name="Program Cards">
-    <div className="card_list">
+    <section className="card-list-container">
       <h2>Everything you need to get hire-ready in just 18 weeks.</h2>
-      <CardList content={content} columns={columns} />
-    </div>
+      <CardList content={content} numberOfColumns={columns} />
+    </section>
   </Story>
 </Canvas>

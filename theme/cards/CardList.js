@@ -2,14 +2,14 @@ import React from 'react'
 
 import Card from "./Card"
 
-const CardList = ({ content, columns }) => {
+const CardList = ({ content, numberOfColumns }) => {
 
-  let columnClass = "card-list__columns"
+  let cardListSize = "card-list"
 
-  if (columns === 2) {
-    columnClass += "--two-column"
-  } else if (columns === 3) {
-    columnClass += "--three-column"
+  if (numberOfColumns === 2) {
+    cardListSize += "--medium"
+  } else if (numberOfColumns === 3) {
+    cardListSize += "--large"
   } 
 
   const cardContentArray = content.map((card)=> {
@@ -23,7 +23,7 @@ const CardList = ({ content, columns }) => {
   })
 
   return(
-    <div className={columnClass} >
+    <div className={cardListSize} >
       {cardContentArray}
     </div>
   )
