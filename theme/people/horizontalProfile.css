@@ -1,8 +1,8 @@
-.horizontal-profile-list-title {
+.horizontal-profile-list__title {
   @apply grid grid-cols-1;
 }
 
-.horizontal-profile-list-container {
+.horizontal-profile-list__container {
   @apply grid grid-cols-1;
   @apply lg:grid lg:grid-cols-2 lg:justify-center lg:place-items-center;
 }
