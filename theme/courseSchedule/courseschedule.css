@@ -1,0 +1,32 @@
+.course-schedule {
+  @apply grid grid-cols-2 max-w-sm p-2 mx-auto my-3 rounded-lg shadow-lg;
+  @apply lg:grid-cols-7 lg:max-w-full;
+
+  & .course-schedule__course_content {
+    @apply col-span-1 m-1;
+  }
+
+  & .course-schedule__cohort {
+    @apply font-headline;
+    @apply lg:text-lg lg:text-left;
+  }
+
+  & .course-schedule__label {
+    @apply font-headline uppercase;
+    @apply lg:text-xxs lg:text-left;
+  }
+    
+  & .course-schedule__date {
+    @apply font-headline font-bold;
+    @apply lg:font-normal lg:text-sm;
+  }
+
+  & .course-schedule__course_content--two-column {
+    @apply col-span-2 text-center max-w-full;
+    @apply lg:col-span-1 lg:text-left;
+  }
+
+  & .course-schedule__course_content--button {
+    @apply lg:text-center;
+  }
+}
