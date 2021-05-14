@@ -2,17 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Faq from './Faq';
 import "./faqList.css";
 
-const FaqList = ({ incomingQuestions }) => {
-  const [questions, setQuestions] = useState([])
+const FaqList = ({ questions }) => {
   const [selectedQuestion, setSelectedQuestion] = useState([])
-
-  const fetchFaq = async () => (
-    setQuestions(incomingQuestions)
-  )
-
-  useEffect(() => {
-    fetchFaq();
-  }, []);
 
   const toggleQuestionSelect = id => {
     if (id === selectedQuestion) {
@@ -45,7 +36,6 @@ const FaqList = ({ incomingQuestions }) => {
 
   return (
     <div className="faq-list">
-      <h1 className="faq-list__title">Freqently Asked Questions</h1>
       <div className="faq-list__container">
         {questionListItems}
       </div>
