@@ -1,0 +1,25 @@
+.article-list {
+  @apply grid grid-cols-1 gap-4 text-center justify-items-center items-center;
+  @apply lg:grid lg:grid-cols-3;
+
+  & .article-list__medium-left {
+    @apply lg:justify-items-center;
+  }
+  
+
+  & .article-list__medium-right {
+    @apply lg:justify-items-center lg:mb-12;
+  }
+  
+  & .article-list__image {
+    @apply shadow-2xl mb-5;
+  }
+
+  & .article-list__title {
+    @apply font-headline text-3xl mt-2;
+  }
+
+  & .article-list__subtitle {
+    @apply font-text text-base;
+  }
+}
