@@ -1,0 +1,31 @@
+import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import "../../src/assets/scss/devices.min.css"
+import "./devicetiles.css"
+
+import MobileDeviceTile from "./MobileDeviceTile.js"
+import DesktopDeviceTile from "./DesktopDeviceTile"
+
+export const image = "http://placekitten.com/200"
+
+<Meta title="Device Project Tiles" />
+
+# Mobile Device
+
+<Canvas>
+  <Story name="Mobile Device Tile">
+    <div className="device-wrapper">
+      <MobileDeviceTile studentProjectScreenshot={image} />
+    </div>
+  </Story>
+</Canvas>
+
+
+# Desktop Device
+
+<Canvas>
+  <Story name="Desktop Device Tile">
+    <div className="desktop-device-wrapper">
+      <DesktopDeviceTile studentProjectScreenshot={image} />
+    </div>
+  </Story>
+</Canvas>

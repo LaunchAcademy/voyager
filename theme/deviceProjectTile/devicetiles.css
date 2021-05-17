@@ -1,0 +1,31 @@
+.mobile-device-wrapper {
+  @apply flex justify-center;
+
+  & .device-mobile--screen {
+    height: 464px;
+    width: 232px;
+  }
+
+  & .marvel-device.iphone-x .notch {
+    @apply top-4 left-9 transform scale-50;
+  }
+
+  & .mobile-student-screenshot {
+    @apply w-full h-full object-cover object-center;
+  }
+}
+
+.desktop-device-wrapper {
+ @apply flex justify-center;
+
+  & .desktop-device--screen {
+   @apply transform scale-25;
+   @apply md:scale-50;
+   @apply lg:scale-90;
+  }
+
+  & .desktop-student-screenshot {
+    @apply w-full h-full object-cover object-center;
+  }
+}
+
