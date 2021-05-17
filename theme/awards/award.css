@@ -1,0 +1,4 @@
+.award-list {
+  @apply grid grid-cols-1 gap-4;
+  @apply lg:grid lg:grid-cols-4 lg:justify-center lg:place-items-center lg:gap-8;
+}
