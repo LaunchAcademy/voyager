@@ -12,6 +12,9 @@ module.exports = {
     colors: { ...getColorsByColorName(), ...getColorsByName() },
     fontFamily,
     fontSize: {
+      xxs: [".75rem", {
+        lineHeight: "1rem",
+      }],
       xs: [".875rem", {
         lineHeight: "1.125rem",
       }],

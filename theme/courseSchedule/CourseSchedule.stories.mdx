@@ -1,0 +1,41 @@
+import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { subDays, addDays } from "date-fns"
+
+import CourseScheduleList from "./CourseScheduleList.js"
+import courseschedule from "./courseschedule.css"
+
+export const cohortSchedule = [
+  {
+    cohort: "Boston #34",
+    enrollmentEnds: addDays(new Date(2021, 7, 5), 10,).toISOString(),
+    prefligtBegins: subDays(new Date(2021, 7, 5), 21).toISOString(),
+    ignitionBegins: new Date(2021, 7, 5).toISOString(),
+    preflightBegins: subDays(new Date(2021, 7, 5), 21).toISOString(),
+    cohortBegins: addDays(new Date(2021, 7, 5), 17).toISOString(),
+    cohortEnds: addDays(new Date(2021, 7, 5), 67).toISOString(),
+    buttonURL: "#",
+    buttonText: "Apply Today"
+  },
+  {
+    cohort: "Boston #35",
+    enrollmentEnds: addDays(new Date(2021, 10, 4), 10).toISOString(),
+    prefligtBegins: subDays(new Date(2021, 10, 4), 21).toISOString(),
+    ignitionBegins: subDays(new Date(2021, 10, 4), 56).toISOString(),
+    preflightBegins: subDays(new Date(2021, 10, 4), 21).toISOString(),
+    cohortBegins: addDays(new Date(2021, 10, 4), 24).toISOString(),
+    cohortEnds: addDays(new Date(2021, 10, 4), 74).toISOString(),
+    buttonURL: "#",
+    buttonText: "Apply Today"
+  }
+]
+
+<Meta title="Course Schedule" />
+
+# Course Schedule
+ 
+<Canvas>
+  <Story name="Course Schedule">
+    <h1 className="text-center">Upcoming course schedule</h1>
+    <CourseScheduleList cohortSchedule={cohortSchedule} />
+  </Story>
+</Canvas>

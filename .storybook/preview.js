@@ -31,7 +31,7 @@ addParameters({
       sm: {
         name: 'sm',
         styles: {
-          width: '375px',
+          width: '376px',
           height: '480px'
         },
         type: "mobile"
