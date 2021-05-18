@@ -1,0 +1,52 @@
+:root {
+  --course-report-background: #FFF8E0; 
+  --course-report-text: #50922F;
+}
+
+.course-report {
+  @apply grid grid-cols-2 w-full shadow-lg rounded-lg p-5;
+  background-color: #FFF8E0;
+
+  & .course-report__title {
+    @apply col-span-2 inline-flex items-baseline justify-start;
+  }
+  
+  & .course-report__reviewer {
+    @apply col-span-2;
+
+    & .reviewer__info {
+      @apply inline-flex items-baseline justify-start flex-wrap font-semibold font-text;
+
+      & .reviewer__info--headline {
+        color: var(--course-report-text);
+      }
+    }
+  }
+
+  & .course-report__scores {
+    @apply col-span-2 inline-grid grid-cols-2 border-gray-slate border-t-2 border-b-2 py-2;
+  }
+
+  & .course-report__review {
+    @apply col-span-2 grid grid-rows-3 grid-cols-1;
+
+    & .review__text {
+      @apply col-start-1 col-span-1 row-start-1 row-span-2;
+    }
+    
+    & .review__readmore {
+      @apply bg-gradient-to-t col-start-1 col-span-1 row-start-1 row-span-2 w-full h-full;
+      --tw-gradient-from: var(--course-report-background);
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0)); 
+    }
+
+    & .review__link {
+      @apply col-span-1 row-start-3 row-span-1;
+      color: var(--course-report-text);
+
+      & .review__link-button {
+        @apply uppercase border-2 rounded-lg p-2;
+      }
+    }
+  }
+}

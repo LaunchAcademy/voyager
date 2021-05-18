@@ -1,0 +1,27 @@
+import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import CourseReportTile from "./CourseReportTile.js"
+
+<Meta title="Reviews" />
+
+# Course Report Tile
+
+
+<Canvas>
+  <Story name="Course Report Tile">
+    <CourseReportTile 
+      reviewTitle="reviewTitle" 
+      reviewedAt="reviewedAt"
+      alumniName="alumniName"
+      alumniTitle="alumniTitle"
+      verified="true"
+      overallScore="5"
+      instructorScore="5"
+      curriculumScore="5"
+      jobAssistanceScore="5"
+      reviewUrl="reviewUrl"
+    >
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </CourseReportTile>
+  </Story>
+</Canvas>
