@@ -1,5 +1,5 @@
 .tuition-table {
-  @applyfont-headline;
+  @apply font-headline;
 
   & .tuition-table__header-container {
     @apply font-headline text-3xl ;
@@ -9,11 +9,11 @@
     @apply w-1/4 justify-center items-center;
   }
 
-  & .tuition-table__background-color {
+  & tr:nth-child(even) {
     @apply bg-gray-dorian;
   }
 
-  & .tuition-table__data-header {
+  & .tuition-table__data-title {
     @apply justify-center items-center text-center p-8 font-headline text-xl border-collapse border border-gray-light-slate;
   }
   
