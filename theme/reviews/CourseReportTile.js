@@ -1,4 +1,6 @@
 import React from 'react'
+import ReviewStars from './ReviewStars'
+
 
 import "./coursereport.css"
 
@@ -21,10 +23,22 @@ const CourseReportTile = ({ reviewTitle, reviewedAt, alumniName, alumniTitle, ve
         </ul>
       </section>
       <section className="course-report__scores">
-        <p>Overall Experience: {overallScore}</p>
-        <p>Curriculum: {curriculumScore}</p>
-        <p>Instructors: {instructorScore}</p>
-        <p>Job Assistance: {jobAssistanceScore}</p>
+        <div className="scores__item">
+          <p>Overall Experience:</p>
+          <ReviewStars rating={overallScore}/>
+        </div>
+        <div className="scores__item">
+          <p>Curriculum:</p>
+          <ReviewStars rating={curriculumScore}/>
+        </div>
+        <div className="scores__item">
+          <p>Instructors: </p>
+          <ReviewStars rating={instructorScore}/>
+        </div>
+        <div className="scores__item">
+          <p>Job Assistance: </p>
+          <ReviewStars rating={jobAssistanceScore}/>
+        </div>
       </section>
       <section className="course-report__review">
         <div className="review__text"><p>{children}</p>

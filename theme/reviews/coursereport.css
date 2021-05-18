@@ -24,7 +24,11 @@
   }
 
   & .course-report__scores {
-    @apply col-span-2 inline-grid grid-cols-2 border-gray-slate border-t-2 border-b-2 py-2;
+    @apply col-span-2 inline-grid grid-cols-2 border-gray-slate border-t-2 border-b-2 py-2 gap-x-8;
+
+    & .scores__item {
+      @apply col-span-1 inline-flex justify-between;
+    }
   }
 
   & .course-report__review {
