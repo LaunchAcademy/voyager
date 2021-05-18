@@ -25,15 +25,15 @@
     @apply lg:justify-items-end lg:pl-20 lg:text-left;
   }
 
-  & .tuition-payment-plan-item__title {
+  & .tuition-plan__item-title {
     @apply font-headline text-xl pb-1;
   }
   
-  & .tuition-payment-plan-item__description {
+  & .tuition-plan__item-description {
     @apply font-text text-base pb-1;
   }
 
-  & .tuition-payment-plan-item__button {
+  & .tuition-plan__item-button {
     @apply lg:mt-4;
   }
 }
