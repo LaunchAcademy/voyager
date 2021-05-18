@@ -2,13 +2,8 @@
   @apply grid grid-cols-1 gap-4 text-center justify-items-center items-center;
   @apply lg:grid lg:grid-cols-3;
 
-  & .article-list__medium-left {
+  & .article-list__item {
     @apply lg:justify-items-center;
-  }
-  
-
-  & .article-list__medium-right {
-    @apply lg:justify-items-center lg:mb-12;
   }
   
   & .article-list__image {

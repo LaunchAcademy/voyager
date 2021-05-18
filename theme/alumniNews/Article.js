@@ -4,11 +4,11 @@ import "./article.css";
 
 const Article = ({ imageUrl, title, subtitle }) => {
   return (
-    <>
+    <div className="article-list__item">
       <img className="article-list__image" src={imageUrl} />
-      <p className="article-list__title">{title}</p>
+      <strong className="article-list__title">{title}</strong>
       <p className="article-list__subtitle">{subtitle}</p>
-    </>
+    </div>
   )
 }
 
