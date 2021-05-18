@@ -1,0 +1,39 @@
+:root {
+  --switchup-link: #3A75BA;
+}
+
+.switchup {
+  @apply grid grid-cols-2 w-full shadow-lg rounded-lg p-5 bg-white;
+
+  & .switchup__reviewer {
+    @apply col-span-2 border-b-2 border-gray-slate  pb-4;
+
+    & .reviewer__name {
+      @apply flex justify-between;
+    }
+  }
+
+  & .switchup__scores {
+    @apply col-span-2 inline-grid grid-cols-3 py-4;
+  }
+
+  & .switchup__review {
+    @apply col-span-2;
+
+    & .review__title {
+      @apply py-4 font-bold;
+    }
+
+    & .review__text {
+      @apply truncate;
+    }
+
+    & .review__link {
+      color: var(--switchup-link);
+
+      & .review__link-button {
+        @apply capitalize;
+      }
+    }
+  }
+}
