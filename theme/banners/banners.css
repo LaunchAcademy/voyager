@@ -37,8 +37,8 @@
       }
 
       & p {
-        @apply ml-16 mr-6 mt-8 z-20 relative text-xs;
-        @apply lg:ml-64 lg:text-base lg:mt-0;
+        @apply ml-16 mr-6 mt-8 z-20 relative text-xs font-headline;
+        @apply lg:ml-64 lg:text-3xl lg:mt-0 lg:font-bold;
       }
     }
   }

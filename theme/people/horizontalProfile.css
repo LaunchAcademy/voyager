@@ -1,5 +1,6 @@
 .horizontal-profile-list__title {
-  @apply grid grid-cols-1;
+  @apply grid grid-cols-1 p-4;
+  @apply lg:text-left lg:p-20;
 }
 
 .horizontal-profile-list__container {
@@ -9,11 +10,16 @@
 
 .horizontal-profile {
   @apply my-2 text-center;
+  @apply lg:grid lg:grid-cols-3;
 
   & .horizontal-profile__image {
     @apply rounded-full inline-block my-8;
     @apply w-52;
-    @apply lg:w-72;
+    @apply lg:w-72 lg:col-start-1 lg:col-span-1;
+  }
+
+  & .horizontal-profile__content {
+    @apply lg:col-start-2 lg:col-span-2 lg:p-10;
   }
 
   & .horizontal-profile__name {
@@ -26,8 +32,8 @@
     @apply lg:mb-2 lg:font-normal tracking-wider;
   }
 
-  , & .horizontal-profile__description {
+  & .horizontal-profile__description {
     @apply text-lg mb-2;
-    @apply lg:mb-0 lg:text-xs lg:font-text lg:normal-case;
+    @apply lg:mb-0 lg:text-xs lg:font-text lg:normal-case lg:px-10;
   }
 }

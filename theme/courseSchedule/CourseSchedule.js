@@ -18,7 +18,7 @@ const CourseSchedule = ({ cohort, enrollmentEnds, preflightBegins, ignitionBegin
         <label className="course-schedule__label">Preflight begins</label>
         <h4 className="course-schedule__date">{preflightBegins}</h4>
       </div>
-      <div className="course-schedule__course_content"> 
+      <div className="course-schedule__course_content">
         <label className="course-schedule__label">Ignition begins</label>
         <h4 className="course-schedule__date">{ignitionBegins}</h4>
       </div>
@@ -37,4 +37,4 @@ const CourseSchedule = ({ cohort, enrollmentEnds, preflightBegins, ignitionBegin
   )
 }
 
-export default CourseSchedule
+export default CourseSchedule;

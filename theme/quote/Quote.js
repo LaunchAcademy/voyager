@@ -1,6 +1,5 @@
-import React from 'react'
-import quote from './quote.css'
-import Icon from '../icons/Icon'
+import React from 'react';
+import './quote.css';
 
 const Quote = ({ quote, name, company }) => {
   return (
@@ -22,7 +21,7 @@ const Quote = ({ quote, name, company }) => {
       </div>
     </div>
   )
-}
+};
 
 
-export default Quote
+export default Quote;

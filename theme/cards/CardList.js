@@ -10,19 +10,20 @@ const CardList = ({ content, numberOfColumns }) => {
     cardListSize += "--medium"
   } else if (numberOfColumns === 3) {
     cardListSize += "--large"
-  } 
+  }
 
-  const cardContentArray = content.map((card)=> {
-    return(
-      <Card 
-        photo={card.photo} 
-        header={card.header}  
+  const cardContentArray = content.map((card) => {
+    return (
+      <Card
+        key={card.id}
+        photo={card.photo}
+        header={card.header}
         body={card.body}
       />
-      )
+    )
   })
 
-  return(
+  return (
     <div className={cardListSize} >
       {cardContentArray}
     </div>
