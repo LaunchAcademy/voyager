@@ -3,7 +3,9 @@
 }
 
 .switchup {
-  @apply grid grid-cols-2 w-full shadow-lg rounded-lg p-5 bg-white;
+  @apply grid grid-cols-2 shadow-lg rounded-lg p-5 bg-white my-5;
+  @apply lg:m-10;
+  max-width: 600px;
 
   & .switchup__reviewer {
     @apply col-span-2 border-b-2 border-gray-slate  pb-4;

@@ -4,8 +4,10 @@
 }
 
 .course-report {
-  @apply grid grid-cols-2 w-full shadow-lg rounded-lg p-5;
-  background-color: #FFF8E0;
+  @apply grid grid-cols-2 shadow-lg rounded-lg p-5 my-5;
+  @apply lg:m-10;
+  background-color: var(--course-report-background);
+  max-width: 600px;
 
   & .course-report__title {
     @apply col-span-2 inline-flex items-baseline justify-start;
@@ -27,7 +29,8 @@
     @apply col-span-2 inline-grid grid-cols-2 border-gray-slate border-t-2 border-b-2 py-2 gap-x-8;
 
     & .scores__item {
-      @apply col-span-1 inline-flex justify-between;
+      @apply col-span-2 inline-flex justify-between;
+      @apply md:col-span-1;
     }
   }
 

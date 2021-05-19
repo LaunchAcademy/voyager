@@ -1,0 +1,29 @@
+.review-grid-container  {
+  @apply w-full grid grid-cols-6 ;
+
+  & .review-grid {
+    @apply col-span-6 w-full;
+
+    & .review-grid__scroll {
+      @apply flex flex-wrap justify-center;
+    }
+  }
+}
+
+@screen lg {
+  .review-grid-container  {
+  
+    & .review-grid {
+      @apply overflow-scroll;
+  
+      & .review-grid__scroll {
+        @apply grid grid-rows-3 grid-cols-3 h-full;
+        width: 2000px;
+      }
+    }
+  }
+}
+ 
+
+
+
