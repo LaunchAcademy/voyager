@@ -1,0 +1,13 @@
+.module-learning-objective {
+  @apply grid grid-cols-5 py-2;
+  @apply lg:max-w-md;
+  @apply md:max-w-sm;
+
+  & .module-learning-objective__icon {
+    @apply col-span-1 col-start-1 items-center flex justify-center;
+  }
+  
+  & .module-learning-objective__description {
+    @apply font-text col-span-4 col-start-2 text-sm max-w-md;
+  }
+}
