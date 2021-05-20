@@ -23,3 +23,8 @@ import FeatureList from "./theme/featureList/FeatureList.js"
 export {
   Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, PartnerLogoList, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile, FaqList, FeatureList
 };
+import PartnerLogoList from "./theme/partnerLogoList/PartnerLogoList.js";
+
+export {
+  Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, PartnerLogoList,
+};
