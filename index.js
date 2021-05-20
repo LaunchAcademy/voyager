@@ -16,7 +16,8 @@ import CourseSchedule from "./theme/courseSchedule/CourseSchedule.js";
 import Module from "./theme/module/Module.js";
 import ModuleLearningObjective from "./theme/module/ModuleLearningObjective.js";
 import HorizontalProfile from "./theme/people/HorizontalProfile.js"
+import FaqList from "./theme/faq/FaqList.js"
 
 export {
-  Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile
+  Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile, FaqList
 };

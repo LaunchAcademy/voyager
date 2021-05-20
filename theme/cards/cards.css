@@ -18,7 +18,7 @@
 
 
 .card {
-  @apply w-full shadow-lg rounded-lg pb-4 mx-auto;
+  @apply w-full shadow-lg rounded-lg pb-4 mx-auto bg-white;
 
   & .card__photo {
     @apply overflow-hidden h-48 rounded-t-lg w-full;
