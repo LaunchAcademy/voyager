@@ -1,6 +1,6 @@
 .banner__title {
-    @apply text-white mb-1 z-20 relative;
-    @apply lg:mb-4 lg:text-6xl;
+  @apply text-white mb-1 z-20 relative;
+  @apply lg:mb-4 lg:text-6xl;
 }
 
 .banner__photo {
