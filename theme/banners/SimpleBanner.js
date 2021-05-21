@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./banners.css";
 
 const SimpleBanner = ({ children, backgroundImageUrl, type }) => (
-  <section className={`banner__photo banner_${type}`} style={{ "background-image": `url("${backgroundImageUrl}")` }}>
+  <section className={`banner__photo banner_${type}`} style={{ "backgroundImage": `url("${backgroundImageUrl}")` }}>
     <div className="banner__content">
       {children}
     </div>
