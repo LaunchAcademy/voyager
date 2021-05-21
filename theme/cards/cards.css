@@ -11,14 +11,14 @@
   }
 
   & .card-list--large {
-    @apply grid grid-cols-1 gap-4 my-5;
+    @apply grid grid-cols-1 gap-4 my-5 px-10;
     @apply md:grid md:grid-cols-3 md:gap-x-4 md:gap-y-16;
   }
 }
 
 
 .card {
-  @apply w-full shadow-lg rounded-lg pb-4 mx-auto;
+  @apply w-full shadow-lg rounded-lg pb-4 mx-auto bg-white;
 
   & .card__photo {
     @apply overflow-hidden h-48 rounded-t-lg w-full;

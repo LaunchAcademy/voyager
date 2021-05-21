@@ -1,6 +1,10 @@
 .module {
-    @apply justify-center shadow-2xl rounded-lg p-2;
-    @apply lg:grid lg:grid-cols-2 lg:col-span-2 lg:shadow-none;
+  @apply justify-center shadow-2xl rounded-lg p-2;
+  @apply lg:grid lg:grid-cols-2 lg:col-span-2 lg:shadow-none;
+
+  &:nth-child(even) {
+    @apply bg-gray-dorian;
+  }
 
   & .module__image-column {
     @apply text-center pb-5;
