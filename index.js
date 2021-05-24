@@ -8,7 +8,8 @@ import SimpleBanner from "./theme/banners/SimpleBanner.js";
 import TitledParagraph from "./theme/titledParagraph/TitledParagraph.js";
 import Fact from "./theme/factSet/Fact.js";
 import FactSet from "./theme/factSet/FactSet.js";
+import PartnerLogoList from "./theme/partnerLogoList/PartnerLogoList.js";
 
 export {
-  Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet,
+  Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, PartnerLogoList,
 };
