@@ -5,7 +5,7 @@
 
 .course-report {
   @apply grid grid-cols-2 w-full shadow-lg rounded-lg p-5;
-  background-color: #FFF8E0;
+  background-color: var(--course-report-background);
 
   & .course-report__title {
     @apply col-span-2 inline-flex items-baseline justify-start;

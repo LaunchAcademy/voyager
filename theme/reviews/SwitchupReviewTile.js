@@ -1,20 +1,26 @@
 import React from 'react'
 
 import ReviewStars from "./ReviewStars.js"
-import "./switchupreview.css"
+import "./reviewtiles.css"
 
-const SwitchupReviewTile = ({ reviewTitle, reviewedAt, alumniName, overallScore, curriculumScore, jobAssistanceScore, reviewUrl, children }) => {
+const SwitchupReviewTile = ({ reviewTitle, reviewedAt, alumniName, alumniTitle, alumniGradYear, overallScore, curriculumScore, jobAssistanceScore, reviewUrl, children }) => {
+
+  let alumniTitleCheck
+  if(alumniTitle) {
+    alumniTitleCheck=` | ${alumniTitle}`
+  }
+
   return (
-    <article className="switchup">
-      <section className="switchup__reviewer">
+    <article className="review review_switchup">
+      <section className="review_switchup__reviewer">
         <div className="reviewer__name">
-          <h4>{alumniName}</h4>
+          <h4>{alumniName}{alumniTitleCheck}</h4>
           <p>{reviewedAt}</p>
         </div>
           <p>18-Week On-Campus JavaScript Immersive Bootcamp</p>
-          <p>Graduated: 2019</p>
+          <p>Graduated: {alumniGradYear}</p>
       </section>
-      <section className="switchup__scores">
+      <section className="review_switchup__scores">
         <div>
           <p>Overall Score</p>
           <ReviewStars rating={overallScore}/>
@@ -28,10 +34,10 @@ const SwitchupReviewTile = ({ reviewTitle, reviewedAt, alumniName, overallScore,
           <ReviewStars rating={jobAssistanceScore}/>
         </div>
       </section>
-      <section className="switchup__review">
+      <section className="review_switchup__review">
         <h4 className="review__title">{reviewTitle}</h4>
           <p className="review__text">{children}</p>
-        <a className="review__link" href={reviewUrl}><button className="review__link-button" >read more</button></a>
+        <a className="review__link" href={reviewUrl}>read more</a>
       </section>
     </article>
   )

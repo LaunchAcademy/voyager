@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+:root {
+  --course-report-background: #FFF8E0; 
+  --course-report-text: #50922F;
+  --switchup-link: #3A75BA;
+  --switchup-text: #4D4D4D;
+  --switchup-border: #EDEDED;
+  --switchup-font-size: 16px;
+  --switchup-font-family: "Source Sans Pro",sans-serif;
+
+}
+
+.review {
+  @apply grid grid-cols-2 w-full;
+}
+
+.review_switchup {
+    @apply bg-white border-2;
+      border-color: var(--switchup-border);
+
+    & h4 {
+      font-size: var(--switchup-font-size);
+      font-family: var(--switchup-font-family);
+      color: var(--switchup-text);
+    }
+
+    & p {
+      font-size: var(--switchup-font-size);
+      font-family: var(--switchup-font-family);
+      color: var(--switchup-text);
+    }
+
+    & .review_switchup__reviewer {
+      @apply col-span-2 border-b-2 p-4;
+      border-color: var(--switchup-border);
+  
+      & .reviewer__name {
+        @apply flex justify-between;
+
+        & h4 {
+          @apply font-bold;
+        }
+      }
+    }
+  
+    & .review_switchup__scores {
+      @apply col-span-2 inline-grid grid-cols-3 px-4 pt-4;
+    }
+  
+    & .review_switchup__review {
+      @apply col-span-2 px-4 pb-4;
+  
+      & .review__title {
+        @apply py-4 font-bold;
+      }
+  
+      & .review__text {
+        @apply truncate pt-4;
+      }
+  
+      & .review__link {
+        @apply capitalize;
+        color: var(--switchup-link);
+        font-size: var(--switchup-font-size);
+        font-family: var(--switchup-font-family);
+      }
+    }
+  }
+
+
