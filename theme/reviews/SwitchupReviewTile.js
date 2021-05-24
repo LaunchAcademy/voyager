@@ -12,7 +12,7 @@ const SwitchupReviewTile = ({ reviewTitle, reviewedAt, alumniName, alumniTitle, 
 
   return (
     <article className="review review__switchup">
-      <section className="review_reviewer__switchup">
+      <section className="review_reviewer review_reviewer__switchup">
         <div className="reviewer_name">
           <h4>{alumniName}{alumniTitleCheck}</h4>
           <p>{reviewedAt}</p>
@@ -20,7 +20,7 @@ const SwitchupReviewTile = ({ reviewTitle, reviewedAt, alumniName, alumniTitle, 
           <p>18-Week On-Campus JavaScript Immersive Bootcamp</p>
           <p>Graduated: {alumniGradYear}</p>
       </section>
-      <section className="review_scores__switchup">
+      <section className="review_scores review_scores__switchup">
         <div>
           <p>Overall Score</p>
           <ReviewStars rating={overallScore}/>
@@ -34,10 +34,10 @@ const SwitchupReviewTile = ({ reviewTitle, reviewedAt, alumniName, alumniTitle, 
           <ReviewStars rating={jobAssistanceScore}/>
         </div>
       </section>
-      <section className="review_narrative__switchup">
-        <h4 className="review__title">{reviewTitle}</h4>
-          <p className="review__text">{children}</p>
-        <a className="review__link" href={reviewUrl}>read more</a>
+      <section className="review_narrative review_narrative__switchup">
+        <h4 className="review_title">{reviewTitle}</h4>
+          <p className="review_text">{children}</p>
+        <a className="review_link" href={reviewUrl}>read more</a>
       </section>
     </article>
   )

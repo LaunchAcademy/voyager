@@ -9,6 +9,7 @@ const ReviewList = ({ allReviews }) => {
     if (review.reviewUrl.includes("coursereport.com")) {
       return (
         <CourseReportTile 
+          key={review.id}
           reviewTitle={review.reviewTitle}
           reviewedAt={review.reviewedAt}
           alumniName={review.alumniName}
@@ -25,10 +26,12 @@ const ReviewList = ({ allReviews }) => {
     } else {
       return(
         <SwitchupReviewTile 
+          key={review.id}
           reviewTitle={review.reviewTitle}
           reviewedAt={review.reviewedAt}
           alumniName={review.alumniName}
           alumniTitle={review.alumniTitle}
+          alumniGradYear={review.alumniGradYear}
           verified={review.verified}
           overallScore={review.overallScore}
           curriculumScore={review.curriculumScore}
@@ -42,8 +45,7 @@ const ReviewList = ({ allReviews }) => {
 
   return (
     <div className="review-grid">
-      <div className="review-grid__scroll"> {reviewsArray}
-      </div>
+      {reviewsArray}
     </div>
   )
 }

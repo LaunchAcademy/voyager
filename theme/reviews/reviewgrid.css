@@ -1,24 +1,23 @@
 .review-grid-container  {
-  @apply w-full grid grid-cols-6 ;
-
+  
   & .review-grid {
-    @apply col-span-6 w-full;
+    @apply grid grid-cols-1 w-full;
 
-    & .review-grid__scroll {
-      @apply flex flex-wrap justify-center;
+    & .review {
+      @apply col-span-1 my-5;
     }
   }
 }
 
 @screen lg {
   .review-grid-container  {
-  
+
     & .review-grid {
-      @apply overflow-scroll;
-  
-      & .review-grid__scroll {
-        @apply grid grid-rows-3 grid-cols-3 h-full;
-        width: 2000px;
+      @apply grid gap-x-48 gap-y-14 overflow-x-scroll;
+      grid-template-columns: repeat(5, minmax(768px, 1fr));
+      
+      & .review {
+        @apply col-span-1 m-auto;
       }
     }
   }

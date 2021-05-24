@@ -7,6 +7,7 @@ import "./reviewgrid.css"
 
 export const reviews = [
   {
+      id: 1,
       reviewTitle: "Best Decision for a Real Future",
       reviewedAt: "11/20/2019",
       alumniName: "Susan Ma",
@@ -20,10 +21,12 @@ export const reviews = [
       reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
     {
+      id: 2,
       reviewTitle: "Best Decision for a Real Future",
       reviewedAt: "11/20/2019",
       alumniName: "Susan Ma",
       alumniTitle: "Software Engineer",
+      alumniGradYear: "2019",
       verified: "true",
       overallScore: "5",
       curriculumScore: "5",
@@ -32,6 +35,7 @@ export const reviews = [
       reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
     {
+      id: 3,
       reviewTitle: "Best Decision for a Real Future",
       reviewedAt: "11/20/2019",
       alumniName: "Susan Ma",
@@ -45,6 +49,7 @@ export const reviews = [
       reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
     {
+      id: 4,
       reviewTitle: "Best Decision for a Real Future",
       reviewedAt: "11/20/2019",
       alumniName: "Susan Ma",
@@ -58,6 +63,7 @@ export const reviews = [
       reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
     {
+      id: 5,
       reviewTitle: "Best Decision for a Real Future",
       reviewedAt: "11/20/2019",
       alumniName: "Susan Ma",
@@ -71,10 +77,12 @@ export const reviews = [
       reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
     {
+      id: 6,
       reviewTitle: "Best Decision for a Real Future",
       reviewedAt: "11/20/2019",
       alumniName: "Susan Ma",
       alumniTitle: "Software Engineer",
+      alumniGradYear: "2019",
       verified: "true",
       overallScore: "5",
       curriculumScore: "5",
@@ -83,6 +91,7 @@ export const reviews = [
       reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
     {
+      id: 7,
       reviewTitle: "Best Decision for a Real Future",
       reviewedAt: "11/20/2019",
       alumniName: "Susan Ma",
@@ -96,6 +105,7 @@ export const reviews = [
       reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
     {
+      id: 8,
       reviewTitle: "Best Decision for a Real Future",
       reviewedAt: "11/20/2019",
       alumniName: "Susan Ma",
@@ -117,6 +127,7 @@ export const reviews = [
 <Canvas>
   <Story name="Course Report Tile">
     <CourseReportTile 
+      key="1"
       reviewTitle="Best Decision for a Real Future" 
       reviewedAt="11/20/2019"
       alumniName="Susan Ma"
@@ -143,7 +154,7 @@ export const reviews = [
       reviewedAt="11/20/2019"
       alumniName="Susan Ma"
       alumniTitle="Software Engineer"
-      alumniGradYear= "2019"
+      alumniGradYear="2019"
       verified="true"
       overallScore="5"
       instructorScore="5"

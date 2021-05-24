@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Roboto:wght@300;700&display=swap');
+
 
 :root {
   --course-report-background: #FFF8E0; 
-  --course-report-text: #50922F;
+  --course-report-title: rgba(80,146,47,0.65);
+  --course-report-text: #3f4549;
+  --course-report-border: #E5DEC9;
+  --course-report-font-family:  "Roboto", Arial, sans-serif;
+  --course-report-font-size: 15px;
+  --course-report-link: #50922f;
+  --course-report-link-size: 12px;
   --switchup-link: #3A75BA;
   --switchup-text: #4D4D4D;
   --switchup-border: #EDEDED;
@@ -15,57 +22,157 @@
   @apply grid grid-cols-2 w-full;
 }
 
-.review__switchup {
-    @apply bg-white border-2;
-      border-color: var(--switchup-border);
+ .review__switchup {
+  @apply bg-white border-2;
+    border-color: var(--switchup-border);
+
+  & h4 {
+    font-size: var(--switchup-font-size);
+    font-family: var(--switchup-font-family);
+    color: var(--switchup-text);
+  }
+
+  & p {
+    font-size: var(--switchup-font-size);
+    font-family: var(--switchup-font-family);
+    color: var(--switchup-text);
+  }
+}
+
+ .review__course-report {
+  @apply grid grid-cols-2 w-full rounded-lg border-2;
+  border-color: var(--course-report-border);
+  background-color: var(--course-report-background);
+
+  & h4 {
+    @apply mr-1;
+    font-family: var(--course-report-font-family);
+    font-size: var(--course-report-font-size);
+  }
+
+  & p {
+    font-family: var(--course-report-font-family);
+    font-size: var(--course-report-font-size);
+  }
+  & li {
+    @apply ml-1;
+    font-family: var(--course-report-font-family);
+    font-size: var(--course-report-font-size);
+  }
+}
+
+.review_reviewer {
+  @apply col-span-2;
+}
+
+.review_reviewer__switchup {
+  @apply border-b-2 p-4;
+  border-color: var(--switchup-border);
+
+  & .reviewer_name {
+    @apply flex justify-between;
 
     & h4 {
-      font-size: var(--switchup-font-size);
-      font-family: var(--switchup-font-family);
-      color: var(--switchup-text);
-    }
-
-    & p {
-      font-size: var(--switchup-font-size);
-      font-family: var(--switchup-font-family);
-      color: var(--switchup-text);
-    }
-
-    & .review_reviewer__switchup {
-      @apply col-span-2 border-b-2 p-4;
-      border-color: var(--switchup-border);
-  
-      & .reviewer_name {
-        @apply flex justify-between;
-
-        & h4 {
-          @apply font-bold;
-        }
-      }
-    }
-  
-    & .review_scores__switchup {
-      @apply col-span-2 inline-grid grid-cols-3 px-4 pt-4;
-    }
-  
-    & .review_narrative__switchup {
-      @apply col-span-2 px-4 pb-4;
-  
-      & .review__title {
-        @apply py-4 font-bold;
-      }
-  
-      & .review__text {
-        @apply truncate pt-4;
-      }
-  
-      & .review__link {
-        @apply capitalize;
-        color: var(--switchup-link);
-        font-size: var(--switchup-font-size);
-        font-family: var(--switchup-font-family);
-      }
+       @apply font-bold;
     }
   }
+}
+
+  
+.review_reviewer__course-report {
+  @apply px-5 pb-5;
+
+  & .reviewer_title {
+     @apply col-span-2 inline-flex items-baseline justify-start w-full pt-5;
+  }
+
+  & .reviewer_info {
+    @apply inline-flex items-baseline justify-start flex-wrap font-semibold font-text;
+
+    & .reviewer_info--headline {
+      color: var(--course-report-title);
+      font-family: var(--course-report-font-family);
+      font-size: var(--course-report-font-size);
+    }
+  }
+}
+
+
+.review_scores {
+  @apply col-span-2 inline-grid;
+
+  & .review_stars {
+    @apply inline-flex text-gold;
+  }
+}
+
+.review_scores__course-report {
+  @apply grid-cols-1 border-t-2 border-b-2 py-2 px-5 gap-x-8;
+  @apply md:col-span-2 md:inline-grid md:grid-cols-2;
+  border-color: var(--course-report-border);
+
+  & .review_scores__item {
+    @apply col-span-2 inline-flex justify-between;
+    @apply md:col-span-1;
+  }
+}
+
+.review_scores__switchup {
+  @apply grid-cols-3 px-4 pt-4;
+}
+
+.review_narrative {
+  @apply col-span-2;
+}
+  
+.review_narrative__switchup {
+  @apply px-4 pb-4;
+  
+  & .review_title {
+    @apply py-4 font-bold;
+  }
+  
+  & .review_text {
+    @apply truncate pt-4;
+  }
+  
+  & .review_link {
+    @apply capitalize;
+    color: var(--switchup-link);
+    font-size: var(--switchup-font-size);
+    font-family: var(--switchup-font-family);
+  }
+}
+
+.review_narrative__course-report {
+  @apply col-span-2 grid grid-rows-3 grid-cols-1 pt-5 px-5;
+  @apply md:p-5;
+  
+  & .review_text {
+    @apply col-start-1 col-span-1 row-start-1 row-span-2;
+  }
+      
+  & .review_readmore {
+    @apply bg-gradient-to-t col-start-1 col-span-1 row-start-1 row-span-2 w-full h-full;
+    --tw-gradient-from: var(--course-report-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0)); 
+  }
+  
+  & .review_link {
+    @apply col-span-1 row-start-3 row-span-1;
+    color: var(--course-report-link);
+    font-family: var(--course-report-font-family);
+    font-size: var(--course-report-link-size);
+  
+    & .review_link-button {
+      @apply uppercase border-2 rounded-lg p-1 font-bold;
+    }
+  }
+}
+
+
+
+
+  
 
 
