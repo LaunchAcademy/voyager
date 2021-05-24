@@ -1,0 +1,22 @@
+import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Button from "../buttons/Button";
+import "../../src/assets/scss/main.css";
+import "./halfPageParagraph.css";
+import HalfPageParagraph from "./HalfPageParagraph.js";
+
+<Meta title="Half Page Paragraph" />
+
+# Program
+
+## Program Half Page
+
+<Canvas>
+  <Story name="Half Page">
+    <HalfPageParagraph title="Land the job. Learn for life.">
+      <p className="half-page-paragraph__text">Lorem ipsum dolor sit amet,<br></br> consectetur adipiscing elit, sed do<br></br> eiusmod tempor incididunt ut labore</p>
+      <div className="half-page-paragraph__action-subtitle">Kickstart your career with confidence
+      </div>
+      <Button to="#" text="Apply Today" iconname="chevron-right" className="hero_button mt-10 col-start-1" size="lg" />
+    </HalfPageParagraph>
+  </Story>
+</Canvas>
