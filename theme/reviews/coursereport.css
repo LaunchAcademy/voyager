@@ -1,32 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
 :root {
   --course-report-background: #FFF8E0; 
-  --course-report-text: #50922F;
+  --course-report-title: rgba(80,146,47,0.65);
+  --course-report-text: #3f4549;
+  --course-report-border: #E5DEC9;
+  --course-report-font-family: "proxima-nova", "Helvetica Neue", "Montserrat", "Roboto", Arial, sans-serif;
+  --course-report-font-size: 15px;
+  --course-report-link: #50922f;
+  --course-report-link-size: 12px;
 }
 
 .course-report {
-  @apply grid grid-cols-2 shadow-lg rounded-lg p-5 my-5;
-  @apply lg:m-10;
+  @apply grid grid-cols-2 w-full rounded-lg border-2;
+  border-color: var(--course-report-border);
   background-color: var(--course-report-background);
-  max-width: 600px;
+
+  & h4 {
+    font-family: var(--course-report-font-family);
+    font-size: var(--course-report-font-size);
+  }
+
+  & p {
+    font-family: var(--course-report-font-family);
+    font-size: var(--course-report-font-size);
+  }
 
   & .course-report__title {
-    @apply col-span-2 inline-flex items-baseline justify-start;
+    @apply col-span-2 inline-flex items-baseline justify-start px-5 pt-5;
   }
   
   & .course-report__reviewer {
-    @apply col-span-2;
+    @apply col-span-2 px-5 pb-5;
 
     & .reviewer__info {
       @apply inline-flex items-baseline justify-start flex-wrap font-semibold font-text;
 
       & .reviewer__info--headline {
-        color: var(--course-report-text);
+        color: var(--course-report-title);
       }
     }
   }
 
   & .course-report__scores {
-    @apply col-span-2 inline-grid grid-cols-2 border-gray-slate border-t-2 border-b-2 py-2 gap-x-8;
+    @apply col-span-2 inline-grid grid-cols-1 border-t-2 border-b-2 py-2 px-5 gap-x-8;
+    @apply md:col-span-2 md:inline-grid md:grid-cols-2;
+    border-color: var(--course-report-border);
 
     & .scores__item {
       @apply col-span-2 inline-flex justify-between;
@@ -35,7 +54,7 @@
   }
 
   & .course-report__review {
-    @apply col-span-2 grid grid-rows-3 grid-cols-1;
+    @apply col-span-2 grid grid-rows-3 grid-cols-1 pt-5 px-5;
 
     & .review__text {
       @apply col-start-1 col-span-1 row-start-1 row-span-2;
@@ -49,10 +68,12 @@
 
     & .review__link {
       @apply col-span-1 row-start-3 row-span-1;
-      color: var(--course-report-text);
+      color: var(--course-report-link);
+      font-family: var(--course-report-font-family);
+      font-size: var(--course-report-link-size);
 
       & .review__link-button {
-        @apply uppercase border-2 rounded-lg p-2;
+        @apply uppercase border-2 rounded-lg p-1;
       }
     }
   }
