@@ -26,11 +26,11 @@ const Module = ({ subtitle, title, location, commitment, duration, description, 
 );
 
 module.propTypes = {
-  subtitle: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  commitment: PropTypes.string.isRequired,
-  duration: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+  title: PropTypes.string,
+  location: PropTypes.string,
+  commitment: PropTypes.string,
+  duration: PropTypes.string,
   description: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
 };

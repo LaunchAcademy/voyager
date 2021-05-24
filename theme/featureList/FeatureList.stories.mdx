@@ -1,0 +1,41 @@
+import blocks, { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import FeatureList from "./FeatureList";
+import FeatureListItem from "./FeatureListItem";
+import "./featureList.css";
+
+<Meta title="Feature List" />
+
+# Feature List
+
+<Canvas>
+  <Story name="Feature List">
+    <div className="feature-list">
+      <FeatureList
+        title="We help people who want to design their own future. And are ready to work hard to get there."
+        subtitle="Students from all backgrounds, work experiences, and walks of life get their start at Launch. There is no “right” person for the job. That’s what we love about it. Here are a few things that succcesful students have in common."
+        footerText="Success at Launch is not about what you know, it’s about your willingness to learn and commit to changing your future. No matter where you start, Launch provides a structured and proven process to becoming a professional developer."
+      >
+      <FeatureListItem
+        title="Passion for building things and solving puzzles"
+        description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+        iconName="info-circle"
+      />
+      <FeatureListItem
+        title="Insatiable curiosity and love for learning"
+        description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+        iconName="info-circle"
+      />
+      <FeatureListItem
+        title="Commitment to building a new career"
+        description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+        iconName="info-circle"
+      />
+      <FeatureListItem
+        title="Grit, grit, and more grit"
+        description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+        iconName="info-circle"
+      />
+      </FeatureList>
+    </div>
+  </Story>
+</Canvas>
