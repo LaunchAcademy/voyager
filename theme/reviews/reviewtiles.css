@@ -15,7 +15,7 @@
   @apply grid grid-cols-2 w-full;
 }
 
-.review_switchup {
+.review__switchup {
     @apply bg-white border-2;
       border-color: var(--switchup-border);
 
@@ -31,11 +31,11 @@
       color: var(--switchup-text);
     }
 
-    & .review_switchup__reviewer {
+    & .review_reviewer__switchup {
       @apply col-span-2 border-b-2 p-4;
       border-color: var(--switchup-border);
   
-      & .reviewer__name {
+      & .reviewer_name {
         @apply flex justify-between;
 
         & h4 {
@@ -44,11 +44,11 @@
       }
     }
   
-    & .review_switchup__scores {
+    & .review_scores__switchup {
       @apply col-span-2 inline-grid grid-cols-3 px-4 pt-4;
     }
   
-    & .review_switchup__review {
+    & .review_narrative__switchup {
       @apply col-span-2 px-4 pb-4;
   
       & .review__title {
