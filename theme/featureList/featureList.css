@@ -37,7 +37,11 @@
   }
   
   & .feature-list__item-title {
-    @apply font-headline text-xl;
+    @apply font-headline text-2xl;
+  }
+
+  & .feature-list__item-subtitle {
+    @apply font-headline text-xl uppercase;
   }
   
   & .feature-list__item-description {
