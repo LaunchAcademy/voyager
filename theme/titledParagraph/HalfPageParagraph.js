@@ -1,18 +1,26 @@
 import React from "react";
+import Button from "../buttons/Button";
 import PropTypes from "prop-types";
 import "./halfPageParagraph.css";
 
-const HalfTitledParagraph = ({ title, children }) => (
+const HalfPageParagraph = ({ title, text, subtitle, iconName }) => (
   <section className="half-page-paragraph">
     <div className="half-page-paragraph__subtitle">Launch Your Career</div>
     <div className="half-page-paragraph__title">{title}</div>
-    {children}
+    <div className="half-page-paragraph__text">{text}</div>
+    <div className="half-page-paragraph__action-subtitle">{subtitle}
+    </div>
+    <div>
+      <Button to="#" text="Apply Today" iconname={iconName} className="hero_button mt-10" size="lg" />
+    </div>
   </section>
 );
 
-HalfTitledParagraph.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
+HalfPageParagraph.propTypes = {
+  title: PropTypes.string,
+  text: PropTypes.string,
+  subtitle: PropTypes.string,
+  iconName: PropTypes.string,
 };
 
-export default HalfTitledParagraph;
+export default HalfPageParagraph;

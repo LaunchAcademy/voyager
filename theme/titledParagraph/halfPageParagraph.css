@@ -1,25 +1,24 @@
 .half-page-paragraph {
-  @apply mt-8 mx-2 text-center;
-  @apply lg:grid lg:grid-cols-2 lg:text-left lg:mt-16 lg:ml-20;
+  @apply mt-8 mx-2 text-center grid;
+  @apply lg:grid-cols-2 lg:text-left lg:mt-16 lg:ml-20;
 
   & .half-page-paragraph__subtitle {
     @apply font-headline font-bold text-base uppercase pb-3;
-    @apply lg:col-start-1;
   }
   
   & .half-page-paragraph__title {
     @apply font-headline font-bold text-5xl leading-tight;
-    @apply lg:text-left lg:col-start-1;
+    @apply lg:text-left;
   }
 
   & .half-page-paragraph__text {
     @apply my-5 p-3;
-    @apply lg:col-start-1 lg:align-top;
+    @apply lg:align-top;
   }
   
   & .half-page-paragraph__action-subtitle {
     @apply font-headline font-bold text-xl;
-    @apply lg:col-start-1 lg:align-top;
+    @apply lg:align-top;
   }
 }
 
