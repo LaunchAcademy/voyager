@@ -10,7 +10,7 @@ const ReviewStars = ({ rating }) => {
   }
 
   return(
-    <ul className="review_stars">{starsList}</ul>
+    <ul className="scores__stars">{starsList}</ul>
   )
 
 }

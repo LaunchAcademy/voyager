@@ -22,9 +22,9 @@
   @apply grid grid-cols-2 w-full;
 }
 
- .review__switchup {
+.review_switchup {
   @apply bg-white border-2;
-    border-color: var(--switchup-border);
+  border-color: var(--switchup-border);
 
   & h4 {
     font-size: var(--switchup-font-size);
@@ -39,7 +39,7 @@
   }
 }
 
- .review__course-report {
+.review_course-report {
   @apply grid grid-cols-2 w-full rounded-lg border-2;
   border-color: var(--course-report-border);
   background-color: var(--course-report-background);
@@ -54,6 +54,7 @@
     font-family: var(--course-report-font-family);
     font-size: var(--course-report-font-size);
   }
+
   & li {
     @apply ml-1;
     font-family: var(--course-report-font-family);
@@ -61,15 +62,15 @@
   }
 }
 
-.review_reviewer {
+.review__reviewer {
   @apply col-span-2;
 }
 
-.review_reviewer__switchup {
+.review__reviewer_switchup {
   @apply border-b-2 p-4;
   border-color: var(--switchup-border);
 
-  & .reviewer_name {
+  & .reviewer__name {
     @apply flex justify-between;
 
     & h4 {
@@ -77,19 +78,27 @@
     }
   }
 }
-
-  
-.review_reviewer__course-report {
+ 
+.review__reviewer_course-report {
   @apply px-5 pb-5;
 
-  & .reviewer_title {
+  & .reviewer__title {
      @apply col-span-2 inline-flex items-baseline justify-start w-full pt-5;
   }
 
-  & .reviewer_info {
-    @apply inline-flex items-baseline justify-start flex-wrap font-semibold font-text;
+  & .reviewer__info_divide li:nth-child(n+2) {
+    @apply list-disc;
+  }
+  
+  & .reviewer__info {
+    @apply inline-flex font-semibold justify-start flex-wrap font-text px-2;
 
-    & .reviewer_info--headline {
+    & li {
+      @apply mx-3;
+    }
+
+    & li.reviewer__info_headline {
+      @apply -ml-2;
       color: var(--course-report-title);
       font-family: var(--course-report-font-family);
       font-size: var(--course-report-font-size);
@@ -97,46 +106,45 @@
   }
 }
 
-
-.review_scores {
+.review__scores {
   @apply col-span-2 inline-grid;
 
-  & .review_stars {
+  & .scores__stars {
     @apply inline-flex text-gold;
   }
 }
 
-.review_scores__course-report {
-  @apply grid-cols-1 border-t-2 border-b-2 py-2 px-5 gap-x-8;
+.review__scores_course-report {
+  @apply border-t-2 border-b-2 py-2 px-5 gap-x-8;
   @apply md:col-span-2 md:inline-grid md:grid-cols-2;
   border-color: var(--course-report-border);
 
-  & .review_scores__item {
+  & .scores__item {
     @apply col-span-2 inline-flex justify-between;
     @apply md:col-span-1;
   }
 }
 
-.review_scores__switchup {
+.review__scores_switchup {
   @apply grid-cols-3 px-4 pt-4;
 }
 
-.review_narrative {
+.review__narrative {
   @apply col-span-2;
 }
   
-.review_narrative__switchup {
+.review__narrative_switchup {
   @apply px-4 pb-4;
   
-  & .review_title {
+  & .narrative__title {
     @apply py-4 font-bold;
   }
   
-  & .review_text {
+  & .narrative__text {
     @apply truncate pt-4;
   }
   
-  & .review_link {
+  & .narrative__link {
     @apply capitalize;
     color: var(--switchup-link);
     font-size: var(--switchup-font-size);
@@ -144,27 +152,27 @@
   }
 }
 
-.review_narrative__course-report {
-  @apply col-span-2 grid grid-rows-3 grid-cols-1 pt-5 px-5;
+.review__narrative_course-report {
+  @apply col-span-2 grid grid-rows-3 grid-cols-1 p-5;
   @apply md:p-5;
   
-  & .review_text {
+  & .narrative__text {
     @apply col-start-1 col-span-1 row-start-1 row-span-2;
   }
       
-  & .review_readmore {
+  & .narrative__read-more {
     @apply bg-gradient-to-t col-start-1 col-span-1 row-start-1 row-span-2 w-full h-full;
     --tw-gradient-from: var(--course-report-background);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0)); 
   }
   
-  & .review_link {
-    @apply col-span-1 row-start-3 row-span-1;
+  & .narrative__link {
+    @apply row-start-3;
     color: var(--course-report-link);
     font-family: var(--course-report-font-family);
     font-size: var(--course-report-link-size);
   
-    & .review_link-button {
+    & .link__button {
       @apply uppercase border-2 rounded-lg p-1 font-bold;
     }
   }
