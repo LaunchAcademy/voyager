@@ -1,0 +1,39 @@
+.card-list-container {
+  @apply max-w-screen-lg mx-auto text-center;
+
+  & .card-list {
+    @apply grid grid-cols-1 gap-4 my-5;
+  }
+
+  & .card-list--medium {
+    @apply grid grid-cols-1 gap-4 my-5;
+    @apply md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-16;
+  }
+
+  & .card-list--large {
+    @apply grid grid-cols-1 gap-4 my-5 px-10;
+    @apply md:grid md:grid-cols-3 md:gap-x-4 md:gap-y-16;
+  }
+}
+
+
+.card {
+  @apply w-full shadow-lg rounded-lg pb-4 mx-auto bg-white;
+
+  & .card__photo {
+    @apply overflow-hidden h-48 rounded-t-lg w-full;
+  }
+
+  & .card__photo-image {
+    @apply object-cover object-center;
+  }
+
+  & .card__header {
+    @apply mx-8 my-3 text-left;
+  }
+
+  & .card__body {
+    @apply mx-8 my-3 text-left;
+  }
+}
+
