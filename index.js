@@ -20,7 +20,7 @@ import FaqList from "./theme/faq/FaqList.js";
 import PartnerLogoList from "./theme/partnerLogoList/PartnerLogoList.js";
 import FeatureList from "./theme/featureList/FeatureList.js";
 import FeatureListItem from "./theme/featureList/FeatureListItem.js";
-import TuitionPaymentPlanItem from "./theme/tuitionPaymentPlan/TuitionPaymentPlanItem";
+import TuitionPaymentPlanItem from "./theme/tuitionPaymentPlan/TuitionPaymentPlanItem.js";
 
 export {
   Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, PartnerLogoList, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile, FaqList, FeatureList, FeatureListItem, TuitionPaymentPlanItem
