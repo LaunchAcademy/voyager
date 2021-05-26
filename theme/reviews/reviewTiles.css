@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Roboto:wght@300;700&display=swap');
+
+
+:root {
+  --course-report-background: #FFF8E0; 
+  --course-report-title: rgba(80,146,47,0.65);
+  --course-report-text: #3f4549;
+  --course-report-border: #E5DEC9;
+  --course-report-font-family:  "Roboto", Arial, sans-serif;
+  --course-report-font-size: 15px;
+  --course-report-link: #50922f;
+  --course-report-link-size: 12px;
+  --switchup-link: #3A75BA;
+  --switchup-text: #4D4D4D;
+  --switchup-border: #EDEDED;
+  --switchup-font-size: 16px;
+  --switchup-font-family: "Source Sans Pro",sans-serif;
+
+}
+
+.review {
+  @apply grid grid-cols-2 w-full;
+}
+
+.review_switchup {
+  @apply bg-white border-2;
+  border-color: var(--switchup-border);
+
+  & h4 {
+    font-size: var(--switchup-font-size);
+    font-family: var(--switchup-font-family);
+    color: var(--switchup-text);
+  }
+
+  & p {
+    font-size: var(--switchup-font-size);
+    font-family: var(--switchup-font-family);
+    color: var(--switchup-text);
+  }
+}
+
+.review_course-report {
+  @apply grid grid-cols-2 w-full rounded-lg border-2;
+  border-color: var(--course-report-border);
+  background-color: var(--course-report-background);
+
+  & h4 {
+    @apply mr-1;
+    font-family: var(--course-report-font-family);
+    font-size: var(--course-report-font-size);
+  }
+
+  & p {
+    font-family: var(--course-report-font-family);
+    font-size: var(--course-report-font-size);
+  }
+
+  & li {
+    @apply ml-1;
+    font-family: var(--course-report-font-family);
+    font-size: var(--course-report-font-size);
+  }
+}
+
+.review__reviewer {
+  @apply col-span-2;
+}
+
+.review__reviewer_switchup {
+  @apply border-b-2 p-4;
+  border-color: var(--switchup-border);
+
+  & .reviewer__name {
+    @apply flex justify-between;
+
+    & h4 {
+       @apply font-bold;
+    }
+  }
+}
+ 
+.review__reviewer_course-report {
+  @apply px-5 pb-5;
+
+  & .reviewer__title {
+     @apply col-span-2 inline-flex items-baseline justify-start w-full pt-5;
+  }
+
+  & .reviewer__info_divide li:nth-child(n+2) {
+    @apply list-disc;
+  }
+  
+  & .reviewer__info {
+    @apply inline-flex font-semibold justify-start flex-wrap font-text px-2;
+
+    & li {
+      @apply mx-3;
+    }
+
+    & li.reviewer__info_headline {
+      @apply -ml-2;
+      color: var(--course-report-title);
+      font-family: var(--course-report-font-family);
+      font-size: var(--course-report-font-size);
+    }
+  }
+}
+
+.review__scores {
+  @apply col-span-2 inline-grid;
+
+  & .scores__stars {
+    @apply inline-flex text-gold;
+  }
+}
+
+.review__scores_course-report {
+  @apply border-t-2 border-b-2 py-2 px-5 gap-x-8;
+  @apply md:col-span-2 md:inline-grid md:grid-cols-2;
+  border-color: var(--course-report-border);
+
+  & .scores__item {
+    @apply col-span-2 inline-flex justify-between;
+    @apply md:col-span-1;
+  }
+}
+
+.review__scores_switchup {
+  @apply grid-cols-3 px-4 pt-4;
+}
+
+.review__narrative {
+  @apply col-span-2;
+}
+  
+.review__narrative_switchup {
+  @apply px-4 pb-4;
+  
+  & .narrative__title {
+    @apply py-4 font-bold;
+  }
+  
+  & .narrative__text {
+    @apply truncate pt-4;
+  }
+  
+  & .narrative__link {
+    @apply capitalize;
+    color: var(--switchup-link);
+    font-size: var(--switchup-font-size);
+    font-family: var(--switchup-font-family);
+  }
+}
+
+.review__narrative_course-report {
+  @apply col-span-2 grid grid-rows-3 grid-cols-1 p-5;
+  @apply md:p-5;
+  
+  & .narrative__text {
+    @apply col-start-1 col-span-1 row-start-1 row-span-2;
+  }
+      
+  & .narrative__read-more {
+    @apply bg-gradient-to-t col-start-1 col-span-1 row-start-1 row-span-2 w-full h-full;
+    --tw-gradient-from: var(--course-report-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0)); 
+  }
+  
+  & .narrative__link {
+    @apply row-start-3;
+    color: var(--course-report-link);
+    font-family: var(--course-report-font-family);
+    font-size: var(--course-report-link-size);
+  
+    & .link__button {
+      @apply uppercase border-2 rounded-lg p-1 font-bold;
+    }
+  }
+}
+
+
+
+
+  
+
+

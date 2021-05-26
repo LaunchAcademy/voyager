@@ -1,7 +1,7 @@
 import React from "react";
 import Icon from "../icons/Icon";
 
-const FeatureListItem = ({ title, description, iconName }) => {
+const FeatureListItem = ({ title, subtitle, description, iconName }) => {
   return (
     <div className="feature-list__item">
       <div className="feature-list__item-icon">
@@ -9,6 +9,7 @@ const FeatureListItem = ({ title, description, iconName }) => {
       </div>
       <div className="feature-list__item-content">
         <strong className="feature-list__item-title">{title}</strong>
+        <div className="feature-list__item-subtitle">{subtitle}</div>
         <p className="feature-list__item-description">{description}</p>
       </div>
     </div>
