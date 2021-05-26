@@ -22,6 +22,7 @@ import FeatureList from "./theme/featureList/FeatureList.js"
 import FeatureListItem from "./theme/featureList/FeatureListItem.js"
 import HalfPageParagraph from "./theme/halfPageParagraphs/HalfPageParagraph.js";
 import CreativeContent from "./theme/creativeContent/CreativeContent.js";
+import TuitionPaymentPlanItem from "./theme/tuitionPaymentPlan/TuitionPaymentPlanItem.js"
 
 export {
   Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, PartnerLogoList, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile, FaqList, FeatureList, FeatureListItem, HalfPageParagraph, TuitionPaymentPlanItem, CreativeContent
