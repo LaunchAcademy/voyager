@@ -1,0 +1,31 @@
+import blocks, { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import Article from "./Article";
+import "./article.css";
+
+export const Template = (args) => <Article {...args} />
+
+<Meta title="Alumni News" />
+
+# Articles
+
+<Canvas>
+  <Story name="Alumni News">
+    <div className="article-list">
+      <Article
+        imageUrl="https://placekitten.com/120/200"
+        title="Article 1"
+        subtitle="Subtitle here"
+      />
+      <Article
+        imageUrl="https://placekitten.com/580/548"
+        title="Article 2"
+        subtitle="Subtitle here"
+      />
+      <Article
+        imageUrl="https://placekitten.com/120/200"
+        title="Article 3"
+        subtitle="Subtitle here"
+      />
+    </div>
+  </Story>
+</Canvas>

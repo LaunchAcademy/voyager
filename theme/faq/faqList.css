@@ -1,6 +1,6 @@
 .faq-list {
   @apply font-headline;
-  @apply lg:items-center;
+  @apply lg:items-center lg:px-32;
 
   & .faq-list__title {
     @apply lg:text-center;
