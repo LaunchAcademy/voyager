@@ -29,6 +29,7 @@
 }
 
 .profile_social {
+  
   & .profile__image {
     @apply rounded-full inline-block my-8;
     @apply w-52;
@@ -37,16 +38,16 @@
 
   & .profile__name {
     @apply text-xl font-headline font-bold mb-8;
-    @apply lg:text-xl lg:mb-1;
+    @apply lg:text-xl lg:mb-2;
   }
 
-  & .profile__label_current, & .profile__label_former {
-    @apply font-bold text-lg uppercase mb-1 tracking-wide;
-    @apply lg:mb-2 lg:font-normal tracking-wider;
-  }
-
-  & .profile__current-title, & .profile__former-title {
+  & .profile__current-title {
     @apply uppercase text-lg mb-2;
-    @apply lg:mb-0 lg:text-xl lg:font-normal lg:font-headline lg:normal-case;
+  }
+  & .profile__social {
+    @apply inline-flex justify-center align-middle;
+    & li {
+      @apply rounded-full bg-gray-dorian p-3 m-2;
+    }
   }
 }
