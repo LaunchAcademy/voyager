@@ -3,20 +3,20 @@
   @apply lg:mb-4 lg:text-6xl;
 }
 
-.banner__no-photo {
+.banner_no-photo {
   @apply bg-white text-center pt-5;
   @apply lg:grid lg:grid-cols-2 lg:text-left;
 
-  & .banner__no-photo__container {
+  & .banner_no-photo__container {
     @apply lg:grid lg:grid-cols-2 lg:px-20;
   }
   
-  & .banner__no-photo__title {
+  & .banner_no-photo__title {
     @apply font-headline font-bold text-5xl pb-8 text-black leading-tight;
     @apply lg:col-start-1 lg:px-20;
   }
 
-  & .banner__no-photo__button {
+  & .banner_no-photo__button {
     @apply my-3 flex-nowrap;
   }
 }
