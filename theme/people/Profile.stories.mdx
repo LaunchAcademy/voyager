@@ -1,11 +1,16 @@
 import blocks, { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
 import Profile from "./Profile"
+import SocialProfile from "./SocialProfile"
 
 export const Template = (args) => <Profile {...args} />
+
+export const socialUrls = ["https://facebook.com", "https://github.com", "https://youtube.com"]
 
 <Meta title="Profiles" />
 
 # Profiles
+
+## Student Profiles
 
 <Canvas>
   <Story name="Featured Student">
@@ -32,4 +37,30 @@ export const Template = (args) => <Profile {...args} />
   </Story>
 </Canvas>
 
-## Student Profiles
+
+## Employee Social Profiles
+
+<Canvas>
+  <Story name="Meet The Team Social">
+    <div className="profile-list">
+      <SocialProfile
+        name="Corinne Babel"
+        headshotUrl="https://placekitten.com/300/300"
+        currentTitle="VP of Career Services"
+        foundingMember="true"
+        socialUrls={socialUrls} />
+      <SocialProfile
+        name="Kerrin Gillis"
+        headshotUrl="https://placekitten.com/300/300"
+        currentTitle="Experience Engineer"
+        foundingMember="false"
+        socialUrls={socialUrls} />
+      <SocialProfile
+        name="Nicholas Alberts"
+        headshotUrl="https://placekitten.com/300/300"
+        currentTitle="Boston Experience Manager"
+        foundingMember="false"
+        socialUrls={socialUrls} />
+    </div>
+  </Story>
+</Canvas>

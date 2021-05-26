@@ -3,6 +3,7 @@ import Button from "./theme/buttons/Button.js";
 import colors from "./theme/colors/colors.cjs";
 import Icon from "./theme/icons/Icon.js";
 import Profile from "./theme/people/Profile.js";
+import SocialProfile from "./theme/people/SocialProfile"
 import TopBar from "./theme/navigation/TopBar.js";
 import BannerTitle from "./theme/banners/BannerTitle.js";
 import SimpleBanner from "./theme/banners/SimpleBanner.js";
@@ -11,6 +12,7 @@ import TitledParagraph from "./theme/titledParagraph/TitledParagraph.js";
 import Fact from "./theme/factSet/Fact.js";
 import FactSet from "./theme/factSet/FactSet.js";
 import Quote from "./theme/quote/Quote.js";
+import FeatureQuote from "./theme/quote/FeatureQuote"
 import CardList from "./theme/cards/CardList";
 import CourseScheduleList from "./theme/courseSchedule/CourseScheduleList.js";
 import CourseSchedule from "./theme/courseSchedule/CourseSchedule.js";
@@ -24,5 +26,5 @@ import FeatureListItem from "./theme/featureList/FeatureListItem.js";
 import TuitionPaymentPlanItem from "./theme/tuitionPaymentPlan/TuitionPaymentPlanItem";
 
 export {
-  Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, PartnerLogoList, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile, FaqList, FeatureList, FeatureListItem, TuitionPaymentPlanItem
+  Button, colors, Icon, Profile, SocialProfile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, FeatureQuote, PartnerLogoList, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile, FaqList, FeatureList, FeatureListItem, TuitionPaymentPlanItem
 };
