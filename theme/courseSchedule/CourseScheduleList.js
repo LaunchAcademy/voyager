@@ -12,13 +12,14 @@ const CourseScheduleList = ({ cohortSchedule }) => {
 
   const cohortScheduleData = cohortSchedule.map((date) => {
     enrollmentEnds = format(new Date(date.enrollmentEnds), 'MMM dd, yyyy')
-    preflightBegins = format(new Date(date.preflightBegins), 'MMM dd, yyyy') 
+    preflightBegins = format(new Date(date.preflightBegins), 'MMM dd, yyyy')
     ignitionBegins = format(new Date(date.ignitionBegins), 'MMM dd, yyyy')
     cohortBegins = format(new Date(date.cohortBegins), 'MMM dd, yyyy')
     cohortEnds = format(new Date(date.cohortEnds), 'MMM dd, yyyy')
 
     return (
-      <CourseSchedule 
+      <CourseSchedule
+        key={date.id}
         cohort={date.cohort}
         enrollmentEnds={enrollmentEnds}
         preflightBegins={preflightBegins}
@@ -27,11 +28,11 @@ const CourseScheduleList = ({ cohortSchedule }) => {
         cohortEnds={cohortEnds}
         buttonURL={date.buttonURL}
         buttonText={date.buttonText}
-     />
+      />
     )
   })
 
-  return(
+  return (
     <Fragment>
       {cohortScheduleData}
     </Fragment>

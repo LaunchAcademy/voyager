@@ -1,0 +1,32 @@
+.review-grid-container  {
+  
+  & .review-grid {
+    @apply grid grid-cols-1 w-full;
+
+    & .review {
+      @apply my-5;
+    }
+  }
+}
+
+@screen lg {
+  .review-grid_stagger article:nth-child(n+6):nth-child(-n+10) {
+    @apply ml-96;
+  }
+  
+  .review-grid-container  {
+
+    & .review-grid {
+      @apply grid gap-x-48 gap-y-14 overflow-x-scroll;
+      grid-template-columns: repeat(5, minmax(768px, 1fr));
+      
+      & .review {
+        @apply m-auto;
+      }
+    }
+  }
+}
+ 
+
+
+

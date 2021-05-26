@@ -1,0 +1,43 @@
+import blocks, { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import "./tuitionTable.css";
+
+export const Template = (args) => <TuitionTable {...args} />
+
+<Meta title="Tuition Table" />
+
+# Tuition Table
+
+<Canvas>
+  <Story name="Tuition Table">
+    <table className="tuition-table">
+      <thead className="tuition-table__header-container">
+        <tr>
+          <th className="tuition-table__header-title">Payment Plans</th>
+          <th className="tuition-table__header-title">Plan Overview</th>
+          <th className="tuition-table__header-title">Am I eligible?</th>
+          <th className="tuition-table__header-title">Payment Schedule</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td className="tuition-table__data-title">Upfront Payment</td>
+          <td className="tuition-table__data-text">tur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</td>
+          <td className="tuition-table__data-text">tur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</td>
+          <td className="tuition-table__data-text">tur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</td>
+        </tr>
+        <tr>
+          <td className="tuition-table__data-title">Deferred Payment</td>
+          <td className="tuition-table__data-text">tur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</td>
+          <td className="tuition-table__data-text">tur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</td>
+          <td className="tuition-table__data-text">tur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</td>
+        </tr>
+        <tr>
+          <td className="tuition-table__data-title">Unemployment Assistance</td>
+          <td className="tuition-table__data-text">tur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</td>
+          <td className="tuition-table__data-text">tur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</td>
+          <td className="tuition-table__data-text">tur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</td>
+        </tr>
+      </tbody>
+    </table>
+  </Story>
+</Canvas>
