@@ -7,6 +7,14 @@
       @apply my-5;
     }
   }
+
+  & .review-grid__button {
+    @apply mt-10 flex justify-center flex-wrap;
+
+    & .button {
+      @apply m-4;
+    }
+  }
 }
 
 @screen lg {

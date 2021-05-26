@@ -1,5 +1,6 @@
 import React from 'react'
 import "./deviceTiles.css"
+import "../../src/assets/scss/devices.min.css"
 
 const DesktopDeviceTile = ({ studentProjectScreenshot }) => {
   return(
