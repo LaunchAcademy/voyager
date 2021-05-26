@@ -12,7 +12,7 @@ const CardList = ({ content, numberOfColumns }) => {
     cardListSize += "--medium"
   } else if (numberOfColumns === 3) {
     cardListSize += "--large"
-  } 
+  }
 
   const cardContentArray = content.map((card)=> {
     if(card.mobile === true) {
@@ -34,10 +34,10 @@ const CardList = ({ content, numberOfColumns }) => {
         header={card.header}  
         body={card.body}
       />
-      )
+    )
   })
 
-  return(
+  return (
     <div className={cardListSize} >
       {cardContentArray}
     </div>
