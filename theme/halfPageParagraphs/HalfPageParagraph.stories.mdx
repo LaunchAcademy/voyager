@@ -1,0 +1,31 @@
+import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Button from "../buttons/Button";
+import "../../src/assets/scss/main.css";
+import "./halfPageParagraph.css";
+import HalfPageParagraph from "./HalfPageParagraph.js";
+import CreativeContent from "../creativeContent/CreativeContent.js";
+
+<Meta title="Half Page Paragraph" />
+
+# Program
+
+## Half Page
+
+<Canvas>
+  <Story name="Half Page">
+    <HalfPageParagraph title="Land the job. Learn for life." text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" subtitle="Kickstart your career with confidence" iconName="chevron-right" />
+  </Story>
+</Canvas>
+
+## Half Page with Creative
+
+<Canvas>
+  <Story name="Half Page with Creative">
+    <div className="banner">
+      <HalfPageParagraph title="Land the job. Learn for life." text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" subtitle="Kickstart your career with confidence" iconName="chevron-right" />
+      <CreativeContent> 
+        <img src="https://place-hold.it/300x486" />
+      </CreativeContent>
+    </div>
+  </Story>
+</Canvas>
