@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const CreativeContent = ({ children }) => (
-  <div>
+  <div className="creative-content__container">
     {children}
   </div>
 );
