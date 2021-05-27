@@ -37,11 +37,11 @@
     & li:hover {
 
       & .navigation-list__sub-navigation {
-        @apply  mt-4 block w-32;
-        @apply lg:inline-flex lg:flex-wrap lg:justify-start lg:align-middle lg:mt-1 lg:-ml-1 lg:absolute;
+        @apply  mt-4 block bg-white;
+        @apply lg:inline-block lg:mt-1 lg:-ml-1 lg:absolute lg:w-32;
 
         & li {
-          @apply lg:py-2 lg:px-3;
+          @apply lg:py-2 lg:px-3 lg:w-full lg:flex lg:justify-end lg:align-middle ;
         }
         & li:hover {
           @apply bg-primary-brand bg-opacity-25;
@@ -67,8 +67,6 @@
   .top-bar-navigation-container {
     box-shadow: none;
   }
-
-
 
   .navigation-list__link {
     @apply block relative overflow-hidden pb-1 top-1;
