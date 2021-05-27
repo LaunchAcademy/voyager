@@ -28,6 +28,25 @@
     & li {
       @apply py-2 ml-2 block;
       @apply lg:inline-block lg:pr-8 lg:py-0 lg:ml-2;
+
+      & .navigation-list__sub-navigation {
+        @apply hidden;
+      }
+    }
+
+    & li:hover {
+
+      & .navigation-list__sub-navigation {
+        @apply  mt-4 block w-32;
+        @apply lg:inline-flex lg:flex-wrap lg:justify-start lg:align-middle lg:mt-1 lg:-ml-1 lg:absolute;
+
+        & li {
+          @apply lg:py-2 lg:px-3;
+        }
+        & li:hover {
+          @apply bg-primary-brand bg-opacity-25;
+        }
+      }
     }
 
     & .navigation-list__apply-list-item {
@@ -49,6 +68,8 @@
     box-shadow: none;
   }
 
+
+
   .navigation-list__link {
     @apply block relative overflow-hidden pb-1 top-1;
     &::after {
@@ -66,9 +87,10 @@
     }
 
     &:hover::after,
-    &:focus::after{
+    &:focus::after {
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
   }
+
 }
