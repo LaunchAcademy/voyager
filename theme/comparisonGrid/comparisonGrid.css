@@ -1,9 +1,9 @@
-.comparison-grid__table-title {
-  @apply flex justify-center items-center p-6;
-}
+  .comparison-grid__table-title {
+    @apply flex justify-center items-center p-6;
+  }
 
 .comparison-grid {
-  @apply font-headline;
+  @apply p-6 flex justify-center items-center;
 
 
   & .comparison-grid__header-container {
