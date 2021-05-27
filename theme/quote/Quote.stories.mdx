@@ -1,5 +1,6 @@
 import blocks, { Canvas, Story } from '@storybook/addon-docs/blocks';
 import Quote from './Quote'
+import StaticQuote from './StaticQuote'
 
 export const Template = (args) => <Quote {...args} />
 
@@ -8,11 +9,26 @@ export const Template = (args) => <Quote {...args} />
 # Quote
 
 <Canvas>
-  <Story name="quote">
-    <Quote 
-      quote="“I highly recommend Launch Academy to anyone who is thinking about switching to software development. Launch Academy found a great formula for success.”"
-      name="Mo Zhu"
-      company="3Play Media"
-    />
+  <Story name="Quote">
+    <div className="quote">
+      <Quote 
+        quote="“I highly recommend Launch Academy to anyone who is thinking about switching to software development. Launch Academy found a great formula for success.”"
+        name="Mo Zhu"
+        company="3Play Media"
+      />
+    </div>
+  </Story>
+</Canvas>
+
+# Static Quote
+
+<Canvas>
+  <Story name="Static Quote">
+    <div className="quote__quote_static">
+      <StaticQuote 
+        quote="“Quote about the difference”"
+        detail="Nemo enim ipsam"
+      />
+    </div>
   </Story>
 </Canvas>

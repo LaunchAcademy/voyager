@@ -10,6 +10,7 @@ import TitledParagraph from "./theme/titledParagraph/TitledParagraph.js";
 import Fact from "./theme/factSet/Fact.js";
 import FactSet from "./theme/factSet/FactSet.js";
 import Quote from "./theme/quote/Quote.js";
+import StaticQuote from "./theme/quote/StaticQuote.js";
 import CardList from "./theme/cards/CardList";
 import CourseScheduleList from "./theme/courseSchedule/CourseScheduleList.js";
 import CourseSchedule from "./theme/courseSchedule/CourseSchedule.js";
@@ -23,7 +24,8 @@ import FeatureListItem from "./theme/featureList/FeatureListItem.js"
 import HalfPageParagraph from "./theme/halfPageParagraphs/HalfPageParagraph.js";
 import CreativeContent from "./theme/creativeContent/CreativeContent.js";
 import TuitionPaymentPlanItem from "./theme/tuitionPaymentPlan/TuitionPaymentPlanItem.js";
+import MobileDeviceTile from "./theme/deviceProjectTile/MobileDeviceTile.js";
 
 export {
-  Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, PartnerLogoList, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile, FaqList, FeatureList, FeatureListItem, HalfPageParagraph, TuitionPaymentPlanItem, CreativeContent
+  Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, PartnerLogoList, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile, FaqList, FeatureList, FeatureListItem, HalfPageParagraph, TuitionPaymentPlanItem, CreativeContent, StaticQuote, MobileDeviceTile
 };
