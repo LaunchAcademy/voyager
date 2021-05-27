@@ -1,0 +1,32 @@
+.comparison-grid__table-title {
+  @apply flex justify-center items-center p-6;
+}
+
+.comparison-grid {
+  @apply font-headline;
+
+
+  & .comparison-grid__header-container {
+    @apply font-headline bg-gray-dorian;
+  }
+  
+  & .comparison-grid__header-title {
+    @apply justify-center items-center text-lg font-normal p-5;
+  }
+  
+  & .comparison-grid__header-title_launch {
+    @apply text-xl font-bold;
+  }
+
+  & .comparison-grid__data-title {
+    @apply text-left font-text text-lg;
+  }
+  
+  & .comparison-grid__data-text {
+    @apply items-center p-8 text-center;
+  }
+  
+  & .comparison-grid__data-text_launch {
+    @apply font-bold;
+  }
+}
