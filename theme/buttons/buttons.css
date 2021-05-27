@@ -37,8 +37,8 @@
 .banner__button {
   @apply bg-black text-teal border-none;
 
-  &.button_secondary {
-    @apply bg-teal text-black border-black;
+  &.button_secondary_teal-bg {
+    @apply bg-teal text-black border-2 border-black;
   }
 }
 

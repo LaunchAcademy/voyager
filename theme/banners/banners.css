@@ -8,7 +8,7 @@
 }
 
 .banner_no-photo {
-  @apply bg-white text-center pt-5;
+  @apply bg-white text-center pt-5 px-3;
   @apply lg:grid lg:grid-cols-2 lg:text-left;
 
   & .banner_no-photo__container {
@@ -41,6 +41,11 @@
 
   & .banner__content {
     @apply relative;
+
+  }
+
+  & .banner__content_half-screen {
+    @apply lg:pl-10 lg:pt-20;
   }
 
   &.banner_prose .banner__content {
