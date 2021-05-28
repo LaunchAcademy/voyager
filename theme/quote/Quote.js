@@ -10,7 +10,7 @@ const Quote = ({ quote, name, company }) => {
       <div className="quote__quote_content">
         <figure>
           <blockquote>
-            <p className="quote__quote_text">{quote}</p>
+            <p className="quote__quote_text">"{quote}"</p>
           </blockquote>
           <hr className="quote__horizontal_line" />
           <figcaption>

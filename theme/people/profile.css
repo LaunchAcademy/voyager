@@ -23,8 +23,11 @@
   }
 
   & .profile__current-title, & .profile__former-title {
-    @apply uppercase text-lg mb-2;
+    @apply uppercase text-lg mb-2 flex flex-wrap justify-center;
     @apply lg:mb-0 lg:text-xl lg:font-normal lg:font-headline lg:normal-case;
+    & span {
+      @apply w-full;
+    }
   }
 }
 
@@ -42,8 +45,20 @@
   }
 
   & .profile__current-title {
-    @apply uppercase text-lg mb-2;
+    @apply uppercase text-lg mb-2 flex flex-wrap justify-center;
+    & span {
+      @apply w-full;
+    }
   }
+
+  & .profile__former-title {
+    @apply hidden;
+  }
+
+  & .profile__label_current, & .profile__label_former {
+    @apply hidden;
+  }
+
   & .profile__social {
     @apply inline-flex justify-center align-middle;
     & li {
