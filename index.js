@@ -11,6 +11,7 @@ import Fact from "./theme/factSet/Fact.js";
 import FactSet from "./theme/factSet/FactSet.js";
 import Quote from "./theme/quote/Quote.js";
 import CardList from "./theme/cards/CardList";
+import Card from "./theme/cards/Card";
 import CourseScheduleList from "./theme/courseSchedule/CourseScheduleList.js";
 import CourseSchedule from "./theme/courseSchedule/CourseSchedule.js";
 import Module from "./theme/module/Module.js";
@@ -25,5 +26,5 @@ import CreativeContent from "./theme/creativeContent/CreativeContent.js";
 import TuitionPaymentPlanItem from "./theme/tuitionPaymentPlan/TuitionPaymentPlanItem.js"
 
 export {
-  Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, PartnerLogoList, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile, FaqList, FeatureList, FeatureListItem, HalfPageParagraph, TuitionPaymentPlanItem, CreativeContent
+  Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, PartnerLogoList, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile, FaqList, FeatureList, FeatureListItem, HalfPageParagraph, TuitionPaymentPlanItem, CreativeContent, Card
 };
