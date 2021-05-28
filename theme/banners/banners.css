@@ -41,11 +41,6 @@
 
   & .banner__content {
     @apply relative;
-
-  }
-
-  & .banner__content_half-screen {
-    @apply lg:pl-10 lg:pt-20;
   }
 
   &.banner_prose .banner__content {
