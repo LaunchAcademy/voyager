@@ -47,6 +47,10 @@
     @apply lg:mb-1 lg:text-base;
   }
 
+  & .hero__image_text {
+    @apply font-text text-base mb-5;
+  }
+
   & .hero__button {
     @apply inline-block clear-both py-2;
   }

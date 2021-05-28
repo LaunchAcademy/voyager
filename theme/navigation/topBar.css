@@ -28,6 +28,25 @@
     & li {
       @apply py-2 ml-2 block;
       @apply lg:inline-block lg:pr-8 lg:py-0 lg:ml-2;
+
+      & .navigation-list__sub-navigation {
+        @apply hidden;
+      }
+    }
+
+    & li:hover {
+
+      & .navigation-list__sub-navigation {
+        @apply  mt-4 block bg-white;
+        @apply lg:inline-block lg:mt-1 lg:-ml-1 lg:absolute lg:w-32;
+
+        & li {
+          @apply lg:py-2 lg:px-3 lg:w-full lg:flex lg:justify-end lg:align-middle ;
+        }
+        & li:hover {
+          @apply bg-primary-brand bg-opacity-25;
+        }
+      }
     }
 
     & .navigation-list__apply-list-item {
@@ -66,9 +85,10 @@
     }
 
     &:hover::after,
-    &:focus::after{
+    &:focus::after {
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
   }
+
 }
