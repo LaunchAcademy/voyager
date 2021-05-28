@@ -1,4 +1,4 @@
-.banner {
+.banner-with-creative {
   @apply lg:grid lg:grid-cols-2;
 }
 
