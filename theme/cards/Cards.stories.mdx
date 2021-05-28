@@ -5,34 +5,58 @@ import CardList from "./CardList"
 
 export const content = [
   {
-    photo: "https://placekitten.com/408/287",
+    imageUrl: "https://placekitten.com/408/287",
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
   },
   {
-    photo: "https://placekitten.com/408/287",
+    imageUrl: "https://placekitten.com/408/287",
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
   },
   {
-    photo: "https://placekitten.com/408/287",
+    imageUrl: "https://placekitten.com/408/287",
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
   },
     {
-    photo: "https://placekitten.com/408/287",
+    imageUrl: "https://placekitten.com/408/287",
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
   },
   {
-    photo: "https://placekitten.com/408/287",
+    imageUrl: "https://placekitten.com/408/287",
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
   },
   {
-    photo: "https://placekitten.com/408/287",
+    imageUrl: "https://placekitten.com/408/287",
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
+  }
+]
+
+export const projectContent = [
+  {
+    imageUrl: "https://placekitten.com/408/287",
+    projectTitle: "Project Name",
+    studentName: "Student Name",
+     studentProfileUrl: "https://placekitten.com/408/287",
+    mobile: true
+  },
+  {
+    imageUrl: "https://placekitten.com/408/287",
+    projectTitle: "Project Name",
+    studentName: "Student Name",
+     studentProfileUrl: "https://placekitten.com/408/287",
+    mobile: false
+  },
+  {
+    imageUrl: "https://placekitten.com/408/287",
+    projectTitle: "Project Name",
+    studentName: "Student Name",
+    studentProfileUrl: "https://placekitten.com/408/287",
+    mobile: true
   }
 ]
 
@@ -47,6 +71,18 @@ export const columns = 3
     <section className="card-list-container">
       <h2>Everything you need to get hire-ready in just 18 weeks.</h2>
       <CardList content={content} numberOfColumns={columns} />
+    </section>
+  </Story>
+</Canvas>
+
+
+# Student Project Cards
+
+<Canvas>
+  <Story name="Student Project Cards">
+    <section className="card-list-container">
+      <h2>Student Projects</h2>
+      <CardList content={projectContent} numberOfColumns={columns} />
     </section>
   </Story>
 </Canvas>

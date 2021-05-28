@@ -1,6 +1,6 @@
 .module {
   @apply justify-center shadow-2xl rounded-lg p-2;
-  @apply lg:grid lg:grid-cols-2 lg:col-span-2 lg:shadow-none;
+  @apply lg:grid lg:grid-cols-2 lg:col-span-2 lg:shadow-none lg:pl-20 lg:py-5;
 
   &:nth-child(even) {
     @apply bg-gray-dorian;
@@ -24,11 +24,13 @@
   }
   
   & .module__title {
-    @apply text-xl font-headline;
+    @apply text-xl font-headline leading-snug;
   }
   
   & .module__info-container {
     @apply uppercase font-text text-sm;
+    @apply lg:py-3;
+
   }
   
   & .module__description-container {

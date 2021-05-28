@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Card = ({ photo, header, body }) => {
+const Card = ({ imageUrl, header, body }) => {
 
   return (
     <div className="card">
-      <figure className="card__photo">
-        <img className="card__photo-image" src={photo} />
+      <figure className="card_photo">
+        <img className="card_photo-image" src={imageUrl} />
       </figure>
-      <h3 className="card__header">{header}</h3>
-      <p className="card__body">{body}</p>
+      <h3 className="card_header">{header}</h3>
+      <p className="card_body">{body}</p>
     </div>
   )
 }

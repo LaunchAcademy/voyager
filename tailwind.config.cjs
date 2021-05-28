@@ -29,6 +29,12 @@ module.exports = {
       "5xl": "3rem",
       "6xl": ["3.75rem", { lineHeight: "3.75rem" }],
     },
+    scale: {
+      '25': '.25',
+      '50': '.5',
+      '75': '.75',
+      '90': '.9'
+    },
   },
   variants: {
     extend: {},
