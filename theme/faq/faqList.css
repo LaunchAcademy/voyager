@@ -1,8 +1,12 @@
 .faq-list {
-  @apply font-headline;
-  @apply lg:items-center;
+  @apply font-headline p-5;
+  @apply lg:items-center lg:px-32 lg:pt-10;
 
   & .faq-list__title {
     @apply lg:text-center;
+  }
+
+  & .faq-list__container {
+    @apply pl-10;
   }
 }

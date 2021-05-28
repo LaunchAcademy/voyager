@@ -11,29 +11,125 @@
   }
 
   & .card-list--large {
-    @apply grid grid-cols-1 gap-4 my-5;
+    @apply grid grid-cols-1 gap-4 my-5 px-10;
     @apply md:grid md:grid-cols-3 md:gap-x-4 md:gap-y-16;
   }
 }
 
 
 .card {
-  @apply w-full shadow-lg rounded-lg pb-4 mx-auto;
+  @apply w-full shadow-lg rounded-lg pb-4 mx-auto bg-white;
 
-  & .card__photo {
+  & .card_photo {
     @apply overflow-hidden h-48 rounded-t-lg w-full;
   }
 
-  & .card__photo-image {
+  & .card_photo-image {
     @apply object-cover object-center;
   }
 
-  & .card__header {
+  & .card_header {
     @apply mx-8 my-3 text-left;
   }
 
-  & .card__body {
+  & .card_body {
     @apply mx-8 my-3 text-left;
   }
 }
 
+.card__mobile-tile {
+
+  & .card_photo {
+    @apply h-60 bg-gray-cloud;
+    @apply md:h-56;
+
+    & .device-mobile_screen {
+      @apply md:transform md:scale-75 md:-mt-6;
+    }
+
+    & .mobile-device-wrapper {
+
+      & .marvel-device.iphone-x {
+
+        & .notch {
+          @apply md:left-4;
+          @apply lg:left-9;
+        }
+      }
+    }
+  }
+
+  & .project-tile_student-info {
+    @apply grid grid-cols-4 pt-4;
+    
+    & .student-info_title {
+      @apply col-start-2 col-span-3;
+
+      & h4 {
+        @apply font-bold;
+      }
+      & h6 {
+        @apply uppercase;
+      }
+
+    }
+
+    & .student-info_student-profile {
+      @apply col-start-1 col-span-1 rounded-full overflow-hidden w-20 h-20 m-auto ml-5;
+      @apply md:w-14 md:h-14;
+      @apply lg:w-20 lg:h-20;
+      
+      & img {
+        @apply w-full h-full object-center object-cover;
+        
+      }
+    }
+  }
+}
+
+.card__desktop-tile {
+  & .desktop-device_screen.marvel-device.macbook {
+    @apply transform scale-25 -mt-56 -ml-64 pr-5;
+    @apply md:-mt-60 md:-ml-80;
+    @apply lg:-mt-60 lg:-ml-72;
+  }
+
+  & .card_photo {
+    @apply h-60 bg-gold;
+    @apply md:h-56;
+
+    &.desktop-device-wrapper {
+
+       & .desktop-device_student-screenshot {
+         @apply w-full h-full object-cover object-center;
+       }
+     }
+  }
+
+  & .project-tile_student-info {
+    @apply grid grid-cols-4 pt-4;
+    
+    & .student-info_title {
+      @apply col-start-2 col-span-3;
+
+      & h4 {
+        @apply font-bold;
+      }
+      & h6 {
+        @apply uppercase;
+      }
+
+    }
+
+    & .student-info_student-profile {
+      @apply col-start-1 col-span-1 rounded-full overflow-hidden w-20 h-20 m-auto ml-5;
+      @apply md:w-14 md:h-14;
+      @apply lg:w-20 lg:h-20;
+      
+      & img {
+        @apply w-full h-full object-center object-cover;
+        
+      }
+    }
+  }
+}

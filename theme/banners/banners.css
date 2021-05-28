@@ -1,6 +1,28 @@
+.banner {
+  @apply lg:grid lg:grid-cols-2;
+}
+
 .banner__title {
   @apply text-white mb-1 z-20 relative;
   @apply lg:mb-4 lg:text-6xl;
+}
+
+.banner_no-photo {
+  @apply bg-white text-center pt-5;
+  @apply lg:grid lg:grid-cols-2 lg:text-left;
+
+  & .banner_no-photo__container {
+    @apply lg:grid lg:grid-cols-2 lg:px-20;
+  }
+  
+  & .banner_no-photo__title {
+    @apply font-headline font-bold text-5xl pb-8 text-black leading-tight;
+    @apply lg:col-start-1 lg:px-20;
+  }
+
+  & .banner_no-photo__button {
+    @apply my-3 flex-nowrap;
+  }
 }
 
 .banner__photo {
@@ -43,8 +65,8 @@
 
 
       & p {
-        @apply ml-16 mr-6 mt-8 z-20 relative text-xs;
-        @apply lg:ml-64 lg:text-base lg:mt-0;
+        @apply ml-16 mr-6 mt-8 z-20 relative text-xs font-headline;
+        @apply lg:ml-64 lg:text-3xl lg:mt-0 lg:font-bold;
       }
     }
   }
