@@ -1,3 +1,4 @@
+import Award from "./theme/awards/Award.js";
 import Button from "./theme/buttons/Button.js";
 import colors from "./theme/colors/colors.cjs";
 import Icon from "./theme/icons/Icon.js";
@@ -10,6 +11,7 @@ import TitledParagraph from "./theme/titledParagraph/TitledParagraph.js";
 import Fact from "./theme/factSet/Fact.js";
 import FactSet from "./theme/factSet/FactSet.js";
 import Quote from "./theme/quote/Quote.js";
+import FeatureQuote from "./theme/quote/FeatureQuote"
 import CardList from "./theme/cards/CardList";
 import Card from "./theme/cards/Card";
 import CourseScheduleList from "./theme/courseSchedule/CourseScheduleList.js";
@@ -27,5 +29,38 @@ import TuitionPaymentPlanItem from "./theme/tuitionPaymentPlan/TuitionPaymentPla
 import MobileDeviceTile from "./theme/deviceProjectTile/MobileDeviceTile.js";
 
 export {
-  Button, colors, Icon, Profile, TopBar, BannerTitle, SimpleBanner, TitledParagraph, Fact, FactSet, Quote, PartnerLogoList, CourseScheduleList, CourseSchedule, CardList, BannerContent, Module, ModuleLearningObjective, HorizontalProfile, FaqList, FeatureList, FeatureListItem, HalfPageParagraph, TuitionPaymentPlanItem, CreativeContent, MobileDeviceTile, Card
+  Article, 
+  Award, 
+  Button, 
+  colors, 
+  DesktopDeviceTile, 
+  DesktopProjectCard, 
+  FeatureQuote,
+  Icon, 
+  Profile, 
+  TopBar, 
+  BannerTitle, 
+  SimpleBanner, 
+  TitledParagraph, 
+  Fact, 
+  FactSet, 
+  Quote, 
+  PartnerLogoList, 
+  CourseScheduleList, 
+  CourseSchedule,
+  Card, 
+  CardList, 
+  BannerContent, 
+  MobileDeviceTile, 
+  MobileProjectCard, 
+  Module, 
+  ModuleLearningObjective, 
+  HorizontalProfile, 
+  FaqList, 
+  FeatureList, 
+  FeatureListItem, 
+  TuitionPaymentPlanItem, 
+  ReviewList,
+  HalfPageParagraph,
+  CreativeContent
 };
