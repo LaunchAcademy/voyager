@@ -3,12 +3,12 @@ import "../../src/assets/scss/devices.min.css"
 import "./deviceTiles.css"
 
 const MobileDeviceTile = ({ studentProjectScreenshot }) => {
-  return(
+  return (
     <div className="mobile-device-wrapper ">
       <div className="marvel-device iphone-x device-mobile_screen">
         <div className="notch">
-            <div className="camera"></div>
-            <div className="speaker"></div>
+          <div className="camera"></div>
+          <div className="speaker"></div>
         </div>
         <div className="top-bar"></div>
         <div className="sleep"></div>

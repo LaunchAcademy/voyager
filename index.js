@@ -14,6 +14,7 @@ import TitledParagraph from "./theme/titledParagraph/TitledParagraph.js";
 import Fact from "./theme/factSet/Fact.js";
 import FactSet from "./theme/factSet/FactSet.js";
 import Quote from "./theme/quote/Quote.js";
+import FeatureQuote from "./theme/quote/FeatureQuote"
 import CardList from "./theme/cards/CardList";
 import Card from "./theme/cards/Card";
 import CourseScheduleList from "./theme/courseSchedule/CourseScheduleList.js";
@@ -31,6 +32,8 @@ import HalfPageParagraph from "./theme/halfPageParagraphs/HalfPageParagraph.js";
 import CreativeContent from "./theme/creativeContent/CreativeContent.js";
 import TuitionPaymentPlanItem from "./theme/tuitionPaymentPlan/TuitionPaymentPlanItem.js";
 import ReviewList from "./theme/reviews/ReviewList"
+import MobileDeviceTile from "./theme/deviceProjectTile/MobileDeviceTile.js";
+
 
 export {
   Article, 
