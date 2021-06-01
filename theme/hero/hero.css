@@ -59,6 +59,13 @@
     @apply pb-5;
     @apply lg:inline-block mr-4;
   }
+
+  & .hero__narrative {
+    @apply pt-10;
+  }
+  & .hero__narrative_close {
+    @apply pt-0;
+  }
 }
 
 @screen lg {
