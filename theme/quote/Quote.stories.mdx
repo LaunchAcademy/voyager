@@ -1,5 +1,6 @@
 import blocks, { Canvas, Story } from '@storybook/addon-docs/blocks';
 import Quote from './Quote'
+import FeatureQuote from './FeatureQuote'
 
 export const Template = (args) => <Quote {...args} />
 
@@ -10,7 +11,20 @@ export const Template = (args) => <Quote {...args} />
 <Canvas>
   <Story name="quote">
     <Quote 
-      quote="“I highly recommend Launch Academy to anyone who is thinking about switching to software development. Launch Academy found a great formula for success.”"
+      quote="I highly recommend Launch Academy to anyone who is thinking about switching to software development. Launch Academy found a great formula for success."
+      name="Mo Zhu"
+      company="3Play Media"
+    />
+  </Story>
+</Canvas>
+
+# With Student Profile Image Quote
+
+<Canvas>
+  <Story name="feature quote">
+    <FeatureQuote 
+      quote="I highly recommend Launch Academy to anyone who is thinking about switching to software development. Launch Academy found a great formula for success."
+      studentImageUrl="https://placekitten.com/300/300"
       name="Mo Zhu"
       company="3Play Media"
     />
