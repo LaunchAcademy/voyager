@@ -22,13 +22,13 @@
 
   & .quote__quote-text {
     @apply pb-5 font-text divide-x-2;
-    @apply lg:text-left
+    @apply md:text-left;
   }
   
   & .quote__quote-name {
     @apply font-bold font-headline leading-snug;
     text-transform: uppercase;
-    @apply lg:text-left
+    @apply md:text-left;
   }
   
   & .quote__quote-company {
@@ -62,3 +62,38 @@
   }
 }
 
+    @apply md:text-left;
+  }
+}
+
+.quote_feature {
+  @apply grid grid-cols-12 my-16; 
+
+  & .quote__content {
+    @apply col-span-12;
+
+    & .quote__quote_text {
+      @apply text-center;
+    }
+
+    & .quote__student {
+      @apply grid grid-cols-2 py-5 place-content-end;
+
+      & .student__profile-image {
+        @apply rounded-full w-16 flex justify-self-end self-center;
+      }
+      & .student__text-info {
+        @apply col-start-2 flex align-middle flex-wrap ml-5;
+
+        & .text-info__name {
+          @apply font-bold w-full font-headline self-end;
+        }
+     
+        & .text-info__company {
+          @apply uppercase w-full leading-none;
+        }
+      }
+    }
+  }
+
+}

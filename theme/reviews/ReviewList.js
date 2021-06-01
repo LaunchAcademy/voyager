@@ -2,6 +2,7 @@ import React from 'react'
 
 import CourseReportTile from "./CourseReportTile"
 import SwitchupReviewTile from "./SwitchupReviewTile"
+import "./reviewGrid.css"
 
 const ReviewList = ({ allReviews }) => {
 

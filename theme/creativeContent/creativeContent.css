@@ -1,0 +1,4 @@
+.creative-content__container {
+  @apply p-3;
+  @apply lg:grid lg:grid-cols-2;
+}
