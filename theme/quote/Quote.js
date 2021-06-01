@@ -1,24 +1,32 @@
 import React from 'react';
 import './quote.css';
+import QuoteAuthor from './QuoteAuthor';
+import QuoteFeatureStudent from './QuoteFeatureStudent'
 
-const Quote = ({ quote, name, company }) => {
+const Quote = ({ quoteType, quote, name, company, studentImageUrl }) => {
+
+  let quoteTypeClass = "quote"
+  let quoteAuthor = <QuoteAuthor name={name} company={company} />
+
+  if(quoteType === "banner") {
+    quoteTypeClass += " quote_banner"
+  } else if(quoteType === "student") {
+    quoteTypeClass += " quote_feature-student"
+    quoteAuthor = <QuoteFeatureStudent name={name} company={company} studentImageUrl={studentImageUrl} />
+  }
+
   return (
-    <div className="quote">
-      <div className="quote__quote-icon">
+    <div className={quoteTypeClass}>
+      <div className="quote__icon">
         <p>”</p>
       </div>
-      <div className="quote__quote-content">
-        <figure>
-          <blockquote>
-            <p className="quote__quote-text">{quote}</p>
-          </blockquote>
-          <hr className="quote__horizontal-line" />
-          <figcaption>
-            <h6 className="quote__quote-name">{name}</h6>
-            <h5 className="quote__quote-company">{company}</h5>
-          </figcaption>
-        </figure>
-      </div>
+      <figure className="quote__content">
+        <blockquote>
+          <p className="quote__text">"{quote}"</p>
+        </blockquote>
+        <hr className="quote__horizontal-line" />
+        {quoteAuthor}
+      </figure>
     </div>
   )
 };

@@ -6,7 +6,7 @@
     @apply col-span-1 text-center;
   }
 
-  & .quote__quote-icon {
+  & .quote__icon {
     @apply hidden;
     @apply lg:col-span-1 lg:text-right lg:pr-10  lg:font-normal lg:font-quote lg:text-6xl lg:block;
   }
@@ -16,64 +16,72 @@
     @apply lg:hidden;
   }
 
-  & .quote__quote-content {
-    @apply col-span-3 px-3 text-center;
-  }
-
-  & .quote__quote-text {
-    @apply pb-5 font-text divide-x-2;
-    @apply md:text-left;
-  }
+  & .quote__content {
+    @apply col-span-3 p-3 text-center;
   
-  & .quote__quote-name {
-    @apply font-bold font-headline leading-snug;
-    text-transform: uppercase;
-    @apply md:text-left;
-  }
-  
-  & .quote__quote-company {
-    @apply font-text;
-    text-transform: uppercase;
-    @apply lg:text-left
+    & .quote__text {
+      @apply pb-5 font-text divide-x-2;
+      @apply lg:text-left;
+    }
+    
+    & .quote__name {
+      @apply font-bold font-headline leading-snug uppercase;
+      @apply lg:text-left;
+    }
+    
+    & .quote__company {
+      @apply font-text uppercase;
+      @apply lg:text-left;
+    }
   }
 }
 
-.quote__quote_static {
-  @apply bg-white pb-10 font-text pt-10 px-5; 
-  @apply lg:divide-y-2 lg:bg-white;
+.quote_banner {
+  @apply bg-white pb-10 font-text pt-10 px-5 divide-x-0; 
+  @apply  lg:bg-white;
 
-  & .quote__quote-content_static {
+  & .quote__icon {
+    @apply hidden;
+  }
+
+  & .quote__content {
     @apply text-center;
-  }
+  
+    & .quote__horizontal-line {
+      @apply lg:mx-40 lg:block;
+    }
 
-  & .quote__horizontal-line_static {
-    @apply lg:mx-40 lg:block;
-  }
+    & .quote__text {
+      @apply text-center pb-5 font-text font-bold text-xl divide-x-0;
+    }
 
-  & .quote__quote-text_static {
-    @apply pb-5 font-text font-bold text-xl divide-x-2;
-    @apply lg:text-center;
-  }
+    & .quote__name {
+      @apply text-center font-text font-normal pt-3 capitalize;
+    }
 
-  & .quote__quote-detail {
-    @apply font-text pt-3;
-    text-transform: uppercase;
-    @apply lg:text-center;
-  }
-}
-
-    @apply md:text-left;
+    & .quote__company {
+      @apply hidden;
+    }
   }
 }
 
-.quote_feature {
-  @apply grid grid-cols-12 my-16; 
+
+.quote_feature-student {
+  @apply grid grid-cols-12 my-16 bg-white divide-x-0;
+
+  & .quote__icon {
+    @apply hidden;
+  }
 
   & .quote__content {
     @apply col-span-12;
 
-    & .quote__quote_text {
-      @apply text-center;
+    & .quote__horizontal-line {
+      @apply hidden;
+    }
+
+    & .quote__text {
+      @apply text-center font-bold text-2xl divide-x-0;
     }
 
     & .quote__student {
@@ -82,18 +90,18 @@
       & .student__profile-image {
         @apply rounded-full w-16 flex justify-self-end self-center;
       }
+
       & .student__text-info {
         @apply col-start-2 flex align-middle flex-wrap ml-5;
 
         & .text-info__name {
-          @apply font-bold w-full font-headline self-end;
+          @apply font-bold w-full font-headline self-end text-left;
         }
      
         & .text-info__company {
-          @apply uppercase w-full leading-none;
+          @apply uppercase w-full leading-none text-left;
         }
       }
     }
   }
-
 }
