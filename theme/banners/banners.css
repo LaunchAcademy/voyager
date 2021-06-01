@@ -16,7 +16,7 @@
   }
   
   & .banner_no-photo__title {
-    @apply font-headline font-bold text-5xl pb-8 text-black leading-tight;
+    @apply font-headline font-bold text-5xl pb-8 px-3 text-black leading-tight;
     @apply lg:col-start-1 lg:px-20;
   }
 

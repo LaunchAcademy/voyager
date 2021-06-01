@@ -26,6 +26,7 @@ import FeatureListItem from "./theme/featureList/FeatureListItem.js"
 import HalfPageParagraph from "./theme/halfPageParagraphs/HalfPageParagraph.js";
 import CreativeContent from "./theme/creativeContent/CreativeContent.js";
 import TuitionPaymentPlanItem from "./theme/tuitionPaymentPlan/TuitionPaymentPlanItem.js";
+import MobileDeviceTile from "./theme/deviceProjectTile/MobileDeviceTile.js";
 
 export {
   Article, 
