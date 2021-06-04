@@ -14,6 +14,7 @@ import TitledParagraph from "./theme/titledParagraph/TitledParagraph.js";
 import Fact from "./theme/factSet/Fact.js";
 import FactSet from "./theme/factSet/FactSet.js";
 import Quote from "./theme/quote/Quote.js";
+import StaticQuote from "./theme/quote/StaticQuote.js";
 import FeatureQuote from "./theme/quote/FeatureQuote"
 import CardList from "./theme/cards/CardList";
 import Card from "./theme/cards/Card";
@@ -65,8 +66,10 @@ export {
   FaqList, 
   FeatureList, 
   FeatureListItem, 
+  FeatureQuote,
   TuitionPaymentPlanItem, 
   ReviewList,
+  StaticQuote,
   HalfPageParagraph,
   CreativeContent
 };
