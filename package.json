@@ -7,7 +7,7 @@
   },
   "license": "UNLICENSED",
   "private": true,
-  "name": "voyager",
+  "name": "@launchacademy/voyager",
   "type": "module",
   "version": "0.0.1",
   "engines": {
