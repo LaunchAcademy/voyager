@@ -9,11 +9,7 @@ const PartnerLogoList = ({ partnerData, className } = {}) => {
     </li>
   ));
 
-  return (
-    <ul className={`partner-logo-list ${className}`}>
-      {listItems}
-    </ul>
-  );
+  return <ul className={`partner-logo-list ${className}`}>{listItems}</ul>;
 };
 
 PartnerLogoList.defaultProps = {

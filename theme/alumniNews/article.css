@@ -5,7 +5,7 @@
   & .article-list__item {
     @apply lg:justify-items-center;
   }
-  
+
   & .article-list__image {
     @apply shadow-2xl mb-5;
   }

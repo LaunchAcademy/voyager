@@ -1,8 +1,8 @@
-import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import Button from "../buttons/Button"
-import Icon from "../icons/Icon.js"
-import Quote from "../quote/Quote.js"
-import "../../src/assets/scss/main.css"
+import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import Button from "../buttons/Button";
+import Icon from "../icons/Icon.js";
+import Quote from "../quote/Quote.js";
+import "../../src/assets/scss/main.css";
 import "./hero.css";
 
 <Meta title="Hero" />
@@ -14,7 +14,11 @@ import "./hero.css";
     <section className="hero">
       <div className="hero__image-column">
         <div className="hero__image-container">
-          <img src="https://place-hold.it/630x630" alt="Hero Image" className="hero__image hero__image_rounded hero__image_sm" />
+          <img
+            src="https://place-hold.it/630x630"
+            alt="Hero Image"
+            className="hero__image hero__image_rounded hero__image_sm"
+          />
           <Button to="#" iconName="play" hideText text="Play Video" className="hero__play-button" />
         </div>
       </div>
@@ -22,10 +26,23 @@ import "./hero.css";
         <h2 className="hero__image_subtitle">Going Pro Starts Here.</h2>
         <h1 className="hero__image_title">Launch your career in software today.</h1>
         <div className="hero__button-container">
-          <Button to="#" text="Apply Today" iconName="chevron-right" className="hero__button" size="lg" />
+          <Button
+            to="#"
+            text="Apply Today"
+            iconName="chevron-right"
+            className="hero__button"
+            size="lg"
+          />
         </div>
         <div className="hero__button-container">
-          <Button to="#" text="Watch Video" iconName="eye" className="hero__button" secondary size="lg" />
+          <Button
+            to="#"
+            text="Watch Video"
+            iconName="eye"
+            className="hero__button"
+            secondary
+            size="lg"
+          />
         </div>
       </div>
     </section>
@@ -39,22 +56,40 @@ import "./hero.css";
     <section className="hero">
       <div className="hero__image-column">
         <div className="hero__image-container">
-          <img src="https://place-hold.it/700x686" alt="Hero Image" className="hero__image hero__image_sm" />
+          <img
+            src="https://place-hold.it/700x686"
+            alt="Hero Image"
+            className="hero__image hero__image_sm"
+          />
         </div>
       </div>
       <div className="hero__supporting-content">
         <h2 className="hero__image_subtitle">Launch your career.</h2>
         <h1 className="hero__image_title">Then take it to the next level.</h1>
         <div className="hero__button-container">
-          <Button to="#" text="Apply Today" iconName="chevron-right" className="hero__button" size="lg" />
+          <Button
+            to="#"
+            text="Apply Today"
+            iconName="chevron-right"
+            className="hero__button"
+            size="lg"
+          />
         </div>
         <div className="hero__button-container">
-          <Button to="#" text="Get the Syllabus" iconName="eye" className="hero__button" secondary size="lg" />
+          <Button
+            to="#"
+            text="Get the Syllabus"
+            iconName="eye"
+            className="hero__button"
+            secondary
+            size="lg"
+          />
         </div>
-            <Quote 
-            quote="“I highly recommend Launch Academy to anyone who is thinking about switching to software development. Launch Academy found a great formula for success.”" 
-            name="Mo Zhu" 
-            company="3Play Media" />
+        <Quote
+          quote="“I highly recommend Launch Academy to anyone who is thinking about switching to software development. Launch Academy found a great formula for success.”"
+          name="Mo Zhu"
+          company="3Play Media"
+        />
       </div>
     </section>
   </Story>
@@ -66,19 +101,38 @@ import "./hero.css";
   <Story name="Teal Hero">
     <section className="hero bg-secondary-brand">
       <div className="hero__supporting-content p-10">
-        <h2 className="hero__image_title pb-10">Sign up today and get $1000 off your full tuition when you complete our next pre-work session.</h2>
+        <h2 className="hero__image_title pb-10">
+          Sign up today and get $1000 off your full tuition when you complete our next pre-work
+          session.
+        </h2>
         <div className="hero__button-container">
-          <Button to="#" text="Apply Today" iconName="chevron-right" className="banner__button" size="lg" />
+          <Button
+            to="#"
+            text="Apply Today"
+            iconName="chevron-right"
+            className="banner__button"
+            size="lg"
+          />
         </div>
         <div className="hero__button-container">
-          <Button to="#" text="Get the Syllabus" iconName="chevron-right" className="banner__button button_secondary" size="lg" />
+          <Button
+            to="#"
+            text="Get the Syllabus"
+            iconName="chevron-right"
+            className="banner__button button_secondary"
+            size="lg"
+          />
         </div>
-      </div >
+      </div>
       <div className="hero__image-column">
         <div className="hero__image-container">
-          <img src="https://place-hold.it/446x460" alt="Image" className="hero__image hero__image_sm" />
+          <img
+            src="https://place-hold.it/446x460"
+            alt="Image"
+            className="hero__image hero__image_sm"
+          />
         </div>
-      </div >
-    </section >
+      </div>
+    </section>
   </Story>
 </Canvas>

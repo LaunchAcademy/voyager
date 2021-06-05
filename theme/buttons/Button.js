@@ -5,9 +5,7 @@ import getIconMap from "../icons/getIconMap.js";
 
 import "./buttons.css";
 
-const Button = ({
-  text, to, size, secondary, placement, iconName, className, hideText,
-}) => {
+const Button = ({ text, to, size, secondary, placement, iconName, className, hideText }) => {
   const modifiers = [];
   if (secondary) {
     modifiers.push("button_secondary");
@@ -29,7 +27,15 @@ const Button = ({
   }
 
   if (to) {
-    return <a className={`button button_size_${size} ${modifiers.join(" ")} ${className || ""}`} href={to}>{hideText ? null : text}{icon}</a>;
+    return (
+      <a
+        className={`button button_size_${size} ${modifiers.join(" ")} ${className || ""}`}
+        href={to}
+      >
+        {hideText ? null : text}
+        {icon}
+      </a>
+    );
   }
   return null;
 };

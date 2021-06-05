@@ -1,9 +1,7 @@
 import React from "react";
 import "./horizontalProfile.css";
 
-const HorizontalProfile = ({
-  name, currentTitle, formerTitle, headshotUrl, description
-}) => (
+const HorizontalProfile = ({ name, currentTitle, formerTitle, headshotUrl, description }) => (
   <div className="horizontal-profile">
     <img className="horizontal-profile__image" src={headshotUrl} alt={name} />
     <div className="horizontal-profile__content">

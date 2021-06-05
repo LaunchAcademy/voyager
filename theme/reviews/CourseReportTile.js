@@ -4,7 +4,17 @@ import ReviewStars from "./ReviewStars.js";
 import "./reviewTiles.css";
 
 const CourseReportTile = ({
-  reviewTitle, reviewedAt, alumniName, alumniTitle, verified, overallScore, instructorScore, curriculumScore, jobAssistanceScore, reviewUrl, children,
+  reviewTitle,
+  reviewedAt,
+  alumniName,
+  alumniTitle,
+  verified,
+  overallScore,
+  instructorScore,
+  curriculumScore,
+  jobAssistanceScore,
+  reviewUrl,
+  children,
 }) => {
   let verifiedText;
   if (verified) {
@@ -46,10 +56,13 @@ const CourseReportTile = ({
         </div>
       </section>
       <section className="review__narrative review__narrative_course-report">
-        <div className="narrative__text"><p>{children}</p>
+        <div className="narrative__text">
+          <p>{children}</p>
         </div>
         <div className="narrative__read-more" />
-        <a className="narrative__link" href={reviewUrl}><button className="link__button">read more</button></a>
+        <a className="narrative__link" href={reviewUrl}>
+          <button className="link__button">read more</button>
+        </a>
       </section>
     </article>
   );

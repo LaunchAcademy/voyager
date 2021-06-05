@@ -1,5 +1,5 @@
 .quote {
-  @apply bg-teal pb-10 font-text pt-10 pr-5; 
+  @apply bg-teal pb-10 font-text pt-10 pr-5;
   @apply lg:grid lg:grid-cols-4 lg:divide-x-2  lg:bg-white;
 
   & .quote__content {
@@ -10,7 +10,7 @@
     @apply hidden;
     @apply lg:col-span-1 lg:text-right lg:pr-10  lg:font-normal lg:font-quote lg:text-6xl lg:block;
   }
-  
+
   & .quote__horizontal-line {
     @apply pt-3 block;
     @apply lg:hidden;
@@ -18,17 +18,17 @@
 
   & .quote__content {
     @apply col-span-3 p-3 text-center;
-  
+
     & .quote__text {
       @apply pb-5 font-text divide-x-2;
       @apply lg:text-left;
     }
-    
+
     & .quote__name {
       @apply font-bold font-headline leading-snug uppercase;
       @apply lg:text-left;
     }
-    
+
     & .quote__company {
       @apply font-text uppercase;
       @apply lg:text-left;
@@ -37,8 +37,8 @@
 }
 
 .quote_banner {
-  @apply bg-white pb-10 font-text pt-10 px-5 divide-x-0; 
-  @apply  lg:bg-white;
+  @apply bg-white pb-10 font-text pt-10 px-5 divide-x-0;
+  @apply lg:bg-white;
 
   & .quote__icon {
     @apply hidden;
@@ -46,7 +46,7 @@
 
   & .quote__content {
     @apply text-center;
-  
+
     & .quote__horizontal-line {
       @apply lg:mx-40 lg:block;
     }
@@ -64,7 +64,6 @@
     }
   }
 }
-
 
 .quote_feature-student {
   @apply grid grid-cols-12 my-16 bg-white divide-x-0;
@@ -97,7 +96,7 @@
         & .text-info__name {
           @apply font-bold w-full font-headline self-end text-left;
         }
-     
+
         & .text-info__company {
           @apply uppercase w-full leading-none text-left;
         }

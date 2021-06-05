@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 
 const Card = ({ imageUrl, header, body }) => {
-
   return (
     <div className="card">
       <figure className="card_photo">
@@ -10,7 +9,7 @@ const Card = ({ imageUrl, header, body }) => {
       <h3 className="card_header">{header}</h3>
       <p className="card_body">{body}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

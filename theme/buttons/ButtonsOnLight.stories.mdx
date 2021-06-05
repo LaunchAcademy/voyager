@@ -1,13 +1,13 @@
-import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import Button from "./Button"
+import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import Button from "./Button";
 import "../../src/assets/scss/main.css";
 
-export const Template = (args) => <Button {...args} />
+export const Template = (args) => <Button {...args} />;
 const defaultArgs = {
   text: "Apply Today",
   to: "#",
-  size: "xl"
-}
+  size: "xl",
+};
 
 <Meta title="Buttons/On Light BG" component={Button} />
 
@@ -18,14 +18,15 @@ const defaultArgs = {
 ### Extra-Large (xl)
 
 <Canvas>
-  <Story name="Primary XL" args={{...defaultArgs, size: "xl"}}>
+  <Story name="Primary XL" args={{ ...defaultArgs, size: "xl" }}>
     {(args) => <Button {...args} />}
   </Story>
 </Canvas>
 
 ### Large (lg)
+
 <Canvas>
-  <Story name="Primary LG" args={{...defaultArgs, size: "lg"}}>
+  <Story name="Primary LG" args={{ ...defaultArgs, size: "lg" }}>
     {(args) => <Button {...args} />}
   </Story>
 </Canvas>
@@ -33,7 +34,7 @@ const defaultArgs = {
 ### Medium (md)
 
 <Canvas>
-  <Story name="Primary MD" args={{...defaultArgs, size: "md"}}>
+  <Story name="Primary MD" args={{ ...defaultArgs, size: "md" }}>
     {(args) => <Button {...args} />}
   </Story>
 </Canvas>
@@ -41,7 +42,7 @@ const defaultArgs = {
 ### Small (sm)
 
 <Canvas>
-  <Story name="Primary SM" args={{...defaultArgs, size: "sm"}}>
+  <Story name="Primary SM" args={{ ...defaultArgs, size: "sm" }}>
     {(args) => <Button {...args} />}
   </Story>
 </Canvas>
@@ -51,14 +52,15 @@ const defaultArgs = {
 ### Extra-Large (xl)
 
 <Canvas>
-  <Story name="Secondary XL" args={{...defaultArgs, size: "xl", secondary: true}}>
+  <Story name="Secondary XL" args={{ ...defaultArgs, size: "xl", secondary: true }}>
     {(args) => <Button {...args} />}
   </Story>
 </Canvas>
 
 ### Large (lg)
+
 <Canvas>
-  <Story name="Secondary LG" args={{...defaultArgs, size: "lg", secondary: true}}>
+  <Story name="Secondary LG" args={{ ...defaultArgs, size: "lg", secondary: true }}>
     {(args) => <Button {...args} />}
   </Story>
 </Canvas>
@@ -66,7 +68,7 @@ const defaultArgs = {
 ### Medium (md)
 
 <Canvas>
-  <Story name="Secondary MD" args={{...defaultArgs, size: "md", secondary: true}}>
+  <Story name="Secondary MD" args={{ ...defaultArgs, size: "md", secondary: true }}>
     {(args) => <Button {...args} />}
   </Story>
 </Canvas>
@@ -74,7 +76,7 @@ const defaultArgs = {
 ### Small (sm)
 
 <Canvas>
-  <Story name="Secondary SM" args={{...defaultArgs, size: "sm", secondary: true}}>
+  <Story name="Secondary SM" args={{ ...defaultArgs, size: "sm", secondary: true }}>
     {(args) => <Button {...args} />}
   </Story>
 </Canvas>

@@ -1,9 +1,7 @@
 import React from "react";
 import DesktopDeviceTile from "../deviceProjectTile/DesktopDeviceTile.js";
 
-const DesktopProjectCard = ({
-  imageUrl, projectTitle, studentName, studentProfileUrl,
-}) => (
+const DesktopProjectCard = ({ imageUrl, projectTitle, studentName, studentProfileUrl }) => (
   <article className="card card__desktop-tile">
     <section className="card_photo">
       <DesktopDeviceTile studentProjectScreenshot={imageUrl} />

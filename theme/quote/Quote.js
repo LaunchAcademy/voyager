@@ -3,9 +3,7 @@ import "./quote.css";
 import QuoteAuthor from "./QuoteAuthor.js";
 import QuoteFeatureStudent from "./QuoteFeatureStudent.js";
 
-const Quote = ({
-  quoteType, quote, name, company, studentImageUrl,
-}) => {
+const Quote = ({ quoteType, quote, name, company, studentImageUrl }) => {
   let quoteTypeClass = "quote";
   let quoteAuthor = <QuoteAuthor name={name} company={company} />;
 
@@ -13,7 +11,9 @@ const Quote = ({
     quoteTypeClass += " quote_banner";
   } else if (quoteType === "student") {
     quoteTypeClass += " quote_feature-student";
-    quoteAuthor = <QuoteFeatureStudent name={name} company={company} studentImageUrl={studentImageUrl} />;
+    quoteAuthor = (
+      <QuoteFeatureStudent name={name} company={company} studentImageUrl={studentImageUrl} />
+    );
   }
 
   return (

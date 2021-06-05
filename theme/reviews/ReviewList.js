@@ -44,11 +44,7 @@ const ReviewList = ({ allReviews }) => {
     );
   });
 
-  return (
-    <div className="review-grid review-grid_stagger">
-      {reviewsArray}
-    </div>
-  );
+  return <div className="review-grid review-grid_stagger">{reviewsArray}</div>;
 };
 
 export default ReviewList;

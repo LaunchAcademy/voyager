@@ -1,9 +1,7 @@
 import React from "react";
 import Icon from "../icons/Icon.js";
 
-const FeatureListItem = ({
-  title, subtitle, description, iconName,
-}) => (
+const FeatureListItem = ({ title, subtitle, description, iconName }) => (
   <div className="feature-list__item">
     <div className="feature-list__item-icon">
       <Icon className=" h-10 w-10" aria-hidden="true" name={iconName} />

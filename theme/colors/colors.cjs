@@ -54,5 +54,4 @@ module.exports = {
     hex: "#fff",
     colorName: "White",
   },
-
 };

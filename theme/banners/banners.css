@@ -14,7 +14,7 @@
   & .banner_no-photo__container {
     @apply lg:grid lg:grid-cols-2 lg:px-20;
   }
-  
+
   & .banner_no-photo__title {
     @apply font-headline font-bold text-5xl pb-8 px-3 text-black leading-tight;
     @apply lg:col-start-1 lg:px-20;
@@ -61,8 +61,6 @@
         @apply bg-purple inline-block rounded-full h-24 w-24 z-0 -top-4;
         @apply lg:h-36 lg:w-36 lg:-top-4 lg:ml-64 lg:-left-24;
       }
-
-
 
       & p {
         @apply ml-16 mr-6 mt-8 z-20 relative text-xs font-headline;

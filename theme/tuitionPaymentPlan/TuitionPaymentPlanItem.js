@@ -3,7 +3,9 @@ import Button from "../buttons/Button.js";
 
 const TuitionPaymentPlanItem = ({ title, description, learnMoreUrl }) => {
   let button;
-  learnMoreUrl ? <Button text="Learn More" to={learnMoreUrl} size="lg" className="tuition-plan__item-button" /> : null;
+  learnMoreUrl ? (
+    <Button text="Learn More" to={learnMoreUrl} size="lg" className="tuition-plan__item-button" />
+  ) : null;
 
   return (
     <div className="tuition-plan__item">

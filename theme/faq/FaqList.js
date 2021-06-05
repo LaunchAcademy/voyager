@@ -36,9 +36,7 @@ const FaqList = ({ questions }) => {
 
   return (
     <div className="faq-list">
-      <div className="faq-list__container">
-        {questionListItems}
-      </div>
+      <div className="faq-list__container">{questionListItems}</div>
     </div>
   );
 };

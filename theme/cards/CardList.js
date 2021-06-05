@@ -23,7 +23,8 @@ const CardList = ({ content, numberOfColumns }) => {
           studentProfileUrl={card.studentProfileUrl}
         />
       );
-    } if (card.mobile === false) {
+    }
+    if (card.mobile === false) {
       return (
         <DesktopProjectCard
           imageUrl={card.imageUrl}
@@ -33,20 +34,10 @@ const CardList = ({ content, numberOfColumns }) => {
         />
       );
     }
-    return (
-      <Card
-        imageUrl={card.imageUrl}
-        header={card.header}
-        body={card.body}
-      />
-    );
+    return <Card imageUrl={card.imageUrl} header={card.header} body={card.body} />;
   });
 
-  return (
-    <div className={cardListSize}>
-      {cardContentArray}
-    </div>
-  );
+  return <div className={cardListSize}>{cardContentArray}</div>;
 };
 
 export default CardList;

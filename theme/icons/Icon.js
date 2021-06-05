@@ -5,7 +5,6 @@ import getIconMap from "./getIconMap.js";
 
 const iconMap = getIconMap();
 const Icon = ({ name, fixedWidth }) => (
-
   <FontAwesomeIcon icon={iconMap[name]} fixedWidth={fixedWidth} />
 );
 

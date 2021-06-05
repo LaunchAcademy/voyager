@@ -1,9 +1,7 @@
 import React from "react";
 import MobileDeviceTile from "../deviceProjectTile/MobileDeviceTile.js";
 
-const MobileProjectCard = ({
-  imageUrl, projectTitle, studentName, studentProfileUrl,
-}) => (
+const MobileProjectCard = ({ imageUrl, projectTitle, studentName, studentProfileUrl }) => (
   <article className="card card__mobile-tile">
     <section className="card_photo">
       <MobileDeviceTile studentProjectScreenshot={imageUrl} />

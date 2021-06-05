@@ -16,15 +16,13 @@
 }
 
 .desktop-device-wrapper {
- 
   & .desktop-device_screen {
-   @apply transform scale-25;
-   @apply md:scale-50;
-   @apply lg:scale-90;
+    @apply transform scale-25;
+    @apply md:scale-50;
+    @apply lg:scale-90;
   }
 
   & .desktop-device_student-screenshot {
     @apply w-full h-full object-cover object-center;
   }
 }
-

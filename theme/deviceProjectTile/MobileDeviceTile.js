@@ -1,6 +1,6 @@
-import React from 'react'
-import "../../src/assets/scss/devices.min.css"
-import "./deviceTiles.css"
+import React from "react";
+import "../../src/assets/scss/devices.min.css";
+import "./deviceTiles.css";
 
 const MobileDeviceTile = ({ studentProjectScreenshot }) => {
   return (
@@ -26,7 +26,7 @@ const MobileDeviceTile = ({ studentProjectScreenshot }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default MobileDeviceTile
+export default MobileDeviceTile;

@@ -16,7 +16,6 @@
   }
 }
 
-
 .card {
   @apply w-full shadow-lg rounded-lg pb-4 mx-auto bg-white;
 
@@ -38,7 +37,6 @@
 }
 
 .card__mobile-tile {
-
   & .card_photo {
     @apply h-60 bg-gray-cloud;
     @apply md:h-56;
@@ -48,9 +46,7 @@
     }
 
     & .mobile-device-wrapper {
-
       & .marvel-device.iphone-x {
-
         & .notch {
           @apply md:left-4;
           @apply lg:left-9;
@@ -61,7 +57,7 @@
 
   & .project-tile_student-info {
     @apply grid grid-cols-4 pt-4;
-    
+
     & .student-info_title {
       @apply col-start-2 col-span-3;
 
@@ -71,17 +67,15 @@
       & h6 {
         @apply uppercase;
       }
-
     }
 
     & .student-info_student-profile {
       @apply col-start-1 col-span-1 rounded-full overflow-hidden w-20 h-20 m-auto ml-5;
       @apply md:w-14 md:h-14;
       @apply lg:w-20 lg:h-20;
-      
+
       & img {
         @apply w-full h-full object-center object-cover;
-        
       }
     }
   }
@@ -99,16 +93,15 @@
     @apply md:h-56;
 
     &.desktop-device-wrapper {
-
-       & .desktop-device_student-screenshot {
-         @apply w-full h-full object-cover object-center;
-       }
-     }
+      & .desktop-device_student-screenshot {
+        @apply w-full h-full object-cover object-center;
+      }
+    }
   }
 
   & .project-tile_student-info {
     @apply grid grid-cols-4 pt-4;
-    
+
     & .student-info_title {
       @apply col-start-2 col-span-3;
 
@@ -118,17 +111,15 @@
       & h6 {
         @apply uppercase;
       }
-
     }
 
     & .student-info_student-profile {
       @apply col-start-1 col-span-1 rounded-full overflow-hidden w-20 h-20 m-auto ml-5;
       @apply md:w-14 md:h-14;
       @apply lg:w-20 lg:h-20;
-      
+
       & img {
         @apply w-full h-full object-center object-cover;
-        
       }
     }
   }

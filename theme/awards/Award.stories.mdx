@@ -1,7 +1,7 @@
-import blocks, { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import blocks, { Meta, Canvas, Story, ArgsTable } from "@storybook/addon-docs/blocks";
 import Award from "./Award";
 
-export const Template = (args) => <Award {...args} />
+export const Template = (args) => <Award {...args} />;
 
 <Meta title="Awards" />
 
@@ -10,22 +10,10 @@ export const Template = (args) => <Award {...args} />
 <Canvas>
   <Story name="Awards">
     <div className="award-list">
-      <Award
-        imageUrl="https://placekitten.com/300/300"
-        altText="Alternative text to be read"
-      />
-      <Award
-        imageUrl="https://placekitten.com/300/300"
-        altText="Alternative text to be read"
-      />
-      <Award
-        imageUrl="https://placekitten.com/300/300"
-        altText="Alternative text to be read"
-      />
-      <Award
-        imageUrl="https://placekitten.com/300/300"
-        altText="Alternative text to be read"
-      />
+      <Award imageUrl="https://placekitten.com/300/300" altText="Alternative text to be read" />
+      <Award imageUrl="https://placekitten.com/300/300" altText="Alternative text to be read" />
+      <Award imageUrl="https://placekitten.com/300/300" altText="Alternative text to be read" />
+      <Award imageUrl="https://placekitten.com/300/300" altText="Alternative text to be read" />
     </div>
   </Story>
 </Canvas>

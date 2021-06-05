@@ -1,124 +1,132 @@
-import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 
-import CourseReportTile from "./CourseReportTile.js"
-import SwitchupReviewTile from "./SwitchupReviewTile.js"
-import ReviewList from "./ReviewList.js"
-import "./reviewGrid.css"
+import CourseReportTile from "./CourseReportTile.js";
+import SwitchupReviewTile from "./SwitchupReviewTile.js";
+import ReviewList from "./ReviewList.js";
+import "./reviewGrid.css";
 
 export const reviews = [
   {
-      id: 1,
-      reviewTitle: "Best Decision for a Real Future",
-      reviewedAt: "11/20/2019",
-      alumniName: "Susan Ma",
-      alumniTitle: "Software Engineer",
-      verified: "true",
-      overallScore: "5",
-      instructorScore: "5",
-      curriculumScore: "5",
-      jobAssistanceScore: "5",
-      reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
-      reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    id: 1,
+    reviewTitle: "Best Decision for a Real Future",
+    reviewedAt: "11/20/2019",
+    alumniName: "Susan Ma",
+    alumniTitle: "Software Engineer",
+    verified: "true",
+    overallScore: "5",
+    instructorScore: "5",
+    curriculumScore: "5",
+    jobAssistanceScore: "5",
+    reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
+    reviewParagraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
-    {
-      id: 2,
-      reviewTitle: "Best Decision for a Real Future",
-      reviewedAt: "11/20/2019",
-      alumniName: "Susan Ma",
-      alumniTitle: "Software Engineer",
-      alumniGradYear: "2019",
-      verified: "true",
-      overallScore: "5",
-      curriculumScore: "5",
-      jobAssistanceScore: "5",
-      reviewUrl: "https://www.switchup.com/schools/launch-academy?shared_review=22740#reviews",
-      reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  {
+    id: 2,
+    reviewTitle: "Best Decision for a Real Future",
+    reviewedAt: "11/20/2019",
+    alumniName: "Susan Ma",
+    alumniTitle: "Software Engineer",
+    alumniGradYear: "2019",
+    verified: "true",
+    overallScore: "5",
+    curriculumScore: "5",
+    jobAssistanceScore: "5",
+    reviewUrl: "https://www.switchup.com/schools/launch-academy?shared_review=22740#reviews",
+    reviewParagraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
-    {
-      id: 3,
-      reviewTitle: "Best Decision for a Real Future",
-      reviewedAt: "11/20/2019",
-      alumniName: "Susan Ma",
-      alumniTitle: "Software Engineer",
-      verified: "true",
-      overallScore: "5",
-      instructorScore: "5",
-      curriculumScore: "5",
-      jobAssistanceScore: "5",
-      reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
-      reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  {
+    id: 3,
+    reviewTitle: "Best Decision for a Real Future",
+    reviewedAt: "11/20/2019",
+    alumniName: "Susan Ma",
+    alumniTitle: "Software Engineer",
+    verified: "true",
+    overallScore: "5",
+    instructorScore: "5",
+    curriculumScore: "5",
+    jobAssistanceScore: "5",
+    reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
+    reviewParagraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
-    {
-      id: 4,
-      reviewTitle: "Best Decision for a Real Future",
-      reviewedAt: "11/20/2019",
-      alumniName: "Susan Ma",
-      alumniTitle: "Software Engineer",
-      verified: "true",
-      overallScore: "5",
-      instructorScore: "5",
-      curriculumScore: "5",
-      jobAssistanceScore: "5",
-      reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
-      reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  {
+    id: 4,
+    reviewTitle: "Best Decision for a Real Future",
+    reviewedAt: "11/20/2019",
+    alumniName: "Susan Ma",
+    alumniTitle: "Software Engineer",
+    verified: "true",
+    overallScore: "5",
+    instructorScore: "5",
+    curriculumScore: "5",
+    jobAssistanceScore: "5",
+    reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
+    reviewParagraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
-    {
-      id: 5,
-      reviewTitle: "Best Decision for a Real Future",
-      reviewedAt: "11/20/2019",
-      alumniName: "Susan Ma",
-      alumniTitle: "Software Engineer",
-      verified: "true",
-      overallScore: "5",
-      instructorScore: "5",
-      curriculumScore: "5",
-      jobAssistanceScore: "5",
-      reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
-      reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  {
+    id: 5,
+    reviewTitle: "Best Decision for a Real Future",
+    reviewedAt: "11/20/2019",
+    alumniName: "Susan Ma",
+    alumniTitle: "Software Engineer",
+    verified: "true",
+    overallScore: "5",
+    instructorScore: "5",
+    curriculumScore: "5",
+    jobAssistanceScore: "5",
+    reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
+    reviewParagraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
-    {
-      id: 6,
-      reviewTitle: "Best Decision for a Real Future",
-      reviewedAt: "11/20/2019",
-      alumniName: "Susan Ma",
-      alumniTitle: "Software Engineer",
-      alumniGradYear: "2019",
-      verified: "true",
-      overallScore: "5",
-      curriculumScore: "5",
-      jobAssistanceScore: "5",
-      reviewUrl: "https://www.switchup.com/schools/launch-academy?shared_review=22740#reviews",
-      reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  {
+    id: 6,
+    reviewTitle: "Best Decision for a Real Future",
+    reviewedAt: "11/20/2019",
+    alumniName: "Susan Ma",
+    alumniTitle: "Software Engineer",
+    alumniGradYear: "2019",
+    verified: "true",
+    overallScore: "5",
+    curriculumScore: "5",
+    jobAssistanceScore: "5",
+    reviewUrl: "https://www.switchup.com/schools/launch-academy?shared_review=22740#reviews",
+    reviewParagraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
-    {
-      id: 7,
-      reviewTitle: "Best Decision for a Real Future",
-      reviewedAt: "11/20/2019",
-      alumniName: "Susan Ma",
-      alumniTitle: "Software Engineer",
-      verified: "true",
-      overallScore: "5",
-      instructorScore: "5",
-      curriculumScore: "5",
-      jobAssistanceScore: "5",
-      reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
-      reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  {
+    id: 7,
+    reviewTitle: "Best Decision for a Real Future",
+    reviewedAt: "11/20/2019",
+    alumniName: "Susan Ma",
+    alumniTitle: "Software Engineer",
+    verified: "true",
+    overallScore: "5",
+    instructorScore: "5",
+    curriculumScore: "5",
+    jobAssistanceScore: "5",
+    reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
+    reviewParagraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
-    {
-      id: 8,
-      reviewTitle: "Best Decision for a Real Future",
-      reviewedAt: "11/20/2019",
-      alumniName: "Susan Ma",
-      alumniTitle: "Software Engineer",
-      verified: "true",
-      overallScore: "5",
-      instructorScore: "5",
-      curriculumScore: "5",
-      jobAssistanceScore: "5",
-      reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
-      reviewParagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-  }
-]
+  {
+    id: 8,
+    reviewTitle: "Best Decision for a Real Future",
+    reviewedAt: "11/20/2019",
+    alumniName: "Susan Ma",
+    alumniTitle: "Software Engineer",
+    verified: "true",
+    overallScore: "5",
+    instructorScore: "5",
+    curriculumScore: "5",
+    jobAssistanceScore: "5",
+    reviewUrl: "https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews",
+    reviewParagraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+];
 
 <Meta title="Reviews" />
 
@@ -126,9 +134,9 @@ export const reviews = [
 
 <Canvas>
   <Story name="Course Report Tile">
-    <CourseReportTile 
+    <CourseReportTile
       key="1"
-      reviewTitle="Best Decision for a Real Future" 
+      reviewTitle="Best Decision for a Real Future"
       reviewedAt="11/20/2019"
       alumniName="Susan Ma"
       alumniTitle="Software Engineer"
@@ -139,7 +147,9 @@ export const reviews = [
       jobAssistanceScore="5"
       reviewUrl="https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews"
     >
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+      galley of type and scrambled it to make a type specimen book.
     </CourseReportTile>
   </Story>
 </Canvas>
@@ -148,9 +158,9 @@ export const reviews = [
 
 <Canvas>
   <Story name="Switchup Tile">
-    <SwitchupReviewTile 
+    <SwitchupReviewTile
       key="1"
-      reviewTitle="Best Decision for a Real Future" 
+      reviewTitle="Best Decision for a Real Future"
       reviewedAt="11/20/2019"
       alumniName="Susan Ma"
       alumniTitle="Software Engineer"
@@ -162,11 +172,12 @@ export const reviews = [
       jobAssistanceScore="5"
       reviewUrl="https://www.coursereport.com/schools/launch-academy?shared_review=22740#reviews"
     >
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+      galley of type and scrambled it to make a type specimen book.
     </SwitchupReviewTile>
   </Story>
 </Canvas>
-
 
 # Review Grid
 

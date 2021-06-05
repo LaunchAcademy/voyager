@@ -24,7 +24,11 @@ const TopBar = ({ logo, logoAltText, children }) => (
             </Disclosure.Button>
           </div>
 
-          <div className={`${open ? "top-bar-navigation__menu-list__open" : "top-bar-navigation__menu-list__closed"}`}>
+          <div
+            className={`${
+              open ? "top-bar-navigation__menu-list__open" : "top-bar-navigation__menu-list__closed"
+            }`}
+          >
             {children}
           </div>
         </>
