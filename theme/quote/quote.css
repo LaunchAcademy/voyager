@@ -1,39 +1,107 @@
 .quote {
   @apply bg-teal pb-10 font-text pt-10 pr-5; 
-  @apply md:grid md:grid-cols-4 md:divide-x-2  md:bg-white;
+  @apply lg:grid lg:grid-cols-4 lg:divide-x-2  lg:bg-white;
 
   & .quote__content {
     @apply col-span-1 text-center;
   }
 
-  & .quote__quote_icon {
+  & .quote__icon {
     @apply hidden;
-    @apply md:col-span-1 md:text-right md:pr-10  md:font-normal md:font-quote md:text-6xl md:block;
+    @apply lg:col-span-1 lg:text-right lg:pr-10  lg:font-normal lg:font-quote lg:text-6xl lg:block;
   }
   
-  & .quote__horizontal_line {
+  & .quote__horizontal-line {
     @apply pt-3 block;
-    @apply md:hidden;
+    @apply lg:hidden;
   }
 
-  & .quote__quote_content {
-    @apply col-span-3 px-3 text-center;
-  }
-
-  & .quote__quote_text {
-    @apply pb-5 font-text divide-x-2;
-    @apply md:text-left
-  }
-
-  & .quote__quote_name {
-    @apply font-bold font-headline leading-snug;
-    text-transform: uppercase;
-    @apply md:text-left
-  }
+  & .quote__content {
+    @apply col-span-3 p-3 text-center;
   
-  & .quote__quote_company {
-    @apply font-text;
-    text-transform: uppercase;
-    @apply md:text-left
+    & .quote__text {
+      @apply pb-5 font-text divide-x-2;
+      @apply lg:text-left;
+    }
+    
+    & .quote__name {
+      @apply font-bold font-headline leading-snug uppercase;
+      @apply lg:text-left;
+    }
+    
+    & .quote__company {
+      @apply font-text uppercase;
+      @apply lg:text-left;
+    }
+  }
+}
+
+.quote_banner {
+  @apply bg-white pb-10 font-text pt-10 px-5 divide-x-0; 
+  @apply  lg:bg-white;
+
+  & .quote__icon {
+    @apply hidden;
+  }
+
+  & .quote__content {
+    @apply text-center;
+  
+    & .quote__horizontal-line {
+      @apply lg:mx-40 lg:block;
+    }
+
+    & .quote__text {
+      @apply text-center pb-5 font-text font-bold text-xl divide-x-0;
+    }
+
+    & .quote__name {
+      @apply text-center font-text font-normal pt-3 capitalize;
+    }
+
+    & .quote__company {
+      @apply hidden;
+    }
+  }
+}
+
+
+.quote_feature-student {
+  @apply grid grid-cols-12 my-16 bg-white divide-x-0;
+
+  & .quote__icon {
+    @apply hidden;
+  }
+
+  & .quote__content {
+    @apply col-span-12;
+
+    & .quote__horizontal-line {
+      @apply hidden;
+    }
+
+    & .quote__text {
+      @apply text-center font-bold text-2xl divide-x-0;
+    }
+
+    & .quote__student {
+      @apply grid grid-cols-2 py-5 place-content-end;
+
+      & .student__profile-image {
+        @apply rounded-full w-16 flex justify-self-end self-center;
+      }
+
+      & .student__text-info {
+        @apply col-start-2 flex align-middle flex-wrap ml-5;
+
+        & .text-info__name {
+          @apply font-bold w-full font-headline self-end text-left;
+        }
+     
+        & .text-info__company {
+          @apply uppercase w-full leading-none text-left;
+        }
+      }
+    }
   }
 }
