@@ -1,9 +1,9 @@
 import React from "react";
-import Button from "../buttons/Button";
+import Button from "../buttons/Button.js";
 
 const TuitionPaymentPlanItem = ({ title, description, learnMoreUrl }) => {
   let button;
-  learnMoreUrl ? <Button text="Learn More" to={learnMoreUrl} size="lg" className="tuition-plan__item-button" /> : null
+  learnMoreUrl ? <Button text="Learn More" to={learnMoreUrl} size="lg" className="tuition-plan__item-button" /> : null;
 
   return (
     <div className="tuition-plan__item">
@@ -11,7 +11,7 @@ const TuitionPaymentPlanItem = ({ title, description, learnMoreUrl }) => {
       <p className="tuition-plan__item-description">{description}</p>
       {button}
     </div>
-  )
-}
+  );
+};
 
 export default TuitionPaymentPlanItem;

@@ -1,15 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import CourseReportTile from "./CourseReportTile"
-import SwitchupReviewTile from "./SwitchupReviewTile"
-import "./reviewGrid.css"
+import CourseReportTile from "./CourseReportTile.js";
+import SwitchupReviewTile from "./SwitchupReviewTile.js";
+import "./reviewGrid.css";
 
 const ReviewList = ({ allReviews }) => {
-
-  const reviewsArray = allReviews.map((review)=> {
+  const reviewsArray = allReviews.map((review) => {
     if (review.reviewUrl.includes("coursereport.com")) {
       return (
-        <CourseReportTile 
+        <CourseReportTile
           key={review.id}
           reviewTitle={review.reviewTitle}
           reviewedAt={review.reviewedAt}
@@ -20,35 +19,36 @@ const ReviewList = ({ allReviews }) => {
           instructorScore={review.instructorScore}
           curriculumScore={review.curriculumScore}
           jobAssistanceScore={review.jobAssistanceScore}
-          reviewUrl={review.reviewUrl}>
+          reviewUrl={review.reviewUrl}
+        >
           {review.reviewParagraph}
         </CourseReportTile>
-      )
-    } else {
-      return(
-        <SwitchupReviewTile 
-          key={review.id}
-          reviewTitle={review.reviewTitle}
-          reviewedAt={review.reviewedAt}
-          alumniName={review.alumniName}
-          alumniTitle={review.alumniTitle}
-          alumniGradYear={review.alumniGradYear}
-          verified={review.verified}
-          overallScore={review.overallScore}
-          curriculumScore={review.curriculumScore}
-          jobAssistanceScore={review.jobAssistanceScore}
-          reviewUrl={review.reviewUrl}>
-          {review.reviewParagraph}
-        </SwitchupReviewTile>
-      )
+      );
     }
-  })
+    return (
+      <SwitchupReviewTile
+        key={review.id}
+        reviewTitle={review.reviewTitle}
+        reviewedAt={review.reviewedAt}
+        alumniName={review.alumniName}
+        alumniTitle={review.alumniTitle}
+        alumniGradYear={review.alumniGradYear}
+        verified={review.verified}
+        overallScore={review.overallScore}
+        curriculumScore={review.curriculumScore}
+        jobAssistanceScore={review.jobAssistanceScore}
+        reviewUrl={review.reviewUrl}
+      >
+        {review.reviewParagraph}
+      </SwitchupReviewTile>
+    );
+  });
 
   return (
     <div className="review-grid review-grid_stagger">
       {reviewsArray}
     </div>
-  )
-}
+  );
+};
 
-export default ReviewList
+export default ReviewList;

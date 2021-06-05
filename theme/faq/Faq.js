@@ -1,21 +1,24 @@
-import React from 'react';
+import React from "react";
 import PropTypes from "prop-types";
-import Icon from "../icons/Icon";
+import Icon from "../icons/Icon.js";
 import "./faq.css";
 
-const Faq = ({ title, description, selected, handleClick }) => {
-  let button, questionClass;
+const Faq = ({
+  title, description, selected, handleClick,
+}) => {
+  let button; let
+    questionClass;
   if (selected) {
-    questionClass = 'block'
+    questionClass = "block";
   } else {
-    questionClass = 'hidden'
+    questionClass = "hidden";
     button = (
       <Icon
         name="plus-square"
         onClick={handleClick}
         aria-hidden="true"
       />
-    )
+    );
   }
   return (
     <div className="faq" onClick={handleClick}>
@@ -29,8 +32,8 @@ const Faq = ({ title, description, selected, handleClick }) => {
       </div>
       <p className={`faq__description ${questionClass}`}>{description}</p>
     </div>
-  )
-}
+  );
+};
 
 Faq.propTypes = {
   title: PropTypes.string.isRequired,
@@ -39,4 +42,4 @@ Faq.propTypes = {
   handleClick: PropTypes.func,
 };
 
-export default Faq
+export default Faq;

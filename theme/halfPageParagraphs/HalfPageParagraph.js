@@ -1,9 +1,11 @@
 import React from "react";
-import Button from "../buttons/Button";
 import PropTypes from "prop-types";
+import Button from "../buttons/Button.js";
 import "./halfPageParagraph.css";
 
-const HalfPageParagraph = ({ title, text, subtitle, iconName }) => (
+const HalfPageParagraph = ({
+  title, text, subtitle, iconName,
+}) => (
   <section className="half-page-paragraph">
     <div className="half-page-paragraph__subtitle">Launch Your Career</div>
     <div className="half-page-paragraph__title">{title}</div>

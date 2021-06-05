@@ -1,9 +1,9 @@
-import Article from "./theme/alumniNews/Article";
+import Article from "./theme/alumniNews/Article.js";
 import Award from "./theme/awards/Award.js";
 import Button from "./theme/buttons/Button.js";
 import colors from "./theme/colors/colors.cjs";
-import DesktopDeviceTile from "./theme/deviceProjectTile/DesktopDeviceTile";
-import DesktopProjectCard from "./theme/cards/DesktopProjectCard";
+import DesktopDeviceTile from "./theme/deviceProjectTile/DesktopDeviceTile.js";
+import DesktopProjectCard from "./theme/cards/DesktopProjectCard.js";
 import Icon from "./theme/icons/Icon.js";
 import Profile from "./theme/people/Profile.js";
 import TopBar from "./theme/navigation/TopBar.js";
@@ -14,14 +14,12 @@ import TitledParagraph from "./theme/titledParagraph/TitledParagraph.js";
 import Fact from "./theme/factSet/Fact.js";
 import FactSet from "./theme/factSet/FactSet.js";
 import Quote from "./theme/quote/Quote.js";
-import StaticQuote from "./theme/quote/StaticQuote.js";
-import FeatureQuote from "./theme/quote/FeatureQuote";
-import CardList from "./theme/cards/CardList";
-import Card from "./theme/cards/Card";
+import CardList from "./theme/cards/CardList.js";
+import Card from "./theme/cards/Card.js";
 import CourseScheduleList from "./theme/courseSchedule/CourseScheduleList.js";
 import CourseSchedule from "./theme/courseSchedule/CourseSchedule.js";
-import MobileDeviceTile from "./theme/deviceProjectTile/MobileDeviceTile";
-import MobileProjectCard from "./theme/cards/MobileProjectCard";
+import MobileDeviceTile from "./theme/deviceProjectTile/MobileDeviceTile.js";
+import MobileProjectCard from "./theme/cards/MobileProjectCard.js";
 import Module from "./theme/module/Module.js";
 import ModuleLearningObjective from "./theme/module/ModuleLearningObjective.js";
 import HorizontalProfile from "./theme/people/HorizontalProfile.js";
@@ -32,7 +30,7 @@ import FeatureListItem from "./theme/featureList/FeatureListItem.js";
 import HalfPageParagraph from "./theme/halfPageParagraphs/HalfPageParagraph.js";
 import CreativeContent from "./theme/creativeContent/CreativeContent.js";
 import TuitionPaymentPlanItem from "./theme/tuitionPaymentPlan/TuitionPaymentPlanItem.js";
-import ReviewList from "./theme/reviews/ReviewList";
+import ReviewList from "./theme/reviews/ReviewList.js";
 
 export {
   Article,
@@ -64,10 +62,8 @@ export {
   FaqList,
   FeatureList,
   FeatureListItem,
-  FeatureQuote,
   TuitionPaymentPlanItem,
   ReviewList,
-  StaticQuote,
   HalfPageParagraph,
   CreativeContent,
 };

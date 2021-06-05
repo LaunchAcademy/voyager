@@ -1,18 +1,19 @@
-import React from 'react';
-import './quote.css';
-import QuoteAuthor from './QuoteAuthor';
-import QuoteFeatureStudent from './QuoteFeatureStudent'
+import React from "react";
+import "./quote.css";
+import QuoteAuthor from "./QuoteAuthor.js";
+import QuoteFeatureStudent from "./QuoteFeatureStudent.js";
 
-const Quote = ({ quoteType, quote, name, company, studentImageUrl }) => {
+const Quote = ({
+  quoteType, quote, name, company, studentImageUrl,
+}) => {
+  let quoteTypeClass = "quote";
+  let quoteAuthor = <QuoteAuthor name={name} company={company} />;
 
-  let quoteTypeClass = "quote"
-  let quoteAuthor = <QuoteAuthor name={name} company={company} />
-
-  if(quoteType === "banner") {
-    quoteTypeClass += " quote_banner"
-  } else if(quoteType === "student") {
-    quoteTypeClass += " quote_feature-student"
-    quoteAuthor = <QuoteFeatureStudent name={name} company={company} studentImageUrl={studentImageUrl} />
+  if (quoteType === "banner") {
+    quoteTypeClass += " quote_banner";
+  } else if (quoteType === "student") {
+    quoteTypeClass += " quote_feature-student";
+    quoteAuthor = <QuoteFeatureStudent name={name} company={company} studentImageUrl={studentImageUrl} />;
   }
 
   return (
@@ -28,8 +29,7 @@ const Quote = ({ quoteType, quote, name, company, studentImageUrl }) => {
         {quoteAuthor}
       </figure>
     </div>
-  )
+  );
 };
-
 
 export default Quote;

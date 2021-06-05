@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import Faq from './Faq';
+import React, { useState, useEffect } from "react";
+import Faq from "./Faq.js";
 import "./faqList.css";
 
 const FaqList = ({ questions }) => {
-  const [selectedQuestion, setSelectedQuestion] = useState([])
+  const [selectedQuestion, setSelectedQuestion] = useState([]);
 
-  const toggleQuestionSelect = id => {
+  const toggleQuestionSelect = (id) => {
     if (id === selectedQuestion) {
-      setSelectedQuestion(null)
+      setSelectedQuestion(null);
     } else {
-      setSelectedQuestion(id)
+      setSelectedQuestion(id);
     }
-  }
+  };
 
-  const questionListItems = questions.map(question => {
-    let selected
+  const questionListItems = questions.map((question) => {
+    let selected;
     if (selectedQuestion === question.id) {
-      selected = true
+      selected = true;
     }
 
-    let handleClick = () => {
-      toggleQuestionSelect(question.id)
-    }
+    const handleClick = () => {
+      toggleQuestionSelect(question.id);
+    };
 
     return (
       <Faq
@@ -31,8 +31,8 @@ const FaqList = ({ questions }) => {
         selected={selected}
         handleClick={handleClick}
       />
-    )
-  })
+    );
+  });
 
   return (
     <div className="faq-list">
@@ -40,7 +40,7 @@ const FaqList = ({ questions }) => {
         {questionListItems}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FaqList
+export default FaqList;
