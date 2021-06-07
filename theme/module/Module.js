@@ -2,10 +2,25 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./module.css";
 
-const Module = ({ subtitle, title, location, commitment, duration, detail, description, imageUrl, children }) => {
+const Module = ({
+  subtitle,
+  title,
+  location,
+  commitment,
+  duration,
+  detail,
+  description,
+  imageUrl,
+  children,
+}) => {
   let details;
-  location && commitment && duration ? details = <p>{location} | {commitment} | {duration}</p> :
-    details = <p>{detail}</p>;
+  location && commitment && duration
+    ? (details = (
+        <p>
+          {location} | {commitment} | {duration}
+        </p>
+      ))
+    : (details = <p>{detail}</p>);
   return (
     <div className="module">
       <div className="module__image-column">
@@ -20,12 +35,10 @@ const Module = ({ subtitle, title, location, commitment, duration, detail, descr
         <div className="module__description-container">
           <p>{description}</p>
         </div>
-        <div className="module__objectives-container">
-          {children}
-        </div>
+        <div className="module__objectives-container">{children}</div>
       </div>
     </div>
-  )
+  );
 };
 
 module.propTypes = {

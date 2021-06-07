@@ -9,8 +9,8 @@ const Article = ({ imageUrl, title, subtitle }) => {
       <strong className="article-list__title">{title}</strong>
       <p className="article-list__subtitle">{subtitle}</p>
     </div>
-  )
-}
+  );
+};
 
 Article.defaultProps = {
   imageUrl: undefined,
@@ -23,6 +23,5 @@ Article.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
 };
-
 
 export default Article;

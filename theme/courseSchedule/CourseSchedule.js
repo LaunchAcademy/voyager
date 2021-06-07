@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
 
-import Button from "../buttons/Button.js"
+import Button from "../buttons/Button.js";
 
-const CourseSchedule = ({ cohort, enrollmentEnds, preflightBegins, ignitionBegins, cohortBegins, cohortEnds, buttonURL, buttonText }) => {
-
+const CourseSchedule = ({
+  cohort,
+  enrollmentEnds,
+  preflightBegins,
+  ignitionBegins,
+  cohortBegins,
+  cohortEnds,
+  buttonURL,
+  buttonText,
+}) => {
   return (
     <div className="course-schedule">
       <div className="course-schedule__course_content course-schedule__course_content--two-column">
@@ -34,7 +42,7 @@ const CourseSchedule = ({ cohort, enrollmentEnds, preflightBegins, ignitionBegin
         <Button to={buttonURL} text={buttonText} className="hero__button" size="lg" />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default CourseSchedule;

@@ -8,9 +8,7 @@ const FeatureList = ({ subtitle, title, footerText, children }) => (
       <h2 className="feature-list__header-container-title">{title}</h2>
       <h3 className="feature-list__header-container-subtitle">{subtitle}</h3>
     </div>
-    <div className="feature-list__grid">
-      {children}
-    </div>
+    <div className="feature-list__grid">{children}</div>
     <div className="feature-list__footer-container">
       <h2 className="feature-list__footer-text">{footerText}</h2>
     </div>

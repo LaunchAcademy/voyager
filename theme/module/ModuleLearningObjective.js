@@ -1,6 +1,6 @@
-import React from "react"
-import Icon from "../icons/Icon"
+import React from "react";
 import PropTypes from "prop-types";
+import Icon from "../icons/Icon.js";
 import "./moduleLearningObjective.css";
 
 const ModuleLearningObjective = ({ objectiveDescription }) => (

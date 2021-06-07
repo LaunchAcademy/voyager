@@ -1,10 +1,18 @@
-import blocks, { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
-import PartnerLogoList from "./PartnerLogoList"
+import blocks, { Meta, Canvas, Story, ArgsTable } from "@storybook/addon-docs/blocks";
+import PartnerLogoList from "./PartnerLogoList";
 
-export const partnerData = [{name: "Acme", logoImageUrl: "https://placekitten.com/300/100"}, {name: "Innotech", logoImageUrl: "https://placekitten.com/300/100"}, {name: "Spacely Sprockets", logoImageUrl: "https://placekitten.com/300/100"}, {name: "Slate Rock and Gravel", logoImageUrl: "https://placekitten.com/300/100"}, {name: "Wayne Enterprises", logoImageUrl: "https://placekitten.com/300/100"}, {name: "Lexcorp", logoImageUrl: "https://placekitten.com/300/100"}, {name: "Some Other Co", logoImageUrl: "https://placekitten.com/300/100"}]
-export const Template = (args) => <PartnerLogoList {...args} />
+export const partnerData = [
+  { name: "Acme", logoImageUrl: "https://placekitten.com/300/100" },
+  { name: "Innotech", logoImageUrl: "https://placekitten.com/300/100" },
+  { name: "Spacely Sprockets", logoImageUrl: "https://placekitten.com/300/100" },
+  { name: "Slate Rock and Gravel", logoImageUrl: "https://placekitten.com/300/100" },
+  { name: "Wayne Enterprises", logoImageUrl: "https://placekitten.com/300/100" },
+  { name: "Lexcorp", logoImageUrl: "https://placekitten.com/300/100" },
+  { name: "Some Other Co", logoImageUrl: "https://placekitten.com/300/100" },
+];
+export const Template = (args) => <PartnerLogoList {...args} />;
 Template.parameters = {};
-const defaultArgs = {}
+const defaultArgs = {};
 
 <Meta title="Partner Logos" />
 

@@ -10,7 +10,7 @@
     @apply text-center pb-5;
     @apply lg:col-span-1;
   }
-  
+
   & .module__image_container {
     @apply align-middle items-center;
   }
@@ -22,17 +22,16 @@
   & .module__subtitle {
     @apply uppercase text-sm font-text;
   }
-  
+
   & .module__title {
     @apply text-xl font-headline leading-snug;
   }
-  
+
   & .module__info-container {
     @apply uppercase font-text text-sm;
     @apply lg:py-3;
-
   }
-  
+
   & .module__description-container {
     @apply font-text text-xs py-2;
     @apply lg:max-w-md;
