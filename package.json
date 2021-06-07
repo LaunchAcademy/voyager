@@ -16,7 +16,9 @@
   "files": [
     "CHANGELOG.md",
     "dist",
-    "README.md"
+    "README.md",
+    "theme/**/*.*",
+    "dist/**"
   ],
   "main": "dist/index.js",
   "module": "index.js",
