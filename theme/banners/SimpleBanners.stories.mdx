@@ -1,11 +1,11 @@
-import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import Button from "../buttons/Button.js"
-import Icon from "../icons/Icon.js"
-import SimpleBanner from "./SimpleBanner.js"
-import BannerTitle from "./BannerTitle.js"
-import BannerContent from "./BannerContent.js"
-import "../../src/assets/scss/main.css"
-import "./banners.css"
+import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import Button from "../buttons/Button.js";
+import Icon from "../icons/Icon.js";
+import SimpleBanner from "./SimpleBanner.js";
+import BannerTitle from "./BannerTitle.js";
+import BannerContent from "./BannerContent.js";
+import "../../src/assets/scss/main.css";
+import "./banners.css";
 
 <Meta title="Banners" />
 
@@ -31,7 +31,14 @@ import "./banners.css"
         <div className="banner_no-photo__title">What to expect from your interview process</div>
         <div className="banner_no-photo__container">
           <div className="banner_button-container_no-photo">
-            <Button to="#" text="Schedule an Info Call" iconname="phone" className="hero__button pr-3" secondary size="lg" />
+            <Button
+              to="#"
+              text="Schedule an Info Call"
+              iconname="phone"
+              className="hero__button pr-3"
+              secondary
+              size="lg"
+            />
           </div>
           <div className="banner_button-container_no-photo">
             <Button to="#" text="Button" iconName="eye" className="hero__button" size="lg" />
@@ -47,9 +54,14 @@ import "./banners.css"
 <Canvas>
   <Story name="Title and Paragraph">
     <SimpleBanner type="prose" backgroundImageUrl="https://placekitten.com/1024/350">
-      <BannerTitle>A practical computer science education without the bloat of a 4-year program</BannerTitle>
+      <BannerTitle>
+        A practical computer science education without the bloat of a 4-year program
+      </BannerTitle>
       <BannerContent>
-        <p>Launch provides a highly-structured, collaborative learning environment designed to prepare you for you new career in just 18 weeks.</p>
+        <p>
+          Launch provides a highly-structured, collaborative learning environment designed to
+          prepare you for you new career in just 18 weeks.
+        </p>
       </BannerContent>
     </SimpleBanner>
   </Story>

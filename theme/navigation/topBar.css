@@ -6,8 +6,7 @@
 }
 
 .top-bar-navigation {
-    @apply flex flex-wrap justify-between items-center py-6 container mx-auto;
-
+  @apply flex flex-wrap justify-between items-center py-6 container mx-auto;
 
   & .top-bar-navigation__menu-list__open {
     @apply block;
@@ -35,13 +34,12 @@
     }
 
     & li:hover {
-
       & .navigation-list__sub-navigation {
-        @apply  mt-4 block bg-white;
+        @apply mt-4 block bg-white;
         @apply lg:inline-block lg:mt-1 lg:-ml-1 lg:absolute lg:w-32;
 
         & li {
-          @apply lg:py-2 lg:px-3 lg:w-full lg:flex lg:justify-end lg:align-middle ;
+          @apply lg:py-2 lg:px-3 lg:w-full lg:flex lg:justify-end lg:align-middle;
         }
         & li:hover {
           @apply bg-primary-brand bg-opacity-25;
@@ -72,7 +70,7 @@
     @apply block relative overflow-hidden pb-1 top-1;
     &::after {
       opacity: 1;
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -90,5 +88,4 @@
       transform: translate3d(0, 0, 0);
     }
   }
-
 }

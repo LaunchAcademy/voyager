@@ -1,13 +1,14 @@
 {
   "scripts": {
-    "build": "./node_modules/.bin/webpack",
-    "dev": "./node_modules/.bin/webpack serve",
+    "build": "webpack",
+    "dev": "webpack serve",
+    "prepare": "yarn run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "license": "UNLICENSED",
   "private": true,
-  "name": "voyager",
+  "name": "@launchacademy/voyager",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -16,7 +17,9 @@
   "files": [
     "CHANGELOG.md",
     "dist",
-    "README.md"
+    "README.md",
+    "theme/**/*.*",
+    "dist/**"
   ],
   "main": "dist/index.js",
   "module": "index.js",

@@ -1,18 +1,18 @@
 .faq {
   @apply pb-4;
-  
+
   & .faq__content {
     @apply grid grid-cols-4 py-4;
   }
-  
+
   & .faq__title-container {
     @apply col-start-1 col-span-3 font-bold font-headline;
   }
-  
+
   & .faq__icon-container {
     @apply col-start-4 col-span-1 place-content-end;
   }
-  
+
   & .faq__description {
     @apply col-span-4 font-text;
   }

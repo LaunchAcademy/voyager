@@ -12,15 +12,24 @@ module.exports = {
     colors: { ...getColorsByColorName(), ...getColorsByName() },
     fontFamily,
     fontSize: {
-      xxs: [".75rem", {
-        lineHeight: "1rem",
-      }],
-      xs: [".875rem", {
-        lineHeight: "1.125rem",
-      }],
-      sm: ["1rem", {
-        lineHeight: "1.33rem",
-      }],
+      xxs: [
+        ".75rem",
+        {
+          lineHeight: "1rem",
+        },
+      ],
+      xs: [
+        ".875rem",
+        {
+          lineHeight: "1.125rem",
+        },
+      ],
+      sm: [
+        "1rem",
+        {
+          lineHeight: "1.33rem",
+        },
+      ],
       base: ["1.125rem", { lineHeight: "1.3125rem" }],
       lg: "1.25rem",
       xl: "1.5rem",
@@ -30,10 +39,10 @@ module.exports = {
       "6xl": ["3.75rem", { lineHeight: "3.75rem" }],
     },
     scale: {
-      '25': '.25',
-      '50': '.5',
-      '75': '.75',
-      '90': '.9'
+      "25": ".25",
+      "50": ".5",
+      "75": ".75",
+      "90": ".9",
     },
   },
   variants: {

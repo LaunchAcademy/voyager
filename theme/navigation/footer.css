@@ -1,5 +1,5 @@
 .footer {
-  @apply text-center md:text-left align-top gap-4 lg:gap-8;
+  @apply text-center md:text-left align-top gap-4 lg:gap-8 pt-6;
   @apply md:grid md:grid-cols-12 md:my-16;
   @apply lg:grid lg:grid-cols-10;
   @apply xl:grid xl:grid-cols-12;

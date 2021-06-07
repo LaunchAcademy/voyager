@@ -1,4 +1,4 @@
-import blocks, { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 import Button from "../buttons/Button";
 import "../../src/assets/scss/main.css";
 import "./halfPageParagraph.css";
@@ -13,7 +13,12 @@ import CreativeContent from "../creativeContent/CreativeContent.js";
 
 <Canvas>
   <Story name="Half Page">
-    <HalfPageParagraph title="Land the job. Learn for life." text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" subtitle="Kickstart your career with confidence" iconName="chevron-right" />
+    <HalfPageParagraph
+      title="Land the job. Learn for life."
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+      subtitle="Kickstart your career with confidence"
+      iconName="chevron-right"
+    />
   </Story>
 </Canvas>
 
@@ -21,9 +26,14 @@ import CreativeContent from "../creativeContent/CreativeContent.js";
 
 <Canvas>
   <Story name="Half Page with Creative">
-    <div className="banner-with-creative">
-      <HalfPageParagraph title="Land the job. Learn for life." text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" subtitle="Kickstart your career with confidence" iconName="chevron-right" />
-      <CreativeContent> 
+    <div className="banner">
+      <HalfPageParagraph
+        title="Land the job. Learn for life."
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+        subtitle="Kickstart your career with confidence"
+        iconName="chevron-right"
+      />
+      <CreativeContent>
         <img src="https://place-hold.it/300x486" />
       </CreativeContent>
     </div>

@@ -8,7 +8,6 @@ const TitledParagraph = ({ title, children }) => (
       <h3 className="titled-paragraph__title">{title}</h3>
       {children}
     </div>
-
   </section>
 );
 

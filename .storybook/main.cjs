@@ -6,5 +6,4 @@ module.exports = {
     "../theme/**/*.stories.mdx",
   ],
   addons: ["@storybook/addon-postcss", "@storybook/addon-links", "@storybook/addon-essentials"],
-
 };

@@ -1,11 +1,15 @@
-import blocks, { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
-import Profile from "./Profile"
+import blocks, { Meta, Canvas, Story, ArgsTable } from "@storybook/addon-docs/blocks";
+import Profile from "./Profile";
 
-export const Template = (args) => <Profile {...args} />
+export const Template = (args) => <Profile {...args} />;
+
+export const socialUrls = ["https://www.facebook.com", "https://github.com", "https://youtube.com"];
 
 <Meta title="Profiles" />
 
 # Profiles
+
+## Student Profiles
 
 <Canvas>
   <Story name="Featured Student">
@@ -15,21 +19,50 @@ export const Template = (args) => <Profile {...args} />
         headshotUrl="https://placekitten.com/300/300"
         currentTitle="DevOps"
         currentEmployer="Boston Mutual"
-        formerTitle="Pastry Chef" />
+        formerTitle="Pastry Chef"
+      />
       <Profile
         name="Thom Froes"
         headshotUrl="https://placekitten.com/300/300"
         currentTitle="DevOps"
         currentEmployer="Boston Mutual"
-        formerTitle="Pastry Chef" />
+        formerTitle="Pastry Chef"
+      />
       <Profile
         name="Thom Froes"
         headshotUrl="https://placekitten.com/300/300"
         currentTitle="DevOps"
         currentEmployer="Boston Mutual"
-        formerTitle="Pastry Chef" />
+        formerTitle="Pastry Chef"
+      />
     </div>
   </Story>
 </Canvas>
 
-## Student Profiles
+## Employee Social Profiles
+
+<Canvas>
+  <Story name="Meet The Team Social">
+    <div className="profile-list">
+      <Profile
+        name="Corinne Babel"
+        headshotUrl="https://placekitten.com/300/300"
+        currentTitle="VP of Career Services"
+        foundingMember="true"
+        socialUrls={socialUrls}
+      />
+      <Profile
+        name="Kerrin Gillis"
+        headshotUrl="https://placekitten.com/300/300"
+        currentTitle="Experience Engineer"
+        socialUrls={socialUrls}
+      />
+      <Profile
+        name="Nicholas Alberts"
+        headshotUrl="https://placekitten.com/300/300"
+        currentTitle="Boston Experience Manager"
+        socialUrls={socialUrls}
+      />
+    </div>
+  </Story>
+</Canvas>

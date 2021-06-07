@@ -15,7 +15,7 @@
     @apply font-headline uppercase;
     @apply lg:text-xxs lg:text-left;
   }
-    
+
   & .course-schedule__date {
     @apply font-headline font-bold;
     @apply lg:font-normal lg:text-sm;

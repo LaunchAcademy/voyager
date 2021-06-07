@@ -5,7 +5,7 @@
   & .half-page-paragraph__subtitle {
     @apply font-headline font-bold text-base uppercase pb-3;
   }
-  
+
   & .half-page-paragraph__title {
     @apply font-headline font-bold text-5xl leading-tight;
     @apply lg:text-left;
@@ -15,12 +15,9 @@
     @apply my-5;
     @apply lg:align-top;
   }
-  
+
   & .half-page-paragraph__action-subtitle {
     @apply font-headline font-bold text-xl;
     @apply lg:align-top;
   }
 }
-
-  
-

@@ -1,3 +1,4 @@
-.creative__container {
-  @apply lg:flex lg:justify-center lg:align-middle lg:p-10;
+.creative-content__container {
+  @apply p-3;
+  @apply lg:grid lg:grid-cols-2;
 }

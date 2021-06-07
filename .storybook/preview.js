@@ -1,73 +1,72 @@
-import { addParameters } from '@storybook/react';
-import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
-import colors from "../theme/colors/colors"
+import { addParameters } from "@storybook/react";
+import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
+import colors from "../theme/colors/colors";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
-}
+};
 
 addParameters({
   backgrounds: {
-    default: 'default',
+    default: "default",
     values: [
       {
         name: "default",
-        value: colors.white.hex
+        value: colors.white.hex,
       },
       {
         name: "callout",
-        value: colors.secondaryBrand.hex
+        value: colors.secondaryBrand.hex,
       },
       {
         name: "photo",
-        value: colors.secondaryText.hex
-      }
-
-    ]
+        value: colors.secondaryText.hex,
+      },
+    ],
   },
 
   viewport: {
     viewports: {
       sm: {
-        name: 'sm',
+        name: "sm",
         styles: {
-          width: '376px',
-          height: '480px'
+          width: "376px",
+          height: "480px",
         },
-        type: "mobile"
+        type: "mobile",
       },
       md: {
-        name: 'md',
+        name: "md",
         styles: {
-          width: '769px',
-          height: '640px'
+          width: "769px",
+          height: "640px",
         },
-        type: "mobile"
+        type: "mobile",
       },
       lg: {
-        name: 'lg',
+        name: "lg",
         styles: {
-          width: '1025px',
-          height: '768px'
+          width: "1025px",
+          height: "768px",
         },
-        type: "desktop"
+        type: "desktop",
       },
       xl: {
-        name: 'xl',
+        name: "xl",
         styles: {
-          width: '1281px',
-          height: '1024px'
+          width: "1281px",
+          height: "1024px",
         },
-        type: "desktop"
+        type: "desktop",
       },
       "2xl": {
-        name: '2xl',
+        name: "2xl",
         styles: {
-          width: '1537px',
-          height: '1280px'
+          width: "1537px",
+          height: "1280px",
         },
-        type: "desktop"
-      }
-    }
-  }
+        type: "desktop",
+      },
+    },
+  },
 });

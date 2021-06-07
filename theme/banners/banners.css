@@ -8,15 +8,15 @@
 }
 
 .banner_no-photo {
-  @apply bg-white text-center pt-5;
+  @apply bg-white text-center pt-5 px-3;
   @apply lg:grid lg:grid-cols-2 lg:text-left;
 
   & .banner_no-photo__container {
     @apply lg:grid lg:grid-cols-2 lg:px-20;
   }
-  
+
   & .banner_no-photo__title {
-    @apply font-headline font-bold text-5xl pb-8 text-black leading-tight;
+    @apply font-headline font-bold text-5xl pb-8 px-3 text-black leading-tight;
     @apply lg:col-start-1 lg:px-20;
   }
 
@@ -48,6 +48,10 @@
     @apply md:w-9/12;
     @apply lg:w-7/12 lg:px-0 lg:pl-8;
     @apply xl:w-1/2;
+
+    & .banner__title {
+      @apply lg:ml-24;
+    }
 
     & .banner__content-container {
       @apply relative;
