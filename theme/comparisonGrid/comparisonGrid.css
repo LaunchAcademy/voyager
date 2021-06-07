@@ -1,32 +1,80 @@
-  .comparison-grid__table-title {
-    @apply flex justify-center items-center p-6;
-  }
+
 
 .comparison-grid {
-  @apply p-6 flex justify-center items-center;
+  @apply p-6 grid;
+  grid-template-columns: 1fr;
 
-
-  & .comparison-grid__header-container {
-    @apply font-headline bg-gray-dorian;
-  }
-  
-  & .comparison-grid__header-title {
-    @apply justify-center items-center text-lg font-normal p-5;
-  }
-  
-  & .comparison-grid__header-title_launch {
-    @apply text-xl font-bold;
+  & .details__name {
+    @apply bg-tertiary-text h-10 flex justify-center items-center flex-nowrap;
+    & h4 {
+      @apply text-xs;
+      @apply md:text-sm;
+    }
   }
 
-  & .comparison-grid__data-title {
-    @apply text-left font-text text-lg;
+  & div.details__checks_yes {
+    & svg {
+      @apply h-7 w-7 text-secondary-brand;
+    }
   }
-  
-  & .comparison-grid__data-text {
-    @apply items-center p-8 text-center;
+
+  & div.details__checks_no {
+    & svg {
+      @apply h-7 w-7 text-tertiary-text;
+    }
   }
-  
-  & .comparison-grid__data-text_launch {
-    @apply font-bold;
+
+  & .comparison-grid__titles {
+    @apply grid absolute bg-white z-10;
+    grid-template-columns: 100px 50px;
+    @apply lg:grid-cols-2 md:relative;
+
+    & .titles__details {
+      @apply font-text text-xxs;
+      @apply md:text-xs;
+      & div {
+        @apply h-10 flex justify-start items-center;
+      }
+    }
+
+    & .titles__icons {
+      & div {
+        @apply h-10 flex justify-center;
+        & svg {
+          @apply h-4 w-4 self-center;
+        }
+      }
+    }
+  }
+
+  & .comparison-grid__content {
+    @apply grid overflow-x-scroll ml-36;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    @apply md:grid-cols-3 md:ml-0;
+
+    & .content__details {
+      @apply text-center;
+
+      & div {
+        @apply h-10;
+      }
+    }
+
+    & .content__details_launch {
+      @apply font-bold;
+      & div {
+        @apply h-10 flex justify-center items-center;
+      }
+    }
+  }
+}
+
+@screen md {
+  .comparison-grid {
+    grid-template-columns: 1fr 3fr;
+
+    & .comparison-grid__titles {
+      grid-template-columns: 130px 50px;
+    }
   }
 }
