@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "build": "./node_modules/.bin/webpack",
-    "dev": "./node_modules/.bin/webpack serve",
+    "build": "webpack",
+    "dev": "webpack serve",
+    "prepare": "yarn run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
