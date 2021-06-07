@@ -2,7 +2,8 @@ import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 import TopBar from "./TopBar";
 import Button from "../buttons/Button";
 
-import logo from "../../src/assets/images/logo.png";
+import logoImage from "../../src/assets/images/logo.png";
+const logo = <img src={logoImage} alt="Launch Academy" />
 
 <Meta title="Top Navigation" component={TopBar} />
 
