@@ -8,6 +8,12 @@
     @apply sm:text-center sm:items-center;
   }
 
+  & .hero__image-column_square {
+    @apply col-span-12 text-center;
+    @apply lg:col-span-6 lg:h-full;
+    @apply sm:text-center sm:items-center;
+  }
+
   & .hero__supporting-content {
     @apply col-span-12;
     @apply lg:col-span-6;
@@ -21,9 +27,19 @@
     height: 210px;
   }
 
+  & .hero__image-container_square {
+    @apply relative inline-block;
+    @apply mt-0;
+    @apply lg:w-auto lg:h-full lg:object-top;
+  }
+
   & .hero__image {
     height: 210px;
     width: 210px;
+  }
+
+  & .hero__image_square {
+    @apply lg:object-cover lg:h-full;
   }
 
   & .hero__play-button {
