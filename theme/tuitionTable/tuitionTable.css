@@ -1,23 +1,35 @@
 .tuition-table {
-  @apply font-headline;
+  @apply font-headline table-auto;
+
+
 
   & .tuition-table__header-container {
-    @apply font-headline text-3xl;
+    @apply font-headline text-xl;
   }
 
   & .tuition-table__header-title {
-    @apply w-1/4 justify-center items-center;
+    @apply pb-5 px-4;
+  }
+
+  & .tuition-table__header-title_payment-plans {
+    @apply bg-white sticky left-0 pb-5;
   }
 
   & tr:nth-child(even) {
     @apply bg-gray-dorian;
+
+    & .tuition-table__data-title {
+      @apply bg-gray-dorian;
+    }
   }
 
   & .tuition-table__data-title {
-    @apply justify-center items-center text-center p-8 font-headline text-xl border-collapse border border-gray-light-slate;
+    @apply text-left font-headline border border-gray-light-slate bg-white sticky left-0 p-3;
+    @apply md:px-8;
   }
 
   & .tuition-table__data-text {
-    @apply justify-center items-center p-8 text-center border-collapse border border-gray-light-slate;
+    @apply font-text text-center border border-gray-light-slate text-sm;
+    @apply md:px-8;
   }
 }
