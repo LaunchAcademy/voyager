@@ -7,85 +7,90 @@ import "./comparisonGrid.css";
 
 <Meta title="Comparison Grid" />
 
-# Comparison Grid
+# Comparison table
 
 <Canvas>
-  <Story name="Comparison Grid">
-    <div className="comparison-grid">
-      <div className="comparison-grid__titles">
-        <div className="titles__details">
-          <div className="details__name"></div>
-          <div><p>Applied Learning Hours</p></div>
-          <div><p>Time commitment</p></div>
-          <div><p>Student:Instructor Ratio</p></div>
-          <div><p>Real-time, market-driven curriculum</p></div>
-          <div><p>Lifetime learning access</p></div>
-          <div><p>Lifetime career support</p></div>
-          <div><p>Direct intro to hiring partners</p></div>
-          <div><p>Placement Rate</p></div>
-          <div><p>Avg. Time-to-Hire</p></div>
-          <div><p>Total Investment</p></div>
-          <div><p>Avg. Year 1 Return-On-Tuition</p></div>
-        </div>
-        <div className="titles__icons">
-          <div className="details__name"></div>
-          <div><FontAwesomeIcon icon={faQuestionCircle} /></div>
-          <div><FontAwesomeIcon icon={faQuestionCircle} /></div>
-          <div><FontAwesomeIcon icon={faQuestionCircle} /></div>
-          <div><FontAwesomeIcon icon={faQuestionCircle} /></div>
-          <div><FontAwesomeIcon icon={faQuestionCircle} /></div>
-          <div><FontAwesomeIcon icon={faQuestionCircle} /></div>
-          <div><FontAwesomeIcon icon={faQuestionCircle} /></div>
-          <div><FontAwesomeIcon icon={faQuestionCircle} /></div>
-          <div><FontAwesomeIcon icon={faQuestionCircle} /></div>
-          <div><FontAwesomeIcon icon={faQuestionCircle} /></div>
-          <div><FontAwesomeIcon icon={faQuestionCircle} /></div>
-        </div>
-      </div>
-      <div className="comparison-grid__content">
-        <div className="content__details_launch">
-          <div className="details__name"><h4>Launch Academy</h4></div>
-          <div><p>700+</p></div>
-          <div><p>18 weeks</p></div>
-          <div><p>12 : 1</p></div>
-          <div className="details__checks_yes"><FontAwesomeIcon icon={faCheckCircle} /></div>
-          <div className="details__checks_yes"><FontAwesomeIcon icon={faCheckCircle} /></div>
-          <div className="details__checks_yes"><FontAwesomeIcon icon={faCheckCircle} /></div>
-          <div className="details__checks_yes"><FontAwesomeIcon icon={faCheckCircle} /></div>
-          <div><p>97%</p></div>
-          <div><p>x days</p></div>
-          <div><p>$16-$17k</p></div>
-          <div><p>400%</p></div>
-        </div>
-        <div className="content__details">
-          <div className="details__name"><h4>CS Degree</h4></div>
-          <div><p>800+</p></div>
-          <div><p>200+ weeks</p></div>
-          <div><p>12-150 : 1</p></div>
-          <div className="details__checks_no"><FontAwesomeIcon icon={faTimesCircle} /></div>
-          <div className="details__checks_no"><FontAwesomeIcon icon={faTimesCircle} /></div>
-          <div className="details__checks_yes"><FontAwesomeIcon icon={faCheckCircle} /></div>
-          <div className="details__checks_no"><FontAwesomeIcon icon={faTimesCircle} /></div>
-          <div><p>Not tracked</p></div>
-          <div><p>Not tracked</p></div>
-          <div><p>$80-$200k</p></div>
-          <div><p>Not tracked</p></div>
-        </div>
-        <div className="content__details">
-          <div className="details__name"><h4>Bootcamp</h4></div>
-          <div><p>450+</p></div>
-          <div><p>12+ weeks</p></div>
-          <div><p>x : y</p></div>
-          <div className="details__checks_no"><FontAwesomeIcon icon={faTimesCircle} /></div>
-          <div className="details__checks_no"><FontAwesomeIcon icon={faTimesCircle} /></div>
-          <div className="details__checks_no"><FontAwesomeIcon icon={faTimesCircle} /></div>
-          <div className="details__checks_no"><FontAwesomeIcon icon={faTimesCircle} /></div>
-          <div><p>x-y%</p></div>
-          <div><p>y days</p></div>
-          <div><p>$8-$26k</p></div>
-          <div><p>x%</p></div>
-        </div>
-      </div>
-    </div>
+  <Story name="Comparison Table">
+    <section className="comparison-table-container">
+      <h3 className="comparison-table__table-title">Table Title Here</h3>
+      <table className="comparison-table">
+        <thead className="comparison-table__header-container">
+          <tr>
+            <th className="header-container__header-title"></th>
+            <th className="header-container__header-title header-container__header-title_launch">Launch Academy</th>
+            <th className="header-container__header-title">CS Degree</th>
+            <th className="header-container__header-title">Bootcamp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="comparison-table__data-title">Applied Learning Hours <FontAwesomeIcon icon={faQuestionCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_launch">700+</td>
+            <td className="comparison-table__data-text">800+</td>
+            <td className="comparison-table__data-text">450+</td>
+          </tr>
+          <tr>
+            <td className="comparison-table__data-title">Time commitment <FontAwesomeIcon icon={faQuestionCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_launch">18</td>
+            <td className="comparison-table__data-text">200+</td>
+            <td className="comparison-table__data-text">12+</td>
+          </tr>
+          <tr>
+            <td className="comparison-table__data-title">Student:Instructor Ratio <FontAwesomeIcon icon={faQuestionCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_launch">12 : 1</td>
+            <td className="comparison-table__data-text">12-150 : 1</td>
+            <td className="comparison-table__data-text">x : y</td>
+          </tr>
+          <tr>
+            <td className="comparison-table__data-title">Real-time, market-driven curriculum <FontAwesomeIcon icon={faQuestionCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_yes"><FontAwesomeIcon icon={faCheckCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_no"><FontAwesomeIcon icon={faTimesCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_no"><FontAwesomeIcon icon={faTimesCircle} /></td>
+          </tr>
+          <tr>
+            <td className="comparison-table__data-title">Lifetime learning access <FontAwesomeIcon icon={faQuestionCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_yes"><FontAwesomeIcon icon={faCheckCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_no"><FontAwesomeIcon icon={faTimesCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_no"><FontAwesomeIcon icon={faTimesCircle} /></td>
+          </tr>
+          <tr>
+            <td className="comparison-table__data-title">Lifetime career support <FontAwesomeIcon icon={faQuestionCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_yes"><FontAwesomeIcon icon={faCheckCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_yes"><FontAwesomeIcon icon={faCheckCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_no"><FontAwesomeIcon icon={faTimesCircle} /></td>
+          </tr>
+          <tr>
+            <td className="comparison-table__data-title">Direct intro to hiring partners <FontAwesomeIcon icon={faQuestionCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_yes"><FontAwesomeIcon icon={faCheckCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_no"><FontAwesomeIcon icon={faTimesCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_no"><FontAwesomeIcon icon={faTimesCircle} /></td>
+          </tr>
+          <tr>
+            <td className="comparison-table__data-title">Placement Rate <FontAwesomeIcon icon={faQuestionCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_launch">97%</td>
+            <td className="comparison-table__data-text">Not tracked</td>
+            <td className="comparison-table__data-text">x-y%</td>
+          </tr>
+          <tr>
+            <td className="comparison-table__data-title">Avg. Time-to-Hire <FontAwesomeIcon icon={faQuestionCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_launch">X days</td>
+            <td className="comparison-table__data-text">Not tracked</td>
+            <td className="comparison-table__data-text">Y days</td>
+          </tr>
+          <tr>
+            <td className="comparison-table__data-title">Total Investment <FontAwesomeIcon icon={faQuestionCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_launch">$16-$17k</td>
+            <td className="comparison-table__data-text">$80-$200k</td>
+            <td className="comparison-table__data-text">$8-$26k</td>
+          </tr>
+          <tr>
+            <td className="comparison-table__data-title">Avg. Year 1 Return-On-Tuition <FontAwesomeIcon icon={faQuestionCircle} /></td>
+            <td className="comparison-table__data-text comparison-table__data-text_launch">400%</td>
+            <td className="comparison-table__data-text">Not tracked</td>
+            <td className="comparison-table__data-text">X%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </Story>
 </Canvas>
