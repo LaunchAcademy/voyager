@@ -1,0 +1,60 @@
+.comparison-table-container {
+  @apply md:flex md:justify-center md:flex-wrap;
+
+
+& .comparison-table__table-title {
+  @apply text-center p-6;
+}
+
+  & .comparison-table {
+    @apply table-auto;
+
+
+    & .comparison-table__header-container {
+      @apply bg-gray-dorian;
+
+      & th:first-child {
+        @apply sticky left-0 bg-gray-dorian z-10;
+      }
+      
+      & .header-container__header-title {
+        @apply text-center p-5 z-0;
+      }
+      & .header-container__header-title_launch {
+        @apply text-xl font-bold z-0;
+      }
+    }
+    
+    
+    & .comparison-table__data-title {
+      @apply text-left font-text text-lg sticky left-0 bg-white flex justify-between py-2 w-56;
+      @apply md:w-64;
+      & svg {
+        @apply h-4 w-4 justify-self-end self-center ml-3;
+      }
+    }
+    
+    
+    & .comparison-table__data-text {
+      @apply p-3 text-center;
+    }
+    
+    & .comparison-table__data-text_launch {
+      @apply font-bold;
+    }
+
+    & .comparison-table__data-text_yes {
+      & svg {
+        @apply h-7 w-7 justify-self-center self-center ml-0 text-secondary-brand;
+      }
+    }
+
+    & .comparison-table__data-text_no {
+      & svg {
+        @apply h-7 w-7 justify-self-center self-center ml-0 text-tertiary-text;
+      }
+    }
+  }
+}
+
+
