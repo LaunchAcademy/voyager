@@ -37,7 +37,7 @@
 }
 
 .quote_banner {
-  @apply bg-white pb-10 font-text pt-10 px-5 divide-x-0;
+  @apply grid grid-cols-12 bg-white pb-10 font-text pt-10 px-5 divide-x-0;
   @apply lg:bg-white;
 
   & .quote__icon {
@@ -45,7 +45,8 @@
   }
 
   & .quote__content {
-    @apply text-center;
+    @apply col-span-12 text-center;
+    @apply md:col-start-4 md:col-span-5;
 
     & .quote__horizontal-line {
       @apply lg:mx-40 lg:block;

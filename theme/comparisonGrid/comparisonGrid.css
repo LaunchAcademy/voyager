@@ -1,13 +1,13 @@
 .comparison-table-container {
-  @apply md:flex md:justify-center md:flex-wrap;
+  @apply grid grid-cols-12;
 
 
 & .comparison-table__table-title {
-  @apply text-center p-6;
+  @apply col-span-12 text-center p-6;
 }
 
   & .comparison-table {
-    @apply table-auto;
+    @apply table-auto col-span-12 md:col-start-3 md:col-span-8;
 
 
     & .comparison-table__header-container {
