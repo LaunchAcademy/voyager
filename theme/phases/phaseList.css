@@ -1,8 +1,8 @@
 .phase-list {
-  @apply lg:grid lg:grid-cols-4 lg:gap-16 lg:-mt-20 lg:z-40 lg:px-16 lg:relative;
+  @apply lg:grid lg:grid-cols-4 lg:gap-8 lg:-mt-20 lg:z-40 lg:px-10 lg:relative lg:mx-24;
 
   & .phase-list__item {
-    @apply shadow-2xl rounded-lg text-left mb-5 p-5 max-w-screen-sm bg-white mx-8;
+    @apply shadow-2xl rounded-lg text-left mb-5 p-5 max-w-screen-sm bg-white;
   }
 
   & .phase-list__item_blue {
