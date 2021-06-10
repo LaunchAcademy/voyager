@@ -21,6 +21,7 @@
   }
 }
 
+
 .banner__photo {
   @apply relative bg-no-repeat bg-cover py-32 text-white text-center mx-auto;
   @apply lg:py-64;
@@ -63,5 +64,41 @@
         @apply lg:ml-64 lg:text-3xl lg:mt-0 lg:font-bold;
       }
     }
+  }
+}
+
+
+.banner_device {
+  @apply bg-secondary-brand text-center pt-20 mb-96;
+  height: 625px;
+  @apply lg:grid lg:grid-cols-12 lg:text-left lg:pt-20 lg:overflow-y-hidden;
+
+  & .banner__content-container {
+    @apply col-span-12;
+    @apply lg:col-start-2 lg:col-span-5 lg:mt-20;
+  }
+
+  & .banner_device__title {
+    @apply font-headline font-bold text-5xl pb-8 px-3 pt-10 text-black leading-tight;
+    @apply lg:col-start-1;
+
+  }
+
+  & .banner_device__container {
+    @apply lg:flex lg:flex-nowrap;
+
+    & div:first-child {
+      @apply mb-10;
+    }
+
+    & .hero__button-container {
+      @apply lg:mr-5;
+    }
+
+  }
+
+  & .banner_device__device-container {
+    @apply col-span-12;
+    @apply lg:col-start-7 lg:col-span-6;
   }
 }

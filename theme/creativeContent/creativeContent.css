@@ -1,6 +1,6 @@
 .banner-with-creative {
-  @apply bg-gray-dorian my-10 py-10 grid grid-cols-12 md:gap-10;
-  @apply md:mx-5;
+  @apply bg-gray-dorian my-10 py-10 grid grid-cols-12;
+  @apply md:mx-5 md:gap-10;
 
   & .creative-content__container {
     @apply col-span-12 place-self-center mx-5;  
@@ -16,6 +16,29 @@
     & .titled-paragraph__container {
       @apply text-center mx-5;
       @apply md:col-span-12 md:text-left;
+    }
+  }
+}
+
+.creative-content__container {
+  @apply lg:grid lg:grid-cols-2;
+
+  & div:first-child {
+    @apply -mt-4;
+  }
+
+  & div:nth-child(2) {
+    @apply hidden;
+    @apply lg:block lg:mt-60;
+
+  }
+
+  & .device-wrapper {
+    & .device-mobile_screen {
+      @apply transform scale-75;
+      & .speaker {
+        @apply hidden;
+      }
     }
   }
 }
