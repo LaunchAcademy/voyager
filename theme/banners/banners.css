@@ -1,5 +1,19 @@
 .banner-with-creative {
-  @apply lg:grid lg:grid-cols-2;
+  @apply bg-gray-dorian mx-5 my-10 py-10;
+  @apply lg:grid lg:grid-cols-12 lg:gap-10;
+
+  & .creative-content__container {
+    @apply lg:col-start-2 lg:col-span-3 lg:place-self-center;
+  }
+  & .titled-paragraph {
+    @apply mt-0;
+    @apply lg:col-span-7;
+
+    & .titled-paragraph__container {
+      @apply text-left;
+      @apply lg:col-span-12;
+    }
+  }
 }
 
 .banner__title {
