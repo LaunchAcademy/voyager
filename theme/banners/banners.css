@@ -1,25 +1,3 @@
-.banner-with-creative {
-  @apply bg-gray-dorian my-10 py-10 grid grid-cols-12 md:gap-10;
-  @apply md:mx-5;
-
-  & .creative-content__container {
-    @apply col-span-12 place-self-center mx-5;  
-    @apply md:col-start-2 md:col-span-3;
-    & img {
-      @apply w-full h-auto object-contain;
-    }
-  }
-  & .titled-paragraph {
-    @apply mt-0 col-span-12;
-    @apply md:col-span-7;
-
-    & .titled-paragraph__container {
-      @apply text-center mx-5;
-      @apply md:col-span-12 md:text-left;
-    }
-  }
-}
-
 .banner__title {
   @apply text-white mb-1 z-20 relative;
   @apply lg:mb-4 lg:text-6xl;
