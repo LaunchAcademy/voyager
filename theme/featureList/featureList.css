@@ -18,8 +18,8 @@
   }
 
   & .feature-list__grid {
-    @apply grid grid-cols-1 bg-light p-5 mr-10;
-    @apply lg:max-w-xl;
+    @apply grid grid-cols-1 bg-light p-5 ;
+    @apply lg:max-w-xl lg:mr-10;
   }
 
   & .feature-list__item {
@@ -66,13 +66,13 @@
   }
 
   & .feature-list__header-container {
-    @apply bg-secondary-brand grid grid-cols-1 text-center p-20;
+    @apply bg-secondary-brand grid grid-cols-1 text-center py-20;
     @apply lg:grid lg:grid-cols-4 lg:col-span-3 lg:col-start-1 lg:ml-14 lg:mt-20;
   }
 
   & .feature-list__grid {
-    @apply bg-white p-5 ml-20 mr-0 -mt-20;
-    @apply lg:grid lg:grid-cols-2 lg:max-w-4xl;
+    @apply bg-white p-5 mx-5 -mt-20 ;
+    @apply lg:grid lg:grid-cols-2 lg:max-w-4xl lg:ml-20;
   }
 
   & .feature-list__footer-container {
