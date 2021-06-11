@@ -153,22 +153,22 @@
 }
 
 .review__narrative_course-report {
-  @apply col-span-2 grid grid-cols-1 grid-rows-1 place-items-start p-5;
-  @apply md:p-5 md:max-h-36;
+  @apply col-span-2 relative w-full max-h-36 p-5;
+  @apply md:p-5;
 
   & .narrative__text {
-   @apply h-full w-full z-0 row-start-1 col-start-1;
-   @apply md:pb-5 md:overflow-hidden;
+   @apply h-full w-full z-10 overflow-hidden;
+   @apply md:pb-5;
   }
 
   & .narrative__read-more {
-    @apply bg-gradient-to-t w-full h-full z-10 row-start-1 col-start-1;
+    @apply bg-gradient-to-t w-auto h-full z-20 absolute bottom-5 left-0 right-0;
     --tw-gradient-from: var(--course-report-background);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
 
   }
   & .narrative__link {
-    @apply row-start-1 col-start-1 z-20 mt-auto;
+    @apply z-30 mt-auto absolute bottom-5 left-5 right-0;
     color: var(--course-report-link);
     font-family: var(--course-report-font-family);
     font-size: var(--course-report-link-size);
