@@ -46,7 +46,7 @@
 
   & .quote__content {
     @apply col-span-12 text-center;
-    @apply md:col-start-5 md:col-span-4;
+    @apply lg:col-start-5 lg:col-span-4;
 
     & .quote__horizontal-line {
       @apply lg:mx-40 lg:block;
