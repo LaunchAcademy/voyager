@@ -1,5 +1,5 @@
 import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
-
+import BlogPost from "./BlogPost"
 
 <Meta title="Blog Posts" />
 
@@ -13,35 +13,16 @@ import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
       authorImageUrl="https://placekitten.com/408/287"
       tags="About Launch Academy, Stories, Learn to code, Uncategorized"
       >
-      To demystify it, and to show how you can build something like it, let’s walk through the technologies that are at play.
-
-      Gatsby
-      Gatsby is a static site generator that works extremely well with the ReactJS front-end framework, a framework we teach during our 18 week course. We used it as the engine that drives the site. It effectively builds our web page and allows us to deploy it.
-
-      ReactJS
-      ReactJS powers sites like Facebook, and provides for rich front-end experiences. ReactJS applications are built with JavaScript, the front-end programming language of the web. It also allows you to write native applications for Android and iOS applications with React Native. 
-
-      This framework drives the response to changes in date when you update it via the slider at the top of the screen. 
-
-      NodeJS
-      NodeJS is the backend runtime for communicating with third party API’s and databases. In this application, we use it to both build the ReactJS application, and to coalesce the data that is provided by the Massachusetts Department of Health.
-
-      JavaScript Object Notation (JSON)
-      The Massachusetts Department of Health publishes Word documents and PDFs daily. This is not a machine friendly-format. We use JavaScript Object Notation (JSON) to transform this data so that it can be easily consumed by the application. It’s just a way to represent data. You can see an example in the GitHub repository.
-
-      Responsive Web Design
-      Modern web applications need to look great both on the desktop and mobile device. I leveraged the Bootstrap front-end framework and some advanced styling to make sure the app looked ok on a small phone screen and your big computer monitor. 
-
-      Nivo
-      Nivo is a React library. It provides a set of friendly components to build interactive charts. If you’re a data nerd, this is a great library for you! It was my first time using it, and once I figured out the documentation, I really enjoyed using it. Using the component-driven nature of React, Nivo makes it really easy to visualize data.
-
-      Git and AWS Amplify 
-      Once I built the application, it was time to release it to the world. Using Git and GitHub for version control and to keep track of the software changes over time, I was able to connect it to Amazon Web Services. Every time I “push” a change to GitHub, Amazon listens for those changes and automatically deploys my changes.
-
-      
-      Overwhelmed? You don’t have to be. It’s a lot of buzzwords that can be intimidating and create a bit of impostor syndrome. During our 18 week course, we take you through many of the technologies above, and we work to show you that it’s not rocket science. 
-
-      My hope is that this adversity we’re all facing serves as a call to action for you. The world is changing, and life will likely be very different after we have overcome COVID-19 (and we will). If you want a rewarding, remote-friendly career that allows you to create, take the next step. Study with us and launch a career centered around building something that matters.  
+      <img src="https://placekitten.com/408/287" />
+      <p>In such a time of need, I’ve felt called to demonstrate that code and software gives us power. I created a COVID-19 tracker for our home state of Massachusetts and I wanted to share it with you: https://ma-covid-19-tracker.launchacademy.com/</p>
+      <p>Sure – technology can help to inform and to drive decisions, but the power of creation can be so liberating. While I was social distancing with my family (earnestly trying to channel my concern), after working intensely to serve our current students, I felt inspired to encourage others to discover this gift of creation.</p>
+      <p>The truth is, there’s nothing special about this application. After studying with us, you could build this. In fact, many students that have come before you build capstone projects that are just like this app. So, I’ve open-sourced this application with one goal: to prove that you can take this adversity we’re all facing and channel it into a transformation that will change your life for the better. </p>
+      <img src="https://placekitten.com/408/287" />
+      <p>To demystify it, and to show how you can build something like it, let’s walk through the technologies that are at play.</p>
+      <h3>Gatsby</h3>
+      <p>Gatsby is a static site generator that works extremely well with the ReactJS front-end framework, a framework we teach during our 18 week course. We used it as the engine that drives the site. It effectively builds our web page and allows us to deploy it.</p>
+      <h3>ReactJS</h3>
+      <p>ReactJS powers sites like Facebook, and provides for rich front-end experiences. ReactJS applications are built with JavaScript, the front-end programming language of the web. It also allows you to write native applications for Android and iOS applications with React Native. </p> 
     </BlogPost>
   </Story>
 </Canvas>
