@@ -1,6 +1,8 @@
 import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 import BlogPost from "./BlogPost"
 
+export const socialUrls = ["https://www.facebook.com", "https://github.com", "https://youtube.com"];
+
 <Meta title="Blog Posts" />
 
 # Blog Post
@@ -12,6 +14,7 @@ import BlogPost from "./BlogPost"
       authorName="Nicholas Alberts"
       authorImageUrl="https://placekitten.com/408/287"
       tags="About Launch Academy, Stories, Learn to code, Uncategorized"
+      socialUrls={socialUrls}
       >
       <img src="https://placekitten.com/408/287" />
       <p>In such a time of need, I’ve felt called to demonstrate that code and software gives us power. I created a COVID-19 tracker for our home state of Massachusetts and I wanted to share it with you: https://ma-covid-19-tracker.launchacademy.com/</p>

@@ -1,3 +1,42 @@
 .blog {
-  @apply 
+  @apply max-w-lg mx-auto flex flex-wrap justify-center; 
+
+  & .blog__author {
+    
+    & .profile_social {
+      @apply grid grid-cols-6 w-full;
+
+      & .profile__image {
+        @apply col-span-1 rounded-full flex items-center justify-center;
+        @apply h-20 w-auto;
+      }
+    
+      & .profile__name {
+        @apply col-span-2 flex items-center text-left text-sm font-headline font-bold ml-3;
+      }
+    
+      & .profile__current-title {
+        @apply hidden;
+      }
+    
+      & .profile__former-title {
+        @apply hidden;
+      }
+    
+      & .profile__label_current,
+      & .profile__label_former {
+        @apply hidden;
+      }
+    
+      & .profile__social {
+        @apply col-span-3 inline-flex justify-center items-center;
+        & li {
+          @apply rounded-full bg-gray-dorian p-3 m-2;
+          & svg {
+            @apply w-5 h-5;
+          }
+        }
+      }
+    }
+  }
 }
