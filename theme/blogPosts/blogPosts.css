@@ -7,8 +7,8 @@
       @apply grid grid-cols-6 w-full;
 
       & .profile__image {
-        @apply col-span-1 rounded-full flex items-center justify-center;
-        @apply h-20 w-auto;
+        @apply col-span-1 rounded-full flex justify-self-center self-center;
+        @apply object-cover w-12 h-12;
       }
     
       & .profile__name {
@@ -29,9 +29,9 @@
       }
     
       & .profile__social {
-        @apply col-span-3 inline-flex justify-center items-center;
+        @apply col-span-3 inline-flex justify-end items-center;
         & li {
-          @apply rounded-full bg-gray-dorian px-3 py-2 m-2;
+          @apply rounded-full bg-gray-dorian p-2 m-2;
           & svg {
             @apply w-5 h-5;
           }
