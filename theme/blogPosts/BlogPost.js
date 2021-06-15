@@ -34,9 +34,12 @@ const BlogPost = ({ blogTitle, authorName, authorImageUrl, socialUrls, tags, chi
       <section className="blog__content">
         {children}
       </section>
-      <ul className="blog__tags">
-        {tagList}
-      </ul>
+      <section className="blog__tag-container">
+        <h6>Tags</h6>
+        <ul className="tag-container__tags">
+          {tagList}
+        </ul>
+      </section>
     </article>
   )
 }

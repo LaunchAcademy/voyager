@@ -31,9 +31,9 @@
       & .profile__social {
         @apply col-span-3 inline-flex justify-end items-center;
         & li {
-          @apply rounded-full bg-gray-dorian p-2 m-2;
+          @apply rounded-full bg-primary-brand bg-opacity-10 p-2 m-2;
           & svg {
-            @apply w-5 h-5;
+            @apply w-5 h-5 text-primary-brand;
           }
         }
       }
@@ -48,15 +48,22 @@
       @apply mb-5;
     }
   }
+  & .blog__tag-container {
+    @apply text-left w-full;
 
-  & .blog__tags {
-    @apply inline-flex justify-between w-full mt-8;
-    & li {
-      @apply mx-2;
-
-      & .button.button_size_sm {
-        @apply text-xxs px-2;
+    & h6 {
+      @apply font-bold;
+    }
+    & .tag-container__tags {
+      @apply inline-flex justify-between w-full mt-3;
+      & li {
+        @apply mx-2;
+  
+        & .button.button_size_sm {
+          @apply text-xxs px-2;
+        }
       }
     }
   }
+
 }

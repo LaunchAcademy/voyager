@@ -8,9 +8,9 @@ const CardList = ({ content, numberOfColumns }) => {
   let cardListSize = "card-list";
 
   if (numberOfColumns === 2) {
-    cardListSize += "--medium";
+    cardListSize += "_medium";
   } else if (numberOfColumns === 3) {
-    cardListSize += "--large";
+    cardListSize += "_large";
   }
 
   const cardContentArray = content.map((card) => {
@@ -34,7 +34,7 @@ const CardList = ({ content, numberOfColumns }) => {
         />
       );
     }
-    return <Card imageUrl={card.imageUrl} header={card.header} body={card.body} />;
+    return <Card imageUrl={card.imageUrl} header={card.header} body={card.body} articleUrl={card.articleUrl} articleTitle={card.articleTitle} articleTime={card.articleTime} />;
   });
 
   return <div className={cardListSize}>{cardContentArray}</div>;

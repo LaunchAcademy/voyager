@@ -60,6 +60,57 @@ export const projectContent = [
   },
 ];
 
+export const blogContent = [
+  {
+    imageUrl: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
+    articleUrl: "#",
+    articleTitle: "HTML article",
+    articleTime: "20 minutes"
+  },
+  {
+    imageUrl: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
+    articleUrl: "#",
+    articleTitle: "HTML article",
+    articleTime: "20 minutes"
+  },
+  {
+    imageUrl: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
+    articleUrl: "#",
+    articleTitle: "HTML article",
+    articleTime: "20 minutes"
+  },
+  {
+    imageUrl: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
+    articleUrl: "#",
+    articleTitle: "HTML article",
+    articleTime: "20 minutes"
+  },
+  {
+    imageUrl: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
+    articleUrl: "#",
+    articleTitle: "HTML article",
+    articleTime: "20 minutes"
+  },
+  {
+    imageUrl: "https://placekitten.com/408/287",
+    header: "Learn the right things, in the right order",
+    body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
+    articleUrl: "#",
+    articleTitle: "HTML article",
+    articleTime: "20 minutes"
+  },
+];
+
 export const columns = 3;
 
 <Meta title="Cards" />
@@ -82,6 +133,16 @@ export const columns = 3;
     <section className="card-list-container">
       <h2>Student Projects</h2>
       <CardList content={projectContent} numberOfColumns={columns} />
+    </section>
+  </Story>
+</Canvas>
+
+# Blog Post Cards
+
+<Canvas>
+  <Story name="Blog Cards">
+    <section className="card-list-container">
+      <CardList content={blogContent} numberOfColumns={columns} />
     </section>
   </Story>
 </Canvas>
