@@ -39,4 +39,20 @@
       }
     }
   }
+
+  & .blog__content {
+    & img {
+      @apply w-full mb-8;
+    }
+    & p {
+      @apply mb-5;
+    }
+  }
+
+  & .blog__tags {
+    @apply inline-flex justify-evenly w-full;
+    & li {
+      @apply border-2 border-text rounded-xl px-2 py-1;
+    }
+  }
 }

@@ -5,19 +5,27 @@ import "./blogPosts.css"
 
 const BlogPost = ({ blogTitle, authorName, authorImageUrl, socialUrls, tags, children }) => {
 
+  let tagsSplit
+  if (tags) {
+    tagsSplit = tags.split(",")
+  }
+
+  const tagList = tagsSplit.map((tag) => {
+    return <li>{tag}</li>
+  })
   
   return(
     <article className="blog" >
-      <h1>{blogTitle}</h1>
+      <h2>{blogTitle}</h2>
       <section className="blog__author">
         <Profile name={authorName} headshotUrl={authorImageUrl} socialUrls={socialUrls}/>
       </section>
       <section className="blog__content">
-        <p>{children}</p>
+        {children}
       </section>
-      <section className="blog__tags">
-        {tags}
-      </section>
+      <ul className="blog__tags">
+        {tagList}
+      </ul>
     </article>
   )
 }
