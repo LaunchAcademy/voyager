@@ -50,9 +50,13 @@
   }
 
   & .blog__tags {
-    @apply inline-flex justify-evenly w-full;
+    @apply inline-flex justify-between w-full mt-8;
     & li {
-      @apply border-2 border-text rounded-xl px-2 py-1;
+      @apply mx-2;
+
+      & .button.button_size_sm {
+        @apply text-xxs px-2;
+      }
     }
   }
 }

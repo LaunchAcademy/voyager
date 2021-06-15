@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Profile from "../people/Profile"
+import Button from "../buttons/Button"
 import "./blogPosts.css"
 
 const BlogPost = ({ blogTitle, authorName, authorImageUrl, socialUrls, tags, children }) => {
@@ -11,7 +12,17 @@ const BlogPost = ({ blogTitle, authorName, authorImageUrl, socialUrls, tags, chi
   }
 
   const tagList = tagsSplit.map((tag) => {
-    return <li>{tag}</li>
+    return (
+      <li>
+        <Button
+          placement="photo"
+          size="sm"
+          text={tag}
+          to="#"
+        />
+      </li>
+    )
+  
   })
   
   return(
