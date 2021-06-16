@@ -73,7 +73,7 @@
   height: 555px;
 
   & .banner_device__container {
-    @apply lg:max-w-screen-lg lg:grid lg:grid-cols-2 lg:mx-auto;
+    @apply lg:max-w-screen-xl lg:grid lg:grid-cols-2 lg:mx-auto;
 
     & .banner__content-container {
       @apply w-full;

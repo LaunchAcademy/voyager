@@ -1,5 +1,5 @@
 .comparison-table-container {
-  @apply max-w-screen-lg mx-auto overflow-x-scroll;
+  @apply max-w-screen-xl mx-auto overflow-x-scroll;
 
 
 & .comparison-table__table-title {
