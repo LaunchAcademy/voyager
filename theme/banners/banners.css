@@ -70,35 +70,46 @@
 
 .banner_device {
   @apply bg-secondary-brand text-center pt-20 mb-96;
-  height: 625px;
-  @apply lg:grid lg:grid-cols-12 lg:text-left lg:pt-20 lg:overflow-y-hidden;
-
-  & .banner__content-container {
-    @apply col-span-12;
-    @apply lg:col-start-2 lg:col-span-5 lg:mt-20;
-  }
-
-  & .banner_device__title {
-    @apply font-headline font-bold text-5xl pb-8 px-3 pt-10 text-black leading-tight;
-    @apply lg:col-start-1;
-
-  }
+  height: 555px;
 
   & .banner_device__container {
-    @apply lg:flex lg:flex-nowrap;
+    @apply lg:max-w-screen-lg lg:grid lg:grid-cols-2 lg:mx-auto;
 
-    & div:first-child {
-      @apply mb-10;
+    & .banner__content-container {
+      @apply w-full;
+      @apply lg:mt-20;
     }
-
-    & .hero__button-container {
-      @apply lg:mr-5;
+  
+    & .banner_device__title {
+      @apply font-headline font-bold text-5xl pb-8 px-3 pt-10 text-black leading-tight text-left;
+  
+    }
+  
+    & .banner_device__container {
+      @apply lg:flex lg:flex-nowrap;
+  
+      & div:first-child {
+        @apply mb-10;
+      }
+  
+      & .hero__button-container {
+        @apply lg:mr-5;
+      }
+  
+    }
+  
+    & .banner_device__device-container {
+      @apply w-full;
     }
 
   }
 
-  & .banner_device__device-container {
-    @apply col-span-12;
-    @apply lg:col-start-7 lg:col-span-6;
+}
+
+@screen lg {
+  .banner_device {
+    height: 625px;
+    @apply pt-20 overflow-y-hidden w-full;
   }
+
 }
