@@ -1,7 +1,8 @@
 .blog {
-  @apply max-w-lg mx-auto flex flex-wrap justify-center; 
+  @apply max-w-2xl mx-auto flex flex-wrap justify-center mt-32; 
 
   & .blog__author {
+    @apply w-full;
     
     & .profile_social {
       @apply grid grid-cols-6 w-full;
@@ -48,6 +49,7 @@
       @apply mb-5;
     }
   }
+  
   & .blog__tag-container {
     @apply text-left w-full;
 
