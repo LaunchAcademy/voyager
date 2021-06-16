@@ -83,6 +83,9 @@
       & img {
         @apply w-full h-full object-center object-cover;
       }
+      & svg {
+        @apply w-full h-full object-center object-cover bg-accent pt-2;
+      }
     }
   }
 }
@@ -126,6 +129,9 @@
 
       & img {
         @apply w-full h-full object-center object-cover;
+      }
+      & svg {
+        @apply w-full h-full object-center object-cover bg-accent pt-2;
       }
     }
   }

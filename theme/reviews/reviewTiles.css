@@ -18,6 +18,8 @@
 
 .review {
   @apply grid grid-cols-2 w-full;
+  @apply md:h-80 md:overflow-hidden;
+
 }
 
 .review_switchup {
@@ -151,27 +153,29 @@
 }
 
 .review__narrative_course-report {
-  @apply col-span-2 grid grid-rows-3 grid-cols-1 p-5;
+  @apply col-span-2 relative w-full max-h-36 p-5;
   @apply md:p-5;
 
   & .narrative__text {
-    @apply col-start-1 col-span-1 row-start-1 row-span-2;
+   @apply h-full w-full z-10 overflow-hidden;
+   @apply md:pb-5;
   }
 
   & .narrative__read-more {
-    @apply bg-gradient-to-t col-start-1 col-span-1 row-start-1 row-span-2 w-full h-full;
+    @apply bg-gradient-to-t w-auto h-full z-20 absolute bottom-5 left-0 right-0;
     --tw-gradient-from: var(--course-report-background);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
-  }
 
+  }
   & .narrative__link {
-    @apply row-start-3;
+    @apply z-30 mt-auto absolute bottom-5 left-5 right-0;
     color: var(--course-report-link);
     font-family: var(--course-report-font-family);
     font-size: var(--course-report-link-size);
 
     & .link__button {
       @apply uppercase border-2 rounded-lg p-1 font-bold;
+      background-color: var(--course-report-background);
     }
   }
 }

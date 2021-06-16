@@ -1,5 +1,7 @@
 import React from "react";
 import DesktopDeviceTile from "../deviceProjectTile/DesktopDeviceTile.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const DesktopProjectCard = ({ imageUrl, projectTitle, studentName, studentProfileUrl }) => (
   <article className="card card__desktop-tile">
