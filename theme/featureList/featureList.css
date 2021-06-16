@@ -62,7 +62,6 @@
 .benefit-list {
   & .feature-list {
     @apply bg-white;
-    @apply lg:block lg:ml-0;
 
     & .feature-list__header-container {
       @apply lg:ml-0 lg:pb-36;
@@ -80,7 +79,7 @@
   }
 
   & .feature-list__footer-container {
-    @apply block;
+    @apply hidden;
   }
 
   & .feature-list__footer-text {
