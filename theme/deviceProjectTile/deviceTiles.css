@@ -1,7 +1,7 @@
 .mobile-device-wrapper {
   @apply flex justify-center;
 
-  & .device-mobile_screen {
+  & .device-mobile__screen {
     max-height: 464px;
     max-width: 232px;
   }
@@ -10,19 +10,19 @@
     @apply top-4 left-9 transform scale-50;
   }
 
-  & .mobile-device_student-screenshot {
+  & .mobile-device__student-screenshot {
     @apply w-full h-full object-cover object-center;
   }
 }
 
 .desktop-device-wrapper {
-  & .desktop-device_screen {
+  & .desktop-device__screen {
     @apply transform scale-25;
     @apply md:scale-50;
     @apply lg:scale-90;
   }
 
-  & .desktop-device_student-screenshot {
+  & .desktop-device__student-screenshot {
     @apply w-full h-full object-cover object-center;
   }
 }
