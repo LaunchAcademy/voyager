@@ -2,7 +2,7 @@
   @apply grid grid-cols-2 max-w-sm p-2 mx-3 my-3 rounded-lg shadow-lg;
   @apply lg:grid-cols-7 lg:max-w-full;
 
-  & .course-schedule__course_content {
+  & .course-schedule__course-content {
     @apply col-span-1 m-1;
   }
 
@@ -21,12 +21,12 @@
     @apply lg:font-normal lg:text-sm;
   }
 
-  & .course-schedule__course_content--two-column {
+  & .course-schedule__course-content_two-column {
     @apply col-span-2 text-center max-w-full;
     @apply lg:col-span-1 lg:text-left;
   }
 
-  & .course-schedule__course_content--button {
+  & .course-schedule__course-content_button {
     @apply lg:text-center;
   }
 }
