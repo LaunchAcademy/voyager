@@ -1,9 +1,9 @@
 .course-schedule {
-  @apply grid grid-cols-2 max-w-sm p-2 mx-3 my-3 rounded-lg shadow-lg;
+  @apply grid grid-cols-2 max-w-sm p-2 mx-auto my-3 rounded-lg shadow-lg;
   @apply lg:grid-cols-7 lg:max-w-full;
 
   & .course-schedule__course-content {
-    @apply col-span-1 m-1;
+    @apply m-1;
   }
 
   & .course-schedule__cohort {
