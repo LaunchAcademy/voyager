@@ -107,6 +107,15 @@
   .banner_device {
     height: 625px;
     @apply pt-20 overflow-y-hidden w-full mb-20;
-  }
 
+    & .banner_device__container { 
+
+      & .banner_device__device-container {
+        @apply w-full mt-0;
+      }
+    }
+    & .marvel-device.iphone-x .speaker {
+      @apply hidden;
+    }
+  }
 }
