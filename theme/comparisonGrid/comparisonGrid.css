@@ -1,5 +1,5 @@
 .comparison-table-container {
-  @apply md:flex md:justify-center md:flex-wrap;
+  @apply max-w-screen-xl mx-auto overflow-x-scroll;
 
 
 & .comparison-table__table-title {
@@ -7,27 +7,29 @@
 }
 
   & .comparison-table {
-    @apply table-auto;
+    @apply table-auto ml-10;
+    @apply md:mx-auto;
 
 
     & .comparison-table__header-container {
       @apply bg-gray-dorian;
 
       & th:first-child {
-        @apply sticky left-0 bg-gray-dorian z-10;
+        @apply sticky left-0 z-10;
       }
       
       & .header-container__header-title {
-        @apply text-center p-5 z-0;
+        @apply text-center p-5 z-0 bg-gray-dorian ;
       }
       & .header-container__header-title_launch {
-        @apply text-xl font-bold z-0;
+        @apply text-xl font-bold z-0 bg-gray-dorian ;
       }
+
     }
     
     
     & .comparison-table__data-title {
-      @apply text-left font-text text-lg sticky left-0 bg-white flex justify-between py-2 w-56;
+      @apply text-left font-text text-lg sticky left-0 bg-white flex justify-between py-2 w-60;
       @apply md:w-64;
       & svg {
         @apply h-4 w-4 justify-self-end self-center ml-3;
