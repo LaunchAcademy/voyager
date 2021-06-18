@@ -10,6 +10,8 @@ import TopBar from "./theme/navigation/TopBar.js";
 import BannerTitle from "./theme/banners/BannerTitle.js";
 import SimpleBanner from "./theme/banners/SimpleBanner.js";
 import BannerContent from "./theme/banners/BannerContent.js";
+import BlogPost from "./theme/blogPosts/BlogPost.js";
+import BlogTags from "./theme/blogPosts/BlogTags"
 import TitledParagraph from "./theme/titledParagraph/TitledParagraph.js";
 import Fact from "./theme/factSet/Fact.js";
 import FactSet from "./theme/factSet/FactSet.js";
@@ -43,6 +45,8 @@ export {
   Profile,
   TopBar,
   BannerTitle,
+  BlogPost,
+  BlogTags,
   SimpleBanner,
   TitledParagraph,
   Fact,
