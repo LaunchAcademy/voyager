@@ -1,6 +1,6 @@
 .course-schedule {
   @apply grid grid-cols-2 max-w-sm p-2 mx-auto my-3 rounded-lg shadow-lg;
-  @apply lg:grid-cols-7 lg:max-w-screen-lg;
+  @apply lg:grid-cols-7 lg:max-w-full;
 
   & .course-schedule__course-content {
     @apply m-1;

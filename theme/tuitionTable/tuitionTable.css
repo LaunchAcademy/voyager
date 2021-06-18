@@ -2,16 +2,9 @@
   @apply mx-5 overflow-x-scroll;
   @apply lg:max-w-screen-xl lg:mx-auto md:overflow-x-visible;
 
-  & .tuition-table {
-    @apply font-headline table-auto;
-
-    & .tuition-table__header-container {
-      @apply font-headline text-xl;
-    }
-
-    & .tuition-table__header-title {
-      @apply pb-5 px-4;
-    }
+  & .tuition-table__header-container {
+    @apply font-headline text-xl;
+  }
 
     & .tuition-table__header-title_payment-plans {
       @apply bg-white sticky left-0 pb-5;
