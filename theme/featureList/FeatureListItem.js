@@ -2,14 +2,14 @@ import React from "react";
 import Icon from "../icons/Icon.js";
 
 const FeatureListItem = ({ title, subtitle, description, iconName }) => (
-  <div className="feature-list__item">
-    <div className="feature-list__item-icon">
-      <Icon className=" h-10 w-10" aria-hidden="true" name={iconName} />
+  <div className="grid__item">
+    <div className="item__icon">
+      <Icon aria-hidden="true" name={iconName} />
     </div>
-    <div className="feature-list__item-content">
-      <strong className="feature-list__item-title">{title}</strong>
-      <div className="feature-list__item-subtitle">{subtitle}</div>
-      <p className="feature-list__item-description">{description}</p>
+    <div className="item__content">
+      <strong className="content__title">{title}</strong>
+      <div className="content__subtitle">{subtitle}</div>
+      <p className="content__description">{description}</p>
     </div>
   </div>
 );

@@ -3,16 +3,18 @@ import PropTypes from "prop-types";
 import "./featureList.css";
 
 const FeatureList = ({ subtitle, title, footerText, children }) => (
-  <div className="feature-list">
-    <div className="feature-list__header-container">
-      <h2 className="feature-list__header-container-title">{title}</h2>
-      <h3 className="feature-list__header-container-subtitle">{subtitle}</h3>
+  <section className="feature-list">
+    <div className="feature-list__content-wrap">
+      <div className="content-wrap__header-container">
+        <h2 className="header-container__title">{title}</h2>
+        <h3 className="header-container__subtitle">{subtitle}</h3>
+      </div>
+      <div className="content-wrap__grid">{children}</div>
+      <div className="content-wrap__footer-container">
+        <h2 className="footer-container__text">{footerText}</h2>
+      </div>
     </div>
-    <div className="feature-list__grid">{children}</div>
-    <div className="feature-list__footer-container">
-      <h2 className="feature-list__footer-text">{footerText}</h2>
-    </div>
-  </div>
+  </section>
 );
 
 module.propTypes = {
