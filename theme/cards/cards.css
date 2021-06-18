@@ -47,7 +47,7 @@
     @apply h-60 bg-gray-cloud;
     @apply md:h-56;
 
-    & .device-mobile_screen {
+    & .device-mobile__screen {
       @apply md:transform md:scale-75 md:-mt-6;
     }
 
@@ -91,7 +91,7 @@
 }
 
 .card__desktop-tile {
-  & .desktop-device_screen.marvel-device.macbook {
+  & .desktop-device__screen.marvel-device.macbook {
     @apply transform scale-25 -mt-56 -ml-64 pr-5;
     @apply md:-mt-60 md:-ml-80;
     @apply lg:-mt-60 lg:-ml-72;
@@ -102,7 +102,7 @@
     @apply md:h-56;
 
     &.desktop-device-wrapper {
-      & .desktop-device_student-screenshot {
+      & .desktop-device__student-screenshot {
         @apply w-full h-full object-cover object-center;
       }
     }
