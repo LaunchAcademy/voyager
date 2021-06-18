@@ -1,33 +1,39 @@
-.tuition-table {
-  @apply font-headline table-auto;
+.tuition-table-wrapper {
+  @apply mx-5 overflow-x-scroll;
+  @apply lg:max-w-screen-xl lg:mx-auto lg:overflow-x-visible;
 
-  & .tuition-table__header-container {
-    @apply font-headline text-xl;
-  }
+  & .tuition-table {
+    @apply font-headline table-auto;
 
-  & .tuition-table__header-title {
-    @apply pb-5 px-4;
-  }
+    & .tuition-table__header-container {
+      @apply font-headline text-xl;
+    }
 
-  & .tuition-table__header-title_payment-plans {
-    @apply bg-white sticky left-0 pb-5;
-  }
+    & .tuition-table__header-title {
+      @apply pb-5 px-4;
+    }
 
-  & tr:nth-child(even) {
-    @apply bg-gray-dorian;
+    & .tuition-table__header-title_payment-plans {
+      @apply bg-white sticky left-0 pb-5;
+      @apply md:relative;
+    }
+
+    & tr:nth-child(even) {
+      @apply bg-gray-dorian;
+
+      & .tuition-table__data-title {
+        @apply bg-gray-dorian;
+      }
+    }
 
     & .tuition-table__data-title {
-      @apply bg-gray-dorian;
+      @apply text-left font-headline border border-gray-light-slate bg-white sticky left-0 p-3;
+      @apply md:px-8 md:relative;;
     }
-  }
 
-  & .tuition-table__data-title {
-    @apply text-left font-headline border border-gray-light-slate bg-white sticky left-0 p-3;
-    @apply md:px-8;
-  }
-
-  & .tuition-table__data-text {
-    @apply font-text text-center border border-gray-light-slate text-sm;
-    @apply md:px-8;
-  }
+    & .tuition-table__data-text {
+      @apply font-text text-center border border-gray-light-slate text-sm;
+      @apply md:px-8;
+    }
+  } 
 }

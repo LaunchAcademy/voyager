@@ -1,6 +1,6 @@
 .faq-list {
   @apply font-headline p-5;
-  @apply lg:items-center lg:px-32 lg:pt-10;
+  @apply lg:items-center lg:pt-10 lg:max-w-screen-xl lg:mx-auto lg:mt-10;
 
   & .faq-list__title {
     @apply lg:text-center;
