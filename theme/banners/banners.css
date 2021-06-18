@@ -95,15 +95,12 @@
       & .hero__button-container {
         @apply lg:mr-5;
       }
-  
     }
   
     & .banner_device__device-container {
       @apply w-full mt-20;
     }
-
   }
-
 }
 
 @screen lg {
