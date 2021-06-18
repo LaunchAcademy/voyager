@@ -70,7 +70,7 @@
 
 .banner_device {
   @apply bg-secondary-brand text-center pt-20 mb-96;
-  height: 555px;
+  height: 725px;
 
   & .banner_device__container {
     @apply lg:max-w-screen-xl lg:grid lg:grid-cols-2 lg:mx-auto;
@@ -99,7 +99,7 @@
     }
   
     & .banner_device__device-container {
-      @apply w-full;
+      @apply w-full mt-20;
     }
 
   }
@@ -109,7 +109,7 @@
 @screen lg {
   .banner_device {
     height: 625px;
-    @apply pt-20 overflow-y-hidden w-full;
+    @apply pt-20 overflow-y-hidden w-full mb-20;
   }
 
 }

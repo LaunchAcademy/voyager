@@ -68,9 +68,10 @@
 
 
 .benefit-list {
+  min-height: 2230px;
 
   & .feature-list {
-    @apply bg-secondary-brand w-full overflow-y-visible;
+    @apply bg-secondary-brand w-full overflow-y-visible mb-96;
     height: 942px;
 
   
@@ -79,29 +80,29 @@
   
       & .content-wrap__header-container {
         @apply col-span-12 p-5 text-center;
-        @apply md:col-start-2 md:col-span-6;
+        @apply lg:col-start-2 lg:col-span-6 lg:pt-20;
     
         & .header-container__title {
           @apply p-4 mb-4;
-          @apply md:text-left;
+          @apply lg:text-left;
         }
     
         & .header-container__subtitle {
           @apply p-4 mb-4;
-          @apply md:text-left;
+          @apply lg:text-left;
         }
       }
     
       & .content-wrap__grid {
         @apply col-span-12 grid grid-cols-1 bg-light mx-4 mb-10;
-        @apply md:col-start-3 md:col-span-10 md:mr-10 lg:grid lg:grid-cols-2;
+        @apply lg:col-start-3 lg:col-span-10 lg:mr-10 lg:grid lg:grid-cols-2;
     
         & .grid__item {
           @apply grid grid-cols-4 p-5;
     
           & .item__icon {
             @apply col-span-1 flex justify-start pt-2;
-            @apply md:mx-auto;
+            @apply lg:mx-auto;
     
             & svg {
               @apply w-5 h-5;
@@ -135,6 +136,7 @@
 
 @screen md {
   .benefit-list {
+    min-height: 1025px;
     & .feature-list {
       height: 618px;
     }
