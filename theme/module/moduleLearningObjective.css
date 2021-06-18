@@ -5,6 +5,10 @@
 
   & .module-learning-objective__icon {
     @apply col-span-1 col-start-1 items-center flex justify-center;
+
+    & svg {
+      @apply w-10 h-10;
+    }
   }
 
   & .module-learning-objective__description {
