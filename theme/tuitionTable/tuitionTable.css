@@ -1,6 +1,6 @@
 .tuition-table-wrapper {
   @apply mx-5 overflow-x-scroll;
-  @apply lg:max-w-screen-xl lg:mx-auto lg:overflow-x-visible;
+  @apply lg:max-w-screen-xl lg:mx-auto md:overflow-x-visible;
 
   & .tuition-table {
     @apply font-headline table-auto;
