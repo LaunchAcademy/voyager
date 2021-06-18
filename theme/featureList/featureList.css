@@ -141,34 +141,3 @@
   }
 
 }
-
-/* .benefit-list {
-  & .feature-list {
-    @apply bg-white;
-    @apply lg:block;
-  }
-
-  & .feature-list__header-container {
-    @apply bg-secondary-brand grid grid-cols-1 text-center p-20;
-    @apply lg:grid lg:grid-cols-4 lg:col-span-3 lg:col-start-1 lg:ml-14 lg:mt-20;
-  }
-
-  & .feature-list__grid {
-    @apply bg-white p-5 ml-20 mr-0 -mt-20;
-    @apply lg:grid lg:grid-cols-2 lg:max-w-4xl;
-  }
-
-  & .feature-list__footer-container {
-    @apply block;
-  }
-
-  & .feature-list__footer-text {
-    @apply p-4 mb-4;
-    @apply lg:text-center;
-  }
-
-  & .feature-list__item-icon {
-    @apply hidden;
-    @apply lg:block lg:pl-0 lg:mr-0 lg:ml-0;
-  }
-} */
