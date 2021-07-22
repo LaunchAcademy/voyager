@@ -1,8 +1,6 @@
 .tuition-table {
   @apply font-headline table-auto;
 
-
-
   & .tuition-table__header-container {
     @apply font-headline text-xl;
   }

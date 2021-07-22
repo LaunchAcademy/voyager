@@ -24,18 +24,18 @@ const Module = ({
   return (
     <div className="module">
       <div className="module__image-column">
-        <div className="module__image-container">
+        <div className="image-column__image-container">
           <img src={imageUrl} alt="module Image" />
         </div>
       </div>
       <div className="module__supporting-content">
-        <h2 className="module__subtitle">{subtitle}</h2>
-        <h1 className="module__title">{title}</h1>
-        <div className="module__info-container">{details}</div>
-        <div className="module__description-container">
+        <h2 className="supporting-content__subtitle">{subtitle}</h2>
+        <h1 className="supporting-content__title">{title}</h1>
+        <div className="supporting-content__info-container">{details}</div>
+        <div className="supporting-content__description-container">
           <p>{description}</p>
         </div>
-        <div className="module__objectives-container">{children}</div>
+        <div className="supporting-content__objectives-container">{children}</div>
       </div>
     </div>
   );

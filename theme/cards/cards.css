@@ -5,12 +5,12 @@
     @apply grid grid-cols-1 gap-4 my-5;
   }
 
-  & .card-list--medium {
+  & .card-list_medium {
     @apply grid grid-cols-1 gap-4 my-5;
     @apply md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-16;
   }
 
-  & .card-list--large {
+  & .card-list_large {
     @apply grid grid-cols-1 gap-4 my-5 px-10;
     @apply md:grid md:grid-cols-3 md:gap-x-4 md:gap-y-16;
   }
@@ -19,25 +19,31 @@
 .card {
   @apply w-full shadow-lg rounded-lg pb-4 mx-auto bg-white;
 
-  & .card_photo {
+  & .card__photo {
     @apply overflow-hidden h-48 rounded-t-lg w-full;
   }
 
-  & .card_photo-image {
+  & .card__photo-image {
     @apply object-cover object-center;
   }
 
-  & .card_header {
+  & .card__header {
     @apply mx-8 my-3 text-left;
   }
 
-  & .card_body {
+  & .card__body {
     @apply mx-8 my-3 text-left;
+  }
+  & .card__readmore {
+    @apply grid grid-cols-2;
+    & a {
+      @apply font-bold text-primary-brand underline;
+    }
   }
 }
 
 .card__mobile-tile {
-  & .card_photo {
+  & .card__photo {
     @apply h-60 bg-gray-cloud;
     @apply md:h-56;
 
@@ -55,10 +61,10 @@
     }
   }
 
-  & .project-tile_student-info {
+  & .project-tile__student-info {
     @apply grid grid-cols-4 pt-4;
 
-    & .student-info_title {
+    & .student-info__title {
       @apply col-start-2 col-span-3;
 
       & h4 {
@@ -69,7 +75,7 @@
       }
     }
 
-    & .student-info_student-profile {
+    & .student-info__student-profile {
       @apply col-start-1 col-span-1 rounded-full overflow-hidden w-20 h-20 m-auto ml-5;
       @apply md:w-14 md:h-14;
       @apply lg:w-20 lg:h-20;
@@ -91,7 +97,7 @@
     @apply lg:-mt-60 lg:-ml-72;
   }
 
-  & .card_photo {
+  & .card__photo {
     @apply h-60 bg-gold;
     @apply md:h-56;
 
@@ -102,10 +108,10 @@
     }
   }
 
-  & .project-tile_student-info {
+  & .project-tile__student-info {
     @apply grid grid-cols-4 pt-4;
 
-    & .student-info_title {
+    & .student-info__title {
       @apply col-start-2 col-span-3;
 
       & h4 {
@@ -116,7 +122,7 @@
       }
     }
 
-    & .student-info_student-profile {
+    & .student-info__student-profile {
       @apply col-start-1 col-span-1 rounded-full overflow-hidden w-20 h-20 m-auto ml-5;
       @apply md:w-14 md:h-14;
       @apply lg:w-20 lg:h-20;
