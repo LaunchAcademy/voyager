@@ -1,10 +1,10 @@
 import React from "react";
 import MobileDeviceTile from "../deviceProjectTile/MobileDeviceTile.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 
 const MobileProjectCard = ({ imageUrl, projectLiveUrl, projectTitle, studentName, studentProfileUrl }) => {
-  let studentProfileImage = <FontAwesomeIcon icon={faUser} />
+  let studentProfileImage = <FontAwesomeIcon icon={faUserGraduate} />
   if(studentProfileUrl) {
     studentProfileImage = <img src={studentProfileUrl} />
   }
