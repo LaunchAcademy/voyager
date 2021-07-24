@@ -1,5 +1,6 @@
 import React from "react";
 
+import "./cards.css";
 import Card from "./Card.js";
 import DesktopProjectCard from "./DesktopProjectCard.js";
 import MobileProjectCard from "./MobileProjectCard.js";
