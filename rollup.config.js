@@ -28,8 +28,8 @@ const cssConfig = [
     },
   ],
   plugins: [
-    // peerDepsExternal(),
-    // resolve(),
+    peerDepsExternal(),
+    resolve(),
     postcss({ extensions: [".css"], extract: true }),
     del({ targets: ["dist/css/**/*.js", "dist/css/**/*.js.map"], hook: "closeBundle", runOnce: true }),
   ],

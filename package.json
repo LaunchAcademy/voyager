@@ -9,7 +9,7 @@
   },
   "license": "UNLICENSED",
   "name": "@launchacademy/voyager",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "node": "^14.8"
   },
@@ -65,7 +65,7 @@
     "prop-types": "~15.7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "rollup": "^2.53.3",
+    "rollup": "^2.57.0",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",

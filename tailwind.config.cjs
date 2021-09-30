@@ -1,6 +1,28 @@
-const getColorsByName = require("./theme/colors/getColorsByName.cjs");
-const getColorsByColorName = require("./theme/colors/getColorsByColorName.cjs");
 const fontFamily = require("./theme/typography/fontFamily.cjs");
+
+const colors = {
+  purple: '#6930C3',
+  teal: '#2CCBC0',
+  gold: '#FFC759',
+  red: '#C33042',
+  black: '#1A1A1A',
+  'gray-slate': '#4f4959',
+  'gray-light-slate': '#ACA9AF',
+  'gray-dorian': '#F3F1F4',
+  'gray-cloud': '#F8F8F8',
+  brown: '#522B29',
+  white: '#fff',
+  'primary-brand': '#6930C3',
+  'secondary-brand': '#2CCBC0',
+  'tertiary-brand': '#FFC759',
+  warning: '#C33042',
+  text: '#1A1A1A',
+  'secondary-text': '#4f4959',
+  'tertiary-text': '#ACA9AF',
+  accent: '#F3F1F4',
+  light: '#F8F8F8',
+  'photo-overlay': '#522B29'
+}
 
 module.exports = {
   purge: [],
@@ -9,7 +31,7 @@ module.exports = {
     container: {
       center: true,
     },
-    colors: { ...getColorsByColorName(), ...getColorsByName() },
+    colors,
     fontFamily,
     fontSize: {
       xxs: [
