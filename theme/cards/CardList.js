@@ -5,7 +5,7 @@ import Card from "./Card.js";
 import DesktopProjectCard from "./DesktopProjectCard.js";
 import MobileProjectCard from "./MobileProjectCard.js";
 
-const CardList = ({ content, numberOfColumns }) => {
+const CardList = ({ content, numberOfColumns, className }) => {
   let cardListSize = "card-list";
 
   if (numberOfColumns === 2) {
@@ -43,7 +43,7 @@ const CardList = ({ content, numberOfColumns }) => {
       header={card.header} body={card.body} articleUrl={card.articleUrl} articleTitle={card.articleTitle} articleTime={card.articleTime} />;
   });
 
-  return <div className={cardListSize}>{cardContentArray}</div>;
+  return <div className={`${[cardListSize, className].join(" ")}`}>{cardContentArray}</div>;
 };
 
 export default CardList;

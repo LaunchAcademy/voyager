@@ -1,12 +1,12 @@
 .button {
-  @apply text-white bg-primary-brand no-underline font-bold rounded-full inline-block border-2 border-primary-brand;
+  @apply text-white bg-primary-brand no-underline font-bold rounded-full inline-block border-2 border-primary-brand font-text;
   line-height: 1.5rem;
 
   &.button_size_xl {
     @apply lg:p-4 py-1 px-4 text-base;
   }
   &.button_size_lg {
-    @apply py-3 px-4 text-xs;
+    @apply py-3 px-4 text-xs lg:text-lg;
   }
 
   &.button_size_md {
@@ -37,8 +37,8 @@
 .banner__button {
   @apply bg-black text-teal border-none;
 
-  &.button_secondary_secondary-bg {
-    @apply bg-secondary-brand text-black border-2 border-black;
+  &.button_secondary {
+    @apply bg-secondary-brand text-black border-2 border-black border-solid;
   }
 }
 

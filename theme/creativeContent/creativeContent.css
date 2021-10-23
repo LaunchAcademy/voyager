@@ -2,8 +2,12 @@
   @apply bg-gray-dorian my-10 py-10 grid grid-cols-12;
   @apply md:mx-5 md:gap-10;
 
+  &.banner-with-creative_white {
+    @apply bg-white;
+  }
+
   & .creative-content__container {
-    @apply col-span-12 place-self-center mx-5;  
+    @apply col-span-12 place-self-center mx-5;
     @apply md:col-start-2 md:col-span-3;
     & img {
       @apply w-full h-auto object-contain;
@@ -29,7 +33,7 @@
 
   & div:nth-child(2) {
     @apply hidden;
-    @apply lg:block lg:mt-60;
+    @apply lg:block;
 
   }
 

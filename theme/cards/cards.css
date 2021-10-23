@@ -5,6 +5,10 @@
     @apply grid grid-cols-1 gap-4 my-5;
   }
 
+  & .card-list.double-gap, & .card-list_large.double-gap, & .card-list_medium.double-gap {
+    @apply md:gap-x-8;
+  }
+
   & .card-list_medium {
     @apply grid grid-cols-1 gap-4 my-5;
     @apply md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-16;

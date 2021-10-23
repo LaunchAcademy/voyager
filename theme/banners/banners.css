@@ -79,24 +79,24 @@
       @apply w-full;
       @apply lg:mt-20;
     }
-  
+
     & .banner_device__title {
       @apply font-headline font-bold text-5xl pb-8 px-3 pt-10 text-black leading-tight text-left;
-  
+
     }
-  
+
     & .banner_device__container {
       @apply lg:flex lg:flex-nowrap;
-  
+
       & div:first-child {
         @apply mb-10;
       }
-  
+
       & .hero__button-container {
         @apply lg:mr-5;
       }
     }
-  
+
     & .banner_device__device-container {
       @apply w-full mt-20;
     }
@@ -109,7 +109,7 @@
     @apply pt-20 overflow-y-hidden w-full mb-20;
 
 
-    & .banner_device__container { 
+    & .banner_device__container {
 
       & .banner_device__device-container {
         @apply w-full mt-0;

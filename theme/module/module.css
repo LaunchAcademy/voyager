@@ -42,7 +42,7 @@
     }
 
     & .supporting-content__description-container {
-      @apply font-text text-xs py-2;
+      @apply font-text py-2;
       @apply lg:max-w-md;
       @apply md:max-w-sm;
     }
