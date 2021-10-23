@@ -28,7 +28,7 @@
   }
 
   & .card__header {
-    @apply mx-8 my-3 text-left;
+    @apply mx-8 my-3 text-left text-xl leading-6;
   }
 
   & .card__body {

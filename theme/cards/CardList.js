@@ -18,6 +18,7 @@ const CardList = ({ content, numberOfColumns }) => {
     if (card.mobile === true) {
       return (
         <MobileProjectCard
+          key={card.id}
           imageUrl={card.imageUrl}
           projectTitle={card.projectTitle}
           studentName={card.studentName}
@@ -28,6 +29,7 @@ const CardList = ({ content, numberOfColumns }) => {
     if (card.mobile === false) {
       return (
         <DesktopProjectCard
+          key={card.id}
           imageUrl={card.imageUrl}
           projectTitle={card.projectTitle}
           studentName={card.studentName}
@@ -35,7 +37,10 @@ const CardList = ({ content, numberOfColumns }) => {
         />
       );
     }
-    return <Card imageUrl={card.imageUrl} header={card.header} body={card.body} articleUrl={card.articleUrl} articleTitle={card.articleTitle} articleTime={card.articleTime} />;
+    return <Card
+      key={card.id}
+      imageUrl={card.imageUrl}
+      header={card.header} body={card.body} articleUrl={card.articleUrl} articleTitle={card.articleTitle} articleTime={card.articleTime} />;
   });
 
   return <div className={cardListSize}>{cardContentArray}</div>;
