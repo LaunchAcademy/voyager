@@ -1,10 +1,10 @@
 import React from "react";
-import Icon from "../icons/Icon.js";
+import scroll from "../../src/assets/scroll.svg"
 
 const FeatureListItem = ({ title, subtitle, description, iconName }) => (
   <div className="grid__item">
     <div className="item__icon">
-      <Icon aria-hidden="true" name={iconName} />
+      <span dangerouslySetInnerHTML={{__html: scroll }} />
     </div>
     <div className="item__content">
       <strong className="content__title">{title}</strong>

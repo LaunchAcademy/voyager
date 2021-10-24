@@ -9,38 +9,40 @@
   & .comparison-table {
     @apply table-auto ml-10;
     @apply md:mx-auto;
-
+    @apply bg-white;
 
     & .comparison-table__header-container {
-      @apply bg-gray-dorian;
+      @apply bg-white;
+
+
 
       & th:first-child {
         @apply sticky left-0 z-10;
       }
-      
+
       & .header-container__header-title {
-        @apply text-center p-5 z-0 bg-gray-dorian ;
+        @apply text-center p-5 z-10 bg-gray-dorian;
       }
       & .header-container__header-title_launch {
-        @apply text-xl font-bold z-0 bg-gray-dorian ;
+        @apply text-xl font-bold z-0;
       }
 
     }
-    
-    
+
+
     & .comparison-table__data-title {
-      @apply text-left font-text text-lg sticky left-0 bg-white flex justify-between py-2 w-60;
+      @apply text-left font-text text-lg sticky left-0 bg-white z-20 flex justify-between py-2 w-60;
       @apply md:w-64;
       & svg {
         @apply h-4 w-4 justify-self-end self-center ml-3;
       }
     }
-    
-    
+
+
     & .comparison-table__data-text {
       @apply p-3 text-center;
     }
-    
+
     & .comparison-table__data-text_launch {
       @apply font-bold;
     }
@@ -58,5 +60,3 @@
     }
   }
 }
-
-
