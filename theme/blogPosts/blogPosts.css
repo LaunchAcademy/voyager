@@ -1,9 +1,9 @@
 .blog {
-  @apply max-w-2xl mx-auto flex flex-wrap justify-center mt-32; 
+  @apply max-w-xl mx-auto flex flex-wrap justify-center mt-32;
 
   & .blog__author {
     @apply w-full;
-    
+
     & .profile_social {
       @apply grid grid-cols-6 w-full;
 
@@ -11,24 +11,24 @@
         @apply col-span-1 rounded-full flex justify-self-center self-center;
         @apply object-cover w-12 h-12;
       }
-    
+
       & .profile__name {
         @apply col-span-2 flex items-center text-left text-sm font-headline font-bold ml-3;
       }
-    
+
       & .profile__current-title {
         @apply hidden;
       }
-    
+
       & .profile__former-title {
         @apply hidden;
       }
-    
+
       & .profile__label_current,
       & .profile__label_former {
         @apply hidden;
       }
-    
+
       & .profile__social {
         @apply col-span-3 inline-flex justify-end items-center;
         & li {
@@ -57,12 +57,12 @@
       @apply font-bold;
     }
     & .tag-container__tags {
-      @apply inline-flex justify-between w-full mt-3;
+      @apply w-full mt-3;
       & li {
-        @apply mx-2;
-  
+        @apply mx-2 inline-block;
+
         & .button.button_size_sm {
-          @apply text-xxs px-2;
+          @apply text-xxs px-2 whitespace-nowrap;
         }
       }
     }
@@ -70,11 +70,12 @@
 }
 
 .blog-index__tags {
-  @apply max-w-screen-lg mx-auto px-10;
+  @apply max-w-screen-xl mx-auto;
   & .tag-container__tags {
-    @apply inline-flex w-full my-8;
+    @apply my-8;
+
     & li {
-      @apply mx-2;
+      @apply inline-block m-2;
 
       & .button.button_size_sm {
         @apply text-xxs px-2;
