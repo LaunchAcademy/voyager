@@ -2,7 +2,7 @@ body {
   margin: 0;
   @apply text-xs;
   @apply lg:text-base;
-  line-height: 21px;
+  line-height: 24px;
   font-weight: 400;
   @apply text-black container mx-auto;
 }

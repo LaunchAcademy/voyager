@@ -5,7 +5,7 @@ import Card from "./Card.js";
 import DesktopProjectCard from "./DesktopProjectCard.js";
 import MobileProjectCard from "./MobileProjectCard.js";
 
-const CardList = ({ content, numberOfColumns }) => {
+const CardList = ({ content, cardType = "article", numberOfColumns, className }) => {
   let cardListSize = "card-list";
 
   if (numberOfColumns === 2) {
@@ -18,6 +18,7 @@ const CardList = ({ content, numberOfColumns }) => {
     if (card.mobile === true) {
       return (
         <MobileProjectCard
+          key={card.id}
           imageUrl={card.imageUrl}
           projectTitle={card.projectTitle}
           studentName={card.studentName}
@@ -28,6 +29,7 @@ const CardList = ({ content, numberOfColumns }) => {
     if (card.mobile === false) {
       return (
         <DesktopProjectCard
+          key={card.id}
           imageUrl={card.imageUrl}
           projectTitle={card.projectTitle}
           studentName={card.studentName}
@@ -35,10 +37,17 @@ const CardList = ({ content, numberOfColumns }) => {
         />
       );
     }
-    return <Card imageUrl={card.imageUrl} header={card.header} body={card.body} articleUrl={card.articleUrl} articleTitle={card.articleTitle} articleTime={card.articleTime} />;
+    return <Card
+      key={card.id}
+      imageUrl={card.imageUrl}
+      header={card.header}
+      body={card.body}
+      url={card.articleUrl}
+      timeToRead={card.timeToRead}
+      categories={card.categories} />;
   });
 
-  return <div className={cardListSize}>{cardContentArray}</div>;
+  return <div className={`${[cardListSize, className, `card-list_${cardType}`].join(" ")}`}>{cardContentArray}</div>;
 };
 
 export default CardList;

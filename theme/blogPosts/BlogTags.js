@@ -15,11 +15,11 @@ const BlogTags = ({ tags }) => {
     return (
       <li>
         <Button
-          key={tag}
+          key={tag.url}
           placement="photo"
           size="sm"
-          text={tag}
-          to="#"
+          text={tag.name}
+          to={tag.url}
         />
       </li>
     )

@@ -12,7 +12,19 @@ body {
 }
 
 .main-content {
-  @apply pt-12 justify-center;
+  @apply pt-12 lg:pt-24 justify-center;
+}
+
+.constrained-container {
+  @apply lg:max-w-screen-xl mx-auto;
+}
+
+.breadcrumbs {
+  @apply text-purple capitalize px-4;
+
+  & li a {
+    @apply hover:underline
+  }
 }
 
 *,

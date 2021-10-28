@@ -2,6 +2,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
+import svg from 'rollup-plugin-svg';
 import babel from "@rollup/plugin-babel";
 import del from "rollup-plugin-delete";
 import copy from "rollup-plugin-copy";
@@ -14,7 +15,6 @@ const packageJson = require("./package.json");
 const cssConfig = [
   "src/assets/scss/main.css",
   "theme/hero/hero.css",
-  "theme/tuitionTable/tuitionTable.css",
   "theme/phases/phaseList.css",
   "theme/navigation/footer.css",
   "theme/comparisonGrid/comparisonGrid.css",
@@ -55,6 +55,7 @@ const jsConfig = {
     babel({ babelHelpers: "bundled" }),
     commonjs({ extract: true }),
     postcss({ extensions: [".css"] }),
+    svg(),
     copy({
       targets:
       [{ src: "src/assets/images/**/*", dest: "dist/images" }],

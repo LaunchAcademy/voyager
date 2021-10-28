@@ -4,14 +4,14 @@
   @apply md:max-w-sm;
 
   & .module-learning-objective__icon {
-    @apply col-span-1 col-start-1 items-center flex justify-center;
+    @apply col-span-1 col-start-1 items-start flex justify-center mr-8;
 
     & svg {
-      @apply w-10 h-10;
+      @apply w-6 h-6;
     }
   }
 
   & .module-learning-objective__description {
-    @apply font-text col-span-4 col-start-2 text-sm max-w-md;
+    @apply font-text col-span-4 col-start-2 text-sm max-w-md my-4;
   }
 }
