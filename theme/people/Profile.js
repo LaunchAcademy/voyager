@@ -10,6 +10,7 @@ const Profile = ({
   foundingMember,
   headshotUrl,
   socialUrls,
+  src
 }) => {
   let whichProfileClass = "profile";
   let currentEmployerOrFoundingMember = (
@@ -54,7 +55,17 @@ const Profile = ({
 
   return (
     <div className={whichProfileClass}>
-      <img className="profile__image" src={headshotUrl} alt={name} />
+      <img
+        className="profile__image"
+        // width={headshotUrl.width}
+        // height={headshotUrl.height}
+        // data-main-image
+        // decoding="async"
+        sizes={headshotUrl.sizes}
+        src={headshotUrl.src}
+        srcset={headshotUrl.srcset}
+        alt={name}
+      />
       <h5 className="profile__name">{name}</h5>
       <p className="profile__label_current">Current:</p>
       {currentEmployerOrFoundingMember}

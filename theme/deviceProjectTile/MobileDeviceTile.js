@@ -2,7 +2,8 @@ import React from "react";
 import "../../src/assets/scss/devices.min.css";
 import "./deviceTiles.css";
 
-const MobileDeviceTile = ({ studentProjectScreenshot }) => {
+const MobileDeviceTile = (props) => {
+  const imageData = {}
   return (
     <div className="mobile-device-wrapper ">
       <div className="marvel-device iphone-x device-mobile__screen">
@@ -22,7 +23,7 @@ const MobileDeviceTile = ({ studentProjectScreenshot }) => {
         </div>
         <div className="inner-shadow"></div>
         <div className="screen">
-          <img className="mobile-device__student-screenshot" src={studentProjectScreenshot} />
+          <img className="mobile-device__student-screenshot" src={imageData} />
         </div>
       </div>
     </div>
