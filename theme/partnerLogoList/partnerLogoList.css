@@ -1,6 +1,6 @@
 .partner-logo-list {
   @apply grid grid-cols-2 max-w-xs  mx-auto place-items-center align-middle justify-around justify-items-center;
-  @apply lg:grid-cols-6 lg:max-w-4xl;
+  @apply lg:grid-cols-6 lg:max-w-xl;
 
   & .partner-logo-list__item {
     @apply py-4 px-8 place-self-center;

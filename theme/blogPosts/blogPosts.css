@@ -1,43 +1,56 @@
 .blog {
-  @apply max-w-2xl mx-auto flex flex-wrap justify-center mt-32; 
+  @apply lg:max-w-screen-lg mx-auto mt-8 text-left px-4;
+  & .blog__social-shares {
+    @apply col-span-3 inline-flex justify-self-start my-2 md:my-0 md:justify-end items-center md:justify-self-end md:pr-32 flex-grow;
+    & button {
+      @apply rounded-full bg-primary-brand bg-opacity-10 p-2 mr-2 !important;
+      &:last-child {
+        @apply mr-0;
+      }
 
-  & .blog__author {
-    @apply w-full;
-    
-    & .profile_social {
-      @apply grid grid-cols-6 w-full;
+      & svg {
+        @apply w-5 h-5 text-primary-brand !important;
+      }
+    }
+  }
 
-      & .profile__image {
-        @apply col-span-1 rounded-full flex justify-self-center self-center;
-        @apply object-cover w-12 h-12;
-      }
-    
-      & .profile__name {
-        @apply col-span-2 flex items-center text-left text-sm font-headline font-bold ml-3;
-      }
-    
-      & .profile__current-title {
-        @apply hidden;
-      }
-    
-      & .profile__former-title {
-        @apply hidden;
-      }
-    
-      & .profile__label_current,
-      & .profile__label_former {
-        @apply hidden;
-      }
-    
-      & .profile__social {
-        @apply col-span-3 inline-flex justify-end items-center;
-        & li {
-          @apply rounded-full bg-primary-brand bg-opacity-10 p-2 m-2;
-          & svg {
-            @apply w-5 h-5 text-primary-brand;
-          }
-        }
-      }
+  & .blog__content_legacy {
+    & h1 {
+      @apply text-xl;
+      @apply lg:text-5xl lg:my-4;
+      font-weight: 700;
+      line-height: 2.66rem;
+    }
+
+    & h2 {
+      @apply text-base;
+      @apply lg:text-3xl lg:my-2;
+      font-weight: 700;
+    }
+
+    & h3 {
+      @apply text-sm;
+      @apply lg:text-xl lg:my-1;
+      line-height: 1.66rem;
+      font-weight: 400;
+    }
+
+    & > div > span {
+      @apply block my-4;
+    }
+  }
+
+  & .blog__context {
+    @apply flex gap-x-2 flex-wrap my-2 align-middle;
+
+    & .profile__image {
+      @apply col-span-1 rounded-full flex justify-self-start;
+      @apply object-cover h-12 w-12;
+    }
+
+    & .blog__author-name {
+      @apply font-bold;
+      text-transform: uppercase;
     }
   }
 
@@ -57,12 +70,12 @@
       @apply font-bold;
     }
     & .tag-container__tags {
-      @apply inline-flex justify-between w-full mt-3;
+      @apply w-full mt-3;
       & li {
-        @apply mx-2;
-  
+        @apply mx-2 inline-block;
+
         & .button.button_size_sm {
-          @apply text-xxs px-2;
+          @apply text-xxs px-2 whitespace-nowrap;
         }
       }
     }
@@ -70,11 +83,12 @@
 }
 
 .blog-index__tags {
-  @apply max-w-screen-lg mx-auto px-10;
+  @apply max-w-screen-xl mx-auto;
   & .tag-container__tags {
-    @apply inline-flex w-full my-8;
+    @apply my-8;
+
     & li {
-      @apply mx-2;
+      @apply inline-block m-2;
 
       & .button.button_size_sm {
         @apply text-xxs px-2;
