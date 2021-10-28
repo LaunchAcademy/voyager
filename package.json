@@ -85,7 +85,9 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.0.0",
-    "date-fns": "^2.21.3",
-    "lodash": "^4.17.21"
+    "date-fns": "^2.25.0",
+    "lodash": "^4.17.21",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-share": "^4.4.0"
   }
 }

@@ -1,5 +1,5 @@
 .hero {
-  @apply grid grid-cols-12 text-center pb-28;
+  @apply grid grid-cols-12 text-center pb-8;
   @apply lg:text-left lg:gap-2 lg:items-center lg:justify-center lg:max-w-screen-xl lg:mx-auto;
 
   & .hero__image-column {

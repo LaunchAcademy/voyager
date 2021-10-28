@@ -1,23 +1,49 @@
 import React from "react";
+import { format } from "date-fns"
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 import Profile from "../people/Profile";
 import "./blogPosts.css";
 import BlogTags from "./BlogTags";
+import { FacebookMessengerShareButton, LinkedinShareButton, TwitterShareButton } from "react-share";
+import Icon from "../icons/Icon";
 
 const BlogPost = ({
-  blogTitle, authorName, authorImageUrl, socialUrls, tags, children,
+  blogTitle, authorName, authorImageProps = {}, url, tags = [], publishedAt, children
 }) => (
   <article className="blog">
-    <h2>{blogTitle}</h2>
-    <section className="blog__author">
-      <Profile name={authorName} headshotUrl={authorImageUrl} socialUrls={socialUrls} />
+    <h1>{blogTitle}</h1>
+    <section className="blog__context">
+      {
+        authorImageProps.src &&
+        <img
+          className="profile__image"
+          alt={authorName}
+          {...authorImageProps} />
+      }
+
+      <div className="blog__meta-details">
+        <p className="blog__author-name">By {authorName}</p>
+        <p className="blog__publication-date">{ format(publishedAt, "LLLL d, yyyy") }</p>
+      </div>
+      <div className="blog__social-shares">
+        <FacebookMessengerShareButton url={url}>
+          <Icon name="facebook" />
+        </FacebookMessengerShareButton>
+        <TwitterShareButton url={url}>
+          <Icon name="twitter" />
+        </TwitterShareButton>
+        <LinkedinShareButton url={url}>
+          <Icon name="linkedin" />
+        </LinkedinShareButton>
+        <CopyToClipboard text={url}>
+          <button><Icon name="link" /></button>
+        </CopyToClipboard>
+      </div>
+
     </section>
-    <section className="blog__content">
+    <section className="blog__content blog__content_legacy">
       {children}
-    </section>
-    <section className="blog__tag-container">
-      <h6>Tags</h6>
-      <BlogTags tags={tags} />
     </section>
   </article>
 );

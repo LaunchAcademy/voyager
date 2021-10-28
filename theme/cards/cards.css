@@ -1,5 +1,5 @@
 .card-list-container {
-  @apply max-w-screen-lg mx-auto text-center;
+  @apply max-w-screen-xl mx-auto text-center;
 
   & .card-list {
     @apply grid grid-cols-1 gap-4 my-5;
@@ -15,35 +15,61 @@
   }
 
   & .card-list_large {
-    @apply grid grid-cols-1 gap-4 my-5 px-10;
-    @apply md:grid md:grid-cols-3 md:gap-x-4 md:gap-y-16;
+    @apply grid grid-cols-1 gap-4 my-5;
+    @apply md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 md:gap-y-16;
+  }
+
+  & .card-list_article {
+    @apply md:gap-x-8;
   }
 }
 
 .card {
-  @apply w-full shadow-lg rounded-lg pb-4 mx-auto bg-white;
+  @apply w-full shadow-lg rounded-lg pb-4 mx-auto bg-white relative flex flex-col;
+
+  & .card__header a, & .card__time-to-read a {
+    @apply hover:underline;
+  }
 
   & .card__photo {
-    @apply overflow-hidden h-48 rounded-t-lg w-full;
+    @apply overflow-hidden h-48 rounded-t-lg w-full py-2;
+    @apply border-white hover:border-purple border-solid border-b-4;
   }
 
   & .card__photo-image {
     @apply object-cover object-center;
   }
 
+  & .card__card-content-container {
+    @apply mx-8 flex flex-col flex-grow;
+  }
+
   & .card__header {
-    @apply mx-8 my-3 text-left text-xl leading-6;
+    @apply my-3 text-left text-xl leading-6;
   }
 
   & .card__body {
-    @apply mx-8 my-3 text-left;
+    @apply my-3 text-left flex-grow;
   }
+
   & .card__readmore {
-    @apply grid grid-cols-2;
-    & a {
-      @apply font-bold text-primary-brand underline;
+    @apply grid grid-cols-3 bottom-1 my-2;
+
+    & .card__links, & .card__time-to-read {
+      @apply text-sm;
+    }
+    & .card__links {
+      @apply font-bold text-primary-brand underline text-left col-span-2;
+    }
+
+    & .card__time-to-read {
+      @apply text-right font-bold;
     }
   }
+}
+
+.card.card_article {
+
 }
 
 .card__mobile-tile {
