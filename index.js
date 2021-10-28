@@ -31,7 +31,6 @@ import FeatureList from "./theme/featureList/FeatureList.js";
 import FeatureListItem from "./theme/featureList/FeatureListItem.js";
 import HalfPageParagraph from "./theme/halfPageParagraphs/HalfPageParagraph.js";
 import CreativeContent from "./theme/creativeContent/CreativeContent.js";
-import TuitionPaymentPlanItem from "./theme/tuitionPaymentPlan/TuitionPaymentPlanItem.js";
 import ReviewList from "./theme/reviews/ReviewList.js";
 
 export {
@@ -69,5 +68,4 @@ export {
   SimpleBanner,
   TitledParagraph,
   TopBar,
-  TuitionPaymentPlanItem,
 };

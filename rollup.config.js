@@ -15,7 +15,6 @@ const packageJson = require("./package.json");
 const cssConfig = [
   "src/assets/scss/main.css",
   "theme/hero/hero.css",
-  "theme/tuitionTable/tuitionTable.css",
   "theme/phases/phaseList.css",
   "theme/navigation/footer.css",
   "theme/comparisonGrid/comparisonGrid.css",
