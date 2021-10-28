@@ -24,14 +24,15 @@ const Card = ({ imageUrl, header, body, url = undefined, cardType = "article", c
         </h3>
         <p className="card__body">{body}</p>
         {cardType === "article" &&
-        <section className="card__readmore">
+        (categoryLinks.length > 0 || timeToRead) &&
+        (<section className="card__readmore">
           <p className="card__links">{categoryLinks}</p>
           <p className="card__time-to-read">
             <UrlLink url={url}>
               {timeToRead} minutes
             </UrlLink>
           </p>
-        </section>}
+        </section>)}
       </div>
 
     </div>
