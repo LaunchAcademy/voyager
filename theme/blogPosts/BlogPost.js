@@ -9,7 +9,7 @@ import { FacebookMessengerShareButton, LinkedinShareButton, TwitterShareButton }
 import Icon from "../icons/Icon";
 
 const BlogPost = ({
-  blogTitle, authorName, authorImageProps = {}, url, tags = [], publishedAt, children
+  blogTitle, authorName, imageProps = {}, authorImageProps = {}, url, tags = [], publishedAt, children
 }) => (
   <article className="blog">
     <h1>{blogTitle}</h1>
@@ -43,6 +43,7 @@ const BlogPost = ({
 
     </section>
     <section className="blog__content blog__content_legacy">
+      <img {...imageProps} />
       {children}
     </section>
   </article>
