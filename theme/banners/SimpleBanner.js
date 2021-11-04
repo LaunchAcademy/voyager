@@ -12,6 +12,7 @@ const SimpleBanner = ({
   sourceSrcSet,
   sourceSizes,
   sourceType,
+  altText,
   type,
 }) => {
   // console.log("in simple banner");
@@ -31,7 +32,7 @@ const SimpleBanner = ({
           sizes={imgSizes}
           src={imgSrc}
           srcset={imgSrcSet}
-          alt=""
+          alt={altText}
         />
         <div className="banner__content">{children}</div>
       </picture>
