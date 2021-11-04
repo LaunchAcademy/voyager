@@ -2,8 +2,18 @@ import React from "react";
 import "../../src/assets/scss/devices.min.css";
 import "./deviceTiles.css";
 
-const MobileDeviceTile = (props) => {
-  const imageData = {}
+const MobileDeviceTile = ({ imageData = {} }) => {
+  const {
+    sourceType,
+    sourceSrcSet,
+    sourceSizes,
+    imgWidth,
+    imgHeight,
+    imgSizes,
+    imgSrc,
+    imgSrcSet,
+    altText
+  } = imageData;
   return (
     <div className="mobile-device-wrapper ">
       <div className="marvel-device iphone-x device-mobile__screen">
@@ -22,8 +32,19 @@ const MobileDeviceTile = (props) => {
           <div className="shadow shadow--bl"></div>
         </div>
         <div className="inner-shadow"></div>
-        <div className="screen">
-          <img className="mobile-device__student-screenshot" src={imageData} />
+        <div className="screen" style={{ display: "grid" }}>
+          <picture layout="fullWidth" style={{ gridArea: "1/1" }}>
+            <source type={sourceType} srcset={sourceSrcSet} sizes={sourceSizes} />
+            <img
+              className="mobile-device__student-screenshot"
+              width={imgWidth}
+              height={imgHeight}
+              sizes={imgSizes}
+              src={imgSrc}
+              srcset={imgSrcSet}
+              alt={altText}
+            />
+          </picture>
         </div>
       </div>
     </div>

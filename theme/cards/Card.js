@@ -7,7 +7,7 @@ const UrlLink = ({url, children = undefined}) => {
   return <>{children}</>
 }
 const Card = ({ imageData = {}, header, body, url = undefined, cardType = "article", categories = [], timeToRead = undefined}) => {
-  const { sourceType, sourceSrcSet, sourceSizes, imgWidth, imgHeight, imgSizes, imgSrc, imgSrcSet } = imageData
+  const { sourceType, sourceSrcSet, sourceSizes, imgWidth, imgHeight, imgSizes, imgSrc, imgSrcSet, altText } = imageData
 
   const categoryLinks = categories.map((category) => <a key={category.url} href={category.url}>{category.name}</a>)
 
@@ -23,7 +23,7 @@ const Card = ({ imageData = {}, header, body, url = undefined, cardType = "artic
                 sizes={imgSizes}
                 src={imgSrc}
                 srcset={imgSrcSet}
-                alt=""
+                alt={altText}
               />
           </picture>
         </UrlLink>

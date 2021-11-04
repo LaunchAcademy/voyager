@@ -1,9 +1,34 @@
 import React from "react";
 import "./horizontalProfile.css";
 
-const HorizontalProfile = ({ name, currentTitle, formerTitle, headshotUrl, description }) => (
+const HorizontalProfile = ({
+  name,
+  currentTitle,
+  formerTitle,
+  imgWidth,
+  imgHeight,
+  imgSrc,
+  imgSrcSet,
+  imgSizes,
+  sourceSrcSet,
+  sourceSizes,
+  sourceType,
+  altText,
+  description,
+}) => (
   <div className="horizontal-profile">
-    <img className="horizontal-profile__image" src={headshotUrl} alt={name} />
+    <picture>
+      <source type={sourceType} srcset={sourceSrcSet} sizes={sourceSizes} />
+      <img
+        className="horizontal-profile__image"
+        width={imgWidth}
+        height={imgHeight}
+        sizes={imgSizes}
+        src={imgSrc}
+        srcset={imgSrcSet}
+        alt={altText}
+      />
+    </picture>
     <div className="horizontal-profile__content">
       <h5 className="horizontal-profile__name">{name}</h5>
       <h6 className="horizontal-profile__current-title">{currentTitle}</h6>

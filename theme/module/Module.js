@@ -10,8 +10,16 @@ const Module = ({
   duration,
   detail,
   description,
-  imageUrl,
   children,
+  sourceType,
+  sourceSrcSet,
+  sourceSizes,
+  imgWidth,
+  imgHeight,
+  imgSizes,
+  imgSrc,
+  imgSrcSet,
+  altText
 }) => {
   let details;
   location && commitment && duration
@@ -25,7 +33,17 @@ const Module = ({
     <div className="module">
       <div className="module__image-column">
         <div className="image-column__image-container">
-          <img src={imageUrl} alt="module Image" />
+          <picture>
+            <source type={sourceType} srcset={sourceSrcSet} sizes={sourceSizes} />
+            <img
+              width={imgWidth}
+              height={imgHeight}
+              sizes={imgSizes}
+              src={imgSrc}
+              srcset={imgSrcSet}
+              alt={altText}
+            />
+          </picture>
         </div>
       </div>
       <div className="module__supporting-content">
