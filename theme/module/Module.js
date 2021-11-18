@@ -11,16 +11,10 @@ const Module = ({
   detail,
   description,
   children,
-  sourceType,
-  sourceSrcSet,
-  sourceSizes,
-  imgWidth,
-  imgHeight,
-  imgSizes,
-  imgSrc,
-  imgSrcSet,
-  altText
+  imgObject = {},
+  altText,
 }) => {
+  const { imgWidth, imgHeight, imgSrc, imgSrcSet, imgSizes, sourceSrcSet, sourceSizes, sourceType } = imgObject;
   let details;
   location && commitment && duration
     ? (details = (

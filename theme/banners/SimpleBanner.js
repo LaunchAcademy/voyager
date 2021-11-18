@@ -2,22 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./banners.css";
 
-const SimpleBanner = ({
-  children,
-  imgWidth,
-  imgHeight,
-  imgSrc,
-  imgSrcSet,
-  imgSizes,
-  sourceSrcSet,
-  sourceSizes,
-  sourceType,
-  altText,
-  type,
-}) => {
-  // console.log("in simple banner");
-
-  // console.log(backgroundImageData);
+const SimpleBanner = ({ children, imgObject = {}, altText, type }) => {
+  const { imgWidth, imgHeight, imgSrc, imgSrcSet, imgSizes, sourceSrcSet, sourceSizes, sourceType } = imgObject;
+  
   return (
     <div style={{ display: "grid" }}>
       <picture

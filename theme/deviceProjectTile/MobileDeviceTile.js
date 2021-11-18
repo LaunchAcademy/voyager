@@ -2,7 +2,7 @@ import React from "react";
 import "../../src/assets/scss/devices.min.css";
 import "./deviceTiles.css";
 
-const MobileDeviceTile = ({ imageData = {} }) => {
+const MobileDeviceTile = ({ imageData = {}, altText }) => {
   const {
     sourceType,
     sourceSrcSet,
@@ -11,8 +11,7 @@ const MobileDeviceTile = ({ imageData = {} }) => {
     imgHeight,
     imgSizes,
     imgSrc,
-    imgSrcSet,
-    altText
+    imgSrcSet
   } = imageData;
   return (
     <div className="mobile-device-wrapper ">

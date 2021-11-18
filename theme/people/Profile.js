@@ -9,16 +9,10 @@ const Profile = ({
   formerTitle,
   foundingMember,
   socialUrls,
-  imgWidth,
-  imgHeight,
-  imgSrc,
-  imgSrcSet,
-  imgSizes,
-  sourceSrcSet,
-  sourceSizes,
-  sourceType,
+  imgObject = {},
   altText,
 }) => {
+  const { imgWidth, imgHeight, imgSrc, imgSrcSet, imgSizes, sourceSrcSet, sourceSizes, sourceType } = imgObject;
   let whichProfileClass = "profile";
   let currentEmployerOrFoundingMember = (
     <h6 className="profile__current-title">
