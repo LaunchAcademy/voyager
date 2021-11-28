@@ -2,43 +2,25 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./banners.css";
 
-const SimpleBanner = ({ children, imgObject = {}, altText, type }) => {
-  const {
-    imgWidth,
-    imgHeight,
-    imgSrc,
-    imgSrcSet,
-    imgSizes,
-    sourceSrcSet,
-    sourceSizes,
-    sourceType,
-  } = imgObject;
+//note: we are deprecating backgroundImageUrl in
+//favor of backgroundImageProps for responsive images
+const SimpleBanner = ({ children, backgroundImageUrl, backgroundImageProps, type, style = {}}) => (
+  <section
+    className={`banner__photo banner_${type}`}
+    style={{
+      ...style,
+      ...(backgroundImageUrl ? { backgroundImage: `url("${backgroundImageUrl}")` } : {})
+    }}
+  >
 
-  return (
-    <div style={{ display: "grid" }}>
-      <picture
-        className={`banner__photo banner_${type}`}
-        style={{ gridArea: "1/1" }}
-        layout="fullWidth"
-      >
-        <source type={sourceType} srcset={sourceSrcSet} sizes={sourceSizes} />
-        <img
-          width={imgWidth}
-          height={imgHeight}
-          sizes={imgSizes}
-          src={imgSrc}
-          srcset={imgSrcSet}
-          alt={altText}
-        />
-        <div className="banner__content">{children}</div>
-      </picture>
-      <div
-        className="future-background-image-styling"
-        style={{ gridArea: "1/1", position: "relative", placeItems: "center", display: "grid" }}
-      />
-    </div>
-  );
-};
+    {backgroundImageProps &&
+      <div className="banner__background-photo-wrapper">
+        <img {...backgroundImageProps} className="banner__background-photo" />
+      </div>
+    }
+    <div className="banner__content">{children}</div>
+  </section>
+);
 
 SimpleBanner.defaultProps = {
   backgroundImageData: {},

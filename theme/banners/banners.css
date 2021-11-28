@@ -23,31 +23,37 @@
 
 
 .banner__photo {
-  @apply relative bg-no-repeat bg-cover py-32 text-white text-center mx-auto;
-  @apply lg:py-64;
+  @apply  text-white text-center mx-auto relative;
 
   &::before {
     content: "";
-    position: absolute;
     top: 0;
-    right: 0;
     bottom: 0;
+    right: 0;
     left: 0;
-    @apply bg-opacity-70 bg-photo-overlay;
+    @apply bg-opacity-70 bg-photo-overlay absolute z-10;
+  }
+
+  & .banner__background-photo-wrapper {
+    @apply absolute w-full z-0 h-full;
+  }
+
+  & .banner__background-photo {
+    @apply object-center object-cover overflow-hidden w-full h-full;
   }
 
   & .banner__content {
-    @apply relative;
+    @apply relative py-32 z-10;
   }
 
   &.banner_prose .banner__content {
     @apply px-12 text-left relative;
     @apply md:w-9/12;
-    @apply lg:w-7/12 lg:px-0 lg:pl-8;
+    @apply lg:w-7/12 lg:px-0 lg:pl-32;
     @apply xl:w-1/2;
 
-    & .banner__title {
-      @apply lg:ml-24;
+    & .banner__button-container {
+      @apply mt-8 lg:mt-16;
     }
 
     & .banner__content-container {
@@ -97,8 +103,8 @@
       }
     }
 
-    & .banner_device__device-container {
-      @apply w-full mt-20;
+  & .banner_device__device-container {
+    @apply w-full mt-20;
     }
   }
 }
