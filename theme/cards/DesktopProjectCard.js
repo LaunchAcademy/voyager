@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 
 const DesktopProjectCard = ({
-  imageData,
+  Image,
   projectLiveUrl,
   projectTitle,
   studentName,
@@ -18,7 +18,7 @@ const DesktopProjectCard = ({
   return (
     <article className="card card__desktop-tile">
       <section className="card__photo">
-        <DesktopDeviceTile {...imageData} />
+        <DesktopDeviceTile Image={Image} />
       </section>
       <section className="project-tile__student-info">
         <figure className="student-info__student-profile">{studentProfileImage}</figure>

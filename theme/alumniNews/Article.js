@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./article.css";
 
-const Article = ({ imageProps, title, subtitle, path, className = "" }) => {
+const Article = ({ Image, title, subtitle, path, className = "" }) => {
   return (
     <div className={`article-list__item ${className}`}>
-      <a href={path}><img className="article-list__image" {...imageProps} /></a>
+      <a href={path}><Image className="article-list__image" /></a>
       <a href={path}><strong className="article-list__title">{title}</strong></a>
       <p className="article-list__subtitle">{subtitle}</p>
     </div>

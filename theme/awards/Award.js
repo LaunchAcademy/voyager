@@ -1,9 +1,8 @@
 import React from "react";
 import "./award.css";
 
-const Award = ({ imageProps, altText }) => {
-  console.log(imageProps)
-  return <img {...imageProps} alt={altText} />;
+const Award = ({ Image }) => {
+  return <Image />;
 };
 
 export default Award;

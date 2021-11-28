@@ -4,18 +4,15 @@ import "./banners.css";
 
 //note: we are deprecating backgroundImageUrl in
 //favor of backgroundImageProps for responsive images
-const SimpleBanner = ({ children, backgroundImageUrl, backgroundImageProps, type, style = {}}) => (
+const SimpleBanner = ({ children, BackgroundImage, type, style = {}}) => (
   <section
     className={`banner__photo banner_${type}`}
-    style={{
-      ...style,
-      ...(backgroundImageUrl ? { backgroundImage: `url("${backgroundImageUrl}")` } : {})
-    }}
+    style={style}
   >
 
-    {backgroundImageProps &&
+    {BackgroundImage &&
       <div className="banner__background-photo-wrapper">
-        <img {...backgroundImageProps} className="banner__background-photo" />
+        <BackgroundImage className="banner__background-photo" />
       </div>
     }
     <div className="banner__content">{children}</div>

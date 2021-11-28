@@ -2,15 +2,14 @@ import React from "react";
 import "./deviceTiles.css";
 import "../../src/assets/scss/devices.min.css";
 
-const DesktopDeviceTile = (props) => {
-  const imageData = {}
+const DesktopDeviceTile = ({Image}) => {
   return (
     <div className="desktop-device-wrapper">
       <div className="desktop-device__screen marvel-device macbook">
         <div className="top-bar"></div>
         <div className="camera"></div>
         <div className="screen">
-          <img className="desktop-device__student-screenshot" src={imageData} />
+          <Image className="desktop-device__student-screenshot" />
         </div>
         <div className="bottom-bar"></div>
       </div>

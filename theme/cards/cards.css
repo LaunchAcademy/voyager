@@ -1,5 +1,5 @@
 .card-list-container {
-  @apply max-w-screen-xl mx-auto text-center;
+  @apply max-w-screen-xl mx-auto text-center z-20;
 
   & .card-list {
     @apply grid grid-cols-1 gap-4 my-5;
@@ -25,7 +25,7 @@
 }
 
 .card {
-  @apply w-full shadow-lg rounded-lg pb-4 mx-auto bg-white relative flex flex-col;
+  @apply w-full shadow-lg rounded-lg pb-4 mx-auto bg-white relative flex flex-col z-30;
 
   & .card__header a, & .card__time-to-read a {
     @apply hover:underline;

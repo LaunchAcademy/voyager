@@ -6,26 +6,14 @@ const UrlLink = ({url, children = undefined}) => {
   }
   return <>{children}</>
 }
-const Card = ({ imageData = {}, header, body, url = undefined, cardType = "article", categories = [], timeToRead = undefined}) => {
-  const { sourceType, sourceSrcSet, sourceSizes, imgWidth, imgHeight, imgSizes, imgSrc, imgSrcSet, altText } = imageData
-
+const Card = ({ Image, header, body, url = undefined, cardType = "article", categories = [], timeToRead = undefined}) => {
   const categoryLinks = categories.map((category) => <a key={category.url} href={category.url}>{category.name}</a>)
 
   return (
     <div className={`card card_${cardType}`}>
       <figure className="card__photo">
         <UrlLink url={url}>
-          <picture>
-              <source type={sourceType} srcset={sourceSrcSet} sizes={sourceSizes} />
-              <img
-                width={imgWidth}
-                height={imgHeight}
-                sizes={imgSizes}
-                src={imgSrc}
-                srcset={imgSrcSet}
-                alt={altText}
-              />
-          </picture>
+          <Image />
         </UrlLink>
       </figure>
       <div className="card__card-content-container">

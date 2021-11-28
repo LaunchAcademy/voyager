@@ -9,10 +9,9 @@ const Profile = ({
   formerTitle,
   foundingMember,
   socialUrls,
-  imgObject = {},
   altText,
+  Image
 }) => {
-  const { imgWidth, imgHeight, imgSrc, imgSrcSet, imgSizes, sourceSrcSet, sourceSizes, sourceType } = imgObject;
   let whichProfileClass = "profile";
   let currentEmployerOrFoundingMember = (
     <h6 className="profile__current-title">
@@ -56,17 +55,7 @@ const Profile = ({
 
   return (
     <div className={whichProfileClass}>
-      <picture className="profile__image">
-        <source type={sourceType} srcset={sourceSrcSet} sizes={sourceSizes} />
-        <img
-          width={imgWidth}
-          height={imgHeight}
-          sizes={imgSizes}
-          src={imgSrc}
-          srcset={imgSrcSet}
-          alt={altText}
-        />
-      </picture>
+      <Image className="profile__image" />
       <h5 className="profile__name">{name}</h5>
       <p className="profile__label_current">Current:</p>
       {currentEmployerOrFoundingMember}
