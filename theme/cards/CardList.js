@@ -19,7 +19,7 @@ const CardList = ({ content, cardType = "article", numberOfColumns, className })
       return (
         <MobileProjectCard
           key={card.id}
-          imageUrl={card.imageUrl}
+          imageData={card.imageData}
           projectTitle={card.projectTitle}
           studentName={card.studentName}
           studentProfileUrl={card.studentProfileUrl}
@@ -30,7 +30,7 @@ const CardList = ({ content, cardType = "article", numberOfColumns, className })
       return (
         <DesktopProjectCard
           key={card.id}
-          imageUrl={card.imageUrl}
+          imageData={card.imageData}
           projectTitle={card.projectTitle}
           studentName={card.studentName}
           studentProfileUrl={card.studentProfileUrl}
@@ -39,7 +39,7 @@ const CardList = ({ content, cardType = "article", numberOfColumns, className })
     }
     return <Card
       key={card.id}
-      imageUrl={card.imageUrl}
+      imageData={card.imageData}
       header={card.header}
       body={card.body}
       url={card.articleUrl}

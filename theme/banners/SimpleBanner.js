@@ -23,12 +23,12 @@ const SimpleBanner = ({ children, backgroundImageUrl, backgroundImageProps, type
 );
 
 SimpleBanner.defaultProps = {
-  backgroundImageUrl: undefined,
+  backgroundImageData: {},
 };
 
 SimpleBanner.propTypes = {
   children: PropTypes.node.isRequired,
-  backgroundImageUrl: PropTypes.string,
+  backgroundImageData: PropTypes.object,
 };
 
 export default SimpleBanner;
