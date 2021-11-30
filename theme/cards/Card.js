@@ -11,11 +11,12 @@ const Card = ({ Image, header, body, url = undefined, cardType = "article", cate
 
   return (
     <div className={`card card_${cardType}`}>
-      <figure className="card__photo">
+      {Image && <figure className="card__photo">
         <UrlLink url={url}>
           <Image />
         </UrlLink>
-      </figure>
+      </figure> }
+
       <div className="card__card-content-container">
         <h3 className="card__header">
           <UrlLink url={url}>

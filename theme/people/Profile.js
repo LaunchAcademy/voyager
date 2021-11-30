@@ -55,7 +55,7 @@ const Profile = ({
 
   return (
     <div className={whichProfileClass}>
-      <Image className="profile__image" />
+      {Image && <Image className="profile__image" />}
       <h5 className="profile__name">{name}</h5>
       <p className="profile__label_current">Current:</p>
       {currentEmployerOrFoundingMember}
