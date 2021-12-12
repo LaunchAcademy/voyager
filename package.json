@@ -9,9 +9,9 @@
   },
   "license": "UNLICENSED",
   "name": "@launchacademy/voyager",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "engines": {
-    "node": "^14.8"
+    "node": ">= 14.8"
   },
   "files": [
     "CHANGELOG.md",
