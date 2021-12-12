@@ -4,7 +4,7 @@ import "./partnerLogoList.css";
 
 const PartnerLogoList = ({ partnerData, className } = {}) => {
   const listItems = partnerData.map((partner) => (
-    <li className="partner-logo-list__item">
+    <li key={partner.name} className="partner-logo-list__item">
       <img key={partner.name} src={partner.logoImageUrl} alt={partner.name} />
     </li>
   ));

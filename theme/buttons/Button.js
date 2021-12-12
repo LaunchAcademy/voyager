@@ -5,7 +5,7 @@ import getIconMap from "../icons/getIconMap.js";
 
 import "./buttons.css";
 
-const Button = ({ text, to, size, secondary, placement, iconName, className, hideText }) => {
+const Button = ({ text, to, size, secondary, placement, iconName, iconSize = "1x", className, hideText }) => {
   const modifiers = [];
   if (secondary) {
     modifiers.push("button_secondary");
@@ -19,7 +19,7 @@ const Button = ({ text, to, size, secondary, placement, iconName, className, hid
   let icon;
   if (iconName) {
     const iconMap = getIconMap();
-    icon = <FontAwesomeIcon icon={iconMap[iconName]} />;
+    icon = <FontAwesomeIcon size={iconSize} icon={iconMap[iconName]} />;
   }
 
   if (hideText) {
