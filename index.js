@@ -32,8 +32,10 @@ import FeatureListItem from "./theme/featureList/FeatureListItem.js";
 import HalfPageParagraph from "./theme/halfPageParagraphs/HalfPageParagraph.js";
 import CreativeContent from "./theme/creativeContent/CreativeContent.js";
 import ReviewList from "./theme/reviews/ReviewList.js";
+import fontFamily from "./theme/typography/fontFamily.cjs";
 
 export {
+  fontFamily,
   Article,
   Award,
   BannerContent,
