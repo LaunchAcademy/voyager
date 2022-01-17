@@ -3,6 +3,14 @@
   height: 942px;
   @apply md:h-auto;
 
+  & .feature-list__prefix-container {
+    @apply relative w-full max-w-screen-xl w-full;
+  }
+
+  & .feature-list__prefix-content {
+    @apply mx-auto block max-w-screen-xl relative;
+  }
+
   & .feature-list__content-wrap {
     @apply max-w-screen-xl grid grid-cols-12 mx-auto;
 
@@ -22,7 +30,7 @@
     }
 
     & .content-wrap__grid {
-      @apply col-span-12 grid grid-cols-1 bg-light mx-4 mb-10;
+      @apply col-span-12 grid grid-cols-1 bg-light mx-4 mb-10 z-10;
       @apply md:col-start-5 md:col-span-7 md:mx-0;
       @apply lg:col-start-6 lg:col-span-6 lg:mx-0;
 

@@ -49,6 +49,10 @@
     @apply bg-gray-light-slate py-2 px-4 rounded-lg mt-4 mb-8 w-full text-black font-bold focus:ring-4 focus:ring-primary-brand focus:outline-none border-2 border-gray-light-slate;
     font-size: 0.875rem;
 
+    &.form__input_error {
+      @apply focus:ring-red border-2 border-red;
+    }
+
     &::placeholder {
       @apply text-black font-bold;
     }
@@ -58,7 +62,7 @@
     position: absolute;
     top: 48px;
     right: 28px;
-    @apply text-white;
+    @apply text-white hover:text-primary-brand;
   }
 
   & .footer__link-list {

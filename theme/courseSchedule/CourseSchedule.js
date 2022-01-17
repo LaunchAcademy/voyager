@@ -39,7 +39,7 @@ const CourseSchedule = ({
       <h4 className="course-schedule__date">{cohortEnds}</h4>
     </div>
     <div className="course-schedule__course-content course-schedule__course-content_two-column">
-      <Button to={buttonURL} text={buttonText} className="hero__button" size="lg" />
+      <Button to={buttonURL} text={buttonText} className="hero__button" size="md" />
     </div>
   </div>
 );

@@ -52,6 +52,10 @@
     @apply my-3 text-left flex-grow;
   }
 
+  & .card__body a {
+    @apply text-primary-brand no-underline hover:underline;
+  }
+
   & .card__readmore {
     @apply grid grid-cols-3 bottom-1 my-2;
 

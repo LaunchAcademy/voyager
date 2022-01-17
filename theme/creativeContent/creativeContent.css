@@ -13,6 +13,7 @@
       @apply w-full h-auto object-contain;
     }
   }
+
   & .titled-paragraph {
     @apply mt-0 col-span-12;
     @apply md:col-span-7;

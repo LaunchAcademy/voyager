@@ -23,7 +23,7 @@ const Card = ({ Image, header, body, url = undefined, cardType = "article", cate
             {header}
           </UrlLink>
         </h3>
-        <p className="card__body">{body}</p>
+        <p className="card__body" dangerouslySetInnerHTML={{"__html": body}} />
         {cardType === "article" &&
         (categoryLinks.length > 0 || timeToRead) &&
         (<section className="card__readmore">
