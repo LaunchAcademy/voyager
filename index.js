@@ -34,11 +34,11 @@ import CreativeContent from "./theme/creativeContent/CreativeContent.js";
 import ReviewList from "./theme/reviews/ReviewList.js";
 import fontFamily from "./theme/typography/fontFamily.cjs";
 import AccentCircle from "./theme/circleAccents/AccentCircle.js";
-import fontSizes from "./theme/typography/fontSizes.cjs";
+import fontSize from "./theme/typography/fontSize.cjs";
 
 export {
   fontFamily,
-  fontSizes,
+  fontSize,
   AccentCircle,
   Article,
   Award,

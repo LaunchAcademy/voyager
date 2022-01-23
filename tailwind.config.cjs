@@ -1,5 +1,5 @@
 const fontFamily = require("./theme/typography/fontFamily.cjs");
-const fontSizes = require("./theme/typography/fontSizes.cjs")
+const fontSize = require("./theme/typography/fontSize.cjs")
 
 const colors = {
   purple: '#6930C3',
@@ -34,7 +34,7 @@ module.exports = {
     },
     colors,
     fontFamily,
-    fontSizes,
+    fontSize,
     scale: {
       "25": ".25",
       "50": ".5",
