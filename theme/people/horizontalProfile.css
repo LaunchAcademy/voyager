@@ -10,7 +10,7 @@
 
 .horizontal-profile {
   @apply my-2 text-center;
-  @apply lg:grid lg:grid-cols-3;
+  @apply lg:grid lg:grid-cols-3 lg:text-left;
 
   & .horizontal-profile__image {
     @apply rounded-full inline-block my-8;
@@ -19,7 +19,7 @@
   }
 
   & .horizontal-profile__content {
-    @apply lg:col-start-2 lg:col-span-2 lg:p-10;
+    @apply lg:col-start-2 lg:col-span-2 lg:p-10 lg:pt-16;
   }
 
   & .horizontal-profile__name {
@@ -33,7 +33,7 @@
   }
 
   & .horizontal-profile__description {
-    @apply text-lg mb-2;
-    @apply lg:mb-0 lg:text-xs lg:font-text lg:normal-case lg:px-10;
+    @apply text-lg mb-2 lg:px-0;
+    @apply lg:mb-0 lg:text-xs lg:font-text lg:normal-case;
   }
 }

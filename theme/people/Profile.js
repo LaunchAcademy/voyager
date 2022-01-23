@@ -4,19 +4,21 @@ import Icon from "../icons/Icon.js";
 
 const Profile = ({
   name,
+  profileType = 'launcher',
   currentTitle,
   currentEmployer,
   formerTitle,
   foundingMember,
   socialUrls,
+  description,
   altText,
   Image
 }) => {
-  let whichProfileClass = "profile";
+  let whichProfileClass = `profile profile__${profileType}`;
   let currentEmployerOrFoundingMember = (
     <h6 className="profile__current-title">
       {currentTitle}
-      <span>at {currentEmployer}</span>
+      {profileType !== "teamMember" && <span>at {currentEmployer}</span>}
     </h6>
   );
   let socialList;
@@ -57,10 +59,12 @@ const Profile = ({
     <div className={whichProfileClass}>
       {Image && <Image className="profile__image" />}
       <h5 className="profile__name">{name}</h5>
-      <p className="profile__label_current">Current:</p>
+      {profileType !== "teamMember" && (<p className="profile__label_current">Current:</p>)}
       {currentEmployerOrFoundingMember}
-      <p className="profile__label_former">Former:</p>
-      <p className="profile__former-title">{formerTitle}</p>
+      {formerTitle && (<><p className="profile__label_former">Former:</p>
+      <p className="profile__former-title">{formerTitle}</p></>)
+      }
+      {description && <p>{description}</p>}
       {socialList}
     </div>
   );

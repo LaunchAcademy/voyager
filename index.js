@@ -33,9 +33,13 @@ import HalfPageParagraph from "./theme/halfPageParagraphs/HalfPageParagraph.js";
 import CreativeContent from "./theme/creativeContent/CreativeContent.js";
 import ReviewList from "./theme/reviews/ReviewList.js";
 import fontFamily from "./theme/typography/fontFamily.cjs";
+import AccentCircle from "./theme/circleAccents/AccentCircle.js";
+import fontSizes from "./theme/typography/fontSizes.cjs";
 
 export {
   fontFamily,
+  fontSizes,
+  AccentCircle,
   Article,
   Award,
   BannerContent,

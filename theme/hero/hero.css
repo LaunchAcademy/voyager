@@ -23,8 +23,8 @@
   & .hero__image-container {
     @apply relative inline-block;
     @apply mt-12;
-    width: 210px;
-    height: 210px;
+    min-width: 210px;
+    min-height: 210px;
   }
 
   & .hero__image-container_square {
@@ -34,8 +34,8 @@
   }
 
   & .hero__image {
-    height: 210px;
-    width: 210px;
+    height: 210px !important;
+    width: 210px !important;
   }
 
   & .hero__image_square {

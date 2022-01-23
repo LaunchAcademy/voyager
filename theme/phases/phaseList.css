@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 .phase-list {
   @apply flex justify-center flex-wrap -mt-10;
   @apply lg:grid lg:grid-cols-4 lg:gap-8 lg:-mt-20 lg:px-10 lg:relative lg:mx-24;
@@ -34,3 +35,4 @@
     @apply pb-6 text-sm font-text font-normal;
   }
 }
+/* purgecss end ignore */

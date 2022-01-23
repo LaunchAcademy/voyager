@@ -1,0 +1,11 @@
+.accent-circle {
+  @apply absolute rounded-full z-0;
+}
+
+.accent-circle__white {
+  @apply bg-white;
+}
+
+.accent-circle__secondary {
+  @apply bg-secondary-brand;
+}

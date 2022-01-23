@@ -33,7 +33,7 @@
   }
 }
 
-.profile_social {
+.profile__teamMember {
   & .profile__image {
     @apply rounded-full inline-block my-8;
     @apply w-52;

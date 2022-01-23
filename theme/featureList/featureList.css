@@ -1,6 +1,5 @@
 .feature-list {
   @apply bg-secondary-brand w-full overflow-y-visible;
-  height: 942px;
   @apply md:h-auto;
 
   & .feature-list__prefix-container {
@@ -142,9 +141,6 @@
 @screen md {
   .benefit-list {
     min-height: 1025px;
-    & .feature-list {
-      height: 618px;
-    }
   }
 
 }
