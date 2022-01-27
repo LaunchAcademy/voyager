@@ -6,9 +6,8 @@ const UrlLink = ({url, children = undefined}) => {
   }
   return <>{children}</>
 }
-const Card = ({ Image, header, body, url = undefined, cardType = "article", categories = [], timeToRead = undefined}) => {
+const Card = ({ Image, header, body, url = undefined, cardType = "article", categories = [], timeToRead = undefined, learnMoreToggle}) => {
   const categoryLinks = categories.map((category) => <a key={category.url} href={category.url}>{category.name}</a>)
-
   return (
     <div className={`card card_${cardType}`}>
       {Image && <figure className="card__photo">
@@ -35,7 +34,7 @@ const Card = ({ Image, header, body, url = undefined, cardType = "article", cate
           </p>
         </section>)}
       </div>
-
+    {learnMoreToggle ? <a className="card__learn-more">Learn more</a> : null}
     </div>
   );
 };

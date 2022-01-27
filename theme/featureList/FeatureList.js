@@ -2,6 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./featureList.css";
 
+{/* <section className="feature-list feature-list-gray"> */}
+// {`feature-list ${bgGray ? "feature-list-gray" : null}`}
+// const FeatureList = ({ subtitle, title, footerText, children, bgGray }) => (
+
+
+
 const FeatureList = ({ subtitle, title, footerText, children, prefixContent }) => (
   <section className="feature-list relative">
     <div className="container feature-list__prefix-container">
@@ -18,7 +24,7 @@ const FeatureList = ({ subtitle, title, footerText, children, prefixContent }) =
       </div>
     </div>
   </section>
-);
+)
 
 module.propTypes = {
   subtitle: PropTypes.string.isRequired,
