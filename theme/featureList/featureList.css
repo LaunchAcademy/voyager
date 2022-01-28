@@ -3,11 +3,14 @@
   @apply md:h-auto;
 
   & .feature-list__prefix-container {
-    @apply relative w-full max-w-screen-xl w-full;
+    @apply relative w-full max-w-screen-xl;
   }
 
   & .feature-list__prefix-content {
     @apply mx-auto block max-w-screen-xl relative;
+
+  &.feature-list-gray {
+     @apply bg-gray-dorian
   }
 
   & .feature-list__content-wrap {
