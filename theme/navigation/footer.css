@@ -29,7 +29,7 @@
   }
 
   & .footer__form {
-    @apply my-3 sm:w-72 lg:w-full mx-auto;
+    @apply my-3 sm:w-72 lg:w-full mx-auto px-8 lg:px-0;
     @apply md:col-span-6 md:mt-0;
     @apply lg:col-span-3;
     position: relative;
@@ -61,7 +61,7 @@
   & .footer__form-submit-button {
     position: absolute;
     top: 48px;
-    right: 28px;
+    right: 48px;
     @apply text-white hover:text-primary-brand;
   }
 
@@ -109,4 +109,16 @@
       @apply md:mr-2 md:inline-block;
     }
   }
+}
+
+@screen lg {
+  .footer {
+    & .footer__form-submit-button {
+      position: absolute;
+      top: 48px;
+      right: 28px;
+      @apply text-white hover:text-primary-brand;
+    }
+  }
+
 }

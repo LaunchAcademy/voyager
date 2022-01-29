@@ -24,7 +24,8 @@ const BlogPost = ({
 
       <div className="blog__meta-details">
         <p className="blog__author-name">By {authorName}</p>
-        <p className="blog__publication-date">{ format(publishedAt, "LLLL d, yyyy") }</p>
+        {publishedAt && <p className="blog__publication-date">{ format(publishedAt, "LLLL d, yyyy") }</p>}
+
       </div>
       <div className="blog__social-shares">
         <FacebookMessengerShareButton url={url}>

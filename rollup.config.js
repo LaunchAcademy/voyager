@@ -18,6 +18,7 @@ const cssConfig = [
   "theme/phases/phaseList.css",
   "theme/navigation/footer.css",
   "theme/comparisonGrid/comparisonGrid.css",
+  "./theme/tuitionTable/tuitionTable.css",
 ].map((inputFile) => ({
   input: inputFile,
   output: [

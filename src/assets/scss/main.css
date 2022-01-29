@@ -6,13 +6,13 @@
 
 /* @tailwind utilities; */
 
-body {
+body.body_launch {
   margin: 0;
-  @apply w-full max-w-full;
+  @apply w-full max-w-full font-text;
 }
 
 .main-content {
-  @apply pt-12 lg:pt-24 justify-center;
+  @apply pt-20 lg:pt-24 justify-center;
 }
 
 .constrained-container {

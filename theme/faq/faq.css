@@ -15,5 +15,13 @@
 
   & .faq__description {
     @apply col-span-4 font-text;
+
+    & p {
+      @apply mb-4;
+    }
+
+    & a {
+      @apply text-primary-brand no-underline hover:underline
+    }
   }
 }

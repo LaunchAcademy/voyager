@@ -1,5 +1,5 @@
 .banner__title {
-  @apply text-white mb-1 z-20 relative;
+  @apply text-white mb-2 z-20 relative;
   @apply lg:mb-4 lg:text-6xl;
 }
 
@@ -23,7 +23,7 @@
 
 @screen lg {
   .banner__photo {
-    min-height: 670px;
+    min-height: 470px;
   }
 }
 
@@ -48,7 +48,7 @@
   }
 
   & .banner__content {
-    @apply relative py-32 z-20;
+    @apply relative py-40 z-20;
   }
 
   &.banner_prose .banner__content {

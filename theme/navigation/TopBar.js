@@ -10,7 +10,7 @@ const TopBar = ({ logo, children }) => (
       {({ open }) => (
         <>
           <div className="flex-initial flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex-shrink-0 flex items-center">
+            <div className="flex-shrink-0 flex items-center top-bar__logo">
               { logo }
             </div>
           </div>

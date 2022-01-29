@@ -1,6 +1,10 @@
 .quote {
   @apply bg-teal pb-10 font-text pt-10 pr-5;
-  @apply lg:grid lg:grid-cols-4 lg:divide-x-2  lg:bg-white;
+  @apply lg:divide-x-2  lg:bg-white;
+
+  &.quote_hero {
+    @apply lg:grid lg:grid-cols-4
+  }
 
   & .quote__content {
     @apply col-span-1 text-center;
@@ -37,16 +41,15 @@
 }
 
 .quote_banner {
-  @apply grid grid-cols-12 bg-white pb-10 font-text pt-10 px-5 divide-x-0;
-  @apply lg:bg-white;
+  @apply  bg-white pb-10 font-text pt-10 divide-x-0;
+  @apply lg:bg-white lg:mx-24;
 
   & .quote__icon {
     @apply hidden;
   }
 
   & .quote__content {
-    @apply col-span-12 text-center;
-    @apply lg:col-start-5 lg:col-span-4;
+    @apply text-center;
 
     & .quote__horizontal-line {
       @apply lg:mx-40 lg:block;

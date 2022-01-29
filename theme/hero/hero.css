@@ -34,17 +34,17 @@
   }
 
   & .hero__image {
-    height: 210px !important;
-    width: 210px !important;
+    height: 310px !important;
+    width: 310px !important;
   }
 
   & .hero__image_square {
     @apply lg:object-cover lg:h-full;
   }
 
-  & .hero__play-button {
+  & a.hero__play-button {
     position: absolute;
-    @apply bottom-2 right-1;
+    @apply bottom-2 right-4;
     @apply lg:text-5xl lg:p-6 lg:right-4 lg:bottom-4;
     @apply xl:right-4 xl:bottom-4;
   }
@@ -59,7 +59,7 @@
   }
 
   & .hero__image_subtitle {
-    @apply uppercase text-xs pt-20;
+    @apply uppercase text-xs pt-6 md:pt-20;
     @apply lg:mb-1 lg:text-base;
   }
 

@@ -7,9 +7,19 @@
 }
 
   & .comparison-table {
-    @apply table-auto ml-10;
+    @apply table-auto md:ml-10;
     @apply md:mx-auto;
     @apply bg-white;
+
+    & tbody {
+      @apply bg-white;
+
+      & tr {
+        @apply border-t border-b border-gray-cloud;
+      }
+    }
+
+
 
     & .comparison-table__header-container {
       @apply bg-white;
@@ -29,15 +39,13 @@
 
     }
 
-
     & .comparison-table__data-title {
-      @apply text-left font-text text-lg sticky left-0 bg-white z-20 flex justify-between py-2 w-60;
-      @apply md:w-64;
+      @apply text-left font-text text-lg sticky left-0 bg-white z-20 justify-between items-stretch py-3 w-60;
+      @apply pl-4 md:pl-0 md:w-64 h-full;
       & svg {
         @apply h-4 w-4 justify-self-end self-center ml-3;
       }
     }
-
 
     & .comparison-table__data-text {
       @apply p-3 text-center;

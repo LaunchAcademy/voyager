@@ -22,7 +22,7 @@ const colors = {
   'tertiary-text': '#ACA9AF',
   accent: '#F3F1F4',
   light: '#F8F8F8',
-  'photo-overlay': '#522B29'
+  'photo-overlay': '#442A24'
 }
 
 module.exports = {

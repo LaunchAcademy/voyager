@@ -14,12 +14,12 @@
 
   & .profile__name {
     @apply text-xl font-headline font-bold mb-8;
-    @apply lg:text-xl lg:mb-1;
+    @apply lg:text-3xl lg:mb-1;
   }
 
   & .profile__label_current,
   & .profile__label_former {
-    @apply font-bold text-lg uppercase mb-1 tracking-wide;
+    @apply font-bold uppercase mb-1 tracking-wide;
     @apply lg:mb-2 lg:font-normal tracking-wider;
   }
 
