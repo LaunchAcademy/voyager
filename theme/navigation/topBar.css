@@ -14,6 +14,10 @@
     flex-basis: 100%;
   }
 
+  & .navigation-list__logo {
+    @apply mb-0;
+  }
+
   & .top-bar-navigation__menu-list__closed {
     @apply lg:block hidden;
   }
