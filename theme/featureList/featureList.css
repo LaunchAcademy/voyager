@@ -8,6 +8,7 @@
 
   & .feature-list__prefix-content {
     @apply mx-auto block max-w-screen-xl relative;
+  }
 
   &.feature-list-gray {
      @apply bg-gray-dorian

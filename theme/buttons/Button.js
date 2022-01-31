@@ -19,7 +19,7 @@ const Button = ({ text, children, to, onClick, size, secondary, placement, iconN
   let icon;
   if (iconName) {
     const iconMap = getIconMap();
-    icon = <FontAwesomeIcon size={iconSize} icon={iconMap[iconName]} />;
+    icon = <FontAwesomeIcon  size={iconSize} fixedWidth={true} icon={iconMap[iconName]} />;
   }
 
   if (hideText) {
