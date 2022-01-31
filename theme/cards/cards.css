@@ -131,6 +131,8 @@
 .card__desktop-tile {
   & .desktop-device__screen.marvel-device.macbook {
     @apply transform scale-25 -mt-56 -ml-64 pr-5;
+    @apply -mt-60;
+    margin-left: -21.5rem;
     @apply md:-mt-60 md:-ml-80;
     @apply lg:-mt-60 lg:-ml-72;
   }
@@ -147,11 +149,9 @@
   }
 
   & .project-tile__student-info {
-    @apply grid grid-cols-4 pt-4;
+    @apply px-4 pt-4;
 
     & .student-info__title {
-      @apply col-start-2 col-span-3;
-
       & h4 {
         @apply font-bold;
       }
@@ -161,7 +161,7 @@
     }
 
     & .student-info__student-profile {
-      @apply col-start-1 col-span-1 rounded-full overflow-hidden w-20 h-20 m-auto ml-5;
+      @apply rounded-full overflow-hidden w-20 h-20 m-auto ml-5;
       @apply md:w-14 md:h-14;
       @apply lg:w-20 lg:h-20;
 

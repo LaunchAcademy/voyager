@@ -10,7 +10,7 @@ const DesktopProjectCard = ({
   studentName,
   studentProfileUrl,
 }) => {
-  let studentProfileImage = <FontAwesomeIcon icon={faUserGraduate} />;
+  let studentProfileImage
   if (studentProfileUrl) {
     studentProfileImage = <img src={studentProfileUrl} />;
   }
@@ -21,7 +21,8 @@ const DesktopProjectCard = ({
         <DesktopDeviceTile Image={Image} />
       </section>
       <section className="project-tile__student-info">
-        <figure className="student-info__student-profile">{studentProfileImage}</figure>
+
+        {studentProfileImage && <figure className="student-info__student-profile">{studentProfileImage}</figure>}
         <div className="student-info__title">
           <a href={projectLiveUrl}>
             <h4 className="card__header">{projectTitle}</h4>
