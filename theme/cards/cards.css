@@ -74,6 +74,11 @@
       @apply text-right font-bold;
     }
   }
+
+  & .card__learn-more {
+    @apply font-semibold my-5;
+    text-decoration: underline;
+  }
 }
 
 .card.card_article {
