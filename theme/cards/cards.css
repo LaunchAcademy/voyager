@@ -134,7 +134,7 @@
     @apply -mt-60;
     margin-left: -21.5rem;
     @apply md:-mt-60 md:-ml-80;
-    @apply lg:-mt-60 lg:-ml-72;
+    @apply lg:-mt-60 lg:-ml-80;
   }
 
   & .card__photo {
