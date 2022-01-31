@@ -6,7 +6,4 @@
     @apply lg:text-center;
   }
 
-  & .faq-list__container {
-    @apply pl-10;
-  }
 }

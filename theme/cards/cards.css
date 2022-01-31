@@ -15,7 +15,7 @@
   }
 
   & .card-list_large {
-    @apply grid grid-cols-1 gap-4 my-5;
+    @apply grid grid-cols-1 gap-4 m-5;
     @apply md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 md:gap-y-16;
   }
 
@@ -32,7 +32,7 @@
   }
 
   & .card__photo {
-    @apply overflow-hidden h-48 rounded-t-lg w-full py-2;
+    @apply overflow-hidden h-48 rounded-t-lg w-full;
     @apply border-white hover:border-purple border-solid border-b-4;
     margin-block-start: 0;
     margin-block-end: 0;

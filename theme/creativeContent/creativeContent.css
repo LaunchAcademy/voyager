@@ -1,5 +1,5 @@
 .banner-with-creative {
-  @apply bg-gray-dorian my-10 py-10 grid grid-cols-12;
+  @apply bg-gray-dorian my-10 pt-10 grid-cols-1 md:grid md:grid-cols-12;
   @apply md:mx-5 md:gap-10;
 
   &.banner-with-creative_white {
@@ -7,7 +7,7 @@
   }
 
   & .creative-content__container {
-    @apply col-span-12 place-self-center mx-5;
+    @apply col-span-12 mx-5 my-8;
     @apply md:col-start-2 md:col-span-3;
     & img {
       @apply w-full h-auto object-contain;

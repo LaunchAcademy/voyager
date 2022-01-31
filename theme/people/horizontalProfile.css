@@ -33,7 +33,7 @@
   }
 
   & .horizontal-profile__description {
-    @apply text-lg mb-2 lg:px-0;
+    @apply text-xs mb-2 lg:px-0;
     @apply lg:mb-0 lg:text-xs lg:font-text lg:normal-case;
   }
 }

@@ -15,6 +15,6 @@
   }
 
   & p {
-    @apply mx-4;
+    @apply md:mx-4;
   }
 }

@@ -6,16 +6,16 @@ const FaqList = ({ questions }) => {
   const [selectedQuestion, setSelectedQuestion] = useState([]);
 
   const toggleQuestionSelect = (id) => {
-    if (id === selectedQuestion) {
-      setSelectedQuestion(null);
+    if (selectedQuestion.includes(id)) {
+      setSelectedQuestion(selectedQuestion.filter(questionId => questionId !== id));
     } else {
-      setSelectedQuestion(id);
+      setSelectedQuestion([...selectedQuestion, id]);
     }
   };
 
   const questionListItems = questions.map((question) => {
     let selected;
-    if (selectedQuestion === question.id) {
+    if (selectedQuestion.includes(question.id)) {
       selected = true;
     }
 

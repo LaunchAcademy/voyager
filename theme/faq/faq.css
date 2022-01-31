@@ -1,16 +1,16 @@
 .faq {
-  @apply pb-4;
+  @apply pb-4 md:w-9/12;
 
   & .faq__content {
-    @apply grid grid-cols-4 py-4;
+    @apply flex py-4;
   }
 
   & .faq__title-container {
-    @apply col-start-1 col-span-3 font-bold font-headline;
+    @apply flex-grow font-bold font-headline text-base;
   }
 
   & .faq__icon-container {
-    @apply col-start-4 col-span-1 place-content-end;
+    @apply flex-none place-content-end ml-4;
   }
 
   & .faq__description {

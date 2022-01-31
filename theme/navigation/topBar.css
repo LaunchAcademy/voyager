@@ -58,7 +58,7 @@
   }
 
   & .top-bar-navigation__menu-toggle {
-    @apply lg:hidden justify-self-end flex-none;
+    @apply lg:hidden justify-self-end flex-none pr-8;
   }
 
   & .top-bar-navigation__menu-toggle-button {

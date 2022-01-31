@@ -35,7 +35,7 @@
 
   & .hero__image {
     height: 310px !important;
-    width: 310px !important;
+    @apply w-full;
   }
 
   & .hero__image_square {

@@ -35,7 +35,6 @@ h2 {
   @apply text-xl;
   @apply lg:text-5xl;
   font-weight: 700;
-  line-height: 2.66rem;
 }
 
 h3 {
