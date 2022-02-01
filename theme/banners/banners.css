@@ -117,7 +117,7 @@
 @screen lg {
   .banner_device {
     height: 625px;
-    @apply pt-20 overflow-y-hidden w-full mb-20;
+    @apply pt-20 overflow-hidden w-full mb-20;
 
 
     & .banner_device__container {
