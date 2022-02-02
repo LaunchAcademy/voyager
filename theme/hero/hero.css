@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 .hero {
   @apply grid grid-cols-12 text-center pb-8;
   @apply lg:text-left lg:gap-2 lg:items-center lg:justify-center lg:max-w-screen-xl lg:mx-auto;
@@ -107,3 +108,4 @@
     max-height: 630px;
   }
 }
+/* purgecss end ignore */
