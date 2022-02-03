@@ -1,11 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import getIconMap from "../icons/getIconMap.js";
 
 import "./buttons.css";
 
-const Button = ({ text, children, to, onClick, size, secondary, placement, iconName, iconSize = "1x", className, hideText }) => {
+const Button = ({ text, children, to, onClick, size, secondary, placement, icon, iconSize = "1x", className, hideText }) => {
   const modifiers = [];
   if (secondary) {
     modifiers.push("button_secondary");
@@ -16,10 +15,9 @@ const Button = ({ text, children, to, onClick, size, secondary, placement, iconN
     modifiers.push("banner-photo__button");
   }
 
-  let icon;
-  if (iconName) {
-    const iconMap = getIconMap();
-    icon = <FontAwesomeIcon  size={iconSize} fixedWidth={true} icon={iconMap[iconName]} />;
+  let faIcon
+  if (icon) {
+    faIcon = <FontAwesomeIcon  size={iconSize} fixedWidth={true} icon={icon} />;
   }
 
   if (hideText) {
@@ -34,7 +32,7 @@ const Button = ({ text, children, to, onClick, size, secondary, placement, iconN
         href={to}
       >
         {children || (hideText ? null : text)}
-        {icon}
+        {faIcon}
       </a>
     );
   }
@@ -54,7 +52,6 @@ Button.defaultProps = {
 
 Button.propTypes = {
   text: PropTypes.string,
-  iconName: PropTypes.oneOf(PropTypes.oneOf(getIconMap())),
   to: PropTypes.string,
   size: PropTypes.oneOf(["xl", "lg", "md", "sm"]),
   secondary: PropTypes.bool,

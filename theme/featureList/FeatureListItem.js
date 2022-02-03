@@ -1,7 +1,7 @@
 import React from "react";
 import scroll from "../../src/assets/scroll.svg"
 
-const FeatureListItem = ({ title, subtitle, description, iconName }) => (
+const FeatureListItem = ({ title, subtitle, description, icon }) => (
   <div className="grid__item">
     <div className="item__icon">
       <span dangerouslySetInnerHTML={{__html: scroll }} />

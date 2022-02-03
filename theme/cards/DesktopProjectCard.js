@@ -1,7 +1,5 @@
 import React from "react";
 import DesktopDeviceTile from "../deviceProjectTile/DesktopDeviceTile.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 
 const DesktopProjectCard = ({
   Image,

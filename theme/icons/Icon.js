@@ -2,11 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import getIconMap from "./getIconMap.js";
 
-const iconMap = getIconMap();
-const Icon = ({ name, fixedWidth }) => (
-  <FontAwesomeIcon icon={iconMap[name]} fixedWidth={fixedWidth} width="18" />
+const Icon = ({ icon, fixedWidth }) => (
+  <FontAwesomeIcon icon={icon} fixedWidth={fixedWidth} width="18" />
 );
 
 Icon.defaultProps = {
@@ -14,7 +12,6 @@ Icon.defaultProps = {
 };
 
 Icon.propTypes = {
-  name: PropTypes.oneOf(Object.keys(iconMap)).isRequired,
   fixedWidth: PropTypes.bool,
 };
 
