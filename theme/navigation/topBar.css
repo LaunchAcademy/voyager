@@ -7,7 +7,7 @@
 
 
 .top-bar-navigation {
-  @apply flex flex-wrap justify-between items-center py-6 container mx-auto px-2 md:px-0;
+  @apply flex flex-wrap justify-between items-center py-3 container mx-auto px-2 md:px-0;
 
   & .top-bar-navigation__menu-list__open {
     @apply block;
