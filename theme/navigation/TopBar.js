@@ -1,7 +1,8 @@
-import React, { Fragment } from "react";
+import React, { Fragment, Suspense } from "react";
 import PropTypes from "prop-types";
 import { Disclosure } from "@headlessui/react";
 import Icon from "../icons/Icon.js";
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
 import "./topBar.css";
 
 const TopBar = ({ logo, children }) => (
@@ -18,9 +19,9 @@ const TopBar = ({ logo, children }) => (
             <Disclosure.Button className="top-bar-navigation__menu-toggle-button">
               <span className="sr-only">Open main menu</span>
               {open ? (
-                <Icon name="times" className="block h-6 w-6" aria-hidden="true" />
+                <Icon icon={faTimes} className="block h-6 w-6" aria-hidden="true" />
               ) : (
-                <Icon name="bars" className="block h-6 w-6" aria-hidden="true" />
+                <Icon icon={faBars} className="block h-6 w-6" aria-hidden="true" />
               )}
             </Disclosure.Button>
           </div>
@@ -30,7 +31,9 @@ const TopBar = ({ logo, children }) => (
               open ? "top-bar-navigation__menu-list__open" : "top-bar-navigation__menu-list__closed"
             }`}
           >
-            {children}
+            <Suspense fallback={<></>}>
+              {children}
+            </Suspense>
           </div>
         </>
       )}
