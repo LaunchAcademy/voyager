@@ -9,7 +9,7 @@
   },
   "license": "UNLICENSED",
   "name": "@launchacademy/voyager",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "engines": {
     "node": ">= 14.8"
   },
