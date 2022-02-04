@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./buttons.css";
@@ -37,27 +36,6 @@ const Button = ({ text, children, to, onClick, size, secondary, placement, icon,
     );
   }
   return null;
-};
-
-Button.defaultProps = {
-  text: undefined,
-  iconName: undefined,
-  to: undefined,
-  size: "md",
-  secondary: false,
-  placement: undefined,
-  className: undefined,
-  hideText: false,
-};
-
-Button.propTypes = {
-  text: PropTypes.string,
-  to: PropTypes.string,
-  size: PropTypes.oneOf(["xl", "lg", "md", "sm"]),
-  secondary: PropTypes.bool,
-  placement: PropTypes.oneOf(["callout", "photo", undefined]),
-  className: PropTypes.string,
-  hideText: PropTypes.bool,
 };
 
 export default Button;

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { format } from "date-fns";
+import format from "date-fns/format";
 
 import CourseSchedule from "./CourseSchedule.js";
 

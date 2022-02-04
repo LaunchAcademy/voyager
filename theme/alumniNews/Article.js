@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./article.css";
 
 const Article = ({ Image, title, subtitle, path, className = "" }) => {
@@ -10,18 +9,6 @@ const Article = ({ Image, title, subtitle, path, className = "" }) => {
       <p className="article-list__subtitle">{subtitle}</p>
     </div>
   );
-};
-
-Article.defaultProps = {
-  imageUrl: undefined,
-  title: undefined,
-  subtitle: undefined,
-};
-
-Article.propTypes = {
-  imageUrl: PropTypes.node.isRequired,
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
 };
 
 export default Article;

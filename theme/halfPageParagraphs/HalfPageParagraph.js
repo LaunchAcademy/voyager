@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Button from "../buttons/Button.js";
 import "./halfPageParagraph.css";
 
@@ -20,12 +19,5 @@ const HalfPageParagraph = ({ title, text, subtitle, iconName, className }) => (
     </div>
   </section>
 );
-
-HalfPageParagraph.propTypes = {
-  title: PropTypes.string,
-  text: PropTypes.string,
-  subtitle: PropTypes.string,
-  iconName: PropTypes.string,
-};
 
 export default HalfPageParagraph;

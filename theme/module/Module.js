@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./module.css";
 
 const Module = ({
@@ -42,17 +41,6 @@ const Module = ({
       </div>
     </div>
   );
-};
-
-module.propTypes = {
-  subtitle: PropTypes.string,
-  title: PropTypes.string,
-  location: PropTypes.string,
-  commitment: PropTypes.string,
-  duration: PropTypes.string,
-  detail: PropTypes.string,
-  description: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired,
 };
 
 export default Module;

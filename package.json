@@ -58,7 +58,6 @@
     "postcss-import": "14.0.0",
     "postcss-loader": "^4.2.0",
     "postcss-nesting": "^8.0.0",
-    "prop-types": "~15.7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "rollup": "^2.57.0",
@@ -67,6 +66,8 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-svg": "^2.0.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "rollup-plugin-visualizer": "^5.5.4",
     "storybook": "^6.2.9",
     "style-loader": "^1.2.1",
     "tailwindcss": "^2.0.2"

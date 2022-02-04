@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./featureList.css";
 
 const FeatureList = ({ subtitle, title, footerText, children, prefixContent }) => (
@@ -19,11 +18,5 @@ const FeatureList = ({ subtitle, title, footerText, children, prefixContent }) =
     </div>
   </section>
 );
-
-module.propTypes = {
-  subtitle: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  footerText: PropTypes.string.isRequired,
-};
 
 export default FeatureList;

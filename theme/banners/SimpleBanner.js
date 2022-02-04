@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./banners.css";
 
 //note: we are deprecating backgroundImageUrl in
@@ -18,14 +17,5 @@ const SimpleBanner = ({ children, BackgroundImage, type, style = {}}) => (
     <div className="banner__content">{children}</div>
   </section>
 );
-
-SimpleBanner.defaultProps = {
-  backgroundImageData: {},
-};
-
-SimpleBanner.propTypes = {
-  children: PropTypes.node.isRequired,
-  backgroundImageData: PropTypes.object,
-};
 
 export default SimpleBanner;

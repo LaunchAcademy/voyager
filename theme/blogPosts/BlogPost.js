@@ -1,5 +1,5 @@
 import React from "react";
-import { format } from "date-fns"
+import format from "date-fns/format"
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 import Profile from "../people/Profile";

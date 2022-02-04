@@ -6,6 +6,8 @@ import svg from 'rollup-plugin-svg';
 import babel from "@rollup/plugin-babel";
 import del from "rollup-plugin-delete";
 import copy from "rollup-plugin-copy";
+import uglify from 'rollup-plugin-uglify';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 const packageJson = require("./package.json");
 
@@ -41,12 +43,14 @@ const jsConfig = {
   output: [
     {
       file: packageJson.main,
+      compact: true,
       format: "cjs",
       sourcemap: true,
     },
     {
       file: packageJson.module,
       format: "esm",
+      compact: true,
       sourcemap: true,
     },
   ],
@@ -63,6 +67,8 @@ const jsConfig = {
       verbose: true,
       copyOnce: true,
     }),
+    process.env.NODE_ENV === 'production' && uglify.uglify(),
+    visualizer()
   ],
 };
 

@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./partnerLogoList.css";
 
 const PartnerLogoList = ({ partnerData, className } = {}) => {
@@ -14,15 +13,6 @@ const PartnerLogoList = ({ partnerData, className } = {}) => {
   });
 
   return <ul className={`partner-logo-list ${className}`}>{listItems}</ul>;
-};
-
-PartnerLogoList.defaultProps = {
-  className: undefined,
-};
-
-PartnerLogoList.propTypes = {
-  partnerData: PropTypes.arrayOf(PropTypes.object).isRequired,
-  className: PropTypes.string,
 };
 
 export default PartnerLogoList;

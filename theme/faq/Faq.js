@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Icon from "../icons/Icon.js";
 import "./faq.css";
 
@@ -22,13 +21,6 @@ const Faq = ({ title, description, selected, handleClick }) => {
       <p className={`faq__description ${questionClass}`}>{description}</p>
     </div>
   );
-};
-
-Faq.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  selected: PropTypes.bool,
-  handleClick: PropTypes.func,
 };
 
 export default Faq;
