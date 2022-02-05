@@ -109,6 +109,13 @@
       @apply md:mr-2 md:inline-block;
     }
   }
+
+  & .footer__contact-info {
+    @apply leading-8;
+    & a {
+      @apply underline;
+    }
+  }
 }
 
 @screen lg {
