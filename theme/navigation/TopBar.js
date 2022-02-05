@@ -1,8 +1,7 @@
-import React, { Fragment, Suspense } from "react";
+import React, { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import Icon from "../icons/Icon.js";
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
-import "./topBar.css";
 
 const TopBar = ({ logo, children }) => (
   <div className="top-bar-navigation-container">

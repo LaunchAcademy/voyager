@@ -17,10 +17,15 @@ const packageJson = require("./package.json");
 const cssConfig = [
   "src/assets/scss/main.css",
   "theme/hero/hero.css",
+  "theme/navigation/topBar.css",
   "theme/phases/phaseList.css",
   "theme/navigation/footer.css",
+  "theme/buttons/buttons.css",
   "theme/comparisonGrid/comparisonGrid.css",
   "./theme/tuitionTable/tuitionTable.css",
+  "./theme/banners/banners.css",
+  "./theme/quote/quote.css",
+  "./theme/courseSchedule/courseschedule.css"
 ].map((inputFile) => ({
   input: inputFile,
   output: [
@@ -59,7 +64,7 @@ const jsConfig = {
     resolve(),
     babel({ babelHelpers: "bundled" }),
     commonjs({ extract: true }),
-    postcss({ extensions: [".css"] }),
+    postcss({ extensions: [".css"],  }),
     svg(),
     copy({
       targets:

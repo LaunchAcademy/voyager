@@ -28,19 +28,19 @@
 }
 
 .banner__photo {
-  @apply  text-white text-center mx-auto relative z-0;
+  @apply  text-white text-center mx-auto relative z-0 overflow-hidden;
 
   &::before {
     content: "";
-    top: 0;
+    /* top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
-    @apply bg-opacity-70 bg-photo-overlay absolute z-10;
+    left: 0; */
+    @apply bg-opacity-70 bg-photo-overlay absolute left-0 top-0 z-10 w-full h-full;
   }
 
   & .banner__background-photo-wrapper {
-    @apply absolute w-full z-0 h-full;
+    @apply absolute z-0 bg-photo-overlay;
   }
 
   & .banner__background-photo {

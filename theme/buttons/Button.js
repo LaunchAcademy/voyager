@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./buttons.css";
 
-const Button = ({ text, children, to, onClick, size, secondary, placement, icon, iconSize = "1x", className, hideText }) => {
+const Button = ({ text, children, to, onClick, size = "lg", secondary, placement, icon, iconSize = "1x", className, hideText }) => {
   const modifiers = [];
   if (secondary) {
     modifiers.push("button_secondary");

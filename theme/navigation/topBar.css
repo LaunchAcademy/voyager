@@ -1,10 +1,10 @@
+/* purgecss start ignore */
 .top-bar-navigation-container {
   @apply w-full bg-white;
   position: fixed;
   z-index: 100;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
 }
-
 
 .top-bar-navigation {
   @apply flex flex-wrap justify-between items-center py-6 container mx-auto px-2 md:px-0;
@@ -19,7 +19,7 @@
   }
 
   & .top-bar-navigation__menu-list__closed {
-    @apply lg:block hidden;
+    @apply hidden lg:block;
   }
 
   & .navigation-list.navigation-list__top {
@@ -58,7 +58,7 @@
   }
 
   & .top-bar-navigation__menu-toggle {
-    @apply lg:hidden justify-self-end flex-none pr-8;
+    @apply md:block lg:hidden justify-self-end flex-grow text-right pr-8;
   }
 
   & .top-bar-navigation__menu-toggle-button {
@@ -94,3 +94,4 @@
     }
   }
 }
+/* purgecss start ignore */
