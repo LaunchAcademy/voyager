@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../buttons/Button.js";
 import "./halfPageParagraph.css";
 
-const HalfPageParagraph = ({ title, text, subtitle, iconName, className }) => (
+const HalfPageParagraph = ({ title, text, subtitle, icon, className }) => (
   <section className={`half-page-paragraph ${className}`}>
     <div className="half-page-paragraph__subtitle">Launch Your Career</div>
     <div className="half-page-paragraph__title">{title}</div>
@@ -12,7 +12,7 @@ const HalfPageParagraph = ({ title, text, subtitle, iconName, className }) => (
       <Button
         to="#"
         text="Apply Today"
-        iconname={iconName}
+        icon={icon}
         className="hero_button mt-10"
         size="lg"
       />

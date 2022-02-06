@@ -1,6 +1,8 @@
 import React from "react";
 import format from "date-fns/format"
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { faFacebook, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 import Profile from "../people/Profile";
 import "./blogPosts.css";
@@ -29,16 +31,16 @@ const BlogPost = ({
       </div>
       <div className="blog__social-shares">
         <FacebookMessengerShareButton url={url}>
-          <Icon name="facebook" />
+          <Icon icon={faFacebook} />
         </FacebookMessengerShareButton>
         <TwitterShareButton url={url}>
-          <Icon name="twitter" />
+          <Icon icon={faTwitter} />
         </TwitterShareButton>
         <LinkedinShareButton url={url}>
-          <Icon name="linkedin" />
+          <Icon icon={faLinkedin} />
         </LinkedinShareButton>
         <CopyToClipboard text={url}>
-          <button><Icon name="link" /></button>
+          <button><Icon icon={faLink} /></button>
         </CopyToClipboard>
       </div>
 
