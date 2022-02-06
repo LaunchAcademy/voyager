@@ -41,7 +41,7 @@
   }
 
   & .banner__background-photo-wrapper {
-    @apply absolute z-0 bg-photo-overlay;
+    @apply absolute z-0 bg-photo-overlay w-full h-full;
   }
 
   & .banner__background-photo {
