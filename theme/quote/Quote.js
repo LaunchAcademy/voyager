@@ -1,5 +1,4 @@
 import React from "react";
-import "./quote.css";
 import QuoteAuthor from "./QuoteAuthor.js";
 import QuoteFeatureStudent from "./QuoteFeatureStudent.js";
 
@@ -15,7 +14,7 @@ const Quote = ({ quoteType = "hero", quote, name, company, studentImageUrl }) =>
       <QuoteFeatureStudent name={name} company={company} studentImageUrl={studentImageUrl} />
     );
   } else if (quoteType === "hero") {
-    quoteTypeClass += " quote_hero"
+    quoteTypeClass += " quote_hero";
   }
 
   return (

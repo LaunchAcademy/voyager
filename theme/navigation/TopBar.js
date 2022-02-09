@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Disclosure } from "@headlessui/react";
 import Icon from "../icons/Icon.js";
-import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 
 const TopBar = ({ logo, children }) => (
   <div className="top-bar-navigation-container">
@@ -9,12 +9,13 @@ const TopBar = ({ logo, children }) => (
       {({ open }) => (
         <>
           <div className="flex-initial flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex-shrink-0 flex items-center top-bar__logo">
-              { logo }
-            </div>
+            <div className="flex-shrink-0 flex items-center top-bar__logo">{logo}</div>
           </div>
           <div className="top-bar-navigation__menu-toggle">
-            <Disclosure.Button className="top-bar-navigation__menu-toggle-button" aria-label="Navigation Menu">
+            <Disclosure.Button
+              className="top-bar-navigation__menu-toggle-button"
+              aria-label="Navigation Menu"
+            >
               <span className="sr-only">Open main menu</span>
               {open ? (
                 <Icon icon={faTimes} className="block h-6 w-6" aria-hidden="true" />

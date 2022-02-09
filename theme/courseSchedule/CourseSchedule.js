@@ -1,7 +1,6 @@
 import React from "react";
 
 import Button from "../buttons/Button.js";
-import "./courseschedule.css";
 
 const CourseSchedule = ({
   cohort,

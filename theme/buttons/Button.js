@@ -1,9 +1,19 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "./buttons.css";
-
-const Button = ({ text, children, to, onClick, size = "lg", secondary, placement, icon, iconSize = "1x", className, hideText }) => {
+const Button = ({
+  text,
+  children,
+  to,
+  onClick,
+  size = "lg",
+  secondary,
+  placement,
+  icon,
+  iconSize = "1x",
+  className,
+  hideText,
+}) => {
   const modifiers = [];
   if (secondary) {
     modifiers.push("button_secondary");
@@ -14,9 +24,9 @@ const Button = ({ text, children, to, onClick, size = "lg", secondary, placement
     modifiers.push("banner-photo__button");
   }
 
-  let faIcon
+  let faIcon;
   if (icon) {
-    faIcon = <FontAwesomeIcon  size={iconSize} fixedWidth={true} icon={icon} />;
+    faIcon = <FontAwesomeIcon size={iconSize} fixedWidth={true} icon={icon} />;
   }
 
   if (hideText) {

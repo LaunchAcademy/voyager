@@ -1,5 +1,4 @@
 import React from "react";
-import "./featureList.css";
 
 const FeatureList = ({ subtitle, title, footerText, children, prefixContent }) => (
   <section className="feature-list relative">

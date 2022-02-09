@@ -2,7 +2,6 @@ import React from "react";
 
 import CourseReportTile from "./CourseReportTile.js";
 import SwitchupReviewTile from "./SwitchupReviewTile.js";
-import "./reviewGrid.css";
 
 const ReviewList = ({ allReviews }) => {
   const reviewsArray = allReviews.map((review) => {

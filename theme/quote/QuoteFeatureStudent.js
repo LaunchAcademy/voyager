@@ -1,5 +1,4 @@
 import React from "react";
-import "./quote.css";
 
 const QuoteFeatureStudent = ({ name, company, studentImageUrl }) => {
   return (

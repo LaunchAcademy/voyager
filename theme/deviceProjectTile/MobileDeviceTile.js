@@ -1,6 +1,4 @@
 import React from "react";
-import "../../src/assets/scss/devices.min.css";
-import "./deviceTiles.css";
 
 const MobileDeviceTile = ({ Image, altText }) => {
   return (

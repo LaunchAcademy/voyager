@@ -2,46 +2,43 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
-import svg from 'rollup-plugin-svg';
+import svg from "rollup-plugin-svg";
 import babel from "@rollup/plugin-babel";
 import del from "rollup-plugin-delete";
 import copy from "rollup-plugin-copy";
-import uglify from 'rollup-plugin-uglify';
-import { visualizer } from 'rollup-plugin-visualizer';
+import uglify from "rollup-plugin-uglify";
+import { visualizer } from "rollup-plugin-visualizer";
+import globby from "globby";
+import path from "path";
 
 const packageJson = require("./package.json");
 
 // import peerDepsExternal from "rollup-plugin-peer-deps-external";
 // import resolve from "@rollup/plugin-node-resolve";
 
-const cssConfig = [
-  "src/assets/scss/main.css",
-  "theme/hero/hero.css",
-  "theme/navigation/topBar.css",
-  "theme/phases/phaseList.css",
-  "theme/navigation/footer.css",
-  "theme/buttons/buttons.css",
-  "theme/comparisonGrid/comparisonGrid.css",
-  "./theme/tuitionTable/tuitionTable.css",
-  "./theme/banners/banners.css",
-  "./theme/quote/quote.css",
-  "./theme/courseSchedule/courseschedule.css"
-].map((inputFile) => ({
-  input: inputFile,
-  output: [
-    {
-      dir: "dist/css",
-      sourcemap: true,
-      format: "es",
-    },
-  ],
-  plugins: [
-    peerDepsExternal(),
-    resolve(),
-    postcss({ extensions: [".css"], extract: true }),
-    del({ targets: ["dist/css/**/*.js", "dist/css/**/*.js.map"], hook: "closeBundle", runOnce: true }),
-  ],
-}));
+console.log(globby.sync(["src/assets/scss/main.css", "theme/**/*.css"]));
+const cssConfig = globby
+  .sync(["src/assets/scss/**/*.css", "theme/**/*.css", "theme/**/*.min.css"])
+  .map((inputFile) => ({
+    input: inputFile,
+    output: [
+      {
+        dir: `dist/css/${inputFile.replace(path.basename(inputFile), "")}`,
+        sourcemap: true,
+        format: "es",
+      },
+    ],
+    plugins: [
+      peerDepsExternal(),
+      resolve(),
+      postcss({ extensions: [".css"], extract: true }),
+      del({
+        targets: ["dist/css/**/*.js", "dist/css/**/*.js.map"],
+        hook: "closeBundle",
+        runOnce: true,
+      }),
+    ],
+  }));
 
 const jsConfig = {
   input: "index.js",
@@ -64,20 +61,16 @@ const jsConfig = {
     resolve(),
     babel({ babelHelpers: "bundled" }),
     commonjs({ extract: true }),
-    postcss({ extensions: [".css"],  }),
+    postcss({ extensions: [".css"] }),
     svg(),
     copy({
-      targets:
-      [{ src: "src/assets/images/**/*", dest: "dist/images" }],
+      targets: [{ src: "src/assets/images/**/*", dest: "dist/images" }],
       verbose: true,
       copyOnce: true,
     }),
-    process.env.NODE_ENV === 'production' && uglify.uglify(),
-    visualizer()
+    process.env.NODE_ENV === "production" && uglify.uglify(),
+    visualizer(),
   ],
 };
 
-export default [
-  jsConfig,
-  ...cssConfig,
-];
+export default [jsConfig, ...cssConfig];

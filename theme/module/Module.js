@@ -1,5 +1,4 @@
 import React from "react";
-import "./module.css";
 
 const Module = ({
   subtitle,
@@ -25,9 +24,7 @@ const Module = ({
     <div className="module">
       <div className="module__image-column">
         <div className="image-column__image-container">
-          <Image
-            alt={altText}
-          />
+          <Image alt={altText} />
         </div>
       </div>
       <div className="module__supporting-content">

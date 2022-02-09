@@ -1,5 +1,4 @@
 import React from "react";
-import "./quote.css";
 
 const QuoteAuthor = ({ name, company }) => {
   return (

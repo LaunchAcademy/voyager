@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Faq from "./Faq.js";
-import "./faqList.css";
 
 const FaqList = ({ questions }) => {
   const [selectedQuestion, setSelectedQuestion] = useState([]);
 
   const toggleQuestionSelect = (id) => {
     if (selectedQuestion.includes(id)) {
-      setSelectedQuestion(selectedQuestion.filter(questionId => questionId !== id));
+      setSelectedQuestion(selectedQuestion.filter((questionId) => questionId !== id));
     } else {
       setSelectedQuestion([...selectedQuestion, id]);
     }

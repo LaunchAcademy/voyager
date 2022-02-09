@@ -1,12 +1,10 @@
 import React from "react";
-import Icon from "../icons/Icon.js";
-import "./moduleLearningObjective.css";
-import bullets from "../../src/assets/images/bullets.svg"
+import bullets from "../../src/assets/images/bullets.svg";
 
 const ModuleLearningObjective = ({ objectiveDescription }) => (
   <div className="module-learning-objective">
     <div className="module-learning-objective__icon">
-      <span dangerouslySetInnerHTML={{__html: bullets}} />
+      <span dangerouslySetInnerHTML={{ __html: bullets }} />
     </div>
     <p className="module-learning-objective__description">{objectiveDescription}</p>
   </div>

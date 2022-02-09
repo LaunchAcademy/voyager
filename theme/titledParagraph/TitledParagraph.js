@@ -1,5 +1,4 @@
 import React from "react";
-import "./titledParagraph.css";
 
 const TitledParagraph = ({ title, children }) => (
   <section className="titled-paragraph">

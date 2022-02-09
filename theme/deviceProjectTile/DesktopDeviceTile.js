@@ -1,8 +1,6 @@
 import React from "react";
-import "./deviceTiles.css";
-import "../../src/assets/scss/devices.min.css";
 
-const DesktopDeviceTile = ({Image}) => {
+const DesktopDeviceTile = ({ Image }) => {
   return (
     <div className="desktop-device-wrapper">
       <div className="desktop-device__screen marvel-device macbook">

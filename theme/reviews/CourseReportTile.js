@@ -1,8 +1,6 @@
 import React from "react";
 import ReviewStars from "./ReviewStars.js";
 
-import "./reviewTiles.css";
-
 const CourseReportTile = ({
   reviewTitle,
   reviewedAt,
