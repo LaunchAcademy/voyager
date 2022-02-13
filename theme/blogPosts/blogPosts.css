@@ -49,6 +49,10 @@
     & .profile__image {
       @apply col-span-1 rounded-full flex justify-self-start;
       @apply object-cover h-12 w-12;
+
+      & img {
+        @apply rounded-full;
+      }
     }
 
     & .blog__author-name {

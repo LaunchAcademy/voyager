@@ -16,6 +16,10 @@
     @apply rounded-full inline-block my-8;
     @apply w-52;
     @apply lg:w-72 lg:col-start-1 lg:col-span-1;
+
+    & img {
+      @apply rounded-full;
+    }
   }
 
   & .horizontal-profile__content {

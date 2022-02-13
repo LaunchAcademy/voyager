@@ -93,6 +93,10 @@
 
       & .student__profile-image {
         @apply rounded-full w-16 flex justify-self-end self-center;
+
+        & img {
+          @apply rounded-full;
+        }
       }
 
       & .student__text-info {

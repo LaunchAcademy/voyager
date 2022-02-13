@@ -60,6 +60,11 @@
   & .hero__image_rounded {
     @apply rounded-full;
     @apply h-80 w-80;
+
+    /* handle for gatsby image wrapper */
+    & img {
+      @apply rounded-full;
+    }
   }
 
   & .hero__image_title {
