@@ -37,10 +37,6 @@
       line-height: 1.66rem;
       font-weight: 400;
     }
-
-    & > div > span {
-      @apply block my-4;
-    }
   }
 
   & .blog__context {
