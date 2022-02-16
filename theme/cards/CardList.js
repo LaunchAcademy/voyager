@@ -10,6 +10,7 @@ const CardList = ({
   numberOfColumns,
   className,
   learnMoreToggle = false,
+  learnMoreContent = null,
 }) => {
   let cardListSize = "card-list";
 
@@ -52,6 +53,7 @@ const CardList = ({
         timeToRead={card.timeToRead}
         categories={card.categories}
         learnMoreToggle={learnMoreToggle}
+        learnMoreContent={learnMoreContent}
       />
     );
   });
