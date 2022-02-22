@@ -23,14 +23,14 @@
   }
 
   & .navigation-list.navigation-list__top {
-    @apply font-bold font-headline;
+    @apply font-bold font-headline mx-2 lg:mx-0;
     @apply lg:flex lg:items-center;
 
     line-height: 1.11rem;
     font-size: 0.875rem;
 
     & li {
-      @apply py-2 ml-2 block;
+      @apply py-2 mx-2 lg:mr-0 lg:ml-2 block;
       @apply lg:inline-block lg:pr-8 lg:py-0 lg:ml-2;
 
       & .navigation-list__sub-navigation {
@@ -45,7 +45,7 @@
         @apply lg:inline-block lg:mt-1 lg:-ml-4 lg:absolute lg:w-48;
 
         & li {
-          @apply lg:py-4 pl-4 lg:w-full lg:flex lg:align-middle font-normal;
+          @apply lg:py-4 lg:pl-4 lg:w-full lg:flex lg:align-middle font-normal;
         }
         & li:hover {
           @apply bg-primary-brand text-text bg-opacity-25 cursor-pointer;
@@ -54,7 +54,11 @@
     }
 
     & .navigation-list__apply-list-item {
-      @apply hidden lg:block lg:z-50;
+      @apply w-full lg:w-auto lg:block lg:z-50 text-center mx-0;
+
+      & a {
+        @apply w-full lg:w-auto;
+      }
     }
   }
 
