@@ -30,7 +30,7 @@
     font-size: 0.875rem;
 
     & li {
-      @apply py-2 mx-2 lg:mr-0 lg:ml-2 block;
+      @apply py-2 mx-2 lg:mr-0 lg:ml-2 block lg:inline-block;
       @apply lg:inline-block lg:pr-8 lg:py-0 lg:ml-2;
 
       & .navigation-list__sub-navigation {
