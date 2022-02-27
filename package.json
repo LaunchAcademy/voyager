@@ -2,6 +2,8 @@
   "scripts": {
     "build": "yarn run rollup -c",
     "dev": "yarn run build -w",
+    "lint": "yarn run eslint .",
+    "lint:style": "yarn run prettier -c theme",
     "prepare": "yarn run build",
     "prepublishOnly": "npm run build",
     "storybook": "start-storybook -p 6006",
