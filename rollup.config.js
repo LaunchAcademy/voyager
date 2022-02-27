@@ -25,7 +25,10 @@ const cssConfig = globby
       input: inputFile,
       output: [
         {
-          dir: `dist/css/${inputFile.replace(path.basename(inputFile), "")}`,
+          dir: `dist/css/${inputFile
+            .replace("src/", "/")
+            .replace("css/", "/")
+            .replace(path.basename(inputFile), "")}`,
           sourcemap: true,
           format: "es",
         },

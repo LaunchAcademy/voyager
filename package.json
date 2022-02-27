@@ -6,8 +6,8 @@
     "lint:style": "yarn run prettier -c src",
     "prepare": "husky install && yarn run build",
     "prepublishOnly": "npm run build",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook:start": "start-storybook -p 6006",
+    "storybook:build": "build-storybook"
   },
   "license": "UNLICENSED",
   "name": "@launchacademy/voyager",
@@ -47,6 +47,7 @@
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addon-storysource": "6.4.19",
     "@storybook/react": "6.4.19",
+    "@types/jest": "^27.4.1",
     "@types/mdx": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
