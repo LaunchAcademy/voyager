@@ -25,7 +25,7 @@ const cssConfig = globby
       input: inputFile,
       output: [
         {
-          dir: `dist/css/${inputFile
+          dir: `css/${inputFile
             .replace("src/", "/")
             .replace("css/", "/")
             .replace(path.basename(inputFile), "")}`,
@@ -38,7 +38,7 @@ const cssConfig = globby
         resolve(),
         postcss({ extensions: [".css"], extract: true }),
         del({
-          targets: ["dist/css/**/*.js", "dist/css/**/*.js.map"],
+          targets: ["css/**/*.js", "css/**/*.js.map"],
           hook: "closeBundle",
           runOnce: true,
         }),
