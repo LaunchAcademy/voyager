@@ -1,8 +1,8 @@
-import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
-import colors from "./colors.cjs";
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks"
+import colors from "./colors.cjs"
 
 export const colorItems = Object.keys(colors).map((color) => {
-  const { hex, colorName, applications } = colors[color];
+  const { hex, colorName, applications } = colors[color]
   return (
     <div key={color}>
       <ColorItem title={color} subtitle={colorName} key={color} colors={[hex]} />
@@ -14,8 +14,8 @@ export const colorItems = Object.keys(colors).map((color) => {
       </ul>
       <hr />
     </div>
-  );
-});
+  )
+})
 
 <Meta title="Colors" />
 

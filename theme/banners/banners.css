@@ -29,7 +29,7 @@
 }
 
 .banner__photo {
-  @apply  text-white text-center mx-auto relative z-0 overflow-hidden;
+  @apply text-white text-center mx-auto relative z-0 overflow-hidden;
 
   &::before {
     content: "";
@@ -79,7 +79,6 @@
   }
 }
 
-
 .banner_device {
   @apply bg-secondary-brand text-center pt-20 mb-96;
   height: 725px;
@@ -94,7 +93,6 @@
 
     & .banner_device__title {
       @apply font-headline font-bold text-5xl pb-8 px-3 pt-10 text-black leading-tight text-left;
-
     }
 
     & .banner_device__container {
@@ -109,8 +107,8 @@
       }
     }
 
-  & .banner_device__device-container {
-    @apply w-full mt-20;
+    & .banner_device__device-container {
+      @apply w-full mt-20;
     }
   }
 }
@@ -120,9 +118,7 @@
     height: 625px;
     @apply pt-20 overflow-hidden w-full mb-20;
 
-
     & .banner_device__container {
-
       & .banner_device__device-container {
         @apply w-full mt-0;
       }

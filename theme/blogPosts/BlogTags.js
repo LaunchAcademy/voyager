@@ -1,4 +1,5 @@
 import React from "react"
+
 import Button from "../buttons/Button"
 
 import "./blogPosts.css"
@@ -13,23 +14,13 @@ const BlogTags = ({ tags }) => {
 
   const tagList = tagsArray.map((tag) => {
     return (
-      <li>
-        <Button
-          key={tag.url}
-          placement="photo"
-          size="sm"
-          text={tag.name}
-          to={tag.url}
-        />
+      <li key={tag.url}>
+        <Button placement="photo" size="sm" text={tag.name} to={tag.url} />
       </li>
     )
   })
 
-  return (
-    <ul className="tag-container__tags">
-      {tagList}
-    </ul>
-  )
+  return <ul className="tag-container__tags">{tagList}</ul>
 }
 
 export default BlogTags

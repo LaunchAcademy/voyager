@@ -1,5 +1,6 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Button = ({
   text,
@@ -14,23 +15,23 @@ const Button = ({
   className,
   hideText,
 }) => {
-  const modifiers = [];
+  const modifiers = []
   if (secondary) {
-    modifiers.push("button_secondary");
+    modifiers.push("button_secondary")
   }
   if (placement === "banner") {
-    modifiers.push("banner__button");
+    modifiers.push("banner__button")
   } else if (placement === "photo") {
-    modifiers.push("banner-photo__button");
+    modifiers.push("banner-photo__button")
   }
 
-  let faIcon;
+  let faIcon
   if (icon) {
-    faIcon = <FontAwesomeIcon size={iconSize} fixedWidth={true} icon={icon} />;
+    faIcon = <FontAwesomeIcon size={iconSize} fixedWidth={true} icon={icon} />
   }
 
   if (hideText) {
-    modifiers.push("button_text-hidden");
+    modifiers.push("button_text-hidden")
   }
 
   if (to || onClick) {
@@ -43,9 +44,9 @@ const Button = ({
         {children || (hideText ? null : text)}
         {faIcon}
       </a>
-    );
+    )
   }
-  return null;
-};
+  return null
+}
 
-export default Button;
+export default Button

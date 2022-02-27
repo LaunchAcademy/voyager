@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 
 const UrlLink = ({ url, children = undefined }) => {
   if (url) {
-    return <a href={url}>{children}</a>;
+    return <a href={url}>{children}</a>
   }
-  return <>{children}</>;
-};
+  return <>{children}</>
+}
 const Card = ({
   Image,
   header,
@@ -21,7 +21,7 @@ const Card = ({
     <a key={category.url} href={category.url}>
       {category.name}
     </a>
-  ));
+  ))
   return (
     <div className={`card card_${cardType}`}>
       {Image && (
@@ -48,7 +48,7 @@ const Card = ({
       </div>
       {learnMoreToggle ? learnMoreContent || <a className="card__learn-more">Learn more</a> : null}
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

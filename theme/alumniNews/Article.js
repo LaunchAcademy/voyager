@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const Article = ({ Image, title, subtitle, path, className = "" }) => {
   return (
@@ -11,7 +11,7 @@ const Article = ({ Image, title, subtitle, path, className = "" }) => {
       </a>
       <p className="article-list__subtitle">{subtitle}</p>
     </div>
-  );
-};
+  )
+}
 
-export default Article;
+export default Article

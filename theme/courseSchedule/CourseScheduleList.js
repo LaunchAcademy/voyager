@@ -1,21 +1,22 @@
-import React, { Fragment } from "react";
-import format from "date-fns/format";
+import React, { Fragment } from "react"
 
-import CourseSchedule from "./CourseSchedule.js";
+import format from "date-fns/format"
+
+import CourseSchedule from "./CourseSchedule.js"
 
 const CourseScheduleList = ({ cohortSchedule }) => {
-  let enrollmentEnds;
-  let preflightBegins;
-  let ignitionBegins;
-  let cohortBegins;
-  let cohortEnds;
+  let enrollmentEnds
+  let preflightBegins
+  let ignitionBegins
+  let cohortBegins
+  let cohortEnds
 
   const cohortScheduleData = cohortSchedule.map((date) => {
-    enrollmentEnds = format(new Date(date.enrollmentEnds), "MMM dd, yyyy");
-    preflightBegins = format(new Date(date.preflightBegins), "MMM dd, yyyy");
-    ignitionBegins = format(new Date(date.ignitionBegins), "MMM dd, yyyy");
-    cohortBegins = format(new Date(date.cohortBegins), "MMM dd, yyyy");
-    cohortEnds = format(new Date(date.cohortEnds), "MMM dd, yyyy");
+    enrollmentEnds = format(new Date(date.enrollmentEnds), "MMM dd, yyyy")
+    preflightBegins = format(new Date(date.preflightBegins), "MMM dd, yyyy")
+    ignitionBegins = format(new Date(date.ignitionBegins), "MMM dd, yyyy")
+    cohortBegins = format(new Date(date.cohortBegins), "MMM dd, yyyy")
+    cohortEnds = format(new Date(date.cohortEnds), "MMM dd, yyyy")
 
     return (
       <CourseSchedule
@@ -29,10 +30,10 @@ const CourseScheduleList = ({ cohortSchedule }) => {
         buttonURL={date.buttonURL}
         buttonText={date.buttonText}
       />
-    );
-  });
+    )
+  })
 
-  return <Fragment>{cohortScheduleData}</Fragment>;
-};
+  return <Fragment>{cohortScheduleData}</Fragment>
+}
 
-export default CourseScheduleList;
+export default CourseScheduleList

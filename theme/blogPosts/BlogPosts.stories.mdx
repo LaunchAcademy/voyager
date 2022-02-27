@@ -1,7 +1,7 @@
-import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks"
 import BlogPost from "./BlogPost"
 
-export const socialUrls = ["https://www.facebook.com", "https://github.com", "https://youtube.com"];
+export const socialUrls = ["https://www.facebook.com", "https://github.com", "https://youtube.com"]
 
 <Meta title="Blog Posts" />
 
@@ -9,25 +9,50 @@ export const socialUrls = ["https://www.facebook.com", "https://github.com", "ht
 
 <Canvas>
   <Story name="Blog Post">
-    <BlogPost 
+    <BlogPost
       blogTitle="Building a COVID-19 Tracker : Learn How We Built It and How To Build Something That Matters!"
       authorName="Nicholas Alberts"
       authorImageUrl="https://placekitten.com/408/287"
       tags="About Launch Academy, Stories, Learn to code, Uncategorized"
       socialUrls={socialUrls}
-      >
+    >
       <img src="https://placekitten.com/408/287" />
-      <p>In such a time of need, I’ve felt called to demonstrate that code and software gives us power. I created a COVID-19 tracker for our home state of Massachusetts and I wanted to share it with you: https://ma-covid-19-tracker.launchacademy.com/</p>
-      <p>Sure – technology can help to inform and to drive decisions, but the power of creation can be so liberating. While I was social distancing with my family (earnestly trying to channel my concern), after working intensely to serve our current students, I felt inspired to encourage others to discover this gift of creation.</p>
-      <p>The truth is, there’s nothing special about this application. After studying with us, you could build this. In fact, many students that have come before you build capstone projects that are just like this app. So, I’ve open-sourced this application with one goal: to prove that you can take this adversity we’re all facing and channel it into a transformation that will change your life for the better. </p>
+      <p>
+        In such a time of need, I’ve felt called to demonstrate that code and software gives us
+        power. I created a COVID-19 tracker for our home state of Massachusetts and I wanted to
+        share it with you: https://ma-covid-19-tracker.launchacademy.com/
+      </p>
+      <p>
+        Sure – technology can help to inform and to drive decisions, but the power of creation can
+        be so liberating. While I was social distancing with my family (earnestly trying to channel
+        my concern), after working intensely to serve our current students, I felt inspired to
+        encourage others to discover this gift of creation.
+      </p>
+      <p>
+        The truth is, there’s nothing special about this application. After studying with us, you
+        could build this. In fact, many students that have come before you build capstone projects
+        that are just like this app. So, I’ve open-sourced this application with one goal: to prove
+        that you can take this adversity we’re all facing and channel it into a transformation that
+        will change your life for the better.{" "}
+      </p>
       <img src="https://placekitten.com/408/287" />
-      <p>To demystify it, and to show how you can build something like it, let’s walk through the technologies that are at play.</p>
+      <p>
+        To demystify it, and to show how you can build something like it, let’s walk through the
+        technologies that are at play.
+      </p>
       <h3>Gatsby</h3>
-      <p>Gatsby is a static site generator that works extremely well with the ReactJS front-end framework, a framework we teach during our 18 week course. We used it as the engine that drives the site. It effectively builds our web page and allows us to deploy it.</p>
+      <p>
+        Gatsby is a static site generator that works extremely well with the ReactJS front-end
+        framework, a framework we teach during our 18 week course. We used it as the engine that
+        drives the site. It effectively builds our web page and allows us to deploy it.
+      </p>
       <h3>ReactJS</h3>
-      <p>ReactJS powers sites like Facebook, and provides for rich front-end experiences. ReactJS applications are built with JavaScript, the front-end programming language of the web. It also allows you to write native applications for Android and iOS applications with React Native. </p> 
+      <p>
+        ReactJS powers sites like Facebook, and provides for rich front-end experiences. ReactJS
+        applications are built with JavaScript, the front-end programming language of the web. It
+        also allows you to write native applications for Android and iOS applications with React
+        Native.{" "}
+      </p>
     </BlogPost>
   </Story>
 </Canvas>
-
-

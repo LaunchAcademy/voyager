@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
 const Award = ({ Image, className }) => {
-  return <Image className={className} />;
-};
+  return <Image className={className} />
+}
 
-export default Award;
+export default Award

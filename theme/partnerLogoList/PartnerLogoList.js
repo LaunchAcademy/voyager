@@ -1,19 +1,19 @@
-import React from "react";
+import React from "react"
 
 const PartnerLogoList = ({ partnerData, className } = {}) => {
   const listItems = partnerData.map((partner) => {
-    let image = <img key={partner.name} src={partner.logoImageUrl} alt={partner.name} />;
+    let image = <img key={partner.name} src={partner.logoImageUrl} alt={partner.name} />
     if (partner.logoImage) {
-      image = partner.logoImage;
+      image = partner.logoImage
     }
     return (
       <li key={partner.name} className="partner-logo-list__item">
         {image}
       </li>
-    );
-  });
+    )
+  })
 
-  return <ul className={`partner-logo-list ${className}`}>{listItems}</ul>;
-};
+  return <ul className={`partner-logo-list ${className}`}>{listItems}</ul>
+}
 
-export default PartnerLogoList;
+export default PartnerLogoList

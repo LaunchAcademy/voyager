@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const FeatureList = ({ subtitle, title, footerText, children, prefixContent }) => (
   <section className="feature-list relative">
@@ -16,6 +16,6 @@ const FeatureList = ({ subtitle, title, footerText, children, prefixContent }) =
       </div>
     </div>
   </section>
-);
+)
 
-export default FeatureList;
+export default FeatureList

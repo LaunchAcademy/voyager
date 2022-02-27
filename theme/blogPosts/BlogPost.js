@@ -1,13 +1,14 @@
-import React from "react";
-import format from "date-fns/format";
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import { faFacebook, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import React from "react"
 
-import Profile from "../people/Profile";
-import BlogTags from "./BlogTags";
-import { FacebookMessengerShareButton, LinkedinShareButton, TwitterShareButton } from "react-share";
-import Icon from "../icons/Icon";
+import { faFacebook, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faLink } from "@fortawesome/free-solid-svg-icons"
+import format from "date-fns/format"
+import { CopyToClipboard } from "react-copy-to-clipboard"
+import { FacebookMessengerShareButton, LinkedinShareButton, TwitterShareButton } from "react-share"
+
+import Icon from "../icons/Icon"
+import Profile from "../people/Profile"
+import BlogTags from "./BlogTags"
 
 const BlogPost = ({
   blogTitle,
@@ -52,6 +53,6 @@ const BlogPost = ({
       {children}
     </section>
   </article>
-);
+)
 
-export default BlogPost;
+export default BlogPost

@@ -4,7 +4,7 @@
   @apply lg:divide-x-2  lg:bg-white;
 
   &.quote_hero {
-    @apply lg:grid lg:grid-cols-4
+    @apply lg:grid lg:grid-cols-4;
   }
 
   & .quote__content {
@@ -42,7 +42,7 @@
 }
 
 .quote_banner {
-  @apply  bg-white pb-10 font-text pt-10 divide-x-0;
+  @apply bg-white pb-10 font-text pt-10 divide-x-0;
   @apply lg:bg-white lg:mx-24;
 
   & .quote__icon {

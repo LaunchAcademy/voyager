@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const QuoteAuthor = ({ name, company }) => {
   return (
@@ -6,7 +6,7 @@ const QuoteAuthor = ({ name, company }) => {
       <h6 className="quote__name">{name}</h6>
       <h5 className="quote__company">{company}</h5>
     </figcaption>
-  );
-};
+  )
+}
 
-export default QuoteAuthor;
+export default QuoteAuthor

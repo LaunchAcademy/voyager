@@ -53,7 +53,7 @@
 
     & svg {
       @apply w-6 h-6;
-      @apply lg:h-9 lg:w-9
+      @apply lg:h-9 lg:w-9;
     }
   }
 

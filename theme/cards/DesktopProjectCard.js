@@ -1,5 +1,6 @@
-import React from "react";
-import DesktopDeviceTile from "../deviceProjectTile/DesktopDeviceTile.js";
+import React from "react"
+
+import DesktopDeviceTile from "../deviceProjectTile/DesktopDeviceTile.js"
 
 const DesktopProjectCard = ({
   Image,
@@ -10,7 +11,7 @@ const DesktopProjectCard = ({
 }) => {
   let studentProfileImage
   if (studentProfileUrl) {
-    studentProfileImage = <img src={studentProfileUrl} />;
+    studentProfileImage = <img src={studentProfileUrl} />
   }
 
   return (
@@ -19,8 +20,9 @@ const DesktopProjectCard = ({
         <DesktopDeviceTile Image={Image} />
       </section>
       <section className="project-tile__student-info">
-
-        {studentProfileImage && <figure className="student-info__student-profile">{studentProfileImage}</figure>}
+        {studentProfileImage && (
+          <figure className="student-info__student-profile">{studentProfileImage}</figure>
+        )}
         <div className="student-info__title">
           <a href={projectLiveUrl}>
             <h4 className="card__header">{projectTitle}</h4>
@@ -29,7 +31,7 @@ const DesktopProjectCard = ({
         </div>
       </section>
     </article>
-  );
-};
+  )
+}
 
-export default DesktopProjectCard;
+export default DesktopProjectCard

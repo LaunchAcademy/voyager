@@ -1,17 +1,19 @@
-import React from "react";
-import Icon from "../icons/Icon.js";
-import { faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons";
-import "./faq.css";
+import React from "react"
+
+import { faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons"
+
+import Icon from "../icons/Icon.js"
+import "./faq.css"
 
 const Faq = ({ title, description, selected, handleClick }) => {
-  let button;
-  let questionClass;
+  let button
+  let questionClass
   if (selected) {
-    questionClass = "block";
-    button = <Icon icon={faMinusSquare} onClick={handleClick} />;
+    questionClass = "block"
+    button = <Icon icon={faMinusSquare} onClick={handleClick} />
   } else {
-    questionClass = "hidden";
-    button = <Icon icon={faPlusSquare} onClick={handleClick} />;
+    questionClass = "hidden"
+    button = <Icon icon={faPlusSquare} onClick={handleClick} />
   }
   return (
     <div className="faq" onClick={handleClick}>
@@ -23,7 +25,7 @@ const Faq = ({ title, description, selected, handleClick }) => {
       </div>
       <p className={`faq__description ${questionClass}`}>{description}</p>
     </div>
-  );
-};
+  )
+}
 
-export default Faq;
+export default Faq

@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
-import Card from "./Card.js";
-import DesktopProjectCard from "./DesktopProjectCard.js";
-import MobileProjectCard from "./MobileProjectCard.js";
+import Card from "./Card.js"
+import DesktopProjectCard from "./DesktopProjectCard.js"
+import MobileProjectCard from "./MobileProjectCard.js"
 
 const CardList = ({
   content,
@@ -12,12 +12,12 @@ const CardList = ({
   learnMoreToggle = false,
   learnMoreContent = null,
 }) => {
-  let cardListSize = "card-list";
+  let cardListSize = "card-list"
 
   if (numberOfColumns === 2) {
-    cardListSize += "_medium";
+    cardListSize += "_medium"
   } else if (numberOfColumns === 3) {
-    cardListSize += "_large";
+    cardListSize += "_large"
   }
 
   const cardContentArray = content.map((card) => {
@@ -30,7 +30,7 @@ const CardList = ({
           studentName={card.studentName}
           studentProfileUrl={card.studentProfileUrl}
         />
-      );
+      )
     }
     if (card.mobile === false) {
       return (
@@ -41,7 +41,7 @@ const CardList = ({
           studentName={card.studentName}
           studentProfileUrl={card.studentProfileUrl}
         />
-      );
+      )
     }
     return (
       <Card
@@ -55,14 +55,14 @@ const CardList = ({
         learnMoreToggle={learnMoreToggle}
         learnMoreContent={learnMoreContent}
       />
-    );
-  });
+    )
+  })
 
   return (
     <div className={`${[cardListSize, className, `card-list_${cardType}`].join(" ")}`}>
       {cardContentArray}
     </div>
-  );
-};
+  )
+}
 
-export default CardList;
+export default CardList

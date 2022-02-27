@@ -1,17 +1,17 @@
-import blocks, { Meta, Canvas, Story, ArgsTable } from "@storybook/addon-docs/blocks";
-import Button from "./Button";
-import "../../src/assets/scss/main.css";
+import blocks, { Meta, Canvas, Story, ArgsTable } from "@storybook/addon-docs/blocks"
+import Button from "./Button"
+import "../../src/assets/scss/main.css"
 
-export const Template = (args) => <Button {...args} />;
+export const Template = (args) => <Button {...args} />
 Template.parameters = {
   backgrounds: { default: "callout" },
-};
+}
 const defaultArgs = {
   text: "Apply Today",
   to: "#",
   size: "xl",
   placement: "banner",
-};
+}
 
 <Meta
   title="Buttons/On Banner"

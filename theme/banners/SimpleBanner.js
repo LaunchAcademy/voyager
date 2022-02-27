@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 //note: we are deprecating backgroundImageUrl in
 //favor of backgroundImageProps for responsive images
@@ -11,6 +11,6 @@ const SimpleBanner = ({ children, BackgroundImage, type, style = {} }) => (
     )}
     <div className="banner__content">{children}</div>
   </section>
-);
+)
 
-export default SimpleBanner;
+export default SimpleBanner

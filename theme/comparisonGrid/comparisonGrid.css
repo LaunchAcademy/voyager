@@ -2,10 +2,9 @@
 .comparison-table-container {
   @apply max-w-screen-xl mx-auto overflow-x-auto;
 
-
-& .comparison-table__table-title {
-  @apply text-center p-6;
-}
+  & .comparison-table__table-title {
+    @apply text-center p-6;
+  }
 
   & .comparison-table {
     @apply table-auto md:ml-10;
@@ -20,12 +19,8 @@
       }
     }
 
-
-
     & .comparison-table__header-container {
       @apply bg-white;
-
-
 
       & th:first-child {
         @apply sticky left-0 z-10;
@@ -37,7 +32,6 @@
       & .header-container__header-title_launch {
         @apply text-xl font-bold z-0;
       }
-
     }
 
     & .comparison-table__data-title {

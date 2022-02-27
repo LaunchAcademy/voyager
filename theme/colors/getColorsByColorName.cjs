@@ -1,5 +1,5 @@
-const _ = require("lodash");
-const colors = require("./colors.cjs");
+const _ = require("lodash")
+const colors = require("./colors.cjs")
 
 const getColorsByColorName = () =>
   Object.values(colors).reduce(
@@ -8,6 +8,6 @@ const getColorsByColorName = () =>
       [_.kebabCase(colorProps.colorName)]: colorProps.hex,
     }),
     {}
-  );
+  )
 
-module.exports = getColorsByColorName;
+module.exports = getColorsByColorName

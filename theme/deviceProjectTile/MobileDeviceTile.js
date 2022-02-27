@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const MobileDeviceTile = ({ Image, altText }) => {
   return (
@@ -24,7 +24,7 @@ const MobileDeviceTile = ({ Image, altText }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MobileDeviceTile;
+export default MobileDeviceTile

@@ -19,7 +19,6 @@
 .review {
   @apply grid grid-cols-2 w-full;
   @apply md:h-80 md:overflow-hidden;
-
 }
 
 .review_switchup {
@@ -157,15 +156,14 @@
   @apply md:p-5;
 
   & .narrative__text {
-   @apply h-full w-full z-10 overflow-hidden;
-   @apply md:pb-5;
+    @apply h-full w-full z-10 overflow-hidden;
+    @apply md:pb-5;
   }
 
   & .narrative__read-more {
     @apply bg-gradient-to-t w-auto h-full z-20 absolute bottom-5 left-0 right-0;
     --tw-gradient-from: var(--course-report-background);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
-
   }
   & .narrative__link {
     @apply z-30 mt-auto absolute bottom-5 left-5 right-0;

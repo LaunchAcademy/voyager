@@ -1,7 +1,9 @@
-import React from "react";
-import MobileDeviceTile from "../deviceProjectTile/MobileDeviceTile.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
+import React from "react"
+
+import { faUserGraduate } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import MobileDeviceTile from "../deviceProjectTile/MobileDeviceTile.js"
 
 const MobileProjectCard = ({
   imageData,
@@ -10,9 +12,9 @@ const MobileProjectCard = ({
   studentName,
   studentProfileUrl,
 }) => {
-  let studentProfileImage = <FontAwesomeIcon icon={faUserGraduate} />;
+  let studentProfileImage = <FontAwesomeIcon icon={faUserGraduate} />
   if (studentProfileUrl) {
-    studentProfileImage = <img src={studentProfileUrl} />;
+    studentProfileImage = <img src={studentProfileUrl} />
   }
   return (
     <article className="card card__mobile-tile">
@@ -29,7 +31,7 @@ const MobileProjectCard = ({
         </div>
       </section>
     </article>
-  );
-};
+  )
+}
 
-export default MobileProjectCard;
+export default MobileProjectCard

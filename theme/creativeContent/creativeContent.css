@@ -35,7 +35,6 @@
   & div:nth-child(2) {
     @apply hidden;
     @apply lg:block;
-
   }
 
   & .device-wrapper {

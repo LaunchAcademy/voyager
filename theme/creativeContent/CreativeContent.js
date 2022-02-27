@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
 const CreativeContent = ({ children }) => (
   <div className="creative-content__container">{children}</div>
-);
+)
 
-export default CreativeContent;
+export default CreativeContent

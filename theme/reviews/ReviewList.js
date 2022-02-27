@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
-import CourseReportTile from "./CourseReportTile.js";
-import SwitchupReviewTile from "./SwitchupReviewTile.js";
+import CourseReportTile from "./CourseReportTile.js"
+import SwitchupReviewTile from "./SwitchupReviewTile.js"
 
 const ReviewList = ({ allReviews }) => {
   const reviewsArray = allReviews.map((review) => {
@@ -22,7 +22,7 @@ const ReviewList = ({ allReviews }) => {
         >
           {review.reviewParagraph}
         </CourseReportTile>
-      );
+      )
     }
     return (
       <SwitchupReviewTile
@@ -40,10 +40,10 @@ const ReviewList = ({ allReviews }) => {
       >
         {review.reviewParagraph}
       </SwitchupReviewTile>
-    );
-  });
+    )
+  })
 
-  return <div className="review-grid review-grid_stagger">{reviewsArray}</div>;
-};
+  return <div className="review-grid review-grid_stagger">{reviewsArray}</div>
+}
 
-export default ReviewList;
+export default ReviewList

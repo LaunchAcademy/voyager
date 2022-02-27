@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
-import ReviewStars from "./ReviewStars.js";
-import "./reviewTiles.css";
+import ReviewStars from "./ReviewStars.js"
+import "./reviewTiles.css"
 
 const SwitchupReviewTile = ({
   reviewTitle,
@@ -15,9 +15,9 @@ const SwitchupReviewTile = ({
   reviewUrl,
   children,
 }) => {
-  let alumniTitleCheck;
+  let alumniTitleCheck
   if (alumniTitle) {
-    alumniTitleCheck = ` | ${alumniTitle}`;
+    alumniTitleCheck = ` | ${alumniTitle}`
   }
 
   return (
@@ -55,7 +55,7 @@ const SwitchupReviewTile = ({
         </a>
       </section>
     </article>
-  );
-};
+  )
+}
 
-export default SwitchupReviewTile;
+export default SwitchupReviewTile

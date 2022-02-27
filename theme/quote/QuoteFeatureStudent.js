@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const QuoteFeatureStudent = ({ name, company, studentImageUrl }) => {
   return (
@@ -9,7 +9,7 @@ const QuoteFeatureStudent = ({ name, company, studentImageUrl }) => {
         <h6 className="text-info__company">{company}</h6>
       </div>
     </figcaption>
-  );
-};
+  )
+}
 
-export default QuoteFeatureStudent;
+export default QuoteFeatureStudent

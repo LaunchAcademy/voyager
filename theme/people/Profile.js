@@ -1,5 +1,6 @@
-import React from "react";
-import Icon from "../icons/Icon.js";
+import React from "react"
+
+import Icon from "../icons/Icon.js"
 
 const Profile = ({
   name,
@@ -13,45 +14,45 @@ const Profile = ({
   altText,
   Image,
 }) => {
-  let whichProfileClass = `profile profile__${profileType}`;
+  let whichProfileClass = `profile profile__${profileType}`
   let currentEmployerOrFoundingMember = (
     <h6 className="profile__current-title">
       {currentTitle}
       {profileType !== "teamMember" && <span>at {currentEmployer}</span>}
     </h6>
-  );
-  let socialList;
+  )
+  let socialList
   if (socialUrls) {
-    whichProfileClass = "profile profile_social";
+    whichProfileClass = "profile profile_social"
 
     if (foundingMember) {
       currentEmployerOrFoundingMember = (
         <h6 className="profile__current-title">
           {currentTitle}, <span>FOUNDING TEAM MEMBER</span>
         </h6>
-      );
+      )
     } else {
-      currentEmployerOrFoundingMember = <h6 className="profile__current-title">{currentTitle}</h6>;
+      currentEmployerOrFoundingMember = <h6 className="profile__current-title">{currentTitle}</h6>
     }
 
     const socialIcons = socialUrls.map((social) => {
-      let domain = new URL(social);
-      let hostname = domain.hostname.replace("www.", "");
-      let iconHostname = hostname.replace(".com", "");
+      let domain = new URL(social)
+      let hostname = domain.hostname.replace("www.", "")
+      let iconHostname = hostname.replace(".com", "")
 
       if (hostname.includes("facebook")) {
-        hostname = "facebook-f";
+        hostname = "facebook-f"
       }
 
       return (
-        <li>
+        <li key={hostname}>
           <a href={social} aria-label={`${name} on ${hostname} `}>
             <Icon name={iconHostname} fixedWidth />
           </a>
         </li>
-      );
-    });
-    socialList = <ul className="profile__social">{socialIcons}</ul>;
+      )
+    })
+    socialList = <ul className="profile__social">{socialIcons}</ul>
   }
 
   return (
@@ -69,7 +70,7 @@ const Profile = ({
       {description && <p>{description}</p>}
       {socialList}
     </div>
-  );
-};
+  )
+}
 
-export default Profile;
+export default Profile

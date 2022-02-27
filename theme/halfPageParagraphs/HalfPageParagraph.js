@@ -1,6 +1,7 @@
-import React from "react";
-import Button from "../buttons/Button.js";
-import "./halfPageParagraph.css";
+import React from "react"
+
+import Button from "../buttons/Button.js"
+import "./halfPageParagraph.css"
 
 const HalfPageParagraph = ({ title, text, subtitle, icon, className }) => (
   <section className={`half-page-paragraph ${className}`}>
@@ -9,15 +10,9 @@ const HalfPageParagraph = ({ title, text, subtitle, icon, className }) => (
     <div className="half-page-paragraph__text">{text}</div>
     <div className="half-page-paragraph__action-subtitle">{subtitle}</div>
     <div>
-      <Button
-        to="#"
-        text="Apply Today"
-        icon={icon}
-        className="hero_button mt-10"
-        size="lg"
-      />
+      <Button to="#" text="Apply Today" icon={icon} className="hero_button mt-10" size="lg" />
     </div>
   </section>
-);
+)
 
-export default HalfPageParagraph;
+export default HalfPageParagraph

@@ -1,10 +1,10 @@
-import { addParameters } from "@storybook/react";
-import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
-import colors from "../theme/colors/colors";
+import { addParameters } from "@storybook/react"
+import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks"
+import colors from "../theme/colors/colors"
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
-};
+}
 
 addParameters({
   backgrounds: {
@@ -69,4 +69,4 @@ addParameters({
       },
     },
   },
-});
+})

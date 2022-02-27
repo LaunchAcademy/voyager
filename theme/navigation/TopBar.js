@@ -1,7 +1,9 @@
-import React from "react";
-import { Disclosure } from "@headlessui/react";
-import Icon from "../icons/Icon.js";
-import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
+import React from "react"
+
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
+import { Disclosure } from "@headlessui/react"
+
+import Icon from "../icons/Icon.js"
 
 const TopBar = ({ logo, children }) => (
   <div className="top-bar-navigation-container">
@@ -36,6 +38,6 @@ const TopBar = ({ logo, children }) => (
       )}
     </Disclosure>
   </div>
-);
+)
 
-export default TopBar;
+export default TopBar

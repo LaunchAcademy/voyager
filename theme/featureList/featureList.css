@@ -11,7 +11,7 @@
   }
 
   &.feature-list-gray {
-     @apply bg-gray-dorian
+    @apply bg-gray-dorian;
   }
 
   & .feature-list__content-wrap {
@@ -77,11 +77,9 @@
   }
 }
 
-
 .benefit-list {
   & .feature-list {
     @apply bg-secondary-brand w-full overflow-y-visible;
-
 
     & .feature-list__content-wrap {
       @apply max-w-screen-xl grid grid-cols-12 mx-auto;
@@ -146,5 +144,4 @@
   .benefit-list {
     min-height: 1025px;
   }
-
 }

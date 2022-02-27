@@ -1,5 +1,6 @@
-import React from "react";
-import bullets from "../../src/assets/images/bullets.svg";
+import React from "react"
+
+import bullets from "../../src/assets/images/bullets.svg"
 
 const ModuleLearningObjective = ({ objectiveDescription }) => (
   <div className="module-learning-objective">
@@ -8,6 +9,6 @@ const ModuleLearningObjective = ({ objectiveDescription }) => (
     </div>
     <p className="module-learning-objective__description">{objectiveDescription}</p>
   </div>
-);
+)
 
-export default ModuleLearningObjective;
+export default ModuleLearningObjective

@@ -5,7 +5,9 @@
     @apply grid grid-cols-1 gap-4 my-5;
   }
 
-  & .card-list.double-gap, & .card-list_large.double-gap, & .card-list_medium.double-gap {
+  & .card-list.double-gap,
+  & .card-list_large.double-gap,
+  & .card-list_medium.double-gap {
     @apply md:gap-x-8;
   }
 
@@ -27,7 +29,8 @@
 .card {
   @apply w-full shadow-lg rounded-lg pb-4 mx-auto bg-white relative flex flex-col z-30;
 
-  & .card__header a, & .card__time-to-read a {
+  & .card__header a,
+  & .card__time-to-read a {
     @apply hover:underline;
   }
 
@@ -63,7 +66,8 @@
   & .card__readmore {
     @apply grid grid-cols-3 bottom-1 my-2;
 
-    & .card__links, & .card__time-to-read {
+    & .card__links,
+    & .card__time-to-read {
       @apply text-sm;
     }
     & .card__links {
@@ -82,7 +86,6 @@
 }
 
 .card.card_article {
-
 }
 
 .card__mobile-tile {

@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import Button from "../buttons/Button.js";
+import Button from "../buttons/Button.js"
 
 const CourseSchedule = ({
   cohort,
@@ -41,6 +41,6 @@ const CourseSchedule = ({
       <Button to={buttonURL} text={buttonText} className="hero__button" size="md" />
     </div>
   </div>
-);
+)
 
-export default CourseSchedule;
+export default CourseSchedule

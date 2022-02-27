@@ -1,26 +1,27 @@
-import React, { useState, useEffect } from "react";
-import Faq from "./Faq.js";
+import React, { useState, useEffect } from "react"
+
+import Faq from "./Faq.js"
 
 const FaqList = ({ questions }) => {
-  const [selectedQuestion, setSelectedQuestion] = useState([]);
+  const [selectedQuestion, setSelectedQuestion] = useState([])
 
   const toggleQuestionSelect = (id) => {
     if (selectedQuestion.includes(id)) {
-      setSelectedQuestion(selectedQuestion.filter((questionId) => questionId !== id));
+      setSelectedQuestion(selectedQuestion.filter((questionId) => questionId !== id))
     } else {
-      setSelectedQuestion([...selectedQuestion, id]);
+      setSelectedQuestion([...selectedQuestion, id])
     }
-  };
+  }
 
   const questionListItems = questions.map((question) => {
-    let selected;
+    let selected
     if (selectedQuestion.includes(question.id)) {
-      selected = true;
+      selected = true
     }
 
     const handleClick = () => {
-      toggleQuestionSelect(question.id);
-    };
+      toggleQuestionSelect(question.id)
+    }
 
     return (
       <Faq
@@ -30,14 +31,14 @@ const FaqList = ({ questions }) => {
         selected={selected}
         handleClick={handleClick}
       />
-    );
-  });
+    )
+  })
 
   return (
     <div className="faq-list">
       <div className="faq-list__container">{questionListItems}</div>
     </div>
-  );
-};
+  )
+}
 
-export default FaqList;
+export default FaqList

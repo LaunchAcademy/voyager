@@ -1,5 +1,6 @@
-import React from "react";
-import ReviewStars from "./ReviewStars.js";
+import React from "react"
+
+import ReviewStars from "./ReviewStars.js"
 
 const CourseReportTile = ({
   reviewTitle,
@@ -14,9 +15,9 @@ const CourseReportTile = ({
   reviewUrl,
   children,
 }) => {
-  let verifiedText;
+  let verifiedText
   if (verified) {
-    verifiedText = "Verified";
+    verifiedText = "Verified"
   }
 
   return (
@@ -63,7 +64,7 @@ const CourseReportTile = ({
         </a>
       </section>
     </article>
-  );
-};
+  )
+}
 
-export default CourseReportTile;
+export default CourseReportTile

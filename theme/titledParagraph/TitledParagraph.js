@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const TitledParagraph = ({ title, children }) => (
   <section className="titled-paragraph">
@@ -7,6 +7,6 @@ const TitledParagraph = ({ title, children }) => (
       {children}
     </div>
   </section>
-);
+)
 
-export default TitledParagraph;
+export default TitledParagraph

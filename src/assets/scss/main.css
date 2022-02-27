@@ -23,7 +23,7 @@ body.body_launch {
   @apply text-purple capitalize;
 
   & li a {
-    @apply hover:underline
+    @apply hover:underline;
   }
 }
 

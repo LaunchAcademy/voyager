@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const DesktopDeviceTile = ({ Image }) => {
   return (
@@ -12,7 +12,7 @@ const DesktopDeviceTile = ({ Image }) => {
         <div className="bottom-bar"></div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DesktopDeviceTile;
+export default DesktopDeviceTile

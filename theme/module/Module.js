@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const Module = ({
   subtitle,
@@ -12,14 +12,14 @@ const Module = ({
   Image,
   altText,
 }) => {
-  let details;
+  let details
   location && commitment && duration
     ? (details = (
         <p>
           {location} | {commitment} | {duration}
         </p>
       ))
-    : (details = <p>{detail}</p>);
+    : (details = <p>{detail}</p>)
   return (
     <div className="module">
       <div className="module__image-column">
@@ -37,7 +37,7 @@ const Module = ({
         <div className="supporting-content__objectives-container">{children}</div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Module;
+export default Module

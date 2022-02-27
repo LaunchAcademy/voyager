@@ -1,7 +1,7 @@
 module.exports = (api) => {
-  const isDevelopmentEnv = api.env("development");
-  const isProductionEnv = api.env("production");
-  const isTestEnv = api.env("test") || api.env("e2e");
+  const isDevelopmentEnv = api.env("development")
+  const isProductionEnv = api.env("production")
+  const isTestEnv = api.env("test") || api.env("e2e")
 
   return {
     presets: [
@@ -62,5 +62,5 @@ module.exports = (api) => {
         },
       ],
     ].filter(Boolean),
-  };
-};
+  }
+}

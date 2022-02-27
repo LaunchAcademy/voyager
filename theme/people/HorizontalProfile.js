@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const HorizontalProfile = ({ name, currentTitle, formerTitle, Image, altText, description }) => {
   return (
@@ -12,7 +12,7 @@ const HorizontalProfile = ({ name, currentTitle, formerTitle, Image, altText, de
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HorizontalProfile;
+export default HorizontalProfile

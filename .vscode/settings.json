@@ -23,10 +23,5 @@
   "files.associations": {
     "*.css": "postcss"
   },
-  "cSpell.words": [
-    "fontawesome",
-    "fortawesome",
-    "globby",
-    "tailwindcss"
-  ]
+  "cSpell.words": ["fontawesome", "fortawesome", "globby", "tailwindcss"]
 }
