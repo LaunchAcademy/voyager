@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+export NVM_DIR="$HOME/.nvm"
+echo $NVM_DIR
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+nvm use 16
+
+yarn run lint
+yarn run lint:style

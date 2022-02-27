@@ -3,8 +3,8 @@
     "build": "yarn run rollup -c",
     "dev": "yarn run build -w",
     "lint": "yarn run eslint .",
-    "lint:style": "yarn run prettier -c theme",
-    "prepare": "yarn run build",
+    "lint:style": "yarn run prettier -c src",
+    "prepare": "husky install && yarn run build",
     "prepublishOnly": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -64,6 +64,7 @@
     "file-loader": "^6.2.0",
     "globby": "11.0.4",
     "html-webpack-plugin": "5.0.0-beta.1",
+    "husky": "^7.0.4",
     "mini-css-extract-plugin": "^0.9.0",
     "postcss": "^8",
     "postcss-import": "14.0.0",
