@@ -1,4 +1,3 @@
-/* purgecss start ignore */
 .top-bar-navigation-container {
   @apply w-full bg-white;
   position: fixed;
@@ -99,4 +98,3 @@
     }
   }
 }
-/* purgecss start ignore */

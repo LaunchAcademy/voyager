@@ -1,4 +1,3 @@
-/* purgecss start ignore */
 .button {
   @apply text-white bg-primary-brand no-underline font-bold rounded-full inline-block border-2 border-primary-brand font-text;
   line-height: 1.5rem;
@@ -51,4 +50,3 @@
     background: transparent;
   }
 }
-/* purgecss end ignore */

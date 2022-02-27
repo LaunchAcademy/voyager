@@ -1,4 +1,3 @@
-/* purgecss start ignore */
 .quote {
   @apply bg-teal pb-10 font-text pt-10 pr-5;
   @apply lg:divide-x-2  lg:bg-white;
@@ -113,4 +112,3 @@
     }
   }
 }
-/* purgecss end ignore */
