@@ -1,6 +1,6 @@
 import React from "react"
 
-import Button from "../buttons/Button.js"
+import Button from "../buttons/Button"
 import "./halfPageParagraph.css"
 
 const HalfPageParagraph = ({ title, text, subtitle, icon, className }) => (

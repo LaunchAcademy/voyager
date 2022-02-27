@@ -1,19 +1,21 @@
-import React from "react"
+import React, { FC } from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const Button = ({
+import { ButtonProps } from "./Button.d"
+
+export const Button: FC<ButtonProps> = ({
   text,
   children,
   to,
   onClick,
   size = "lg",
-  secondary,
+  secondary = false,
   placement,
   icon,
   iconSize = "1x",
-  className,
-  hideText,
+  className = "",
+  hideText = false,
 }) => {
   const modifiers = []
   if (secondary) {
