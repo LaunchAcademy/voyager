@@ -2,7 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "../../../theme/typography/typography.css";
+@import "../../../src/typography/typography.css";
 
 /* @tailwind utilities; */
 

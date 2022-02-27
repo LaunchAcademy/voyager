@@ -17,9 +17,8 @@ const packageJson = require("./package.json")
 // import peerDepsExternal from "rollup-plugin-peer-deps-external";
 // import resolve from "@rollup/plugin-node-resolve";
 
-console.log(globby.sync(["src/assets/scss/main.css", "theme/**/*.css"]))
 const cssConfig = globby
-  .sync(["src/assets/scss/**/*.css", "theme/**/*.css", "theme/**/*.min.css"])
+  .sync(["src/assets/scss/**/*.css", "src/**/*.css", "src/**/*.min.css"])
   .map((inputFile) => {
     return {
       input: inputFile,
