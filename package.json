@@ -11,7 +11,7 @@
   },
   "license": "UNLICENSED",
   "name": "@launchacademy/voyager",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "engines": {
     "node": ">= 14.8"
   },
@@ -19,7 +19,8 @@
     "CHANGELOG.md",
     "dist",
     "README.md",
-    "dist/**"
+    "dist/**",
+    "css/**"
   ],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
