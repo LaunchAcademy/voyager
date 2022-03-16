@@ -1,8 +1,10 @@
-import React from "react"
+import React, { FC } from "react"
+
+import { SimpleBannerProps } from "./Banners.d"
 
 //note: we are deprecating backgroundImageUrl in
 //favor of backgroundImageProps for responsive images
-const SimpleBanner = ({ children, BackgroundImage, type, style = {} }) => (
+export const SimpleBanner: FC<SimpleBannerProps> = ({ children, BackgroundImage, type, style }) => (
   <section className={`banner__photo banner_${type}`} style={style}>
     {BackgroundImage && (
       <div className="banner__background-photo-wrapper">
@@ -12,5 +14,3 @@ const SimpleBanner = ({ children, BackgroundImage, type, style = {} }) => (
     <div className="banner__content">{children}</div>
   </section>
 )
-
-export default SimpleBanner

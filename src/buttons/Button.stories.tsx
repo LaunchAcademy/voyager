@@ -29,7 +29,7 @@ SmButton.args = {
 }
 
 export const MdButton = Template.bind({})
-SmButton.args = {
+MdButton.args = {
   size: "md",
 }
 
