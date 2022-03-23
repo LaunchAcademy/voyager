@@ -1,8 +1,9 @@
-import React from "react"
+import React, { FC } from "react"
 
-import DesktopDeviceTile from "../deviceProjectTile/DesktopDeviceTile.js"
+import { DesktopDeviceTile } from "../deviceProjectTile/DesktopDeviceTile"
+import { ProjectCardProps } from "./Card.d"
 
-const DesktopProjectCard = ({
+export const DesktopProjectCard: FC<ProjectCardProps> = ({
   Image,
   projectLiveUrl,
   projectTitle,
@@ -33,5 +34,3 @@ const DesktopProjectCard = ({
     </article>
   )
 }
-
-export default DesktopProjectCard

@@ -6,7 +6,7 @@ import Button from "./Button"
 import { ButtonPlacement, ButtonProps, ButtonSize } from "./Button.d"
 import "../../css/assets/main.css"
 import "./css/buttons.css"
-import mdx from "./Button.mdx"
+import mdx from "./Button.stories.mdx"
 
 const defaultArgs = {
   text: "Apply Today",

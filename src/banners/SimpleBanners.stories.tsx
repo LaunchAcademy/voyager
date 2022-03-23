@@ -13,7 +13,7 @@ import "../assets/css/main.css"
 import "./css/banners.css"
 
 export default {
-  title: "Simple Banner Test",
+  title: "Simple Banners",
   component: SimpleBanner,
 } as ComponentMeta<typeof SimpleBanner>
 

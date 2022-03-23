@@ -1,6 +1,6 @@
 import React from "react"
 
-import Icon from "../icons/Icon.js"
+import { Icon } from "../icons/Icon"
 
 const Profile = ({
   name,

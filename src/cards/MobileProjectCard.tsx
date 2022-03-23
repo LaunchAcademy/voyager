@@ -1,12 +1,13 @@
-import React from "react"
+import React, { FC } from "react"
 
 import { faUserGraduate } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import MobileDeviceTile from "../deviceProjectTile/MobileDeviceTile.js"
+import { MobileDeviceTile } from "../deviceProjectTile/MobileDeviceTile"
+import { ProjectCardProps } from "./Card.d"
 
-const MobileProjectCard = ({
-  imageData,
+export const MobileProjectCard: FC<ProjectCardProps> = ({
+  Image,
   projectLiveUrl,
   projectTitle,
   studentName,
@@ -19,7 +20,7 @@ const MobileProjectCard = ({
   return (
     <article className="card card__mobile-tile">
       <section className="card__photo">
-        <MobileDeviceTile {...imageData} />
+        <MobileDeviceTile Image={Image} />
       </section>
       <section className="project-tile__student-info">
         <figure className="student-info__student-profile">{studentProfileImage}</figure>
@@ -33,5 +34,3 @@ const MobileProjectCard = ({
     </article>
   )
 }
-
-export default MobileProjectCard

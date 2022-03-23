@@ -1,12 +1,14 @@
-import React from "react"
+import React, { FC } from "react"
 
-const UrlLink = ({ url, children = undefined }) => {
+import { CardProps, UrlLinkProps } from "./Card.d"
+
+const UrlLink: FC<UrlLinkProps> = ({ url, children = undefined }) => {
   if (url) {
     return <a href={url}>{children}</a>
   }
   return <>{children}</>
 }
-const Card = ({
+export const Card: FC<CardProps> = ({
   Image,
   header,
   body,
@@ -50,5 +52,3 @@ const Card = ({
     </div>
   )
 }
-
-export default Card

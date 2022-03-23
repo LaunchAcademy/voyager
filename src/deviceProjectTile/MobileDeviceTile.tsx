@@ -1,6 +1,8 @@
-import React from "react"
+import React, { FC } from "react"
 
-const MobileDeviceTile = ({ Image, altText }) => {
+import { DeviceTileProps } from "./DeviceProjectTile.d"
+
+export const MobileDeviceTile: FC<DeviceTileProps> = ({ Image, altText }) => {
   return (
     <div className="mobile-device-wrapper ">
       <div className="marvel-device iphone-x device-mobile__screen">
@@ -26,5 +28,3 @@ const MobileDeviceTile = ({ Image, altText }) => {
     </div>
   )
 }
-
-export default MobileDeviceTile

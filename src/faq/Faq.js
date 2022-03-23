@@ -2,7 +2,7 @@ import React from "react"
 
 import { faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons"
 
-import Icon from "../icons/Icon.js"
+import { Icon } from "../icons/Icon"
 import "./faq.css"
 
 const Faq = ({ title, description, selected, handleClick }) => {

@@ -1,6 +1,6 @@
 import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks"
 import Button from "../buttons/Button"
-import Icon from "../icons/Icon.js"
+import {Icon} from "../icons/Icon"
 import { SimpleBanner } from "./SimpleBanner"
 import { BannerTitle } from "./BannerTitle"
 import { BannerContent } from "./BannerContent"

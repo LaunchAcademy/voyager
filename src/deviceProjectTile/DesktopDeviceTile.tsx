@@ -1,6 +1,8 @@
-import React from "react"
+import React, { FC } from "react"
 
-const DesktopDeviceTile = ({ Image }) => {
+import { DeviceTileProps } from "./DeviceProjectTile.d"
+
+export const DesktopDeviceTile: FC<DeviceTileProps> = ({ Image }) => {
   return (
     <div className="desktop-device-wrapper">
       <div className="desktop-device__screen marvel-device macbook">
@@ -14,5 +16,3 @@ const DesktopDeviceTile = ({ Image }) => {
     </div>
   )
 }
-
-export default DesktopDeviceTile

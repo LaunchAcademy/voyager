@@ -1,10 +1,11 @@
-import React from "react"
+import React, { FC } from "react"
 
-import Card from "./Card.js"
-import DesktopProjectCard from "./DesktopProjectCard.js"
-import MobileProjectCard from "./MobileProjectCard.js"
+import { Card } from "./Card"
+import { CardListProps } from "./Card.d"
+import { DesktopProjectCard } from "./DesktopProjectCard"
+import { MobileProjectCard } from "./MobileProjectCard"
 
-const CardList = ({
+export const CardList: FC<CardListProps> = ({
   content,
   cardType = "article",
   numberOfColumns,
@@ -64,5 +65,3 @@ const CardList = ({
     </div>
   )
 }
-
-export default CardList

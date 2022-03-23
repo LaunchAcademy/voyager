@@ -3,7 +3,7 @@ import React from "react"
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
 import { Disclosure } from "@headlessui/react"
 
-import Icon from "../icons/Icon.js"
+import { Icon } from "../icons/Icon"
 
 const TopBar = ({ logo, children }) => (
   <div className="top-bar-navigation-container">
