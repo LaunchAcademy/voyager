@@ -22,6 +22,7 @@ module.exports = {
   xl: ["1.5rem", { lineHeight: "1.75rem" }],
   "2xl": ["2rem", { lineHeight: "2.25rem" }],
   "3xl": ["2.25rem", { lineHeight: "2.4rem" }],
+  "4xl": ["2.75rem", { lineHeight: "2.8rem" }],
   "5xl": ["3rem", { lineHeight: "3.25rem" }],
   "6xl": ["3.75rem", { lineHeight: "4rem" }],
 }
