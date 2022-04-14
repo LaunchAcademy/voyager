@@ -26,7 +26,7 @@ export default {
   },
 } as Meta
 
-const Template: Story = (args) => (
+const Template: Story = () => (
   <footer className="footer">
     <div className="footer__brand">
       <Logo />

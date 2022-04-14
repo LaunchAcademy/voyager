@@ -22,7 +22,7 @@ export default {
   },
 } as Meta
 
-const Template: Story<TopBarProps> = (args) => (
+const Template: Story<TopBarProps> = () => (
   <TopBar logo={logo}>
     <ul className="navigation-list navigation-list__top" role="list">
       <li>

@@ -1,68 +1,15 @@
-import blocks, { Meta, Story, Canvas } from "@storybook/addon-docs/blocks"
-import Button from "../buttons/Button"
-import {Icon} from "../icons/Icon"
-import { SimpleBanner } from "./SimpleBanner"
-import { BannerTitle } from "./BannerTitle"
-import { BannerContent } from "./BannerContent"
-import "../../css/assets/main.css"
-import "./css/banners.css"
-
-<Meta title="Banners" />
+import { Story } from "@storybook/addon-docs"
 
 # Hero
 
 ## Homepage Simple
 
-<Canvas>
-  <Story name="Title and One Button">
-    <SimpleBanner backgroundImageUrl="https://placekitten.com/1024/350">
-      <BannerTitle>See us in action</BannerTitle>
-      <Button placement="photo" text="Watch Video" to="#" secondary iconName="eye" />
-    </SimpleBanner>
-  </Story>
-</Canvas>
+<Story id="simple-banner--title-and-one-button" />
 
 ## Program Banner Two Buttons
 
-<Canvas>
-  <Story name="Title and Two Buttons">
-    <div className="banner_no-photo">
-      <BannerContent>
-        <div className="banner_no-photo__title">What to expect from your interview process</div>
-        <div className="banner_no-photo__container">
-          <div className="banner_button-container_no-photo">
-            <Button
-              to="#"
-              text="Schedule an Info Call"
-              iconname="phone"
-              className="hero__button pr-3"
-              secondary
-              size="lg"
-            />
-          </div>
-          <div className="banner_button-container_no-photo">
-            <Button to="#" text="Button" iconName="eye" className="hero__button" size="lg" />
-          </div>
-        </div>
-      </BannerContent>
-    </div>
-  </Story>
-</Canvas>
+<Story id="simple-banner--title-and-two-buttons" />
 
 ## Homepage with Paragraph
 
-<Canvas>
-  <Story name="Title and Paragraph">
-    <SimpleBanner type="prose" backgroundImageUrl="https://placekitten.com/1024/350">
-      <BannerTitle>
-        A practical computer science education without the bloat of a 4-year program
-      </BannerTitle>
-      <BannerContent>
-        <p>
-          Launch provides a highly-structured, collaborative learning environment designed to
-          prepare you for you new career in just 18 weeks.
-        </p>
-      </BannerContent>
-    </SimpleBanner>
-  </Story>
-</Canvas>
+<Story id="simple-banner--homepage-with-paragraph" />

@@ -16,7 +16,7 @@ export default {
   },
 } as Meta
 
-const Template: Story = (args) => (
+const Template: Story = () => (
   <div className="phase-list">
     <div className="phase-list__item">
       <div className="phase-list__item_icon">

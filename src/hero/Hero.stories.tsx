@@ -17,7 +17,7 @@ export default {
   },
 } as Meta
 
-export const CircularPhoto: Story = (args) => (
+export const CircularPhoto: Story = () => (
   <section className="hero">
     <div className="hero__image-column">
       <div className="hero__image-container">
@@ -55,7 +55,7 @@ export const CircularPhoto: Story = (args) => (
   </section>
 )
 
-export const SquarePhoto: Story = (args) => (
+export const SquarePhoto: Story = () => (
   <section className="hero">
     <div className="hero__image-column_square">
       <div className="hero__image-container_square">
@@ -90,7 +90,7 @@ export const SquarePhoto: Story = (args) => (
   </section>
 )
 
-export const TealHero: Story = (args) => (
+export const TealHero: Story = () => (
   <section className="hero bg-secondary-brand">
     <div className="hero__supporting-content p-10">
       <h2 className="hero__image_title pb-10">

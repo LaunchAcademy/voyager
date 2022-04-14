@@ -1,6 +1,6 @@
 import React, { FC } from "react"
 
-import { library, IconDefinition, findIconDefinition } from "@fortawesome/fontawesome-svg-core"
+import { IconDefinition, findIconDefinition } from "@fortawesome/fontawesome-svg-core"
 
 import { Icon } from "../icons/Icon"
 import { ProfileProps } from "./Profile.d"

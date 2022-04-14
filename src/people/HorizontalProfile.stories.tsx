@@ -16,7 +16,7 @@ export default {
   },
 } as Meta
 
-const Template: Story = (args) => (
+const Template: Story = () => (
   <div className="horizontal-profile-list__title">
     <h2>Learn to code the human way: Meet your team of full-time software engineers</h2>
     <div className="horizontal-profile-list__container">
