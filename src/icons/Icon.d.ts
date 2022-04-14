@@ -4,4 +4,5 @@ export interface IconProps {
   icon: IconProp
   fixedWidth?: boolean
   className?: string
+  onClick?: () => void
 }

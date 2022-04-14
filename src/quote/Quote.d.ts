@@ -4,10 +4,12 @@ export interface QuoteAuthorProps {
 }
 
 export interface QuoteFeatureStudentProps extends QuoteAuthorProps {
-  studentImageUrl: string
+  studentImageUrl?: string
 }
 
 export interface QuoteProps extends QuoteFeatureStudentProps {
-  quoteType: "hero" | "banner" | "student"
+  quoteType?: QuoteType
   quote: string
 }
+
+export type QuoteType = "hero" | "banner" | "student"

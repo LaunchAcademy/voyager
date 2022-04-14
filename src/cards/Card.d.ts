@@ -3,7 +3,7 @@ import { FC } from "react"
 export interface CardProps extends Card {
   cardType?: string | "article"
   url?: string
-  Image: FC
+  Image: FC<{ className?: string; altText?: string }>
 }
 
 export interface UrlLinkProps {
@@ -39,5 +39,5 @@ interface ProjectCardProps extends BaseCard {
 
 interface BaseCard {
   id?: number
-  Image?: FC
+  Image: FC
 }

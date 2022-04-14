@@ -3,13 +3,16 @@ import React from "react"
 import { Meta, Story } from "@storybook/react"
 
 import { Quote } from "./Quote"
-import { QuoteProps } from "./Quote.d"
+import { QuoteProps, QuoteType } from "./Quote.d"
 import mdx from "./Quote.stories.mdx"
 import "./css/quote.css"
 
 export default {
   title: "Quotes",
   component: Quote,
+  argTypes: {
+    quoteType: { control: "radio", options: ["hero", "banner", "student"] },
+  },
   parameters: {
     docs: {
       page: mdx,
@@ -18,7 +21,7 @@ export default {
 } as Meta
 
 const defaultArgs = {
-  quoteType: "hero",
+  quoteType: "hero" as QuoteType,
   quote:
     "I highly recommend Launch Academy to anyone who is thinking about switching to software development. Launch Academy found a great formula for success.",
   name: "Mo Zhu",

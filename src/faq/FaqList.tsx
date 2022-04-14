@@ -15,7 +15,7 @@ export const FaqList: FC<FaqListProps> = ({ questions }) => {
   }
 
   const questionListItems = questions.map((question) => {
-    let selected
+    let selected = false
     if (selectedQuestion.includes(question.id)) {
       selected = true
     }
