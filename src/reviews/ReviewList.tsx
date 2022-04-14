@@ -1,9 +1,10 @@
-import React from "react"
+import React, { FC } from "react"
 
-import CourseReportTile from "./CourseReportTile.js"
-import SwitchupReviewTile from "./SwitchupReviewTile.js"
+import { CourseReportTile } from "./CourseReportTile"
+import { SwitchupReviewTile } from "./SwitchupReviewTile"
+import { ReviewListProps } from "./reviews.d"
 
-const ReviewList = ({ allReviews }) => {
+export const ReviewList: FC<ReviewListProps> = ({ allReviews }) => {
   const reviewsArray = allReviews.map((review) => {
     if (review.reviewUrl.includes("coursereport.com")) {
       return (
@@ -45,5 +46,3 @@ const ReviewList = ({ allReviews }) => {
 
   return <div className="review-grid review-grid_stagger">{reviewsArray}</div>
 }
-
-export default ReviewList

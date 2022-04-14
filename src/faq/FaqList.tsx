@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react"
+import React, { FC, useState } from "react"
 
-import Faq from "./Faq.js"
+import { Faq } from "./Faq"
+import { FaqListProps } from "./Faq.d"
 
-const FaqList = ({ questions }) => {
-  const [selectedQuestion, setSelectedQuestion] = useState([])
+export const FaqList: FC<FaqListProps> = ({ questions }) => {
+  const [selectedQuestion, setSelectedQuestion] = useState([-1])
 
-  const toggleQuestionSelect = (id) => {
+  const toggleQuestionSelect = (id: number): void => {
     if (selectedQuestion.includes(id)) {
       setSelectedQuestion(selectedQuestion.filter((questionId) => questionId !== id))
     } else {
@@ -19,7 +20,7 @@ const FaqList = ({ questions }) => {
       selected = true
     }
 
-    const handleClick = () => {
+    const handleClick = (): void => {
       toggleQuestionSelect(question.id)
     }
 
@@ -40,5 +41,3 @@ const FaqList = ({ questions }) => {
     </div>
   )
 }
-
-export default FaqList

@@ -1,6 +1,16 @@
-import React from "react"
+import React, { FC } from "react"
 
-const HorizontalProfile = ({ name, currentTitle, formerTitle, Image, altText, description }) => {
+import { ProfileProps } from "./Profile.d"
+import "./css/horizontalProfile.css"
+
+export const HorizontalProfile: FC<ProfileProps> = ({
+  name,
+  currentTitle,
+  formerTitle,
+  Image,
+  altText,
+  description,
+}) => {
   return (
     <div className="horizontal-profile">
       <Image className="horizontal-profile__image" alt={altText} />
@@ -14,5 +24,3 @@ const HorizontalProfile = ({ name, currentTitle, formerTitle, Image, altText, de
     </div>
   )
 }
-
-export default HorizontalProfile

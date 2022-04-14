@@ -1,11 +1,12 @@
-import React from "react"
+import React, { FC } from "react"
 
 import { faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons"
 
 import { Icon } from "../icons/Icon"
-import "./faq.css"
+import "./css/faq.css"
+import { FaqProps } from "./Faq.d"
 
-const Faq = ({ title, description, selected, handleClick }) => {
+export const Faq: FC<FaqProps> = ({ title, description, selected, handleClick }) => {
   let button
   let questionClass
   if (selected) {
@@ -27,5 +28,3 @@ const Faq = ({ title, description, selected, handleClick }) => {
     </div>
   )
 }
-
-export default Faq

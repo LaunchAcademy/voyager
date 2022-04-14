@@ -1,46 +1,7 @@
-import blocks, { Meta, Canvas, Story, ArgsTable } from "@storybook/addon-docs/blocks"
-import HorizontalProfile from "./HorizontalProfile"
-
-export const Template = (args) => <HorizontalProfile {...args} />
-
-<Meta title=" Horizontal Profiles" />
+import { Meta, Canvas, Story, ArgsTable } from "@storybook/addon-docs"
+import { HorizontalProfile } from "./HorizontalProfile"
+import "./css/horizontalProfile.css"
 
 # Horizontal Profiles
 
-<Canvas>
-  <Story name="Featured Staff">
-    <div className="horizontal-profile-list__title">
-      <h2>Learn to code the human way: Meet your team of full-time software engineers</h2>
-      <div className="horizontal-profile-list__container">
-        <HorizontalProfile
-          name="Kylee Acker"
-          headshotUrl="https://placekitten.com/300/300"
-          currentTitle="Sr. Experience Engineer"
-          formerTitle="Pastry Chef"
-          description="Philly civic engager, swam in the Schuylkill River once."
-        />
-        <HorizontalProfile
-          name="Brianna Kincart"
-          headshotUrl="https://placekitten.com/300/300"
-          currentTitle="Dev Extraordinaire"
-          formerTitle="Financial Analyst"
-          description="yogi, runner."
-        />
-        <HorizontalProfile
-          name="Alex Schwartz"
-          headshotUrl="https://placekitten.com/300/300"
-          currentTitle="Career Services Manager"
-          formerTitle="Teacher"
-          description="lifelong learner. Fan of books, games, and tea."
-        />
-        <HorizontalProfile
-          name="Random Cat"
-          headshotUrl="https://placekitten.com/300/300"
-          currentTitle="Deep Thoughts Thinker"
-          formerTitle="Kitten"
-          description="unsure how I even got here."
-        />
-      </div>
-    </div>
-  </Story>
-</Canvas>
+<Story id="horizontal-profile--horizontal-profile" />

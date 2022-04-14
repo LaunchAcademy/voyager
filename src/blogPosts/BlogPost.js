@@ -7,7 +7,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard"
 import { FacebookMessengerShareButton, LinkedinShareButton, TwitterShareButton } from "react-share"
 
 import Icon from "../icons/Icon"
-import Profile from "../people/Profile"
+import { Profile } from "../people/Profile"
 import BlogTags from "./BlogTags"
 
 const BlogPost = ({

@@ -1,9 +1,17 @@
-import React from "react"
+import React, { FC } from "react"
 
-import QuoteAuthor from "./QuoteAuthor.js"
-import QuoteFeatureStudent from "./QuoteFeatureStudent.js"
+import { QuoteProps } from "./Quote.d"
+import { QuoteAuthor } from "./QuoteAuthor"
+import { QuoteFeatureStudent } from "./QuoteFeatureStudent"
+import "./css/quote.css"
 
-const Quote = ({ quoteType = "hero", quote, name, company, studentImageUrl }) => {
+export const Quote: FC<QuoteProps> = ({
+  quoteType = "hero",
+  quote,
+  name,
+  company,
+  studentImageUrl,
+}) => {
   let quoteTypeClass = "quote"
   let quoteAuthor = <QuoteAuthor name={name} company={company} />
 
@@ -33,5 +41,3 @@ const Quote = ({ quoteType = "hero", quote, name, company, studentImageUrl }) =>
     </div>
   )
 }
-
-export default Quote

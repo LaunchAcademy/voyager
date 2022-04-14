@@ -1,6 +1,12 @@
-import React from "react"
+import React, { FC } from "react"
 
-const QuoteFeatureStudent = ({ name, company, studentImageUrl }) => {
+import { QuoteFeatureStudentProps } from "./Quote.d"
+
+export const QuoteFeatureStudent: FC<QuoteFeatureStudentProps> = ({
+  name,
+  company,
+  studentImageUrl,
+}) => {
   return (
     <figcaption className="quote__student">
       <img className="student__profile-image" src={studentImageUrl} />
@@ -11,5 +17,3 @@ const QuoteFeatureStudent = ({ name, company, studentImageUrl }) => {
     </figcaption>
   )
 }
-
-export default QuoteFeatureStudent

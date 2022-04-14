@@ -1,8 +1,9 @@
-import React from "react"
+import React, { FC } from "react"
 
-import ReviewStars from "./ReviewStars.js"
+import { ReviewStars } from "./ReviewStars"
+import { CourseReportTileProps } from "./reviews.d"
 
-const CourseReportTile = ({
+export const CourseReportTile: FC<CourseReportTileProps> = ({
   reviewTitle,
   reviewedAt,
   alumniName,
@@ -66,5 +67,3 @@ const CourseReportTile = ({
     </article>
   )
 }
-
-export default CourseReportTile

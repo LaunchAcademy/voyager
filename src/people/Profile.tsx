@@ -1,8 +1,12 @@
-import React from "react"
+import React, { FC } from "react"
+
+import { library, IconDefinition, findIconDefinition } from "@fortawesome/fontawesome-svg-core"
 
 import { Icon } from "../icons/Icon"
+import { ProfileProps } from "./Profile.d"
+import "./css/profile.css"
 
-const Profile = ({
+export const Profile: FC<ProfileProps> = ({
   name,
   profileType = "launcher",
   currentTitle,
@@ -11,7 +15,6 @@ const Profile = ({
   foundingMember,
   socialUrls,
   description,
-  altText,
   Image,
 }) => {
   let whichProfileClass = `profile profile__${profileType}`
@@ -36,18 +39,23 @@ const Profile = ({
     }
 
     const socialIcons = socialUrls.map((social) => {
-      let domain = new URL(social)
+      const domain = new URL(social)
       let hostname = domain.hostname.replace("www.", "")
-      let iconHostname = hostname.replace(".com", "")
+      const iconHostname = hostname.replace(".com", "")
 
       if (hostname.includes("facebook")) {
         hostname = "facebook-f"
       }
 
+      const socialIconDefinition: IconDefinition = findIconDefinition({
+        prefix: "fas",
+        iconName: `${iconHostname}`,
+      })
+
       return (
         <li key={hostname}>
           <a href={social} aria-label={`${name} on ${hostname} `}>
-            <Icon name={iconHostname} fixedWidth />
+            <Icon icon={socialIconDefinition} fixedWidth />
           </a>
         </li>
       )
@@ -72,5 +80,3 @@ const Profile = ({
     </div>
   )
 }
-
-export default Profile

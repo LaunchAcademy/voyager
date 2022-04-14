@@ -2,6 +2,6 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core"
 
 export interface IconProps {
   icon: IconProp
-  fixedWidth: boolean
+  fixedWidth?: boolean
   className?: string
 }

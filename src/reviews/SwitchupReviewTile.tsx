@@ -1,9 +1,10 @@
-import React from "react"
+import React, { FC } from "react"
 
-import ReviewStars from "./ReviewStars.js"
-import "./reviewTiles.css"
+import { ReviewStars } from "./ReviewStars"
+import { SwitchupReviewTileProps } from "./reviews.d"
+import "./css/reviewTiles.css"
 
-const SwitchupReviewTile = ({
+export const SwitchupReviewTile: FC<SwitchupReviewTileProps> = ({
   reviewTitle,
   reviewedAt,
   alumniName,
@@ -57,5 +58,3 @@ const SwitchupReviewTile = ({
     </article>
   )
 }
-
-export default SwitchupReviewTile
