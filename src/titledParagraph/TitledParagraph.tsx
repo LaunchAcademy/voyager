@@ -1,6 +1,8 @@
-import React from "react"
+import React, { FC } from "react"
 
-const TitledParagraph = ({ title, children }) => (
+import { TitledParagraphProps } from "./TitledParagraph.d"
+
+const TitledParagraph: FC<TitledParagraphProps> = ({ title, children }) => (
   <section className="titled-paragraph">
     <div className="titled-paragraph__container">
       <h3 className="titled-paragraph__title">{title}</h3>
