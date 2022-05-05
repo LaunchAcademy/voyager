@@ -2,7 +2,7 @@ import React, { FC } from "react"
 
 import { TitledParagraphProps } from "./TitledParagraph.d"
 
-const TitledParagraph: FC<TitledParagraphProps> = ({ title, children }) => (
+export const TitledParagraph: FC<TitledParagraphProps> = ({ title, children }) => (
   <section className="titled-paragraph">
     <div className="titled-paragraph__container">
       <h3 className="titled-paragraph__title">{title}</h3>
@@ -10,5 +10,3 @@ const TitledParagraph: FC<TitledParagraphProps> = ({ title, children }) => (
     </div>
   </section>
 )
-
-export default TitledParagraph
