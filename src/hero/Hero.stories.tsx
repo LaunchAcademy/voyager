@@ -5,7 +5,7 @@ import { Meta, Story } from "@storybook/react"
 
 import { Button } from "../buttons/Button"
 import { Quote } from "../quote/Quote"
-import mdx from "./Hero.stories.mdx"
+import mdx from "./Hero.mdx"
 import "./css/hero.css"
 
 export default {

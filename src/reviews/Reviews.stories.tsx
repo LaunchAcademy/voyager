@@ -4,7 +4,7 @@ import { Meta, Story } from "@storybook/react"
 
 import { CourseReportTile } from "./CourseReportTile"
 import { ReviewList } from "./ReviewList"
-import mdx from "./Reviews.stories.mdx"
+import mdx from "./Reviews.mdx"
 import { SwitchupReviewTile } from "./SwitchupReviewTile"
 import { ReviewListProps, CourseReportTileProps, SwitchupReviewTileProps } from "./reviews.d"
 

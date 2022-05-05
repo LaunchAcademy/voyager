@@ -1,6 +1,13 @@
 import React, { FC } from "react"
 
-import { IconDefinition, findIconDefinition, IconName } from "@fortawesome/fontawesome-svg-core"
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core"
+import {
+  faTwitter,
+  faFacebookF,
+  faGithub,
+  faYoutube,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons"
 
 import { Icon } from "../icons/Icon"
 import { ProfileProps } from "./Profile.d"
@@ -40,22 +47,25 @@ export const Profile: FC<ProfileProps> = ({
 
     const socialIcons = socialUrls.map((social) => {
       const domain = new URL(social)
-      let hostname = domain.hostname.replace("www.", "")
-      const iconHostname = hostname.replace(".com", "")
+      const hostname = domain.hostname.replace("www.", "").replace(".com", "")
+      // let iconHostname = hostname.replace(".com", "")
 
-      if (hostname.includes("facebook")) {
-        hostname = "facebook-f"
+      const getIconByName = (name: string): IconDefinition | undefined => {
+        return {
+          twitter: faTwitter,
+          facebook: faFacebookF,
+          github: faGithub,
+          youtube: faYoutube,
+          linkedin: faLinkedin,
+        }[name]
       }
 
-      const socialIconDefinition: IconDefinition = findIconDefinition({
-        prefix: "fas",
-        iconName: `${iconHostname}` as IconName,
-      })
+      getIconByName("facebook")
 
       return (
         <li key={hostname}>
           <a href={social} aria-label={`${name} on ${hostname} `}>
-            <Icon icon={socialIconDefinition} fixedWidth />
+            <Icon icon={getIconByName(hostname)} fixedWidth />
           </a>
         </li>
       )

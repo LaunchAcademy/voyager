@@ -4,7 +4,7 @@ import { Meta, Story } from "@storybook/react"
 
 import { Profile } from "./Profile"
 import { ProfileProps } from "./Profile.d"
-import mdx from "./Profile.stories.mdx"
+import mdx from "./Profile.mdx"
 import "./css/profile.css"
 
 const kittenHeadshot = (): JSX.Element => <img src="https://placekitten.com/300/300" />
@@ -14,9 +14,7 @@ export default {
   title: "Profile",
   component: Profile,
   parameters: {
-    docs: {
-      page: mdx,
-    },
+    docs: { page: mdx },
   },
 } as Meta
 

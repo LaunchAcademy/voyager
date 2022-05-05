@@ -4,7 +4,7 @@ import { Meta, Story } from "@storybook/react"
 
 import { Quote } from "./Quote"
 import { QuoteProps, QuoteType } from "./Quote.d"
-import mdx from "./Quote.stories.mdx"
+import mdx from "./Quote.mdx"
 import "./css/quote.css"
 
 export default {

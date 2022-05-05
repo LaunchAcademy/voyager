@@ -4,7 +4,7 @@ import { faWalking } from "@fortawesome/free-solid-svg-icons"
 import { Meta, Story } from "@storybook/react"
 
 import { Icon } from "../icons/Icon"
-import mdx from "./PhaseList.stories.mdx"
+import mdx from "./PhaseList.mdx"
 import "./css/phaseList.css"
 
 export default {

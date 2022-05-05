@@ -1,7 +1,7 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core"
+import { IconProp, IconDefinition } from "@fortawesome/fontawesome-svg-core"
 
 export interface IconProps {
-  icon: IconProp
+  icon: IconProp | IconDefinition
   fixedWidth?: boolean
   className?: string
   onClick?: () => void

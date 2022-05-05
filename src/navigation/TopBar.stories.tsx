@@ -7,7 +7,7 @@ import logoImage from "../../src/assets/images/logo.png"
 import Button from "../buttons/Button"
 import { TopBar } from "./TopBar"
 import { TopBarProps } from "./TopBar.d"
-import mdx from "./TopBar.stories.mdx"
+import mdx from "./TopBar.mdx"
 import "./css/topBar.css"
 
 const logo = <img src={logoImage} alt="Launch Academy" />

@@ -3,6 +3,7 @@ import React, { FC } from "react"
 import {
   faFacebookF,
   faGithub,
+  faInstagram,
   faLinkedin,
   faTwitter,
   faYoutube,
@@ -12,7 +13,7 @@ import { Meta, Story } from "@storybook/react"
 
 import logoImage from "../../src/assets/images/logo.png"
 import Icon from "../icons/Icon"
-import mdx from "./Footer.stories.mdx"
+import mdx from "./Footer.mdx"
 import "./css/footer.css"
 
 const Logo: FC = () => <img className="footer__logo" src={logoImage} alt="Launch Academy" />
@@ -64,7 +65,7 @@ const Template: Story = () => (
             href="https://www.instagram.com/launchacademy/"
             aria-label="Launch Academy on Instagram"
           >
-            <Icon icon="instagram" fixedWidth />
+            <Icon icon={faInstagram} fixedWidth />
           </a>
         </li>
       </ul>

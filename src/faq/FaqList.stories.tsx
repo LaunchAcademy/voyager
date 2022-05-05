@@ -4,7 +4,7 @@ import { Meta, Story } from "@storybook/react"
 
 import { FaqListProps } from "./Faq.d"
 import { FaqList } from "./FaqList"
-import mdx from "./FaqList.stories.mdx"
+import mdx from "./FaqList.mdx"
 import "./css/faqList.css"
 
 const codedQuestions = [
@@ -56,5 +56,5 @@ const Template: Story<FaqListProps> = (args) => (
   </div>
 )
 
-export const Faqs = Template.bind({})
-Faqs.storyName = "FAQ List"
+export const FaqsList = Template.bind({})
+FaqsList.storyName = "FAQ List"

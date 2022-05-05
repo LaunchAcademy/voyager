@@ -3,7 +3,7 @@ import React from "react"
 import { Meta, Story } from "@storybook/react"
 
 import { CardList } from "./CardList"
-import mdx from "./Cards.stories.mdx"
+import mdx from "./Cards.mdx"
 import "./css/cards.css"
 
 const content = [
