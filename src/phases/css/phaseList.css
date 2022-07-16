@@ -1,0 +1,36 @@
+.phase-list {
+  @apply flex justify-center flex-wrap -mt-10;
+  @apply lg:grid lg:grid-cols-4 lg:gap-8 lg:-mt-20 lg:px-10 lg:relative lg:mx-24;
+
+  & .phase-list__item {
+    @apply shadow-2xl rounded-lg text-left mt-5 pb-8 mx-5 p-5 max-w-screen-sm bg-white w-full z-40;
+    @apply lg:mx-0;
+  }
+
+  & .phase-list__item_blue {
+    @apply bg-secondary-brand;
+  }
+
+  & .phase-list__item_icon {
+    @apply pb-6;
+    & svg {
+      @apply w-14 h-14;
+    }
+  }
+
+  & .phase-list__title {
+    @apply pb-6 text-xl font-headline font-bold;
+  }
+
+  & .phase-list__subtitle {
+    @apply pb-6 text-sm font-text font-normal;
+  }
+
+  & .phase-list__text {
+    @apply pb-6 text-sm font-text font-normal;
+  }
+
+  & .phase-list__detail {
+    @apply pb-6 text-sm font-text font-normal;
+  }
+}

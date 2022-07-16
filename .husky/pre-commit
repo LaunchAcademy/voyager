@@ -3,7 +3,7 @@
 
 export NVM_DIR="$HOME/.nvm"
 echo $NVM_DIR
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use
 nvm use 16
 
 yarn run lint
