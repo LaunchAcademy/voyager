@@ -1,6 +1,10 @@
 import React, { FC } from "react"
 
-import { QuoteFeatureStudentProps } from "./Quote.d"
+import { QuoteAuthorProps } from "./QuoteAuthor"
+
+export interface QuoteFeatureStudentProps extends QuoteAuthorProps {
+  studentImageUrl?: string
+}
 
 export const QuoteFeatureStudent: FC<QuoteFeatureStudentProps> = ({
   name,

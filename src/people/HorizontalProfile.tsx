@@ -1,6 +1,6 @@
 import React, { FC } from "react"
 
-import { ProfileProps } from "./Profile.d"
+import { ProfileProps } from "./Profile"
 import "./css/horizontalProfile.css"
 
 export const HorizontalProfile: FC<ProfileProps> = ({

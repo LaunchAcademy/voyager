@@ -5,8 +5,7 @@ import { Meta, Story } from "@storybook/react"
 
 import logoImage from "../../src/assets/images/logo.png"
 import Button from "../buttons/Button"
-import { TopBar } from "./TopBar"
-import { TopBarProps } from "./TopBar.d"
+import { TopBar, TopBarProps } from "./TopBar"
 import mdx from "./TopBar.mdx"
 import "./css/topBar.css"
 

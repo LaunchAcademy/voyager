@@ -2,8 +2,8 @@ import { BannerContent } from "./src/banners/BannerContent"
 import { BannerTitle } from "./src/banners/BannerTitle"
 import { SimpleBanner } from "./src/banners/SimpleBanner"
 import { Button } from "./src/buttons/Button"
-import { Card } from "./src/cards/Card"
 import { CardList } from "./src/cards/CardList"
+import { CardTile } from "./src/cards/CardTile"
 import { DesktopProjectCard } from "./src/cards/DesktopProjectCard"
 import { MobileProjectCard } from "./src/cards/MobileProjectCard"
 import { AccentCircle } from "./src/circleAccents/AccentCircle"
@@ -29,7 +29,7 @@ export {
   BannerContent,
   BannerTitle,
   Button,
-  Card,
+  CardTile,
   CardList,
   CreativeContent,
   colors,

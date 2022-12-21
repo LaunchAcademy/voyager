@@ -47,7 +47,7 @@ const cssConfig = globby
   })
 
 const jsConfig = {
-  input: "index.js",
+  input: "index.ts",
   output: [
     {
       file: packageJson.main,
@@ -64,7 +64,7 @@ const jsConfig = {
   ],
   plugins: [
     peerDepsExternal(),
-    typescript(),
+    typescript({ declaration: true }),
     resolve(),
     babel({ babelHelpers: "bundled" }),
     commonjs({ extract: true }),

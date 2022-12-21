@@ -13,7 +13,7 @@ export const image = "http://placekitten.com/200"
 <Canvas>
   <Story name="Mobile Device Tile">
     <div className="device-wrapper">
-      <MobileDeviceTile studentProjectScreenshot={image} />
+      <MobileDeviceTile Image={() => <img src={image} />} />
     </div>
   </Story>
 </Canvas>
@@ -23,7 +23,7 @@ export const image = "http://placekitten.com/200"
 <Canvas>
   <Story name="Desktop Device Tile">
     <div className="desktop-device-wrapper">
-      <DesktopDeviceTile studentProjectScreenshot={image} />
+      <DesktopDeviceTile Image={() => <img src={image} />} />
     </div>
   </Story>
 </Canvas>

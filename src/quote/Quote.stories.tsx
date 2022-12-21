@@ -2,8 +2,7 @@ import React from "react"
 
 import { Meta, Story } from "@storybook/react"
 
-import { Quote } from "./Quote"
-import { QuoteProps, QuoteType } from "./Quote.d"
+import { Quote, QuoteProps, QuoteType } from "./Quote"
 import mdx from "./Quote.mdx"
 import "./css/quote.css"
 

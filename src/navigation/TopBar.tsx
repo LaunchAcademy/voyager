@@ -4,7 +4,9 @@ import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
 import { Disclosure } from "@headlessui/react"
 
 import { Icon } from "../icons/Icon"
-import { TopBarProps } from "./TopBar.d"
+export interface TopBarProps {
+  logo: JSX.Element
+}
 
 export const TopBar: FC<TopBarProps> = ({ logo, children }) => (
   <div className="top-bar-navigation-container">

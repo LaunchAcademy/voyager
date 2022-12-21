@@ -4,7 +4,7 @@ export interface ReviewStarsProps {
   rating: rating
 }
 
-interface Review {
+interface ReviewProps {
   id?: number
   reviewTitle: string
   reviewedAt: string
@@ -19,13 +19,13 @@ interface Review {
 }
 
 export interface ReviewListProps {
-  allReviews: ReviewProps[]
+  allReviews: (CourseReportTileProps | SwitchupReviewTileProps)[]
 }
 
-export interface CourseReportTileProps extends Review {
+export interface CourseReportTileProps extends ReviewProps {
   instructorScore: rating
 }
 
-export interface SwitchupReviewTileProps extends Review {
+export interface SwitchupReviewTileProps extends ReviewProps {
   alumniGradYear: number
 }

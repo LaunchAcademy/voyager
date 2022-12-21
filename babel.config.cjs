@@ -40,13 +40,14 @@ module.exports = (api) => {
           loose: true,
         },
       ],
-      ["@babel/plugin-proposal-private-methods", { loose: true }],
       [
         require("@babel/plugin-proposal-object-rest-spread").default,
         {
           useBuiltIns: true,
         },
       ],
+      [require("@babel/plugin-proposal-private-methods"), { loose: true }],
+      [require("@babel/plugin-proposal-private-property-in-object").default, { loose: true }],
       [
         require("@babel/plugin-transform-runtime").default,
         {

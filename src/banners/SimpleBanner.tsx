@@ -1,6 +1,11 @@
 import React, { FC } from "react"
 
-import { SimpleBannerProps } from "./Banners.d"
+export interface SimpleBannerProps {
+  children: JSX.Element | JSX.Element[]
+  BackgroundImage: FC<{ className: string }>
+  type?: "prose" | string
+  style?: React.CSSProperties
+}
 
 //note: we are deprecating backgroundImageUrl in
 //favor of backgroundImageProps for responsive images

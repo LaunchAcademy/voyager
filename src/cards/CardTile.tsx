@@ -1,6 +1,38 @@
 import React, { FC } from "react"
 
-import { CardProps, UrlLinkProps } from "./Card.d"
+export interface CardProps extends Card {
+  cardType?: string | "article"
+  url?: string
+  Image?: FC<{ className?: string; altText?: string }>
+}
+
+export interface UrlLinkProps {
+  url?: string
+}
+
+export interface Card extends BaseCard {
+  mobile?: boolean
+  header: string
+  body: string
+  articleUrl?: string
+  categories?: { name: string; url: string }[]
+  timeToRead?: number
+  learnMoreToggle?: boolean
+  learnMoreContent?: unknown
+}
+
+export interface ProjectCardProps extends BaseCard {
+  projectTitle?: string
+  studentName?: string
+  studentProfileUrl?: string
+  projectLiveUrl?: string
+  Image: FC
+}
+
+interface BaseCard {
+  id?: number
+  Image?: FC
+}
 
 const UrlLink: FC<UrlLinkProps> = ({ url, children = undefined }) => {
   if (url) {
@@ -8,7 +40,7 @@ const UrlLink: FC<UrlLinkProps> = ({ url, children = undefined }) => {
   }
   return <>{children}</>
 }
-export const Card: FC<CardProps> = ({
+export const CardTile: FC<CardProps> = ({
   Image,
   header,
   body,

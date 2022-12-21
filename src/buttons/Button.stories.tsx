@@ -2,8 +2,7 @@ import React from "react"
 
 import { Story } from "@storybook/react"
 
-import Button from "./Button"
-import { ButtonPlacement, ButtonProps, ButtonSize } from "./Button.d"
+import Button, { ButtonPlacement, ButtonProps, ButtonSize } from "./Button"
 import "../../css/assets/main.css"
 import "./css/buttons.css"
 import mdx from "./Button.mdx"

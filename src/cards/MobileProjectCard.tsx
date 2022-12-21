@@ -4,7 +4,7 @@ import { faUserGraduate } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { MobileDeviceTile } from "../deviceProjectTile/MobileDeviceTile"
-import { ProjectCardProps } from "./Card.d"
+import { ProjectCardProps } from "./CardTile"
 
 export const MobileProjectCard: FC<ProjectCardProps> = ({
   Image,

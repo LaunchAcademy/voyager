@@ -1,10 +1,12 @@
 import React, { FC } from "react"
 
 import { CourseReportTile } from "./CourseReportTile"
+import { CourseReportTileProps, SwitchupReviewTileProps } from "./ReviewTypes"
 import { SwitchupReviewTile } from "./SwitchupReviewTile"
-import { ReviewListProps } from "./reviews.d"
 
-export const ReviewList: FC<ReviewListProps> = ({ allReviews }) => {
+export const ReviewList: FC<{
+  allReviews: (CourseReportTileProps | SwitchupReviewTileProps)[]
+}> = ({ allReviews }) => {
   const reviewsArray = allReviews.map((review) => {
     if (review.reviewUrl.includes("coursereport.com")) {
       return (
@@ -16,7 +18,7 @@ export const ReviewList: FC<ReviewListProps> = ({ allReviews }) => {
           alumniTitle={review.alumniTitle}
           verified={review.verified}
           overallScore={review.overallScore}
-          instructorScore={review.instructorScore}
+          instructorScore={(review as CourseReportTileProps).instructorScore}
           curriculumScore={review.curriculumScore}
           jobAssistanceScore={review.jobAssistanceScore}
           reviewUrl={review.reviewUrl}
@@ -32,7 +34,7 @@ export const ReviewList: FC<ReviewListProps> = ({ allReviews }) => {
         reviewedAt={review.reviewedAt}
         alumniName={review.alumniName}
         alumniTitle={review.alumniTitle}
-        alumniGradYear={review.alumniGradYear}
+        alumniGradYear={(review as SwitchupReviewTileProps).alumniGradYear}
         verified={review.verified}
         overallScore={review.overallScore}
         curriculumScore={review.curriculumScore}

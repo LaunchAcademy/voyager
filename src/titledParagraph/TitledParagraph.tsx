@@ -1,6 +1,8 @@
 import React, { FC } from "react"
 
-import { TitledParagraphProps } from "./TitledParagraph.d"
+export interface TitledParagraphProps {
+  title: string
+}
 
 export const TitledParagraph: FC<TitledParagraphProps> = ({ title, children }) => (
   <section className="titled-paragraph">

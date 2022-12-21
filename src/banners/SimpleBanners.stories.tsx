@@ -4,10 +4,9 @@ import { faEye } from "@fortawesome/free-solid-svg-icons"
 import { ComponentMeta, Story } from "@storybook/react"
 
 import Button from "../buttons/Button"
-import { BannerContent } from "./BannerContent"
+import { BannerContent, BannerContentProps } from "./BannerContent"
 import { BannerTitle } from "./BannerTitle"
-import { BannerContentProps, SimpleBannerProps } from "./Banners.d"
-import { SimpleBanner } from "./SimpleBanner"
+import { SimpleBanner, SimpleBannerProps } from "./SimpleBanner"
 
 import "../assets/css/main.css"
 import "./css/banners.css"

@@ -2,8 +2,7 @@ import React from "react"
 
 import { Meta, Story } from "@storybook/react"
 
-import { Profile } from "./Profile"
-import { ProfileProps } from "./Profile.d"
+import { Profile, ProfileProps } from "./Profile"
 import mdx from "./Profile.mdx"
 import "./css/profile.css"
 

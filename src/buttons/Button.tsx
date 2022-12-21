@@ -1,8 +1,23 @@
-import React, { FC } from "react"
+import React, { FC, ReactElement } from "react"
 
+import { IconProp, SizeProp } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { ButtonProps } from "./Button.d"
+export type ButtonSize = "xl" | "lg" | "md" | "sm" | "xs"
+export type ButtonPlacement = "banner" | "photo" | null
+export type ButtonProps = {
+  text?: string
+  children?: ReactElement
+  to?: string
+  onClick?: () => void
+  size?: ButtonSize
+  secondary?: boolean
+  placement?: ButtonPlacement
+  icon?: IconProp
+  iconSize?: SizeProp
+  className?: string
+  hideText?: boolean
+}
 
 export const Button: FC<ButtonProps> = ({
   text,

@@ -4,7 +4,13 @@ import { faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons"
 
 import { Icon } from "../icons/Icon"
 import "./css/faq.css"
-import { FaqProps } from "./Faq.d"
+
+export interface FaqProps {
+  title: string
+  description: string
+  selected: boolean
+  handleClick: () => void
+}
 
 export const Faq: FC<FaqProps> = ({ title, description, selected, handleClick }) => {
   let button

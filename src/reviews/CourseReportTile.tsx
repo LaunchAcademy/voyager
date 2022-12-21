@@ -1,7 +1,7 @@
 import React, { FC } from "react"
 
 import { ReviewStars } from "./ReviewStars"
-import { CourseReportTileProps } from "./reviews.d"
+import { CourseReportTileProps } from "./ReviewTypes"
 
 export const CourseReportTile: FC<CourseReportTileProps> = ({
   reviewTitle,

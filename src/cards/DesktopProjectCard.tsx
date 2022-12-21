@@ -1,7 +1,7 @@
 import React, { FC } from "react"
 
 import { DesktopDeviceTile } from "../deviceProjectTile/DesktopDeviceTile"
-import { ProjectCardProps } from "./Card.d"
+import { ProjectCardProps } from "./CardTile"
 
 export const DesktopProjectCard: FC<ProjectCardProps> = ({
   Image,

@@ -1,8 +1,8 @@
 import React, { FC } from "react"
 
-import { DeviceTileProps } from "./DeviceProjectTile.d"
+import { DeviceTileProps } from "./DeviceTileProps"
 
-export const MobileDeviceTile: FC<DeviceTileProps> = ({ Image, altText }) => {
+export const MobileDeviceTile: FC<DeviceTileProps> = ({ Image }) => {
   return (
     <div className="mobile-device-wrapper ">
       <div className="marvel-device iphone-x device-mobile__screen">
@@ -22,7 +22,7 @@ export const MobileDeviceTile: FC<DeviceTileProps> = ({ Image, altText }) => {
         </div>
         <div className="inner-shadow"></div>
         <div className="screen" style={{ display: "grid" }}>
-          <Image altText={altText} />
+          <Image />
         </div>
       </div>
     </div>

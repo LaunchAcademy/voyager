@@ -3,7 +3,7 @@ import React, { FC } from "react"
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { ReviewStarsProps } from "./reviews.d"
+import { ReviewStarsProps } from "./ReviewTypes"
 
 export const ReviewStars: FC<ReviewStarsProps> = ({ rating }) => {
   // eslint-disable-next-line prefer-const

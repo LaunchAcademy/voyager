@@ -2,8 +2,7 @@ import React from "react"
 
 import { Meta, Story } from "@storybook/react"
 
-import { FaqListProps } from "./Faq.d"
-import { FaqList } from "./FaqList"
+import { FaqList, FaqListProps } from "./FaqList"
 import mdx from "./FaqList.mdx"
 import "./css/faqList.css"
 

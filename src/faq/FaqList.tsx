@@ -1,7 +1,9 @@
 import React, { FC, useState } from "react"
 
 import { Faq } from "./Faq"
-import { FaqListProps } from "./Faq.d"
+export interface FaqListProps {
+  questions: { id: number; title: string; description: string }[]
+}
 
 export const FaqList: FC<FaqListProps> = ({ questions }) => {
   const [selectedQuestion, setSelectedQuestion] = useState([-1])

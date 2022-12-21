@@ -1,9 +1,17 @@
 import React, { FC } from "react"
 
-import { Card } from "./Card"
-import { CardListProps } from "./Card.d"
+import { CardTile, Card, ProjectCardProps } from "./CardTile"
 import { DesktopProjectCard } from "./DesktopProjectCard"
 import { MobileProjectCard } from "./MobileProjectCard"
+
+export interface CardListProps {
+  content?: Card[]
+  cardType: "article" | string
+  numberOfColumns: number
+  className?: string
+  learnMoreToggle: boolean
+  learnMoreContent?: JSX.Element | JSX.Element[]
+}
 
 export const CardList: FC<CardListProps> = ({
   content,
@@ -21,31 +29,38 @@ export const CardList: FC<CardListProps> = ({
     cardListSize += "_large"
   }
 
-  const cardContentArray = content.map((card) => {
+  const cardContentArray = (content || []).map((card) => {
     if (card.mobile === true) {
+      const projectCard = card as ProjectCardProps
       return (
         <MobileProjectCard
           key={card.id}
-          Image={card.Image}
-          projectTitle={card.projectTitle}
-          studentName={card.studentName}
-          studentProfileUrl={card.studentProfileUrl}
+          Image={
+            card.Image ||
+            ((): null => {
+              return null
+            })
+          }
+          projectTitle={projectCard.projectTitle}
+          studentName={projectCard.studentName}
+          studentProfileUrl={projectCard.studentProfileUrl}
         />
       )
     }
     if (card.mobile === false) {
+      const projectCard = card as ProjectCardProps
       return (
         <DesktopProjectCard
           key={card.id}
-          Image={card.Image}
-          projectTitle={card.projectTitle}
-          studentName={card.studentName}
-          studentProfileUrl={card.studentProfileUrl}
+          Image={projectCard.Image}
+          projectTitle={projectCard.projectTitle}
+          studentName={projectCard.studentName}
+          studentProfileUrl={projectCard.studentProfileUrl}
         />
       )
     }
     return (
-      <Card
+      <CardTile
         key={card.id}
         Image={card.Image}
         header={card.header}

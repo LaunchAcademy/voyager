@@ -1,6 +1,9 @@
 import React, { FC } from "react"
 
-import { QuoteAuthorProps } from "./Quote.d"
+export interface QuoteAuthorProps {
+  name: string
+  company: string
+}
 
 export const QuoteAuthor: FC<QuoteAuthorProps> = ({ name, company }) => {
   return (

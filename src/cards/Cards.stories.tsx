@@ -3,6 +3,7 @@ import React from "react"
 import { Meta, Story } from "@storybook/react"
 
 import { CardList } from "./CardList"
+import { Card } from "./CardTile"
 import mdx from "./Cards.mdx"
 import "./css/cards.css"
 
@@ -68,50 +69,56 @@ const blogContent = [
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",
-    articleTitle: "HTML article",
-    articleTime: "20 minutes",
+    learnMoreContent: (): null => {
+      return null
+    },
   },
   {
     Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",
-    articleTitle: "HTML article",
-    articleTime: "20 minutes",
+    learnMoreContent: (): null => {
+      return null
+    },
   },
   {
     Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",
-    articleTitle: "HTML article",
-    articleTime: "20 minutes",
+    learnMoreContent: (): null => {
+      return null
+    },
   },
   {
     Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",
-    articleTitle: "HTML article",
-    articleTime: "20 minutes",
+    learnMoreContent: (): null => {
+      return null
+    },
   },
   {
     Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",
-    articleTitle: "HTML article",
-    articleTime: "20 minutes",
+    learnMoreContent: (): null => {
+      return null
+    },
   },
   {
     Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",
-    articleTitle: "HTML article",
-    articleTime: "20 minutes",
+    learnMoreContent: (): null => {
+      return null
+    },
   },
-]
+] as Card[]
 
 export default {
   title: "Cards",
@@ -124,7 +131,7 @@ export default {
 } as Meta
 
 const defaultArgs = {
-  content: content,
+  content,
   numberOfColumns: 3,
   learnMoreToggle: false,
   cardType: "",

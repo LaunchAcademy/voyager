@@ -10,8 +10,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 
 import { Icon } from "../icons/Icon"
-import { ProfileProps } from "./Profile.d"
 import "./css/profile.css"
+
+export interface ProfileProps {
+  name: string
+  profileType?: string
+  currentTitle?: string
+  currentEmployer?: string
+  formerTitle?: string
+  foundingMember?: boolean
+  socialUrls?: string[]
+  description?: string
+  Image: FC<{ className?: string; alt?: string }>
+  altText?: string
+}
 
 export const Profile: FC<ProfileProps> = ({
   name,
@@ -50,14 +62,18 @@ export const Profile: FC<ProfileProps> = ({
       const hostname = domain.hostname.replace("www.", "").replace(".com", "")
       // let iconHostname = hostname.replace(".com", "")
 
-      const getIconByName = (name: string): IconDefinition | undefined => {
-        return {
+      const getIconByName = (name: string): IconDefinition => {
+        const icon = {
           twitter: faTwitter,
           facebook: faFacebookF,
           github: faGithub,
           youtube: faYoutube,
           linkedin: faLinkedin,
         }[name]
+        if (!icon) {
+          throw new Error("icon not found")
+        }
+        return icon
       }
 
       getIconByName("facebook")

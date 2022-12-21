@@ -1,9 +1,16 @@
 import React, { FC } from "react"
 
-import { QuoteProps } from "./Quote.d"
 import { QuoteAuthor } from "./QuoteAuthor"
-import { QuoteFeatureStudent } from "./QuoteFeatureStudent"
+import { QuoteFeatureStudent, QuoteFeatureStudentProps } from "./QuoteFeatureStudent"
 import "./css/quote.css"
+
+export type QuoteType = "hero" | "banner" | "student"
+export interface QuoteProps extends QuoteFeatureStudentProps {
+  quoteType?: QuoteType
+  quote: string
+  name: string
+  company: string
+}
 
 export const Quote: FC<QuoteProps> = ({
   quoteType = "hero",
@@ -13,7 +20,10 @@ export const Quote: FC<QuoteProps> = ({
   studentImageUrl,
 }) => {
   let quoteTypeClass = "quote"
-  let quoteAuthor = <QuoteAuthor name={name} company={company} />
+  let quoteAuthor
+  if (name && company) {
+    quoteAuthor = <QuoteAuthor name={name} company={company} />
+  }
 
   if (quoteType === "banner") {
     quoteTypeClass += " quote_banner"

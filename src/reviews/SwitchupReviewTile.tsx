@@ -1,7 +1,7 @@
 import React, { FC } from "react"
 
 import { ReviewStars } from "./ReviewStars"
-import { SwitchupReviewTileProps } from "./reviews.d"
+import { SwitchupReviewTileProps } from "./ReviewTypes"
 import "./css/reviewTiles.css"
 
 export const SwitchupReviewTile: FC<SwitchupReviewTileProps> = ({

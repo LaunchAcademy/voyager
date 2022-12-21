@@ -1,6 +1,6 @@
 import React, { FC } from "react"
 
-import { DeviceTileProps } from "./DeviceProjectTile.d"
+import { DeviceTileProps } from "./DeviceTileProps"
 
 export const DesktopDeviceTile: FC<DeviceTileProps> = ({ Image }) => {
   return (

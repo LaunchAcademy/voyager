@@ -1,6 +1,10 @@
 import React, { FC } from "react"
 
-import { AccentCircleProps } from "./AccentCircle.d"
+export interface AccentCircleProps {
+  width: number
+  color: string
+  className: string
+}
 
 export const AccentCircle: FC<AccentCircleProps> = ({ width = 8, color = "white", ...props }) => {
   return (
