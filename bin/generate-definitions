@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+const path = require("path")
+const rootPath = path.join(__dirname, "..")
+require("dts-generator").default({
+  project: rootPath,
+  project: rootPath,
+  out: path.join(rootPath, "dist", "index.d.ts"),
+  exclude: ["*.stories.*", "./node_modules/**/*"],
+})

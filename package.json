@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "build": "yarn run rollup -c",
+    "build": "yarn run build:rollup && yarn run build:declarations",
+    "build:rollup": "yarn run rollup -c",
+    "build:declarations": "./bin/generate-definitions",
     "clean": "rm -rf dist/*",
     "dev": "yarn run build -w",
     "lint": "yarn run eslint .",
@@ -58,6 +60,7 @@
     "babel-loader": "~8.1",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.0.0",
+    "dts-generator": "^3.0.0",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-import": "^2.25.4",

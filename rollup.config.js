@@ -64,7 +64,7 @@ const jsConfig = {
   ],
   plugins: [
     peerDepsExternal(),
-    typescript({ declaration: true }),
+    typescript(),
     resolve(),
     babel({ babelHelpers: "bundled" }),
     commonjs({ extract: true }),
