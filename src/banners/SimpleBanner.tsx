@@ -9,7 +9,12 @@ export interface SimpleBannerProps {
 
 //note: we are deprecating backgroundImageUrl in
 //favor of backgroundImageProps for responsive images
-export const SimpleBanner: FC<SimpleBannerProps> = ({ children, BackgroundImage, type, style }) => (
+export const SimpleBanner = ({
+  children,
+  BackgroundImage,
+  type,
+  style,
+}: SimpleBannerProps): JSX.Element => (
   <section className={`banner__photo banner_${type}`} style={style}>
     {BackgroundImage && (
       <div className="banner__background-photo-wrapper">

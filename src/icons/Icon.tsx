@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { IconProp, IconDefinition } from "@fortawesome/fontawesome-svg-core"
 import { IconDefinition as SolidIconDefinition } from "@fortawesome/free-solid-svg-icons"
@@ -12,7 +12,7 @@ export interface IconProps {
   onClick?: () => void
 }
 
-export const Icon: FC<IconProps> = ({ icon, fixedWidth = false, className }) => (
+export const Icon = ({ icon, fixedWidth = false, className }: IconProps): JSX.Element => (
   <FontAwesomeIcon icon={icon} className={`${className}`} fixedWidth={fixedWidth} width="18" />
 )
 

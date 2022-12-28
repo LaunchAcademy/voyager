@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { QuoteAuthor } from "./QuoteAuthor"
 import { QuoteFeatureStudent, QuoteFeatureStudentProps } from "./QuoteFeatureStudent"
@@ -12,13 +12,13 @@ export interface QuoteProps extends QuoteFeatureStudentProps {
   company: string
 }
 
-export const Quote: FC<QuoteProps> = ({
+export const Quote = ({
   quoteType = "hero",
   quote,
   name,
   company,
   studentImageUrl,
-}) => {
+}: QuoteProps): JSX.Element => {
   let quoteTypeClass = "quote"
   let quoteAuthor
   if (name && company) {

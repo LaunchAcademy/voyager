@@ -1,11 +1,11 @@
-import React, { FC } from "react"
+import React from "react"
 
 export interface QuoteAuthorProps {
   name: string
   company: string
 }
 
-export const QuoteAuthor: FC<QuoteAuthorProps> = ({ name, company }) => {
+export const QuoteAuthor = ({ name, company }: QuoteAuthorProps): JSX.Element => {
   return (
     <figcaption>
       <h6 className="quote__name">{name}</h6>

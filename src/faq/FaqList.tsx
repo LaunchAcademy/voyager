@@ -1,11 +1,11 @@
-import React, { FC, useState } from "react"
+import React, { useState } from "react"
 
 import { Faq } from "./Faq"
 export interface FaqListProps {
   questions: { id: number; title: string; description: string }[]
 }
 
-export const FaqList: FC<FaqListProps> = ({ questions }) => {
+export const FaqList = ({ questions }: FaqListProps): JSX.Element => {
   const [selectedQuestion, setSelectedQuestion] = useState([-1])
 
   const toggleQuestionSelect = (id: number): void => {

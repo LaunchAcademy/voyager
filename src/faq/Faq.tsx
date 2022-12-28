@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons"
 
@@ -12,7 +12,7 @@ export interface FaqProps {
   handleClick: () => void
 }
 
-export const Faq: FC<FaqProps> = ({ title, description, selected, handleClick }) => {
+export const Faq = ({ title, description, selected, handleClick }: FaqProps): JSX.Element => {
   let button
   let questionClass
   if (selected) {

@@ -1,9 +1,9 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { ReviewStars } from "./ReviewStars"
 import { CourseReportTileProps } from "./ReviewTypes"
 
-export const CourseReportTile: FC<CourseReportTileProps> = ({
+export const CourseReportTile = ({
   reviewTitle,
   reviewedAt,
   alumniName,
@@ -15,7 +15,7 @@ export const CourseReportTile: FC<CourseReportTileProps> = ({
   jobAssistanceScore,
   reviewUrl,
   children,
-}) => {
+}: CourseReportTileProps): JSX.Element => {
   let verifiedText
   if (verified) {
     verifiedText = "Verified"
