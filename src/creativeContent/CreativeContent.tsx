@@ -1,5 +1,5 @@
-import React, { FC, PropsWithChildren } from "react"
+import React, { PropsWithChildren } from "react"
 
-export const CreativeContent: FC = ({ children }: PropsWithChildren) => (
+export const CreativeContent = ({ children }: PropsWithChildren): JSX.Element => (
   <div className="creative-content__container">{children}</div>
 )

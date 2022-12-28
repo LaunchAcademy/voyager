@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { CardTile, Card, ProjectCardProps } from "./CardTile"
 import { DesktopProjectCard } from "./DesktopProjectCard"
@@ -13,14 +13,14 @@ export interface CardListProps {
   learnMoreContent?: React.ReactNode
 }
 
-export const CardList: FC<CardListProps> = ({
+export const CardList = ({
   content,
   cardType = "article",
   numberOfColumns,
   className,
   learnMoreToggle = false,
   learnMoreContent = null,
-}) => {
+}: CardListProps): JSX.Element => {
   let cardListSize = "card-list"
 
   if (numberOfColumns === 2) {

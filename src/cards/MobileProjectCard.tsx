@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { faUserGraduate } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -6,13 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { MobileDeviceTile } from "../deviceProjectTile/MobileDeviceTile"
 import { ProjectCardProps } from "./CardTile"
 
-export const MobileProjectCard: FC<ProjectCardProps> = ({
+export const MobileProjectCard = ({
   Image,
   projectLiveUrl,
   projectTitle,
   studentName,
   studentProfileUrl,
-}) => {
+}: ProjectCardProps): JSX.Element => {
   let studentProfileImage = <FontAwesomeIcon icon={faUserGraduate} />
   if (studentProfileUrl) {
     studentProfileImage = <img src={studentProfileUrl} />

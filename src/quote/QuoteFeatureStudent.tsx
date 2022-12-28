@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { QuoteAuthorProps } from "./QuoteAuthor"
 
@@ -6,11 +6,11 @@ export interface QuoteFeatureStudentProps extends QuoteAuthorProps {
   studentImageUrl?: string
 }
 
-export const QuoteFeatureStudent: FC<QuoteFeatureStudentProps> = ({
+export const QuoteFeatureStudent = ({
   name,
   company,
   studentImageUrl,
-}) => {
+}: QuoteFeatureStudentProps): JSX.Element => {
   return (
     <figcaption className="quote__student">
       <img className="student__profile-image" src={studentImageUrl} />

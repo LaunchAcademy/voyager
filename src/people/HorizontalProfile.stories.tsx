@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { Meta, Story } from "@storybook/react"
 
@@ -6,7 +6,9 @@ import { HorizontalProfile } from "./HorizontalProfile"
 import mdx from "./HorizontalProfile.mdx"
 import "./css/horizontalProfile.css"
 
-const kittenHeadshot: FC = () => <img src="https://placekitten.com/300/300" />
+const kittenHeadshot = ({}: { className?: string }): JSX.Element => (
+  <img src="https://placekitten.com/300/300" />
+)
 
 export default {
   title: "Horizontal Profile",

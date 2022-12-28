@@ -1,10 +1,10 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { ReviewStars } from "./ReviewStars"
 import { SwitchupReviewTileProps } from "./ReviewTypes"
 import "./css/reviewTiles.css"
 
-export const SwitchupReviewTile: FC<SwitchupReviewTileProps> = ({
+export const SwitchupReviewTile = ({
   reviewTitle,
   reviewedAt,
   alumniName,
@@ -15,7 +15,7 @@ export const SwitchupReviewTile: FC<SwitchupReviewTileProps> = ({
   jobAssistanceScore,
   reviewUrl,
   children,
-}) => {
+}: SwitchupReviewTileProps): JSX.Element => {
   let alumniTitleCheck
   if (alumniTitle) {
     alumniTitleCheck = ` | ${alumniTitle}`

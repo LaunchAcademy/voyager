@@ -1,8 +1,8 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { DeviceTileProps } from "./DeviceTileProps"
 
-export const MobileDeviceTile: FC<DeviceTileProps> = ({ Image }) => {
+export const MobileDeviceTile = ({ Image }: DeviceTileProps): JSX.Element => {
   return (
     <div className="mobile-device-wrapper ">
       <div className="marvel-device iphone-x device-mobile__screen">

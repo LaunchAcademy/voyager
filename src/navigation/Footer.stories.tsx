@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 import {
   faFacebookF,
@@ -16,7 +16,9 @@ import Icon from "../icons/Icon"
 import mdx from "./Footer.mdx"
 import "./css/footer.css"
 
-const Logo: FC = () => <img className="footer__logo" src={logoImage} alt="Launch Academy" />
+const Logo = (): JSX.Element => (
+  <img className="footer__logo" src={logoImage} alt="Launch Academy" />
+)
 
 export default {
   title: "Footer",

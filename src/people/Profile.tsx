@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core"
 import {
@@ -21,11 +21,10 @@ export interface ProfileProps {
   foundingMember?: boolean
   socialUrls?: string[]
   description?: string
-  Image: FC<{ className?: string; alt?: string }>
-  altText?: string
+  Image: ({ className, alt }: { className?: string; alt?: string }) => JSX.Element
 }
 
-export const Profile: FC<ProfileProps> = ({
+export const Profile = ({
   name,
   profileType = "launcher",
   currentTitle,
@@ -35,7 +34,7 @@ export const Profile: FC<ProfileProps> = ({
   socialUrls,
   description,
   Image,
-}) => {
+}: ProfileProps): JSX.Element => {
   let whichProfileClass = `profile profile__${profileType}`
   let currentEmployerOrFoundingMember = (
     <h6 className="profile__current-title">

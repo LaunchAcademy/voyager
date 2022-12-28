@@ -1,11 +1,11 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { ReviewStarsProps } from "./ReviewTypes"
 
-export const ReviewStars: FC<ReviewStarsProps> = ({ rating }) => {
+export const ReviewStars = ({ rating }: ReviewStarsProps): JSX.Element => {
   // eslint-disable-next-line prefer-const
   let starsList = []
   for (let i = 0; i < rating; i++) {

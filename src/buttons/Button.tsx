@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from "react"
+import React, { ReactElement } from "react"
 
 import { IconProp, SizeProp } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -19,7 +19,7 @@ export type ButtonProps = {
   hideText?: boolean
 }
 
-export const Button: FC<ButtonProps> = ({
+export const Button = ({
   text,
   children,
   to,
@@ -31,7 +31,7 @@ export const Button: FC<ButtonProps> = ({
   iconSize = "1x",
   className = "",
   hideText = false,
-}) => {
+}: ButtonProps): JSX.Element | null => {
   const modifiers = []
   if (secondary) {
     modifiers.push("button_secondary")

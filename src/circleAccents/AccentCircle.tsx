@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 export interface AccentCircleProps {
   width: number
@@ -6,7 +6,11 @@ export interface AccentCircleProps {
   className: string
 }
 
-export const AccentCircle: FC<AccentCircleProps> = ({ width = 8, color = "white", ...props }) => {
+export const AccentCircle = ({
+  width = 8,
+  color = "white",
+  ...props
+}: AccentCircleProps): JSX.Element => {
   return (
     <div
       {...props}

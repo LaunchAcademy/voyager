@@ -1,12 +1,14 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { CourseReportTile } from "./CourseReportTile"
 import { CourseReportTileProps, SwitchupReviewTileProps } from "./ReviewTypes"
 import { SwitchupReviewTile } from "./SwitchupReviewTile"
 
-export const ReviewList: FC<{
+export const ReviewList = ({
+  allReviews,
+}: {
   allReviews: (CourseReportTileProps | SwitchupReviewTileProps)[]
-}> = ({ allReviews }) => {
+}): JSX.Element => {
   const reviewsArray = allReviews.map((review) => {
     if (review.reviewUrl.includes("coursereport.com")) {
       return (

@@ -1,15 +1,15 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { DesktopDeviceTile } from "../deviceProjectTile/DesktopDeviceTile"
 import { ProjectCardProps } from "./CardTile"
 
-export const DesktopProjectCard: FC<ProjectCardProps> = ({
+export const DesktopProjectCard = ({
   Image,
   projectLiveUrl,
   projectTitle,
   studentName,
   studentProfileUrl,
-}) => {
+}: ProjectCardProps): JSX.Element => {
   let studentProfileImage
   if (studentProfileUrl) {
     studentProfileImage = <img src={studentProfileUrl} />

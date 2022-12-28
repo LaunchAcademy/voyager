@@ -1,8 +1,8 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { DeviceTileProps } from "./DeviceTileProps"
 
-export const DesktopDeviceTile: FC<DeviceTileProps> = ({ Image }) => {
+export const DesktopDeviceTile = ({ Image }: DeviceTileProps): JSX.Element => {
   return (
     <div className="desktop-device-wrapper">
       <div className="desktop-device__screen marvel-device macbook">
