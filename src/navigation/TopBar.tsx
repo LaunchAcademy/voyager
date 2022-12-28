@@ -1,17 +1,17 @@
-import React, { FC, ReactFragment } from "react"
+import React, { PropsWithChildren, ReactElement } from "react"
 
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
 import { Disclosure } from "@headlessui/react"
 
 import { Icon } from "../icons/Icon"
 export interface TopBarProps {
-  logo: JSX.Element
+  logo: React.ReactNode
 }
 
-export const TopBar: FC<TopBarProps> = ({ logo, children }) => (
+export const TopBar = ({ logo, children }: PropsWithChildren<TopBarProps>): JSX.Element => (
   <div className="top-bar-navigation-container">
     <Disclosure as="nav" className="top-bar-navigation">
-      {({ open }): ReactFragment => (
+      {({ open }): ReactElement => (
         <>
           <div className="flex-initial flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0 flex items-center top-bar__logo">{logo}</div>

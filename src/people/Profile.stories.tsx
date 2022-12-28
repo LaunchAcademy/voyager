@@ -6,7 +6,7 @@ import { Profile, ProfileProps } from "./Profile"
 import mdx from "./Profile.mdx"
 import "./css/profile.css"
 
-const kittenHeadshot = (): JSX.Element => <img src="https://placekitten.com/300/300" />
+const kittenHeadshot = (): React.ReactNode => <img src="https://placekitten.com/300/300" />
 const socialUrls = ["https://www.facebook.com", "https://github.com", "https://youtube.com"]
 
 export default {

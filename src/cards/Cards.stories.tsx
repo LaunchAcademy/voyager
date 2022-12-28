@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactElement } from "react"
 
 import { Meta, Story } from "@storybook/react"
 
@@ -9,32 +9,32 @@ import "./css/cards.css"
 
 const content = [
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
   },
@@ -42,20 +42,20 @@ const content = [
 
 const projectContent = [
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     projectTitle: "Project Name",
     studentName: "Student Name",
     studentProfileUrl: "https://placekitten.com/408/287",
     mobile: true,
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     projectTitle: "Project Name",
     studentName: "Student Name",
     mobile: false,
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     projectTitle: "Project Name",
     studentName: "Student Name",
     studentProfileUrl: "https://placekitten.com/408/287",
@@ -65,7 +65,7 @@ const projectContent = [
 
 const blogContent = [
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",
@@ -74,7 +74,7 @@ const blogContent = [
     },
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",
@@ -83,7 +83,7 @@ const blogContent = [
     },
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",
@@ -92,7 +92,7 @@ const blogContent = [
     },
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): React.ReactNode => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",
@@ -101,7 +101,7 @@ const blogContent = [
     },
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",
@@ -110,7 +110,7 @@ const blogContent = [
     },
   },
   {
-    Image: (): JSX.Element => <img src="https://placekitten.com/408/287" />,
+    Image: (): ReactElement => <img src="https://placekitten.com/408/287" />,
     header: "Learn the right things, in the right order",
     body: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
     articleUrl: "#",

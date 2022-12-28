@@ -10,7 +10,7 @@ export interface CardListProps {
   numberOfColumns: number
   className?: string
   learnMoreToggle: boolean
-  learnMoreContent?: JSX.Element | JSX.Element[]
+  learnMoreContent?: React.ReactNode
 }
 
 export const CardList: FC<CardListProps> = ({

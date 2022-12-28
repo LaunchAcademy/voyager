@@ -1,13 +1,14 @@
-import React, { FC } from "react"
+import React from "react"
 
 export interface CardProps extends Card {
   cardType?: string | "article"
   url?: string
-  Image?: FC<{ className?: string; altText?: string }>
+  Image: () => JSX.Element
 }
 
 export interface UrlLinkProps {
   url?: string
+  children?: React.ReactNode[] | React.ReactNode
 }
 
 export interface Card extends BaseCard {
@@ -26,21 +27,21 @@ export interface ProjectCardProps extends BaseCard {
   studentName?: string
   studentProfileUrl?: string
   projectLiveUrl?: string
-  Image: FC
+  Image: () => JSX.Element
 }
 
 interface BaseCard {
   id?: number
-  Image?: FC
+  Image: () => JSX.Element
 }
 
-const UrlLink: FC<UrlLinkProps> = ({ url, children = undefined }) => {
+const UrlLink = ({ url, children = undefined }: UrlLinkProps): React.ReactElement => {
   if (url) {
     return <a href={url}>{children}</a>
   }
   return <>{children}</>
 }
-export const CardTile: FC<CardProps> = ({
+export const CardTile = ({
   Image,
   header,
   body,
@@ -50,7 +51,7 @@ export const CardTile: FC<CardProps> = ({
   timeToRead = undefined,
   learnMoreToggle,
   learnMoreContent = null,
-}) => {
+}: CardProps): JSX.Element => {
   const categoryLinks = categories.map((category) => (
     <a key={category.url} href={category.url}>
       {category.name}
@@ -58,29 +59,33 @@ export const CardTile: FC<CardProps> = ({
   ))
   return (
     <div className={`card card_${cardType}`}>
-      {Image && (
-        <figure className="card__photo">
-          <UrlLink url={url}>
-            <Image />
-          </UrlLink>
-        </figure>
-      )}
-
-      <div className="card__card-content-container">
-        <h3 className="card__header">
-          <UrlLink url={url}>{header}</UrlLink>
-        </h3>
-        <p className="card__body" dangerouslySetInnerHTML={{ __html: body }} />
-        {cardType === "article" && (categoryLinks.length > 0 || timeToRead) && (
-          <section className="card__readmore">
-            <p className="card__links">{categoryLinks}</p>
-            <p className="card__time-to-read">
-              <UrlLink url={url}>{timeToRead} minutes</UrlLink>
-            </p>
-          </section>
+      <>
+        {Image && (
+          <figure className="card__photo">
+            <UrlLink url={url}>
+              <Image />
+            </UrlLink>
+          </figure>
         )}
-      </div>
-      {learnMoreToggle ? learnMoreContent || <a className="card__learn-more">Learn more</a> : null}
+
+        <div className="card__card-content-container">
+          <h3 className="card__header">
+            <UrlLink url={url}>{header}</UrlLink>
+          </h3>
+          <p className="card__body" dangerouslySetInnerHTML={{ __html: body }} />
+          {cardType === "article" && (categoryLinks.length > 0 || timeToRead) && (
+            <section className="card__readmore">
+              <p className="card__links">{categoryLinks}</p>
+              <p className="card__time-to-read">
+                <UrlLink url={url}>{timeToRead} minutes</UrlLink>
+              </p>
+            </section>
+          )}
+        </div>
+        {learnMoreToggle
+          ? learnMoreContent || <a className="card__learn-more">Learn more</a>
+          : null}
+      </>
     </div>
   )
 }

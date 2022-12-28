@@ -16,6 +16,7 @@ interface ReviewProps {
   jobAssistanceScore: rating
   reviewUrl: string
   reviewParagraph?: string
+  children?: React.ReactNode
 }
 
 export interface ReviewListProps {

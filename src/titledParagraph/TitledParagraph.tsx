@@ -2,6 +2,7 @@ import React, { FC } from "react"
 
 export interface TitledParagraphProps {
   title: string
+  children: React.ReactNode
 }
 
 export const TitledParagraph: FC<TitledParagraphProps> = ({ title, children }) => (

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactElement } from "react"
 
 import { faEye } from "@fortawesome/free-solid-svg-icons"
 import { ComponentMeta, Story } from "@storybook/react"
@@ -18,7 +18,7 @@ export default {
 
 export const TitleAndOneButton: Story<SimpleBannerProps> = (args) => <SimpleBanner {...args} />
 TitleAndOneButton.args = {
-  BackgroundImage: (): JSX.Element => (
+  BackgroundImage: (): ReactElement => (
     <img className="banner__background-photo" src="https://placekitten.com/1024/350" />
   ),
   children: (
@@ -57,7 +57,7 @@ TitleAndTwoButtons.storyName = "Title and Two Buttons"
 export const HomepageWithParagraph: Story<SimpleBannerProps> = (args) => <SimpleBanner {...args} />
 HomepageWithParagraph.args = {
   type: "prose",
-  BackgroundImage: (): JSX.Element => (
+  BackgroundImage: (): ReactElement => (
     <img className="banner__background-photo" src="https://placekitten.com/1024/350" />
   ),
   children: (
