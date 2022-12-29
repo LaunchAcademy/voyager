@@ -1,5 +1,3 @@
-import { FC } from "react"
-
 export interface DeviceTileProps {
-  Image: FC<{ className?: string; altText?: string }>
+  Image: ({ className, altText }: { className?: string; altText?: string }) => JSX.Element
 }

@@ -54,12 +54,18 @@ const jsConfig = {
       compact: true,
       format: "cjs",
       sourcemap: true,
+      name: "Voyager",
+      globals: { react: "React" },
+      exports: "named",
     },
     {
       file: packageJson.module,
       format: "esm",
       compact: true,
       sourcemap: true,
+      name: "Voyager",
+      globals: { react: "React" },
+      exports: "named",
     },
   ],
   plugins: [

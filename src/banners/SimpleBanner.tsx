@@ -1,8 +1,8 @@
-import React, { FC } from "react"
+import React from "react"
 
 export interface SimpleBannerProps {
   children: React.ReactNode
-  BackgroundImage: FC<{ className: string }>
+  BackgroundImage: ({ className }: { className: string }) => JSX.Element
   type?: "prose" | string
   style?: React.CSSProperties
 }

@@ -31,11 +31,7 @@ export const Button = ({
   iconSize = "1x",
   className = "",
   hideText = false,
-<<<<<<< HEAD
-}: ButtonProps): JSX.Element => {
-=======
 }: ButtonProps): JSX.Element | null => {
->>>>>>> 1a023e7 (don't use FC type)
   const modifiers = []
   if (secondary) {
     modifiers.push("button_secondary")

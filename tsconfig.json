@@ -4,6 +4,8 @@
     "allowSyntheticDefaultImports": true,
     "composite": true,
     "esModuleInterop": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
     // "strict": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
@@ -25,7 +27,7 @@
     "types": [
       "react",
       "jest",
-      "mdx"
+      "mdx",
     ]
   },
   "exclude": [

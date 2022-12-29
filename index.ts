@@ -22,6 +22,8 @@ import { TitledParagraph } from "./src/titledParagraph/TitledParagraph"
 import fontFamily from "./src/typography/fontFamily.cjs"
 import fontSize from "./src/typography/fontSize.cjs"
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export const Voyager = () => {}
 export {
   fontFamily,
   fontSize,
@@ -47,3 +49,5 @@ export {
   TitledParagraph,
   TopBar,
 }
+
+export default Voyager
