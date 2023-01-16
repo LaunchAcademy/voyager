@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react"
 
-import { faEye } from "@fortawesome/free-solid-svg-icons"
+import { faEye, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { ComponentMeta, Story } from "@storybook/react"
 
 import Button from "../buttons/Button"
@@ -39,14 +39,14 @@ export const TitleAndTwoButtons: Story<BannerContentProps> = () => (
           <Button
             to="#"
             text="Schedule an Info Call"
-            icon="phone"
+            icon={faPhone}
             className="hero__button pr-3"
             secondary
             size="lg"
           />
         </div>
         <div className="banner_button-container_no-photo">
-          <Button to="#" text="Button" icon="eye" className="hero__button" size="lg" />
+          <Button to="#" text="Button" icon={faEye} className="hero__button" size="lg" />
         </div>
       </div>
     </BannerContent>

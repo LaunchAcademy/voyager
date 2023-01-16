@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react"
 
-import { IconProp, SizeProp } from "@fortawesome/fontawesome-svg-core"
+import { IconDefinition, SizeProp } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export type ButtonSize = "xl" | "lg" | "md" | "sm" | "xs"
@@ -13,7 +13,7 @@ export type ButtonProps = {
   size?: ButtonSize
   secondary?: boolean
   placement?: ButtonPlacement
-  icon?: IconProp
+  icon?: IconDefinition
   iconSize?: SizeProp
   className?: string
   hideText?: boolean

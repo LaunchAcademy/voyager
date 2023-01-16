@@ -1,12 +1,12 @@
 import React from "react"
 
-import { IconProp, IconDefinition } from "@fortawesome/fontawesome-svg-core"
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core"
 import { IconDefinition as SolidIconDefinition } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 
 export interface IconProps {
-  icon: IconProp | IconDefinition | SolidIconDefinition
+  icon: IconDefinition | SolidIconDefinition
   fixedWidth?: boolean
   className?: string
   onClick?: () => void

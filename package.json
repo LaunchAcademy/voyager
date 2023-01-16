@@ -14,7 +14,7 @@
   },
   "license": "UNLICENSED",
   "name": "@launchacademy/voyager",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "engines": {
     "node": ">= 14.8"
   },
@@ -25,14 +25,6 @@
     "dist/**",
     "css/**"
   ],
-  "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.js"
-    }
-  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "typings": "dist/index.d.ts",
