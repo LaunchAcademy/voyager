@@ -87,7 +87,7 @@
     "postcss": "^8",
     "postcss-import": "15.1.0",
     "postcss-loader": "^7.0.1",
-    "postcss-nesting": "^8.0.0",
+    "postcss-nesting": "^11.0.1",
     "prettier": "^2.5.1",
     "react": "17.0.1",
     "react-docgen-typescript": "^2.2.2",
